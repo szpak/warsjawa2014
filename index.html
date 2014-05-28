@@ -16,7 +16,23 @@
 
     <link rel="stylesheet" href="stylesheets/warsjawa.css">
 
-    {% include "template-favicons.html" %}
+    <link rel="shortcut icon" href="images/favicons/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="images/favicons/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="images/favicons/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#1b4055">
+<meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+<meta name="msapplication-config" content="images/favicons/browserconfig.xml">
 </head>
 
 
@@ -122,19 +138,69 @@
     </div>
 
     <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-6">
-        {% for speaker in speakers %}
+        
         <li>
-            <img src="{{ speaker.picture_url }}" alt="{{ speaker.name }} photo"/>
-            <span class="caption">{{ speaker.name }}</span>
+            <img src="images/speakers/venkat-subramaniam-320x320.jpg" alt="Venkat Subramaniam photo"/>
+            <span class="caption">Venkat Subramaniam</span>
         </li>
-        {% endfor%}
+        
 
-        {% for placeholder in speaker_placeholders %}
-        <li class="placeholder {% if placeholder.show_for_small %}show-for-small-up{% elif placeholder.show_for_medium %}show-for-medium-up{% elif placeholder.show_for_large %}show-for-large-up{% endif %}">
-            <img src="{{ placeholder.placeholder_background_image_url }}" alt="Speaker placeholder"/>
+        
+        <li class="placeholder show-for-small-up">
+            <img src="images/speaker-placeholer-1-320x320.png" alt="Speaker placeholder"/>
             <img class="logo" src="images/warsjawa-logo-200x328.png">
         </li>
-        {% endfor%}
+        
+        <li class="placeholder show-for-small-up">
+            <img src="images/speaker-placeholer-2-320x320.png" alt="Speaker placeholder"/>
+            <img class="logo" src="images/warsjawa-logo-200x328.png">
+        </li>
+        
+        <li class="placeholder show-for-small-up">
+            <img src="images/speaker-placeholer-3-320x320.png" alt="Speaker placeholder"/>
+            <img class="logo" src="images/warsjawa-logo-200x328.png">
+        </li>
+        
+        <li class="placeholder show-for-medium-up">
+            <img src="images/speaker-placeholer-1-320x320.png" alt="Speaker placeholder"/>
+            <img class="logo" src="images/warsjawa-logo-200x328.png">
+        </li>
+        
+        <li class="placeholder show-for-medium-up">
+            <img src="images/speaker-placeholer-2-320x320.png" alt="Speaker placeholder"/>
+            <img class="logo" src="images/warsjawa-logo-200x328.png">
+        </li>
+        
+        <li class="placeholder show-for-medium-up">
+            <img src="images/speaker-placeholer-3-320x320.png" alt="Speaker placeholder"/>
+            <img class="logo" src="images/warsjawa-logo-200x328.png">
+        </li>
+        
+        <li class="placeholder show-for-medium-up">
+            <img src="images/speaker-placeholer-1-320x320.png" alt="Speaker placeholder"/>
+            <img class="logo" src="images/warsjawa-logo-200x328.png">
+        </li>
+        
+        <li class="placeholder show-for-large-up">
+            <img src="images/speaker-placeholer-2-320x320.png" alt="Speaker placeholder"/>
+            <img class="logo" src="images/warsjawa-logo-200x328.png">
+        </li>
+        
+        <li class="placeholder show-for-large-up">
+            <img src="images/speaker-placeholer-3-320x320.png" alt="Speaker placeholder"/>
+            <img class="logo" src="images/warsjawa-logo-200x328.png">
+        </li>
+        
+        <li class="placeholder show-for-large-up">
+            <img src="images/speaker-placeholer-1-320x320.png" alt="Speaker placeholder"/>
+            <img class="logo" src="images/warsjawa-logo-200x328.png">
+        </li>
+        
+        <li class="placeholder show-for-large-up">
+            <img src="images/speaker-placeholer-2-320x320.png" alt="Speaker placeholder"/>
+            <img class="logo" src="images/warsjawa-logo-200x328.png">
+        </li>
+        
     </ul>
 </section>
 
@@ -160,18 +226,68 @@
     </div>
 
     <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-6">
-        {% for sponsor in sponsors %}
+        
             <li>
-                <img src="{{ sponsor.picture_url }}" alt="{{ sponsor.name }} logo"/>
+                <img src="images/sponsors/touk-320x320.png" alt="Touk logo"/>
             </li>
-        {% endfor%}
+        
 
-        {% for placeholder in sponsor_placeholders %}
-            <li class="placeholder {% if placeholder.show_for_small %}show-for-small-up{% elif placeholder.show_for_medium %}show-for-medium-up{% elif placeholder.show_for_large %}show-for-large-up{% endif %}">
-                <img src="{{ placeholder.placeholder_background_image_url }}" alt="Speaker placeholder"/>
+        
+            <li class="placeholder show-for-small-up">
+                <img src="images/speaker-placeholer-1-320x320.png" alt="Speaker placeholder"/>
                 <img class="logo" src="images/warsjawa-logo-200x328.png">
             </li>
-        {% endfor%}
+        
+            <li class="placeholder show-for-small-up">
+                <img src="images/speaker-placeholer-2-320x320.png" alt="Speaker placeholder"/>
+                <img class="logo" src="images/warsjawa-logo-200x328.png">
+            </li>
+        
+            <li class="placeholder show-for-small-up">
+                <img src="images/speaker-placeholer-3-320x320.png" alt="Speaker placeholder"/>
+                <img class="logo" src="images/warsjawa-logo-200x328.png">
+            </li>
+        
+            <li class="placeholder show-for-medium-up">
+                <img src="images/speaker-placeholer-1-320x320.png" alt="Speaker placeholder"/>
+                <img class="logo" src="images/warsjawa-logo-200x328.png">
+            </li>
+        
+            <li class="placeholder show-for-medium-up">
+                <img src="images/speaker-placeholer-2-320x320.png" alt="Speaker placeholder"/>
+                <img class="logo" src="images/warsjawa-logo-200x328.png">
+            </li>
+        
+            <li class="placeholder show-for-medium-up">
+                <img src="images/speaker-placeholer-3-320x320.png" alt="Speaker placeholder"/>
+                <img class="logo" src="images/warsjawa-logo-200x328.png">
+            </li>
+        
+            <li class="placeholder show-for-medium-up">
+                <img src="images/speaker-placeholer-1-320x320.png" alt="Speaker placeholder"/>
+                <img class="logo" src="images/warsjawa-logo-200x328.png">
+            </li>
+        
+            <li class="placeholder show-for-large-up">
+                <img src="images/speaker-placeholer-2-320x320.png" alt="Speaker placeholder"/>
+                <img class="logo" src="images/warsjawa-logo-200x328.png">
+            </li>
+        
+            <li class="placeholder show-for-large-up">
+                <img src="images/speaker-placeholer-3-320x320.png" alt="Speaker placeholder"/>
+                <img class="logo" src="images/warsjawa-logo-200x328.png">
+            </li>
+        
+            <li class="placeholder show-for-large-up">
+                <img src="images/speaker-placeholer-1-320x320.png" alt="Speaker placeholder"/>
+                <img class="logo" src="images/warsjawa-logo-200x328.png">
+            </li>
+        
+            <li class="placeholder show-for-large-up">
+                <img src="images/speaker-placeholer-2-320x320.png" alt="Speaker placeholder"/>
+                <img class="logo" src="images/warsjawa-logo-200x328.png">
+            </li>
+        
     </ul>
 </section>
 

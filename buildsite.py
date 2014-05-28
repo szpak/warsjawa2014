@@ -12,5 +12,9 @@ globals()['templateVariables'] = {}
 execfile('contents/main.py')
 
 outputText = template.render(globals()['templateVariables'])
+#print(outputText)
 
-print(outputText)
+output_file = open('index.html', 'wr+')
+output_file.write(outputText.encode('utf8'))
+output_file.close()
+

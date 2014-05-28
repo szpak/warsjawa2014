@@ -3,7 +3,7 @@
 @import "warsjawa-fonts";
 @import "foundation/settings";
 @import "foundation";
-@import "csshake/csshake";
+//@import "csshake/csshake";
 
 .blue-section {
   background: $warsjawa-blue;
@@ -221,6 +221,37 @@ section#agenda {
 section#sponsors {
   @extend .beige-section;
   padding-bottom: 6rem;
+
+  ul {
+    margin: 0;
+    li {
+      padding: 0;
+      position: relative;
+
+      span {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba($warsjawa-blue, 0.7);
+        color: #ffffff;
+        padding: 0.4rem;
+        line-height: 1;
+        font-size: $small-font-size;
+      }
+
+      &.placeholder {
+        .logo {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 36%;
+        }
+      }
+    }
+  }
 }
 
 section#contact {
@@ -243,8 +274,8 @@ section#contact {
     }
 
     .shaking-duke {
-      @extend .shake;
-      @extend .shake-constant;
+//      @extend .shake;
+//      @extend .shake-constant;
     }
   }
 
