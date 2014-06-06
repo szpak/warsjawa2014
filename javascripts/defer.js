@@ -66,7 +66,7 @@
             m.parentNode.insertBefore(a, m)
         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-41789146-1', 'warsjawa.pl');
+        ga('create', 'UA-44336202-1', 'warsjawa.pl');
         ga('send', 'pageview');
     })();
 
