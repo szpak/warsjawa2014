@@ -19,18 +19,49 @@
         require(['javascripts/vendor/jquery'], function () {
             function loadMap() {
                 var mapSection = $('section#map');
-                var mapUrl = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.740577996301!2d20.982062799999987!3d52.21176169999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccba6c9e2719%3A0xa614e74a0b76eff1!2sStefana+Banacha+2!5e0!3m2!1spl!2spl!4v1398360409911';
-                mapSection.append('<iframe src="' + mapUrl + '"></iframe>');
-                mapSection.addClass('opened');
+                if (!mapSection.hasClass('opened')) {
+                    window.initializeMap = function () {
+                        var mapOptions = {
+                            center: new google.maps.LatLng(52.21176169999991, 20.982062799999987),
+                            zoom: 15,
+                            maxZoom: 15,
+                            minZoom: 11,
+                            zoomControl: true,
+                            zoomControlOptions: {
+                                style: google.maps.ZoomControlStyle.LARGE,
+                                position: google.maps.ControlPosition.LEFT_CENTER
+                            },
+                            draggable: false,
+                            scrollwheel: false,
+                            streetViewControl: false,
+                            disableDefaultUI: true,
+                            disableDoubleClickZoom: true
+                        };
+
+                        var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+                        var marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(52.21176169999991, 20.982062799999987),
+                            map: map,
+                        });
+
+                        google.maps.event.addListener(map, 'center_changed', function () {
+                            window.setTimeout(function () {
+                                map.panTo(marker.getPosition());
+                            }, 500);
+                        });
+                    };
+
+                    getScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyBBULW4_iHzfOEKOjvU1bBr248i0HCsVRw&callback=initializeMap', function () {
+                        mapSection.addClass('opened');
+                    });
+                }
             }
 
             function loadMapIfNeeded() {
-                var mapSection = $('section#map');
-                if (mapSection.find('iframe').length === 0) {
-                    var currentScreenSize = $('#media-query-breakpoints div:visible').first().data('size');
-                    if (currentScreenSize === 'medium' || currentScreenSize === 'large') {
-                        loadMap();
-                    }
+                var currentScreenSize = $('#media-query-breakpoints div:visible').first().data('size');
+                if (currentScreenSize === 'medium' || currentScreenSize === 'large') {
+                    loadMap();
                 }
             }
 
@@ -53,7 +84,7 @@
         });
     });
 
-    (function() {
+    (function () {
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function () {
@@ -69,7 +100,6 @@
         ga('create', 'UA-44336202-1', 'warsjawa.pl');
         ga('send', 'pageview');
     })();
-
 })();
 
 
