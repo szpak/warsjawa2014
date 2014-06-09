@@ -21,12 +21,21 @@
                 var mapSection = $('section#map');
                 if (!mapSection.hasClass('opened')) {
                     window.initializeMap = function () {
+                        var styles = [
+                            {
+                                featureType: "poi",
+                                stylers: [
+                                    { visibility: "off" }
+                                ]
+                            }
+                        ];
+
                         var mapOptions = {
                             center: new google.maps.LatLng(52.21176169999991, 20.982062799999987),
-                            zoom: 15,
-                            maxZoom: 15,
+                            zoom: 14,
+                            maxZoom: 14,
                             minZoom: 11,
-                            zoomControl: true,
+                            zoomControl: false,
                             zoomControlOptions: {
                                 style: google.maps.ZoomControlStyle.LARGE,
                                 position: google.maps.ControlPosition.LEFT_CENTER
@@ -35,14 +44,14 @@
                             scrollwheel: false,
                             streetViewControl: false,
                             disableDefaultUI: true,
-                            disableDoubleClickZoom: true
+                            disableDoubleClickZoom: true,
+                            styles: styles
                         };
-
                         var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
                         var marker = new google.maps.Marker({
                             position: new google.maps.LatLng(52.21176169999991, 20.982062799999987),
-                            map: map,
+                            map: map
                         });
 
                         google.maps.event.addListener(map, 'center_changed', function () {
