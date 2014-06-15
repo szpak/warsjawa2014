@@ -53,13 +53,12 @@
 </head>
 
 
-<body>
-
+<body itemscope itemtype="http://schema.org/Event">
 
 <section id="header">
     <div class="row">
         <div class="small-12 columns text-center">
-            <h1><span class="dot">&middot;</span>WARS<br>JAWA<span class="dot">&middot;</span></h1>
+            <h1><span class="dot">&middot;</span>WARS<br/>JAWA<span class="dot">&middot;</span></h1>
         </div>
     </div>
     <div class="row">
@@ -81,17 +80,29 @@
         <div class="small-12 medium-6 columns text-center">
             <div class="icon-and-header-wrapper">
                 <i class="fi-calendar"></i>
-                <h5 class="date">26-27th September 2014</h5>
+                <h5 class="date"><meta itemprop="startDate" content="2014-09-26">26-27th September 2014</h5>
             </div>
         </div>
         <div class="small-12 medium-6 columns text-center">
             <div class="icon-and-header-wrapper">
                 <i class="fi-marker"></i>
-                <h5 class="place"><a href="#map">MIMUW<br>Warszawa, Banacha&nbsp;2</a></h5>
+                <h5 class="place">
+                    <a href="#map" itemprop="location" itemscope itemtype="http://schema.org/Place">
+                        <span itemprop="name">MIMUW</span>
+                        <br>
+                        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="addressLocality">Warszawa</span>,
+                            <span itemprop="streetAddress">Banacha&nbsp;2</span>
+                        </span>
+                    </a>
+                </h5>
             </div>
         </div>
     </div>
 </section>
+
+<meta itemprop="name" content="WARSJAWA">
+<meta itemprop="description" content="Conference for developers, by developers. Unique 100% workshop formula. “Learn by doing” approach. Proudly host workshops related to all aspects of software development: designing, developing, testing, maintaining etc. Initially oriented around Java and JVM programming languages. Now open to other programming languages like Scala, Groovy, Python, mobile development for Android, iOS and others.">
 
 <section id="map">
 </section>
@@ -153,9 +164,9 @@
 
     <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-6">
         
-        <li>
+        <li itemscope itemprop="performer" itemtype="http://schema.org/Person">
             <img src="images/speakers/venkat-subramaniam-320x320.jpg" alt="Venkat Subramaniam photo"/>
-            <span class="caption">Venkat Subramaniam</span>
+            <span class="caption" itemprop="name">Venkat Subramaniam</span>
         </li>
         
 
