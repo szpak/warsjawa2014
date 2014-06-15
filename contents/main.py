@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 from __future__ import division
 from math import ceil
 
@@ -58,6 +60,8 @@ def get_number_of_placeholders(minimum_number_of_rows, number_of_cells_in_row, n
 
 
 globals()['templateVariables'].update({
+    'page_title': 'Warsjawa: 100% workshop formula',
+    'page_description': 'Conference for developers, by developers. Unique 100% workshop formula. “Learn by doing” approach. Proudly host workshops related to all aspects of software development: designing, developing, testing, maintaining etc. Initially oriented around Java and JVM programming languages. Now open to other programming languages like Scala, Groovy, Python, mobile development for Android, iOS and others.',
     'speakers': speakers,
     'speaker_placeholders': cell_placeholders(speakers),
     'sponsors': sponsors,
