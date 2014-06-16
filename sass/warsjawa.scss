@@ -3,6 +3,7 @@
 @import "warsjawa-fonts";
 @import "foundation/settings";
 @import "foundation";
+
 //@import "csshake/csshake";
 
 .blue-section {
@@ -274,8 +275,8 @@ section#contact {
     }
 
     .shaking-duke {
-//      @extend .shake;
-//      @extend .shake-constant;
+      //      @extend .shake;
+      //      @extend .shake-constant;
     }
   }
 
@@ -294,6 +295,70 @@ section#contact {
       color: $warsjawa-gray;
 
     }
+  }
+}
+
+section#call-for-papers-header {
+  @extend .blue-section;
+
+  h1 {
+    display: inline-block;
+    font-family: $font-museo-500;
+    font-weight: 500;
+    line-height: 1;
+
+    span {
+      @extend .show-for-large-up;
+      display: inline-block;
+      padding: 0 1rem 0 1rem;
+    }
+
+    br {
+      @extend .show-for-small-only;
+    }
+  }
+
+  hr {
+    border-width: 2px 0 0;
+    margin: 0 auto 2rem auto;
+    @media #{$small-only} {
+      width: 2.5*$h1-font-size;
+    }
+    @media #{$medium-only}{
+      width: 5.5*$h1-font-size;
+    }
+    @media #{$large-up}{
+      width: 6.3*$h1-font-size;
+    }
+  }
+}
+
+section#call-for-papers-content {
+  @extend .beige-section;
+
+  input.button {
+    margin: 1.5rem 0 1rem 0;
+    background-color: $warsjawa-blue;
+  }
+}
+
+body#thank-you-for-filling-call-for-paper-form-body {
+  @extend .blue-section;
+}
+
+section#thank-you-for-filling-call-for-paper-form-content {
+  @extend section#call-for-papers-header;
+
+  @media #{$medium-up} {
+    hr {
+      margin: 0 auto 5rem auto;
+    }
+  }
+
+  img {
+    width: auto;
+    height: $h1-font-size;
+    margin: 3rem 0 1rem 0;
   }
 }
 

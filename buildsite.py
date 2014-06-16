@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 import jinja2
 import sys
@@ -9,15 +9,28 @@ sys.setdefaultencoding("utf-8")
 templateLoader = jinja2.FileSystemLoader(searchpath=".")
 templateEnv = jinja2.Environment(loader=templateLoader)
 
-TEMPLATE_FILE = "template-index.html"
-template = templateEnv.get_template(TEMPLATE_FILE)
-
 globals()['templateVariables'] = {}
 execfile('contents/main.py')
 
-outputText = template.render(globals()['templateVariables'])
+template_files = [
+    {
+        'template_file': 'template-index.html',
+        'output_file': 'index.html'
+    },
+    {
+        'template_file': 'template-call-for-papers.html',
+        'output_file': 'call-for-papers.html'
+    },
+    {
+        'template_file': 'template-thank-you-for-filling-call-for-papers-form.html',
+        'output_file': 'thank-you-for-filling-call-for-papers-form.html'
+    },
+]
 
-output_file = open('index.html', 'wr+')
-output_file.write(outputText.encode('utf8'))
-output_file.close()
+for template_file in template_files:
+    template = templateEnv.get_template(template_file['template_file'])
+    outputText = template.render(globals()['templateVariables'])
+    output_file = open(template_file['output_file'], 'wr+')
+    output_file.write(outputText.encode('utf8'))
+    output_file.close()
 
