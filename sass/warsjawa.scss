@@ -80,6 +80,13 @@ section#header {
     margin: 1rem 0 2rem 0;
   }
 
+  input.button {
+    @include button-style($warsjawa-raspberry);
+    @media #{$small-only} {
+      width: 100%;
+    }
+  }
+
   .icon-and-header-wrapper {
     display: inline-block;
     width: 100%;
