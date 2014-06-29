@@ -1,1 +1,5 @@
 .sass-cache
+.idea
+app/.sass-cache
+app/output/
+*.pyc

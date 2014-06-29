@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+
+<head>
+    <script src="static/javascripts/vendor/modernizr.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>{{ page_title }}</title>
+    <meta name="description" content="{{ page_description }}">
+
+    <link rel="stylesheet" href="static/stylesheets/warsjawa.css">
+
+    {% include "favicons.html" %}
+    {% include "seo-header.html" %}
+</head>
+
+
+<body itemscope itemtype="http://schema.org/Event">
+
+<section id="header">
+    <div class="row">
+        <div class="small-12 columns text-center">
+            <h1><span class="dot">&middot;</span>WARS<br/>JAWA<span class="dot">&middot;</span></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns text-center">
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns text-center">
+            <h3>100% WORKSHOP FORMULA</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns text-center">
+            <img src="static/images/warsjawa-logo-200x328.png" alt="Warsjawa logo"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns text-center">
+            <a href="/call-for-papers">
+                <input class="button" type="button" value="Call for papers"/>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 medium-6 columns text-center">
+            <div class="icon-and-header-wrapper">
+                <i class="fi-calendar"></i>
+                <h5 class="date"><meta itemprop="startDate" content="2014-09-26">26-27th September 2014</h5>
+            </div>
+        </div>
+        <div class="small-12 medium-6 columns text-center">
+            <div class="icon-and-header-wrapper">
+                <i class="fi-marker"></i>
+                <h5 class="place">
+                    <a href="#map" itemprop="location" itemscope itemtype="http://schema.org/Place">
+                        <span itemprop="name">MIMUW</span>
+                        <br>
+                        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="addressLocality">Warszawa</span>,
+                            <span itemprop="streetAddress">Banacha&nbsp;2</span>
+                        </span>
+                    </a>
+                </h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<meta itemprop="name" content="WARSJAWA">
+<meta itemprop="description" content="{{ page_description }}">
+
+<section id="map">
+</section>
+
+<section id="about">
+    <div class="row">
+        <div class="content-column">
+            <h3>About Warsjawa</h3>
+
+            <div class="columnable">
+                <p>
+                    Conference for developers, by developers. Unique 100% workshop formula. “Learn by doing” approach.
+                    Proudly host workshops related to all aspects of software development: designing, developing,
+                    testing, maintaining etc. Initially oriented around Java and JVM programming languages. Now open
+                    to other programming languages like Scala, Groovy, Python, mobile development for Android, iOS
+                    and others.
+                </p>
+
+                <p>
+                    Being open, resulted with many fascinating tracks related to databases, big data frameworks, agile
+                    and product management methodologies and system administration. Thus that, peoples from product
+                    owners by developers to devops, can find anything for themselves.
+                </p>
+
+                <p>
+                    It is free of charge for all participants. Last year it brought more than 550 registered attendees
+                    from all over Poland, who were practicing their skills within 23 parallel tracks! This year, we are
+                    aiming even higher. Moving warsjawa to completly new level.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="enroll">
+    <div class="row">
+        <div class="small-12 columns">
+            <h3>Registration</h3>
+            <p>
+                Registration starts at 2014-09-12T10:00+02:00. It is two weeks before conference. Make sure that you
+                have chosen your workshops. Keep in mind that last year registration took 24-48hrs until we were sold
+                out.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="speakers">
+    <div class="row">
+        <div class="small-12 columns">
+            <h3>Speakers</h3>
+        </div>
+    </div>
+
+    <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-6">
+        {% for speaker in speakers %}
+        <li itemscope itemprop="performer" itemtype="http://schema.org/Person">
+            <img src="{{ speaker.picture_url }}" alt="{{ speaker.name }} photo"/>
+            <span class="caption" itemprop="name">{{ speaker.name }}</span>
+        </li>
+        {% endfor%}
+
+        {% for placeholder in speaker_placeholders %}
+        <li class="placeholder {% if placeholder.show_for_small %}show-for-small-up{% elif placeholder.show_for_medium %}show-for-medium-up{% elif placeholder.show_for_large %}show-for-large-up{% endif %}">
+            <img src="{{ placeholder.placeholder_background_image_url }}" alt="Speaker placeholder"/>
+            <img class="logo" src="../static/images/warsjawa-logo-200x328.png">
+        </li>
+        {% endfor%}
+    </ul>
+</section>
+
+
+<section id="agenda">
+    <div class="row">
+        <div class="small-12 columns">
+            <h3>Agenda</h3>
+            Soon
+        </div>
+    </div>
+</section>
+
+
+<section id="sponsors">
+    <div class="row">
+        <div class="small-12 columns">
+            <h3>Sponsors</h3>
+            <p>
+            Want to become a sponsor ? Checkout our <a href="../static/images/sponsors.pdf">offer</a> and feel free to contact us at <a href="mailto:sponsor@warsjawa.pl">sponsor@warsjawa.pl</a>.
+            </p>
+        </div>
+    </div>
+
+    <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-6">
+        {% for sponsor in sponsors %}
+            <li>
+                <img src="{{ sponsor.picture_url }}" alt="{{ sponsor.name }} logo"/>
+            </li>
+        {% endfor%}
+
+        {% for placeholder in sponsor_placeholders %}
+            <li class="placeholder {% if placeholder.show_for_small %}show-for-small-up{% elif placeholder.show_for_medium %}show-for-medium-up{% elif placeholder.show_for_large %}show-for-large-up{% endif %}">
+                <img src="{{ placeholder.placeholder_background_image_url }}" alt="Speaker placeholder"/>
+                <img class="logo" src="../static/images/warsjawa-logo-200x328.png">
+            </li>
+        {% endfor%}
+    </ul>
+</section>
+
+
+<section id="contact">
+    <div class="row">
+        <div class="small-12 columns text-center">
+            <div class="duke-in-the-jar">
+                <img src="../static/images/jar-only-100x164.png" alt="Jar standing still"/>
+                <img class="shaking-duke" src="../static/images/duke-only-100x164.png" alt="Shaking Duke"/>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns text-center">
+            <ul class="small-block-grid-3 social-icons">
+                <li>
+                    <a href="https://www.facebook.com/warsjawa" target="_blank">
+                        <i class="fi-social-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/warsjawa" target="_blank">
+                        <i class="fi-social-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/108758878245006159088" target="_blank">
+                        <i class="fi-social-google-plus"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns text-center">
+            <ul>
+                <li>sponsors: <a href="mailto:sponsor@warsjawa.pl">sponsor@warsjawa.pl</a></li>
+                <li>contact: <a href="mailto:contact@warsjawa.pl">contact@warsjawa.pl</a></li>
+                <li>CFP: <a href="mailto:c4p@warsjawa.pl">c4p@warsjawa.pl</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<div id="media-query-breakpoints">
+    <div class="small" data-size="small"></div>
+    <div class="medium" data-size="medium"></div>
+    <div class="large" data-size="large"></div>
+</div>
+
+
+<script type="text/javascript">
+    function downloadJSAtOnload() {
+        var element = document.createElement('script');
+        element.src = 'static/javascripts/defer.js';
+        document.body.appendChild(element);
+    }
+    if (window.addEventListener) {
+        window.addEventListener('load', downloadJSAtOnload, false);
+    } else if (window.attachEvent) {
+        window.attachEvent('onload', downloadJSAtOnload);
+    } else {
+        window.onload = downloadJSAtOnload;
+    }
+</script>
+
+
+</body>
+
+
+</html>
