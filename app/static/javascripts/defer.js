@@ -17,6 +17,11 @@
 
     getScript('static/javascripts/vendor/require.js', function () {
         require(['static/javascripts/vendor/jquery'], function () {
+            function diplayBiggerThanSmall() {
+                var currentScreenSize = $('#media-query-breakpoints div:visible').first().data('size');
+                return currentScreenSize === 'medium' || currentScreenSize === 'large';
+            }
+
             function loadMap() {
                 var mapSection = $('section#map');
                 if (!mapSection.hasClass('opened')) {
@@ -30,17 +35,19 @@
                             }
                         ];
 
+                        var draggable = diplayBiggerThanSmall();
+
                         var mapOptions = {
                             center: new google.maps.LatLng(52.21176169999991, 20.982062799999987),
                             zoom: 14,
                             maxZoom: 14,
                             minZoom: 11,
-                            zoomControl: false,
+                            zoomControl: draggable,
                             zoomControlOptions: {
                                 style: google.maps.ZoomControlStyle.LARGE,
                                 position: google.maps.ControlPosition.LEFT_CENTER
                             },
-                            draggable: false,
+                            draggable: draggable,
                             scrollwheel: false,
                             streetViewControl: false,
                             disableDefaultUI: true,
@@ -56,7 +63,9 @@
 
                         google.maps.event.addListener(map, 'center_changed', function () {
                             window.setTimeout(function () {
-                                map.panTo(marker.getPosition());
+                                if (!diplayBiggerThanSmall()) {
+                                    map.panTo(marker.getPosition());
+                                }
                             }, 500);
                         });
                     };
@@ -68,8 +77,7 @@
             }
 
             function loadMapIfNeeded() {
-                var currentScreenSize = $('#media-query-breakpoints div:visible').first().data('size');
-                if (currentScreenSize === 'medium' || currentScreenSize === 'large') {
+                if (diplayBiggerThanSmall()) {
                     loadMap();
                 }
             }
