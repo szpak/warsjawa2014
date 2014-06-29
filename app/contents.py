@@ -24,7 +24,7 @@ def update_variables(variables):
         minimum_number_of_rows = 2
         number_of_speakers_in_small_resolution = 2
         number_of_speakers_in_medium_resolution = 4
-        number_of_speakers_in_large_resolution = 6
+        number_of_speakers_in_large_resolution = 7
 
         placeholder_image_urls = [
             'static/images/speaker-placeholer-1-320x320.png',
