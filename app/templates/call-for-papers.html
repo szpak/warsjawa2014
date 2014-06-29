@@ -15,7 +15,7 @@
     <title>{{ page_title }}</title>
     <meta name="description" content="{{ page_description }}">
 
-    <link rel="stylesheet" href="../../stylesheets/warsjawa.css">
+    <link rel="stylesheet" href="static/stylesheets/warsjawa.css">
 
     {% include "favicons.html" %}
     {% include "seo-header.html" %}
@@ -162,7 +162,7 @@
 <script type="text/javascript">
     function downloadJSAtOnload() {
         var element = document.createElement('script');
-        element.src = 'javascripts/defer.js';
+        element.src = 'static/javascripts/defer.js';
         document.body.appendChild(element);
     }
     if (window.addEventListener) {
