@@ -96,7 +96,11 @@
             });
         });
 
-        require(['static/javascripts/vendor/jquery', 'static/javascripts/foundation/foundation', 'static/javascripts/foundation/foundation.tooltip'], function () {
+        require([
+            'static/javascripts/vendor/jquery',
+            'static/javascripts/foundation/foundation',
+            'static/javascripts/foundation/foundation.tooltip']
+            , function () {
             $(document).foundation();
         });
     });

@@ -22,20 +22,20 @@
 
 section {
   padding: 2rem 0 2rem 0;
+}
 
-  .content-column {
-    @extend .small-12;
-    @extend .columns;
+.content-column {
+  @extend .small-12;
+  @extend .columns;
 
-    .columnable {
-      @media #{$medium-up}{
-        column-count: 2;
-        column-gap: 2rem;
-        -moz-column-count: 2;
-        -moz-column-gap: 2rem;
-        -webkit-column-count: 2;
-        -webkit-column-gap: 2rem;
-      }
+  .columnable {
+    @media #{$medium-up}{
+      column-count: 2;
+      column-gap: 2rem;
+      -moz-column-count: 2;
+      -moz-column-gap: 2rem;
+      -webkit-column-count: 2;
+      -webkit-column-gap: 2rem;
     }
   }
 }
