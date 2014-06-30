@@ -96,12 +96,12 @@
             });
         });
 
-        require([
-            'static/javascripts/vendor/jquery',
-            'static/javascripts/foundation/foundation',
-            'static/javascripts/foundation/foundation.tooltip']
-            , function () {
-            $(document).foundation();
+        require(['static/javascripts/vendor/jquery'], function () {
+            require(['static/javascripts/foundation/foundation'], function () {
+                require(['static/javascripts/foundation/foundation.tooltip'], function () {
+                    $(document).foundation();
+                });
+            });
         });
     });
 

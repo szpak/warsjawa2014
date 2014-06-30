@@ -16,8 +16,13 @@
     }
 
     getScript('static/javascripts/vendor/require.js', function () {
-        require(['static/javascripts/defer', 'static/javascripts/vendor/jquery', 'static/javascripts/foundation/foundation', 'static/javascripts/foundation/foundation.accordion'], function () {
-           
+        require(['static/javascripts/defer'], function () {
+            require(['static/javascripts/vendor/jquery'], function () {
+                require(['static/javascripts/foundation/foundation'], function () {
+                    require(['static/javascripts/foundation/foundation.accordion'], function () {
+                    });
+                });
+            });
         });
     });
 })();
