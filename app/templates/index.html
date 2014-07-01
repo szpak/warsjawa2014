@@ -178,7 +178,9 @@
     <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-7">
         {% for sponsor in sponsors %}
             <li>
-                <img src="{{ sponsor.picture_url }}" alt="{{ sponsor.name }} logo"/>
+                <a href="{{ sponsor.url }}" target="_blank">
+                    <img src="{{ sponsor.picture_url }}" alt="{{ sponsor.name }} logo"/>
+                </a>
             </li>
         {% endfor%}
 

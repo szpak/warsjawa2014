@@ -14,7 +14,13 @@ def update_variables(variables):
     sponsors = [
         {
             'name': 'Touk',
-            'picture_url': 'static/images/sponsors/touk-320x320.png'
+            'picture_url': 'static/images/sponsors/touk-320x320.png',
+            'url' : 'http://touk.pl/'
+        },
+        {
+            'name': 'Pragmatists',
+            'picture_url': 'static/images/sponsors/pragmatists-320x320.png',
+            'url' : 'http://pragmatists.pl/'
         }
     ]
 
