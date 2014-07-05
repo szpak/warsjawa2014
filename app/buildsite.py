@@ -21,7 +21,7 @@ if os.path.isdir(absolute_output_path):
 os.mkdir(absolute_output_path)
 
 print('compiling sass...')
-os.system('compass compile')
+os.system('compass compile /warsjawa/app/')
 
 print('compiling templates...')
 globals()['templateVariables'] = {}
