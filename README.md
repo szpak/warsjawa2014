@@ -1,16 +1,36 @@
-warsjawa
+Warsjawa
 ========
 
-BUILD:
+Build
 ====
-docker build -t warsjawa .
+In order to create image:
 
-RUN NGINX:
+	docker build -t warsjawa .
+
+Run
 ====
-docker run -i -t -p 80:80  warsjawa
+In order to run the image:
 
-INTERACTIVE RUN (to develop stuff):
+	docker run -i -t -p 80:80 warsjawa
+
+Warsjawa site will be available on docker IP on port 80.
+
+Develop
 ====
-first you need to rebuild your boot2docker image with sharing: [see](https://medium.com/boot2docker-lightweight-linux-for-docker/boot2docker-together-with-virtualbox-guest-additions-da1e3ab2465c)
+Rebuild your boot2docker image with sharing: [see](https://medium.com/boot2docker-lightweight-linux-for-docker/boot2docker-together-with-virtualbox-guest-additions-da1e3ab2465c). Just replace `boot2docker.iso` and mount User's folder: `VBoxManage sharedfolder add boot2docker-vm -name home -hostpath /Users`.
 
-docker run -i -t -v /Users/neciu/Dev/www/warsjawa:/warsjawa warsjawa /bin/bash
+Run the container.
+
+	$ docker run -i -t -p 80:80 -v [WARSJAWA REPOSITORY PATH]:/warsjawa warsjawa /bin/bash
+
+Go to app folder, do cool stuff. 
+
+	$ cd /warsjawa/app
+
+Rebuild page.
+
+	$ sh build.sh
+
+Start the server and enjoy.
+
+	$ nginx -c /warsjawa/app/nginx.conf &
