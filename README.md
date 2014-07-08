@@ -1,14 +1,16 @@
 Warsjawa
 ========
 
+We are using [boot2docker](http://boot2docker.io/) for serving docker on MacOs.
+
 Build
-====
+-----
 In order to create image:
 
 	docker build -t warsjawa .
 
 Run
-====
+---
 In order to run the image:
 
 	docker run -i -t -p 80:80 warsjawa
@@ -16,8 +18,10 @@ In order to run the image:
 Warsjawa site will be available on docker IP on port 80.
 
 Develop
-====
-Rebuild your boot2docker image with sharing: [see](https://medium.com/boot2docker-lightweight-linux-for-docker/boot2docker-together-with-virtualbox-guest-additions-da1e3ab2465c). Just replace `boot2docker.iso` and mount User's folder: `VBoxManage sharedfolder add boot2docker-vm -name home -hostpath /Users`.
+-------
+Rebuild your boot2docker image with sharing additions: [see](https://medium.com/boot2docker-lightweight-linux-for-docker/boot2docker-together-with-virtualbox-guest-additions-da1e3ab2465c). 
+
+Just replace `boot2docker.iso` and mount User's folder: `VBoxManage sharedfolder add boot2docker-vm -name home -hostpath /Users`.
 
 Run the container.
 
