@@ -13,7 +13,7 @@ Run
 ---
 In order to run the image:
 
-	docker run -i -t -p 80:80 warsjawa
+	docker run -d -p 80:80 warsjawa
 
 Warsjawa site will be available on docker IP on port 80.
 
