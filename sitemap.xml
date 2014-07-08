@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://warsjawa.pl/</loc>
+  <lastmod>2014-07-08T18:23:22+00:00</lastmod>
+</url>
+<url>
+  <loc>http://warsjawa.pl/call-for-papers</loc>
+  <lastmod>2014-07-08T18:23:22+00:00</lastmod>
+</url>
+<url>
+  <loc>http://warsjawa.pl/static/sponsors.pdf</loc>
+  <lastmod>2014-07-08T18:23:22+00:00</lastmod>
+</url>
+<url>
+  <loc>http://warsjawa.pl/static/poster-with-bleeds.pdf</loc>
+  <lastmod>2014-07-08T18:23:22+00:00</lastmod>
+</url>
+</urlset>
