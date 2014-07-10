@@ -1,6 +1,7 @@
 FROM ubuntu:14.04
 
-RUN apt-get -y update
+RUN apt-get -y update --fix-missing
+RUN apt-get -y install jpegoptim
 RUN apt-get -y install git-core
 RUN apt-get -y install nodejs
 RUN apt-get -y install npm
@@ -16,6 +17,7 @@ RUN apt-get -y install nginx
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 ADD ./app /warsjawa/app
+RUN find /warsjawa -type f -name "*.jpg" -o -name "*.jpeg" | xargs -l jpegoptim --strip-all
 RUN python /warsjawa/app/buildsite.py
 
 EXPOSE 80
