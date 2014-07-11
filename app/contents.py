@@ -8,6 +8,10 @@ def update_variables(variables):
         {
             'name': 'Venkat Subramaniam',
             'picture_url': 'static/images/speakers/venkat-subramaniam-320x320.jpg'
+        },
+        {
+            'name': 'Konrad Malawski',
+            'picture_url': 'static/images/speakers/konrad-malawski-320x320.jpg'
         }
     ]
 
