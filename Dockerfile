@@ -13,6 +13,7 @@ RUN gem install compass
 RUN apt-get -y install python-dev
 RUN apt-get -y install python-pip
 RUN pip install jinja2
+RUN pip install Flask
 RUN apt-get -y install nginx
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
@@ -21,4 +22,6 @@ ADD ./app /warsjawa/app
 RUN python /warsjawa/app/buildsite.py
 
 EXPOSE 80
-CMD nginx -c /warsjawa/app/nginx.conf
+EXPOSE 81
+
+CMD /bin/bash /warsjawa/app/runsite.sh
