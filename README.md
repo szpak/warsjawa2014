@@ -38,3 +38,7 @@ Rebuild page.
 Start the server and enjoy.
 
 	$ nginx -c /warsjawa/app/nginx.conf &
+
+Deploy
+------
+Just push to master
