@@ -14,6 +14,7 @@ RUN apt-get -y install python-dev
 RUN apt-get -y install python-pip
 RUN pip install jinja2
 RUN pip install Flask
+RUN pip install pymongo
 RUN apt-get -y install nginx
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
