@@ -41,4 +41,8 @@ Start the server and enjoy.
 
 Deploy
 ------
-Just push to master
+Just push to master.
+
+Docker
+------
+This application consists of two containers. warsjawa which is web container. db which is mongo container.
