@@ -1,6 +1,3 @@
-Warsjawa
-========
-
 Run
 ======
 This application consists of two containers. warsjawa which is web container. db which is mongo container.
