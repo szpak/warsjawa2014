@@ -188,11 +188,39 @@
 
         {% for placeholder in sponsor_placeholders %}
             <li class="placeholder {% if placeholder.show_for_small %}show-for-small-up{% elif placeholder.show_for_medium %}show-for-medium-up{% elif placeholder.show_for_large %}show-for-large-up{% endif %}">
-                <img src="{{ placeholder.placeholder_background_image_url }}" alt="Speaker placeholder"/>
+                <img src="{{ placeholder.placeholder_background_image_url }}" alt="Sponsor placeholder"/>
                 <img class="logo" src="static/images/warsjawa-logo-200x328.png">
             </li>
         {% endfor%}
     </ul>
+</section>
+
+
+<section id="partners">
+    <div class="row">
+        <div class="content-column">
+            <h3>Partners</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <ul class="small-block-grid-4 medium-block-grid-6 large-block-grid-8">
+            {% for partner in partners %}
+                <li>
+                    <a href="{{ partner.url }}" target="_blank">
+                        <img src="{{ partner.picture_url }}" alt="{{ partner.name }} logo"/>
+                    </a>
+                </li>
+            {% endfor %}
+
+            {% for placeholder in partner_placeholders %}
+                <li class="placeholder {% if placeholder.show_for_small %}show-for-small-up{% elif placeholder.show_for_medium %}show-for-medium-up{% elif placeholder.show_for_large %}show-for-large-up{% endif %}">
+                    <img src="static/images/cell-placeholder-0-320x320.png" alt="Partner placeholder"/>
+                    <img class="logo" src="static/images/warsjawa-logo-gray-200x328.png">
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 </section>
 
 

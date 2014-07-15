@@ -1,7 +1,8 @@
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 from __future__ import division
 from math import ceil
+
 
 def update_variables(variables):
     speakers = [
@@ -19,22 +20,28 @@ def update_variables(variables):
         {
             'name': 'Touk',
             'picture_url': 'static/images/sponsors/touk-320x320.png',
-            'url' : 'http://touk.pl/'
+            'url': 'http://touk.pl/'
         },
         {
             'name': 'Pragmatists',
             'picture_url': 'static/images/sponsors/pragmatists-320x320.png',
-            'url' : 'http://pragmatists.pl/'
+            'url': 'http://pragmatists.pl/'
         }
     ]
 
+    partners = [
+        {
+            'picture_url': 'static/images/partners/bitspiration-320x320.png',
+            'url': 'http://bitspiration.com/'
+        }
+    ]
 
-    def cell_placeholders(speaker_list):
-        number_of_speakers = len(speaker_list)
-        minimum_number_of_rows = 2
-        number_of_speakers_in_small_resolution = 2
-        number_of_speakers_in_medium_resolution = 4
-        number_of_speakers_in_large_resolution = 7
+    def cell_placeholders(content_list,
+                          minimum_number_of_rows=2,
+                          number_of_cells_in_small_resolution=2,
+                          number_of_cells_in_medium_resolution=4,
+                          number_of_cells_in_large_resolution=7):
+        number_of_speakers = len(content_list)
 
         placeholder_image_urls = [
             'static/images/speaker-placeholer-1-320x320.png',
@@ -45,7 +52,7 @@ def update_variables(variables):
         placeholders = []
 
         for i in range(get_number_of_placeholders(minimum_number_of_rows,
-                                                  number_of_speakers_in_large_resolution,
+                                                  number_of_cells_in_large_resolution,
                                                   number_of_speakers)):
             placeholders.append({
                 'placeholder_background_image_url': placeholder_image_urls[i % len(placeholder_image_urls)],
@@ -53,12 +60,12 @@ def update_variables(variables):
             })
 
         for i in range(get_number_of_placeholders(minimum_number_of_rows,
-                                                  number_of_speakers_in_medium_resolution,
+                                                  number_of_cells_in_medium_resolution,
                                                   number_of_speakers)):
             placeholders[i]['show_for_medium'] = True
 
         for i in range(get_number_of_placeholders(minimum_number_of_rows,
-                                                  number_of_speakers_in_small_resolution,
+                                                  number_of_cells_in_small_resolution,
                                                   number_of_speakers)):
             placeholders[i]['show_for_small'] = True
 
@@ -76,6 +83,12 @@ def update_variables(variables):
         'speakers': speakers,
         'speaker_placeholders': cell_placeholders(speakers),
         'sponsors': sponsors,
-        'sponsor_placeholders': cell_placeholders(sponsors)
+        'sponsor_placeholders': cell_placeholders(sponsors),
+        'partners': partners,
+        'partner_placeholders': cell_placeholders(partners,
+                                                  minimum_number_of_rows=1,
+                                                  number_of_cells_in_small_resolution=4,
+                                                  number_of_cells_in_medium_resolution=6,
+                                                  number_of_cells_in_large_resolution=8)
     })
 

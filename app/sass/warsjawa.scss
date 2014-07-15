@@ -262,6 +262,30 @@ section#sponsors {
   }
 }
 
+section#partners {
+  @extend .beige-section;
+
+  ul {
+    margin: 0;
+    li {
+      padding: 0;
+      position: relative;
+
+      &.placeholder {
+        .logo {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 36%;
+        }
+      }
+    }
+  }
+}
+
 section#contact {
   @extend .blue-section;
 
