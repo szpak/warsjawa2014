@@ -14,7 +14,7 @@ def speakers():
 @app.route('/api/speakers', methods=['POST'])
 @authentication.requires_auth
 def newSpeaker():
-    print mailgunresource.sendNewSpeakerEmail("Speaker Name", "michal@warsjawa.pl", "Some Generated key")
+    print mailgunresource.sendNewSpeakerEmail("Speaker Name", "michal@warsjawa.pl", "SOME_M$GIC_K3Y")
     return utils.toJson({"status":"done"})
 
 if __name__ == "__main__":
