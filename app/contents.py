@@ -21,6 +21,10 @@ def update_variables(variables):
         {
             'name': 'Artur Stępniewski',
             'picture_url': 'static/images/speakers/artur-stepniewski-320x320.jpg'
+        },
+        {
+            'name': 'Tomasz Nurkiewicz',
+            'picture_url': 'static/images/speakers/tomek-nurkiewicz-320x320.jpg'
         }
     ]
 
