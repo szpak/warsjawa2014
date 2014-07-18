@@ -38,6 +38,11 @@ def update_variables(variables):
             'name': 'Pragmatists',
             'picture_url': 'static/images/sponsors/pragmatists-320x320.png',
             'url': 'http://pragmatists.pl/'
+        },
+        {
+            'name': '4 Finance',
+            'picture_url': 'static/images/sponsors/4-finance-320x320.png',
+            'url': 'http://www.4finance.com/'
         }
     ]
 
