@@ -15,15 +15,10 @@ sys.setdefaultencoding("utf-8")
 absolute_template_path = absolute_path + '/templates'
 absolute_output_path = absolute_path + '/output'
 
-print('removing old output...')
-if os.path.isdir(absolute_output_path):
-    shutil.rmtree(absolute_output_path)
-os.mkdir(absolute_output_path)
-
-print('compiling sass...')
+print(' ++++ compiling sass...')
 os.system('compass compile /warsjawa/app/')
 
-print('compiling templates...')
+print(' ++++ compiling templates...')
 globals()['templateVariables'] = {}
 contents.update_variables(globals()['templateVariables'])
 
@@ -43,16 +38,11 @@ for template_file in template_files:
     output_file.write(outputText.encode('utf8'))
     output_file.close()
 
-print('copying static to output')
-os.system('cp -rf %s %s' % (absolute_path + '/static', absolute_output_path))
+print(' ++++ copying static to output')
+os.system('cp -rf %s %s' % (absolute_path + '/static/*', absolute_output_path))
 
-print('removing old stuff from root...')
-os.system('rm -rf /static')
-root_path = absolute_path + '/..'
-for f in os.listdir(root_path):
-    if f.endswith('.html'):
-        os.remove(root_path + '/' + f)
 
-print('copying output to root')
-os.system('cp -rf %s %s' % (absolute_output_path + '/*', root_path))
-
+print (' ============================================= ')
+print (os.system('ls -a /warsjawa/app'))
+print (' ============================================= ')
+print (os.system('ls -a /warsjawa/app/output'))

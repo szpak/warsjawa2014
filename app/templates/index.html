@@ -8,14 +8,14 @@
 
 
 <head>
-    <script src="static/javascripts/vendor/modernizr.js"></script>
+    <script src="javascripts/vendor/modernizr.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>{{ page_title }}</title>
     <meta name="description" content="{{ page_description }}">
 
-    <link rel="stylesheet" href="static/stylesheets/warsjawa.css">
+    <link rel="stylesheet" href="stylesheets/warsjawa.css">
 
     {% include "favicons.html" %}
     {% include "seo-header.html" %}
@@ -42,7 +42,7 @@
     </div>
     <div class="row">
         <div class="small-12 columns text-center">
-            <img src="static/images/warsjawa-logo-200x328.png" alt="Warsjawa logo"/>
+            <img src="images/warsjawa-logo-200x328.png" alt="Warsjawa logo"/>
         </div>
     </div>
     <div class="row">
@@ -148,7 +148,7 @@
         {% for placeholder in speaker_placeholders %}
         <li class="placeholder {% if placeholder.show_for_small %}show-for-small-up{% elif placeholder.show_for_medium %}show-for-medium-up{% elif placeholder.show_for_large %}show-for-large-up{% endif %}">
             <img src="{{ placeholder.placeholder_background_image_url }}" alt="Speaker placeholder"/>
-            <img class="logo" src="static/images/warsjawa-logo-200x328.png">
+            <img class="logo" src="images/warsjawa-logo-200x328.png">
         </li>
         {% endfor%}
     </ul>
@@ -171,7 +171,7 @@
             <h3>Sponsors</h3>
 
             <p>
-                Want to become a sponsor? Checkout our <a href="static/sponsors.pdf" target="_blank">offer</a> and feel
+                Want to become a sponsor? Checkout our <a href="sponsors.pdf" target="_blank">offer</a> and feel
                 free to contact us at <a href="mailto:sponsor@warsjawa.pl">sponsor@warsjawa.pl</a>.
             </p>
         </div>
@@ -189,7 +189,7 @@
         {% for placeholder in sponsor_placeholders %}
             <li class="placeholder {% if placeholder.show_for_small %}show-for-small-up{% elif placeholder.show_for_medium %}show-for-medium-up{% elif placeholder.show_for_large %}show-for-large-up{% endif %}">
                 <img src="{{ placeholder.placeholder_background_image_url }}" alt="Sponsor placeholder"/>
-                <img class="logo" src="static/images/warsjawa-logo-200x328.png">
+                <img class="logo" src="images/warsjawa-logo-200x328.png">
             </li>
         {% endfor%}
     </ul>
@@ -215,8 +215,8 @@
 
             {% for placeholder in partner_placeholders %}
                 <li class="placeholder {% if placeholder.show_for_small %}show-for-small-up{% elif placeholder.show_for_medium %}show-for-medium-up{% elif placeholder.show_for_large %}show-for-large-up{% endif %}">
-                    <img src="static/images/cell-placeholder-0-320x320.png" alt="Partner placeholder"/>
-                    <img class="logo" src="static/images/warsjawa-logo-gray-200x328.png">
+                    <img src="images/cell-placeholder-0-320x320.png" alt="Partner placeholder"/>
+                    <img class="logo" src="images/warsjawa-logo-gray-200x328.png">
                 </li>
             {% endfor %}
         </ul>
@@ -228,8 +228,8 @@
     <div class="row">
         <div class="small-12 columns text-center">
             <div class="duke-in-the-jar">
-                <img src="static/images/jar-only-100x164.png" alt="Jar standing still"/>
-                <img class="shaking-duke" src="static/images/duke-only-100x164.png" alt="Shaking Duke"/>
+                <img src="images/jar-only-100x164.png" alt="Jar standing still"/>
+                <img class="shaking-duke" src="images/duke-only-100x164.png" alt="Shaking Duke"/>
             </div>
         </div>
     </div>
@@ -259,7 +259,7 @@
             <ul>
                 <li>sponsors: <a href="mailto:sponsor@warsjawa.pl">sponsor@warsjawa.pl</a></li>
                 <li>contact: <a href="mailto:contact@warsjawa.pl">contact@warsjawa.pl</a></li>
-                <li>CFP: <a href="mailto:c4p@warsjawa.pl">c4p@warsjawa.pl</a> (<a href="static/poster-with-bleeds.pdf" target="_blank">CFP poster</a>)</li>
+                <li>CFP: <a href="mailto:c4p@warsjawa.pl">c4p@warsjawa.pl</a> (<a href="poster-with-bleeds.pdf" target="_blank">CFP poster</a>)</li>
             </ul>
         </div>
     </div>
@@ -276,7 +276,7 @@
 <script type="text/javascript">
     function downloadJSAtOnload() {
         var element = document.createElement('script');
-        element.src = 'static/javascripts/defer.js';
+        element.src = 'javascripts/defer.js';
         document.body.appendChild(element);
     }
     if (window.addEventListener) {

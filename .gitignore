@@ -1,5 +1,5 @@
 .sass-cache
 .idea
 app/.sass-cache
-app/output/
+app/output
 *.pyc

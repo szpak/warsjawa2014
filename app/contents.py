@@ -8,51 +8,51 @@ def update_variables(variables):
     speakers = [
         {
             'name': 'Venkat Subramaniam',
-            'picture_url': 'static/images/speakers/venkat-subramaniam-320x320.jpg'
+            'picture_url': 'images/speakers/venkat-subramaniam-320x320.jpg'
         },
         {
             'name': 'Konrad Malawski',
-            'picture_url': 'static/images/speakers/konrad-malawski-320x320.jpg'
+            'picture_url': 'images/speakers/konrad-malawski-320x320.jpg'
         },
         {
             'name': 'Adam Smolnik',
-            'picture_url': 'static/images/speakers/adam-smolnik-320x320.jpg'
+            'picture_url': 'images/speakers/adam-smolnik-320x320.jpg'
         },
         {
             'name': 'Artur Stępniewski',
-            'picture_url': 'static/images/speakers/artur-stepniewski-320x320.jpg'
+            'picture_url': 'images/speakers/artur-stepniewski-320x320.jpg'
         },
         {
             'name': 'Tomasz Nurkiewicz',
-            'picture_url': 'static/images/speakers/tomek-nurkiewicz-320x320.jpg'
+            'picture_url': 'images/speakers/tomek-nurkiewicz-320x320.jpg'
         },
         {
             'name': 'Jacek Kunicki',
-            'picture_url': 'static/images/speakers/jacek-kunicki-320x320.jpg'
+            'picture_url': 'images/speakers/jacek-kunicki-320x320.jpg'
         }
     ]
 
     sponsors = [
         {
             'name': 'Touk',
-            'picture_url': 'static/images/sponsors/touk-320x320.png',
+            'picture_url': 'images/sponsors/touk-320x320.png',
             'url': 'http://touk.pl/'
         },
         {
             'name': 'Pragmatists',
-            'picture_url': 'static/images/sponsors/pragmatists-320x320.png',
+            'picture_url': 'images/sponsors/pragmatists-320x320.png',
             'url': 'http://pragmatists.pl/'
         },
         {
             'name': '4 Finance',
-            'picture_url': 'static/images/sponsors/4-finance-320x320.png',
+            'picture_url': 'images/sponsors/4-finance-320x320.png',
             'url': 'http://www.4finance.com/'
         }
     ]
 
     partners = [
         {
-            'picture_url': 'static/images/partners/bitspiration-320x320.png',
+            'picture_url': 'images/partners/bitspiration-320x320.png',
             'url': 'http://bitspiration.com/'
         }
     ]
@@ -65,9 +65,9 @@ def update_variables(variables):
         number_of_speakers = len(content_list)
 
         placeholder_image_urls = [
-            'static/images/speaker-placeholer-1-320x320.png',
-            'static/images/speaker-placeholer-2-320x320.png',
-            'static/images/speaker-placeholer-3-320x320.png',
+            'images/speaker-placeholer-1-320x320.png',
+            'images/speaker-placeholer-2-320x320.png',
+            'images/speaker-placeholer-3-320x320.png',
         ]
 
         placeholders = []

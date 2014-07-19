@@ -8,14 +8,14 @@
 
 
 <head>
-    <script src="static/javascripts/vendor/modernizr.js"></script>
+    <script src="javascripts/vendor/modernizr.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>{{ page_title }}</title>
     <meta name="description" content="{{ page_description }}">
 
-    <link rel="stylesheet" href="static/stylesheets/warsjawa.css">
+    <link rel="stylesheet" href="stylesheets/warsjawa.css">
 
     {% include "favicons.html" %}
     {% include "seo-header.html" %}
@@ -46,7 +46,7 @@
         <div class="small-12 columns text-center">
             <div class="small-12 columns text-center">
                 <a href="/">
-                    <img src="../static/images/warsjawa-logo-200x328.png" alt="Warsjawa logo"/>
+                    <img src="../images/warsjawa-logo-200x328.png" alt="Warsjawa logo"/>
                 </a>
             </div>
             <p>
@@ -59,7 +59,7 @@
 <script type="text/javascript">
     function downloadJSAtOnload() {
         var element = document.createElement('script');
-        element.src = 'static/javascripts/defer.js';
+        element.src = 'javascripts/defer.js';
         document.body.appendChild(element);
     }
     if (window.addEventListener) {

@@ -1,7 +1,7 @@
 (function loadDefferdJs() {
     yepnope([
         {
-            load: 'static/javascripts/vendor/jquery.js',
+            load: 'javascripts/vendor/jquery.js',
             complete: function () {
                 function diplayBiggerThanSmall() {
                     var currentScreenSize = $('#media-query-breakpoints div:visible').first().data('size');
@@ -86,7 +86,7 @@
             }
         },
         {
-            load: 'static/javascripts/google-analytics.js'
+            load: 'javascripts/google-analytics.js'
         }
     ]);
 })();
