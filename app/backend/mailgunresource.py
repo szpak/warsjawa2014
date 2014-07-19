@@ -3,7 +3,7 @@ import os
 
 def send_new_speaker_email(name, email, key):
     return requests.post(
-        "https://api.mailgun.net/v2/sandboxb5f00e6ffa8c488aa5b15c1e373dd6c4.mailgun.org/messages",
+        "https://api.mailgun.net/v2/system.warsjawa.pl/messages",
         auth=("api", os.environ.get('MAILGUN_API_KEY')),
         data={"from": "Warsjawa <postmaster@system.warsjawa.pl>",
               "to": "{0} <{1}>".format(name,email),
