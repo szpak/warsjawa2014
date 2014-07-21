@@ -51,6 +51,11 @@ def update_variables(variables):
             'name': '4 Finance',
             'picture_url': 'images/sponsors/4-finance-320x320.png',
             'url': 'http://www.4finance.com/'
+        },
+        {
+            'name': 'Typesafe',
+            'picture_url': 'images/sponsors/typesafe-320x320.png',
+            'url': 'https://typesafe.com/'
         }
     ]
 
