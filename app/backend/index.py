@@ -1,4 +1,5 @@
 from flask import Flask, request
+from flanker.addresslib import address
 
 import dbresource
 import mailgunresource
@@ -20,6 +21,7 @@ def new_speaker():
         return utils.toJson({"status":"Not authenticated"})
 
     body = request.values.get("body-plain")
+    committee_member_email = address.parse(request.values.get("from"))
     body_list = [s.strip() for s in body.splitlines()]
     print body_list
 
@@ -32,7 +34,7 @@ def new_speaker():
     speaker_hash = binascii.b2a_hex(os.urandom(128))
 
     dbresource.init_speaker(speaker_name, speaker_email, speaker_hash)
-    print mailgunresource.send_new_speaker_email(speaker_name, speaker_email, speaker_hash)
+    print mailgunresource.send_new_speaker_email(speaker_name, speaker_email, speaker_hash, committee_member_email)
     return utils.toJson({"status":"done"})
 
 @app.route('/api/speakers/<key>', methods=['PUT'])
