@@ -33,7 +33,19 @@ def update_variables(variables):
         {
             'name': 'Maciej Górski',
             'picture_url': 'images/speakers/maciej-gorski-320x320.jpg'
-        }
+        },
+        {
+            'name': 'Łukasz Sowa',
+            'picture_url': 'images/speakers/lukasz-sowa-320x320.jpg'
+        },
+        {
+            'name': 'Andrzej Michałowski',
+            'picture_url': 'images/speakers/andrzej-michalowski-320x320.jpg'
+        },
+        {
+            'name': 'Jacek Głodek',
+            'picture_url': 'images/speakers/jacek-glodek-320x320.jpg'
+        },
     ]
 
     sponsors = [
