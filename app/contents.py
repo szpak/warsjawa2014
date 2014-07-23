@@ -46,6 +46,10 @@ def update_variables(variables):
             'name': 'Jacek Głodek',
             'picture_url': 'images/speakers/jacek-glodek-320x320.jpg'
         },
+        # {
+        #     'name': 'Marek Będkowski',
+        #     'picture_url': 'images/speakers/marek-bedkowski-320x320.jpg'
+        # },
     ]
 
     sponsors = [
