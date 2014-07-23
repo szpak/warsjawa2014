@@ -63,7 +63,12 @@ def update_variables(variables):
         {
             'picture_url': 'images/partners/bitspiration-320x320.png',
             'url': 'http://bitspiration.com/'
+        },
+        {
+            'picture_url': 'images/partners/torun-jug-320x320.png',
+            'url': 'http://torun.jug.pl/'
         }
+
     ]
 
     def cell_placeholders(content_list,
