@@ -49,7 +49,12 @@ def update_variables(variables):
         {
             'name': 'Marek Będkowski',
             'picture_url': 'images/speakers/marek-bedkowski-320x320.jpg'
+        },
+        {
+            'name': 'Sylwester Madej',
+            'picture_url': 'images/speakers/sylwester-madej-320x320.jpg'
         }
+        
     ]
 
     sponsors = [
