@@ -56,7 +56,10 @@
         <div class="small-12 medium-6 columns text-center">
             <div class="icon-and-header-wrapper">
                 <i class="fi-calendar"></i>
-                <h5 class="date"><meta itemprop="startDate" content="2014-09-26">26-27th September 2014</h5>
+                <h5 class="date">
+                    <meta itemprop="startDate" content="2014-09-26">
+                    26-27th September 2014
+                </h5>
             </div>
         </div>
         <div class="small-12 medium-6 columns text-center">
@@ -139,18 +142,22 @@
 
     <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-7">
         {% for speaker in speakers %}
-        <li itemscope itemprop="performer" itemtype="http://schema.org/Person">
-            <img src="{{ speaker.picture_url }}" alt="{{ speaker.name }} photo"/>
-            <span class="caption" itemprop="name">{{ speaker.name }}</span>
-        </li>
-        {% endfor%}
+            <li itemscope itemprop="performer" itemtype="http://schema.org/Person">
+                <img src="{{ speaker.picture_url }}" alt="{{ speaker.name }} photo"/>
+                <span class="caption" itemprop="name">{{ speaker.name }}</span>
+            </li>
+        {% endfor %}
 
         {% for placeholder in speaker_placeholders %}
-        <li class="placeholder {% if placeholder.show_for_small %}show-for-small-up{% elif placeholder.show_for_medium %}show-for-medium-up{% elif placeholder.show_for_large %}show-for-large-up{% endif %}">
-            <img src="{{ placeholder.placeholder_background_image_url }}" alt="Speaker placeholder"/>
-            <img class="logo" src="images/warsjawa-logo-200x328.png">
-        </li>
-        {% endfor%}
+            <li class="placeholder show-for-small-up
+                {% if not placeholder.show_for_small %}hide-for-small-only{% endif %}
+                {% if not placeholder.show_for_medium %}hide-for-medium-only{% endif %}
+                {% if not placeholder.show_for_large %}hide-for-large-up{% endif %}
+            ">
+                <img src="{{ placeholder.placeholder_background_image_url }}" alt="Speaker placeholder"/>
+                <img class="logo" src="images/warsjawa-logo-200x328.png">
+            </li>
+        {% endfor %}
     </ul>
 </section>
 
@@ -184,14 +191,18 @@
                     <img src="{{ sponsor.picture_url }}" alt="{{ sponsor.name }} logo"/>
                 </a>
             </li>
-        {% endfor%}
+        {% endfor %}
 
         {% for placeholder in sponsor_placeholders %}
-            <li class="placeholder {% if placeholder.show_for_small %}show-for-small-up{% elif placeholder.show_for_medium %}show-for-medium-up{% elif placeholder.show_for_large %}show-for-large-up{% endif %}">
+            <li class="placeholder show-for-small-up
+                {% if not placeholder.show_for_small %}hide-for-small-only{% endif %}
+                {% if not placeholder.show_for_medium %}hide-for-medium-only{% endif %}
+                {% if not placeholder.show_for_large %}hide-for-large-up{% endif %}
+            ">
                 <img src="{{ placeholder.placeholder_background_image_url }}" alt="Sponsor placeholder"/>
                 <img class="logo" src="images/warsjawa-logo-200x328.png">
             </li>
-        {% endfor%}
+        {% endfor %}
     </ul>
 </section>
 
@@ -214,7 +225,11 @@
             {% endfor %}
 
             {% for placeholder in partner_placeholders %}
-                <li class="placeholder {% if placeholder.show_for_small %}show-for-small-up{% elif placeholder.show_for_medium %}show-for-medium-up{% elif placeholder.show_for_large %}show-for-large-up{% endif %}">
+                <li class="placeholder show-for-small-up
+                    {% if not placeholder.show_for_small %}hide-for-small-only{% endif %}
+                    {% if not placeholder.show_for_medium %}hide-for-medium-only{% endif %}
+                    {% if not placeholder.show_for_large %}hide-for-large-up{% endif %}
+                ">
                     <img src="images/cell-placeholder-0-320x320.png" alt="Partner placeholder"/>
                     <img class="logo" src="images/warsjawa-logo-gray-200x328.png">
                 </li>
@@ -259,7 +274,9 @@
             <ul>
                 <li>sponsors: <a href="mailto:sponsor@warsjawa.pl">sponsor@warsjawa.pl</a></li>
                 <li>contact: <a href="mailto:contact@warsjawa.pl">contact@warsjawa.pl</a></li>
-                <li>CFP: <a href="mailto:c4p@warsjawa.pl">c4p@warsjawa.pl</a> (<a href="poster-with-bleeds.pdf" target="_blank">CFP poster</a>)</li>
+                <li>CFP: <a href="mailto:c4p@warsjawa.pl">c4p@warsjawa.pl</a> (<a href="poster-with-bleeds.pdf"
+                                                                                  target="_blank">CFP poster</a>)
+                </li>
             </ul>
         </div>
     </div>

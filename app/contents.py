@@ -58,7 +58,7 @@ def update_variables(variables):
             'name': 'Michał Lipski',
             'picture_url': 'images/speakers/michal-lipski-320x320.jpg'
         }
-        
+
     ]
 
     sponsors = [
@@ -116,22 +116,31 @@ def update_variables(variables):
 
         placeholders = []
 
-        for i in range(get_number_of_placeholders(minimum_number_of_rows,
-                                                  number_of_cells_in_large_resolution,
-                                                  number_of_speakers)):
+        number_of_large_placeholders = get_number_of_placeholders(minimum_number_of_rows,
+                                                                  number_of_cells_in_large_resolution,
+                                                                  number_of_speakers)
+        number_of_medium_placeholders = get_number_of_placeholders(minimum_number_of_rows,
+                                                                   number_of_cells_in_medium_resolution,
+                                                                   number_of_speakers)
+        number_of_small_placeholders = get_number_of_placeholders(minimum_number_of_rows,
+                                                                  number_of_cells_in_small_resolution,
+                                                                  number_of_speakers)
+        maximum_number_of_placeholders = max(number_of_large_placeholders,
+                                             number_of_medium_placeholders,
+                                             number_of_small_placeholders)
+
+        for i in range(maximum_number_of_placeholders):
             placeholders.append({
                 'placeholder_background_image_url': placeholder_image_urls[i % len(placeholder_image_urls)],
-                'show_for_large': True
             })
 
-        for i in range(get_number_of_placeholders(minimum_number_of_rows,
-                                                  number_of_cells_in_medium_resolution,
-                                                  number_of_speakers)):
+        for i in range(number_of_large_placeholders):
+            placeholders[i]['show_for_large'] = True
+
+        for i in range(number_of_medium_placeholders):
             placeholders[i]['show_for_medium'] = True
 
-        for i in range(get_number_of_placeholders(minimum_number_of_rows,
-                                                  number_of_cells_in_small_resolution,
-                                                  number_of_speakers)):
+        for i in range(number_of_small_placeholders):
             placeholders[i]['show_for_small'] = True
 
         return placeholders
