@@ -57,7 +57,7 @@ def update_variables(variables):
         {
             'name': 'Michał Lipski',
             'picture_url': 'images/speakers/michal-lipski-320x320.jpg'
-        }
+        },
 
     ]
 
