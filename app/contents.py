@@ -81,6 +81,11 @@ def update_variables(variables):
             'name': 'Typesafe',
             'picture_url': 'images/sponsors/typesafe-320x320.png',
             'url': 'https://typesafe.com/'
+        },
+        {
+            'name': 'Mobica',
+            'picture_url': 'images/sponsors/mobica-320x320.png',
+            'url': 'http://www.mobica.com/'
         }
     ]
 
