@@ -53,6 +53,10 @@ def update_variables(variables):
         {
             'name': 'Sylwester Madej',
             'picture_url': 'images/speakers/sylwester-madej-320x320.jpg'
+        },
+        {
+            'name': 'Michał Lipski',
+            'picture_url': 'images/speakers/michal-lipski-320x320.jpg'
         }
         
     ]
