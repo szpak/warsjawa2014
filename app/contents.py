@@ -97,6 +97,10 @@ def update_variables(variables):
         {
             'picture_url': 'images/partners/torun-jug-320x320.png',
             'url': 'http://torun.jug.pl/'
+        },
+        {
+            'picture_url': 'images/partners/programista-320x320.png',
+            'url': 'http://programistamag.pl/'
         }
 
     ]
