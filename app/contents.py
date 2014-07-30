@@ -90,7 +90,12 @@ def update_variables(variables):
             'name': 'Mobica',
             'picture_url': 'images/sponsors/mobica-320x320.png',
             'url': 'http://www.mobica.com/'
-        }
+        },
+        {
+            'name': 'Sii',
+            'picture_url': 'images/sponsors/sii-320x320.png',
+            'url': 'http://pl.sii.eu/'
+        },
     ]
 
     partners = [
