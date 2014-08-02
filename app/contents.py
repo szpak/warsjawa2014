@@ -69,6 +69,14 @@ def update_variables(variables):
                 {
             'name': 'Marcin Korniluk',
             'picture_url': 'images/speakers/marcin-korniluk-320x320.jpg'
+        },
+        {
+            'name': 'Dariusz Aniszewski',
+            'picture_url': 'images/speakers/dariusz-aniszewski-320x320.jpg'
+        },
+        {
+            'name': 'Dariusz Seweryn',
+            'picture_url': 'images/speakers/dariusz-seweryn-320x320.jpg'
         }
 
     ]
