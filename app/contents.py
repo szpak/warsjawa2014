@@ -62,6 +62,14 @@ def update_variables(variables):
             'name': 'Tomasz Grynfelder',
             'picture_url': 'images/speakers/tomasz-grynfelder-320x320.jpg'
         },
+        {
+            'name': 'Kamil Szymański',
+            'picture_url': 'images/speakers/kamil-szymanski-320x320.jpg'
+        },
+                {
+            'name': 'Marcin Korniluk',
+            'picture_url': 'images/speakers/marcin-korniluk-320x320.jpg'
+        }
 
     ]
 
