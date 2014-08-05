@@ -77,6 +77,14 @@ def update_variables(variables):
         {
             'name': 'Dariusz Seweryn',
             'picture_url': 'images/speakers/dariusz-seweryn-320x320.jpg'
+        },
+        {
+            'name': 'Dominika Musiał',
+            'picture_url': 'images/speakers/dominika-musial-320x320.jpg'
+        },
+        {
+            'name': 'Stoigniew Sztank',
+            'picture_url': 'images/speakers/stoigniew-sztank-320x320.jpg'
         }
 
     ]
