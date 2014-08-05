@@ -66,7 +66,7 @@ def update_variables(variables):
             'name': 'Kamil Szymański',
             'picture_url': 'images/speakers/kamil-szymanski-320x320.jpg'
         },
-                {
+        {
             'name': 'Marcin Korniluk',
             'picture_url': 'images/speakers/marcin-korniluk-320x320.jpg'
         },
@@ -127,7 +127,46 @@ def update_variables(variables):
             'picture_url': 'images/partners/programista-320x320.png',
             'url': 'http://programistamag.pl/'
         }
+    ]
 
+    organizers = [
+        {
+            'name': 'Michał Lewandowski',
+            'picture_url': 'images/organizers/michal-lewandowski-320x320.jpg',
+        },
+        {
+            'name': 'Maciej Opała',
+            'picture_url': 'images/organizers/maciej-opala-320x320.jpg',
+        },
+        {
+            'name': 'Tomasz Netczuk',
+            'picture_url': 'images/organizers/tomasz-netczuk-320x320.jpg',
+        },
+        {
+            'name': 'Magda Żebrowska',
+            'picture_url': 'images/organizers/magda-zebrowska-320x320.jpg',
+        },
+        {
+            'name': 'Adam Chudzik',
+            'picture_url': 'images/organizers/adam-chudzik-temp.png',
+        },
+        {
+            'name': 'Ilona Sobiczewska',
+            'picture_url': 'images/organizers/ilona-sobiczewska-320x320.jpg',
+        },
+        {
+            'name': 'Kamil Szymański',
+            'picture_url': 'images/organizers/kamil-szymanski-320x320.jpg',
+        },
+
+        {
+            'name': 'Wojtek Erbetowski',
+            'picture_url': 'images/organizers/wojtek-erbetowski-320x320.jpg',
+        },
+        {
+            'name': 'Krzysztof Siejkowski',
+            'picture_url': 'images/organizers/krzysztof-siejkowski-320x320.jpg',
+        },
     ]
 
     def cell_placeholders(content_list,
@@ -192,6 +231,7 @@ def update_variables(variables):
                                                   minimum_number_of_rows=1,
                                                   number_of_cells_in_small_resolution=4,
                                                   number_of_cells_in_medium_resolution=6,
-                                                  number_of_cells_in_large_resolution=8)
+                                                  number_of_cells_in_large_resolution=8),
+        'organizers': organizers,
     })
 

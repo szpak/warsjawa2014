@@ -143,7 +143,7 @@
     <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-7">
         {% for speaker in speakers %}
             <li itemscope itemprop="performer" itemtype="http://schema.org/Person">
-                <img src="{{ speaker.picture_url }}" alt="{{ speaker.name }} photo"/>
+                <img itemprop="image" content="http://warsjawa.pl/{{ speaker.picture_url }}" src="{{ speaker.picture_url }}" alt="{{ speaker.name }} photo"/>
                 <span class="caption" itemprop="name">{{ speaker.name }}</span>
             </li>
         {% endfor %}
@@ -201,6 +201,23 @@
             ">
                 <img src="{{ placeholder.placeholder_background_image_url }}" alt="Sponsor placeholder"/>
                 <img class="logo" src="images/warsjawa-logo-200x328.png">
+            </li>
+        {% endfor %}
+    </ul>
+</section>
+
+
+<section id="organizers">
+    <div class="row">
+        <div class="content-column">
+            <h3>Organizers</h3>
+        </div>
+    </div>
+
+    <ul class="small-block-grid-3 medium-block-grid-9 large-block-grid-9">
+        {% for organizer in organizers %}
+            <li itemscope itemprop="organizer" itemtype="http://schema.org/Person">
+                <img itemprop="image" content="http://warsjawa.pl/{{ organizer.picture_url }}" src="{{ organizer.picture_url }}" alt="{{ organizer.name }} photo"/>
             </li>
         {% endfor %}
     </ul>
