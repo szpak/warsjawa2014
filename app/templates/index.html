@@ -214,10 +214,16 @@
         </div>
     </div>
 
-    <ul class="small-block-grid-3 medium-block-grid-9 large-block-grid-9">
+    <ul class="small-block-grid-3 medium-block-grid-5 large-block-grid-9">
         {% for organizer in organizers %}
             <li itemscope itemprop="organizer" itemtype="http://schema.org/Person">
                 <img itemprop="image" content="http://warsjawa.pl/{{ organizer.picture_url }}" src="{{ organizer.picture_url }}" alt="{{ organizer.name }} photo"/>
+                <div class="whole-wrapper">
+                    <div class="span-wrapper">
+                        <span class="name" itemprop="name">{{ organizer.name }}</span>
+                        <span class="role">{{ organizer.role }}</span>
+                    </div>
+                </div>
             </li>
         {% endfor %}
     </ul>

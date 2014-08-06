@@ -141,18 +141,22 @@ def update_variables(variables):
         {
             'name': 'Michał Lewandowski',
             'picture_url': 'images/organizers/michal-lewandowski-320x320.jpg',
+            'role': 'Backend',
         },
         {
             'name': 'Maciej Opała',
             'picture_url': 'images/organizers/maciej-opala-320x320.jpg',
+            'role': 'Sponsoring',
         },
         {
             'name': 'Tomasz Netczuk',
             'picture_url': 'images/organizers/tomasz-netczuk-320x320.jpg',
+            'role': 'Frontend',
         },
         {
             'name': 'Magda Żebrowska',
             'picture_url': 'images/organizers/magda-zebrowska-320x320.jpg',
+            'role': 'Media',
         },
         {
             'name': 'Adam Chudzik',
@@ -161,19 +165,21 @@ def update_variables(variables):
         {
             'name': 'Ilona Sobiczewska',
             'picture_url': 'images/organizers/ilona-sobiczewska-320x320.jpg',
+            'role': 'Design',
         },
         {
             'name': 'Kamil Szymański',
             'picture_url': 'images/organizers/kamil-szymanski-320x320.jpg',
         },
-
         {
             'name': 'Wojtek Erbetowski',
             'picture_url': 'images/organizers/wojtek-erbetowski-320x320.jpg',
+            'role': 'Head',
         },
         {
             'name': 'Krzysztof Siejkowski',
             'picture_url': 'images/organizers/krzysztof-siejkowski-320x320.jpg',
+            'role': 'Speakers',
         },
     ]
 

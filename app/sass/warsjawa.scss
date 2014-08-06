@@ -272,6 +272,50 @@ section#organizers {
     li {
       padding: 0;
       position: relative;
+      overflow: hidden;
+
+      .whole-wrapper {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $warsjawa-blue;
+        color: $warsjawa-beige;
+
+        -o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+        transition:.5s;
+
+        .span-wrapper {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 0.5rem 0.5rem 1rem 0.5rem;
+
+          span {
+            display: block;
+            line-height: 1;
+            font-family: $header-font-family;
+            font-weight: $header-font-weight;
+          }
+          .name {
+            padding-bottom: 0.5rem;
+          }
+          .role {
+            font-size: $small-font-size;
+          }
+        }
+      }
+
+      &:hover {
+        .whole-wrapper {
+          top: 0%;
+        }
+      }
+
 
       &.placeholder {
         .logo {
