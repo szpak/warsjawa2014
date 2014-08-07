@@ -1,0 +1,28 @@
+---
+organizers:
+    - name: Michał Lewandowski
+      role: Backend
+      picture_url: images/organizers/michal-lewandowski-320x320.jpg
+    - name: Maciej Opała
+      role: Sponsoring
+      picture_url: images/organizers/maciej-opala-320x320.jpg
+    - name: Tomasz Netczuk
+      role: Frontend
+      picture_url: images/organizers/tomasz-netczuk-320x320.jpg
+    - name: Magda Żebrowska
+      role: Media
+      picture_url: images/organizers/magda-zebrowska-320x320.jpg
+    - name: Adam Chudzik
+      role: Media
+      picture_url: images/organizers/adam-chudzik-temp.png
+    - name: Ilona Sobiczewska
+      role: Design
+      picture_url: images/organizers/ilona-sobiczewska-320x320.jpg
+    - name: Kamil Szymański
+      picture_url: images/organizers/kamil-szymanski-320x320.jpg
+    - name: Wojtek Erbetowski
+      role: Head
+      picture_url: images/organizers/wojtek-erbetowski-320x320.jpg
+    - name: Krzysztof Siejkowski
+      role: Speakers
+      picture_url: images/organizers/krzysztof-siejkowski-320x320.jpg

@@ -2,6 +2,8 @@
 
 from __future__ import division
 from math import ceil
+import os
+import yaml
 
 
 def update_variables(variables):
@@ -137,52 +139,6 @@ def update_variables(variables):
         }
     ]
 
-    organizers = [
-        {
-            'name': 'Michał Lewandowski',
-            'picture_url': 'images/organizers/michal-lewandowski-320x320.jpg',
-            'role': 'Backend',
-        },
-        {
-            'name': 'Maciej Opała',
-            'picture_url': 'images/organizers/maciej-opala-320x320.jpg',
-            'role': 'Sponsoring',
-        },
-        {
-            'name': 'Tomasz Netczuk',
-            'picture_url': 'images/organizers/tomasz-netczuk-320x320.jpg',
-            'role': 'Frontend',
-        },
-        {
-            'name': 'Magda Żebrowska',
-            'picture_url': 'images/organizers/magda-zebrowska-320x320.jpg',
-            'role': 'Media',
-        },
-        {
-            'name': 'Adam Chudzik',
-            'picture_url': 'images/organizers/adam-chudzik-temp.png',
-        },
-        {
-            'name': 'Ilona Sobiczewska',
-            'picture_url': 'images/organizers/ilona-sobiczewska-320x320.jpg',
-            'role': 'Design',
-        },
-        {
-            'name': 'Kamil Szymański',
-            'picture_url': 'images/organizers/kamil-szymanski-320x320.jpg',
-        },
-        {
-            'name': 'Wojtek Erbetowski',
-            'picture_url': 'images/organizers/wojtek-erbetowski-320x320.jpg',
-            'role': 'Head',
-        },
-        {
-            'name': 'Krzysztof Siejkowski',
-            'picture_url': 'images/organizers/krzysztof-siejkowski-320x320.jpg',
-            'role': 'Speakers',
-        },
-    ]
-
     def cell_placeholders(content_list,
                           minimum_number_of_rows=2,
                           number_of_cells_in_small_resolution=2,
@@ -246,6 +202,6 @@ def update_variables(variables):
                                                   number_of_cells_in_small_resolution=4,
                                                   number_of_cells_in_medium_resolution=6,
                                                   number_of_cells_in_large_resolution=8),
-        'organizers': organizers,
     })
+    variables.update(yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/organizers.yaml', 'r')))
 

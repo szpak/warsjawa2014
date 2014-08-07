@@ -13,6 +13,7 @@ RUN gem install compass
 RUN apt-get -y install python-dev
 RUN apt-get -y install python-pip
 RUN pip install jinja2
+RUN pip install pyyaml
 RUN pip install Flask
 RUN pip install pymongo
 RUN pip install flanker
