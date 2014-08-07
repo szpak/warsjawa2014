@@ -239,7 +239,7 @@ def update_variables(variables):
         'speakers': speakers,
         'speaker_placeholders': cell_placeholders(speakers),
         'sponsors': sponsors,
-        'sponsor_placeholders': cell_placeholders(sponsors),
+        'sponsor_placeholders': cell_placeholders(sponsors, minimum_number_of_rows=1),
         'partners': partners,
         'partner_placeholders': cell_placeholders(partners,
                                                   minimum_number_of_rows=1,
