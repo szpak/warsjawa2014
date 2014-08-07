@@ -17,7 +17,6 @@ RUN pip install Flask
 RUN pip install pymongo
 RUN pip install flanker
 RUN apt-get -y install nginx
-RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 ADD ./app /warsjawa/app
 #RUN find /warsjawa -type f -name "*.jpg" -o -name "*.jpeg" | xargs -l jpegoptim --strip-all
