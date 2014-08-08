@@ -124,21 +124,6 @@ def update_variables(variables):
         },
     ]
 
-    partners = [
-        {
-            'picture_url': 'images/partners/bitspiration-320x320.png',
-            'url': 'http://bitspiration.com/'
-        },
-        {
-            'picture_url': 'images/partners/torun-jug-320x320.png',
-            'url': 'http://torun.jug.pl/'
-        },
-        {
-            'picture_url': 'images/partners/programista-320x320.png',
-            'url': 'http://programistamag.pl/'
-        }
-    ]
-
     def cell_placeholders(content_list,
                           minimum_number_of_rows=2,
                           number_of_cells_in_small_resolution=2,
@@ -189,6 +174,7 @@ def update_variables(variables):
         return number_of_rows * number_of_cells_in_row - number_of_actual_cells
 
 
+    partners = yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/partners.yaml', 'r'))['partners']
     variables.update({
         'page_title': 'Warsjawa: 100% workshop formula',
         'page_description': 'Conference for developers, by developers. Unique 100% workshop formula. “Learn by doing” approach. Proudly host workshops related to all aspects of software development: designing, developing, testing, maintaining etc. Initially oriented around Java and JVM programming languages. Now open to other programming languages like Scala, Groovy, Python, mobile development for Android, iOS and others.',
