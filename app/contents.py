@@ -26,7 +26,7 @@ def update_variables(variables):
         },
         {
             'name': 'Tomasz Nurkiewicz',
-            'picture_url': 'images/speakers/tomek-nurkiewicz-320x320.jpg'
+            'picture_url': 'images/speakers/tomasz-nurkiewicz-320x320.jpg'
         },
         {
             'name': 'Jacek Kunicki',
