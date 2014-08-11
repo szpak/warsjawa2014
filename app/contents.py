@@ -7,90 +7,6 @@ import yaml
 
 
 def update_variables(variables):
-    speakers = [
-        {
-            'name': 'Venkat Subramaniam',
-            'picture_url': 'images/speakers/venkat-subramaniam-320x320.jpg'
-        },
-        {
-            'name': 'Konrad Malawski',
-            'picture_url': 'images/speakers/konrad-malawski-320x320.jpg'
-        },
-        {
-            'name': 'Adam Smolnik',
-            'picture_url': 'images/speakers/adam-smolnik-320x320.jpg'
-        },
-        {
-            'name': 'Artur Stępniewski',
-            'picture_url': 'images/speakers/artur-stepniewski-320x320.jpg'
-        },
-        {
-            'name': 'Tomasz Nurkiewicz',
-            'picture_url': 'images/speakers/tomasz-nurkiewicz-320x320.jpg'
-        },
-        {
-            'name': 'Jacek Kunicki',
-            'picture_url': 'images/speakers/jacek-kunicki-320x320.jpg'
-        },
-        {
-            'name': 'Maciej Górski',
-            'picture_url': 'images/speakers/maciej-gorski-320x320.jpg'
-        },
-        {
-            'name': 'Łukasz Sowa',
-            'picture_url': 'images/speakers/lukasz-sowa-320x320.jpg'
-        },
-        {
-            'name': 'Andrzej Michałowski',
-            'picture_url': 'images/speakers/andrzej-michalowski-320x320.jpg'
-        },
-        {
-            'name': 'Jacek Głodek',
-            'picture_url': 'images/speakers/jacek-glodek-320x320.jpg'
-        },
-        {
-            'name': 'Marek Będkowski',
-            'picture_url': 'images/speakers/marek-bedkowski-320x320.jpg'
-        },
-        {
-            'name': 'Sylwester Madej',
-            'picture_url': 'images/speakers/sylwester-madej-320x320.jpg'
-        },
-        {
-            'name': 'Michał Lipski',
-            'picture_url': 'images/speakers/michal-lipski-320x320.jpg'
-        },
-        {
-            'name': 'Tomasz Grynfelder',
-            'picture_url': 'images/speakers/tomasz-grynfelder-320x320.jpg'
-        },
-        {
-            'name': 'Kamil Szymański',
-            'picture_url': 'images/speakers/kamil-szymanski-320x320.jpg'
-        },
-        {
-            'name': 'Marcin Korniluk',
-            'picture_url': 'images/speakers/marcin-korniluk-320x320.jpg'
-        },
-        {
-            'name': 'Dariusz Aniszewski',
-            'picture_url': 'images/speakers/dariusz-aniszewski-320x320.jpg'
-        },
-        {
-            'name': 'Dariusz Seweryn',
-            'picture_url': 'images/speakers/dariusz-seweryn-320x320.jpg'
-        },
-        {
-            'name': 'Dominika Musiał',
-            'picture_url': 'images/speakers/dominika-musial-320x320.jpg'
-        },
-        {
-            'name': 'Stoigniew Sztank',
-            'picture_url': 'images/speakers/stoigniew-sztank-320x320.jpg'
-        }
-
-    ]
-
     sponsors = [
         {
             'name': 'Touk',
@@ -174,6 +90,7 @@ def update_variables(variables):
         return number_of_rows * number_of_cells_in_row - number_of_actual_cells
 
 
+    speakers = yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/speakers.yaml', 'r'))['speakers']
     partners = yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/partners.yaml', 'r'))['partners']
     variables.update({
         'page_title': 'Warsjawa: 100% workshop formula',
