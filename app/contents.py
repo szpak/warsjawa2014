@@ -38,6 +38,11 @@ def update_variables(variables):
             'picture_url': 'images/sponsors/sii-320x320.png',
             'url': 'http://pl.sii.eu/'
         },
+        {
+            'name': 'LendOn.pl',
+            'picture_url': 'images/sponsors/lendon-320x320.png',
+            'url': 'https://www.lendon.pl/'
+        },
     ]
 
     def cell_placeholders(content_list,
