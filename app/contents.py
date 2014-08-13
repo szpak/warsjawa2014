@@ -7,44 +7,6 @@ import yaml
 
 
 def update_variables(variables):
-    sponsors = [
-        {
-            'name': 'Touk',
-            'picture_url': 'images/sponsors/touk-320x320.png',
-            'url': 'http://touk.pl/'
-        },
-        {
-            'name': 'Pragmatists',
-            'picture_url': 'images/sponsors/pragmatists-320x320.png',
-            'url': 'http://pragmatists.pl/'
-        },
-        {
-            'name': '4 Finance',
-            'picture_url': 'images/sponsors/4-finance-320x320.png',
-            'url': 'http://www.4finance.com/'
-        },
-        {
-            'name': 'Typesafe',
-            'picture_url': 'images/sponsors/typesafe-320x320.png',
-            'url': 'https://typesafe.com/'
-        },
-        {
-            'name': 'Mobica',
-            'picture_url': 'images/sponsors/mobica-320x320.png',
-            'url': 'http://www.mobica.com/'
-        },
-        {
-            'name': 'Sii',
-            'picture_url': 'images/sponsors/sii-320x320.png',
-            'url': 'http://pl.sii.eu/'
-        },
-        {
-            'name': 'LendOn.pl',
-            'picture_url': 'images/sponsors/lendon-320x320.png',
-            'url': 'https://www.lendon.pl/'
-        },
-    ]
-
     def cell_placeholders(content_list,
                           minimum_number_of_rows=2,
                           number_of_cells_in_small_resolution=2,
@@ -95,6 +57,7 @@ def update_variables(variables):
         return number_of_rows * number_of_cells_in_row - number_of_actual_cells
 
 
+    sponsors = yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/sponsors.yaml', 'r'))['sponsors']
     speakers = yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/speakers.yaml', 'r'))['speakers']
     partners = yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/partners.yaml', 'r'))['partners']
     variables.update({

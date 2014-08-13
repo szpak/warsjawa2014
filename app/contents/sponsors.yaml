@@ -1,0 +1,36 @@
+---
+sponsors:
+    - name: Touk
+      rank: diamond
+      url: http://touk.pl/
+      picture_url: images/sponsors/touk-320x320.png
+
+    - name: Pragmatists
+      rank: golden
+      url: http://pragmatists.pl/
+      picture_url: images/sponsors/pragmatists-320x320.png
+
+    - name: 4 Finance
+      rank: silver
+      url: http://www.4finance.com/
+      picture_url: images/sponsors/4-finance-320x320.png
+
+    - name: Typesafe
+      rank: bronze
+      url: https://typesafe.com/
+      picture_url: images/sponsors/typesafe-320x320.png
+
+    - name: Mobica
+      rank: ???
+      url: http://www.mobica.com/
+      picture_url: images/sponsors/mobica-320x320.png
+
+    - name: Sii
+      rank: ???
+      url: http://pl.sii.eu/
+      picture_url: images/sponsors/sii-320x320.png
+
+    - name: LendOn.pl
+      rank: ???
+      url: https://www.lendon.pl/
+      picture_url: images/sponsors/lendon-320x320.png
