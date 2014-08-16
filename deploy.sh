@@ -1,5 +1,9 @@
 #!/bin/bash
-docker stop $3
-docker rm $3
-docker build -t $3 .
-docker run --name $3 --link $4:db -d -p $1:80 -p $2:81 -e HTTP_USERNAME=$5 -e HTTP_PASS=$6 -e MAILGUN_API_KEY=$7 $3
+CONTAINER_NAME=$1
+PORT=$2
+BACKEND_NAME=$3
+
+docker stop ${CONTAINER_NAME}
+docker rm ${CONTAINER_NAME}
+docker build -t ${CONTAINER_NAME} .
+docker run --name ${CONTAINER_NAME} --link ${BACKEND_NAME}:backend -d -p ${PORT}:80 ${CONTAINER_NAME}
