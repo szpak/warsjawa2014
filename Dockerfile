@@ -7,7 +7,7 @@ RUN apt-get -y install nodejs
 RUN apt-get -y install npm
 RUN npm install -g bower
 RUN npm install -g grunt-cli
-RUN apt-get -y install ruby
+RUN apt-get -y install ruby-dev
 RUN gem install foundation
 RUN gem install compass
 RUN apt-get -y install python-dev
@@ -24,6 +24,5 @@ ADD ./app /warsjawa/app
 RUN python /warsjawa/app/buildsite.py
 
 EXPOSE 80
-EXPOSE 81
 
 CMD /bin/bash /warsjawa/app/runsite.sh
