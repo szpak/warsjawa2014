@@ -13,6 +13,42 @@
 //});
 
 Meteor.methods({
+    register: function (name, email) {
+        var attendee = Attendees.findOne({_id: email});
+        if (attendee === undefined) {
+            // /users POST
+
+            var response = Meteor.http.get('http://warsjawa.pl/');
+            console.log('Registering new attendee: ' + email);
+            Attendees.insert({_id: email, email: email, name: name, key: null});
+            return 'ok';
+        } else {
+            throw new Meteor.Error('Email already taken.');
+        }
+    },
+
+    confirmation: function (email, key) {
+        var attendee = Attendees.findOne({_id: email, key: key});
+        if (attendee !== undefined) {
+            console.log('Attendee: ' + email + ' is already confirmed. Logging him instead.');
+            this.setUserId(email);
+            return 'ok';
+        }
+
+        // /users PUT
+        var response = Meteor.http.get('http://warsjawa.pl/');
+        if (response.statusCode == 200) {
+            attendee = Attendees.findOne({_id: email});
+            if (attendee === undefined) {
+                throw new Meteor.Error('Something wrong happen with user confirmation.');
+            }
+            Attendees.update({_id: email}, {$set: {key: key}});
+            return 'ok';
+        } else {
+            throw new Meteor.Error('Something wrong happen with user confirmation.');
+        }
+    },
+
     login: function (id, key) {
         var attendee = Attendees.findOne({_id: id, key: 'key'});
         if (attendee === undefined) {

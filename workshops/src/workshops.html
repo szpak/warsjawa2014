@@ -1,13 +1,67 @@
 <head>
-  <title>workshops</title>
+    <title>workshops</title>
 </head>
 
 <body>
-  {{> hello}}
+
+{{> header}}
+{{> registration}}
+{{> confirmation}}
+
 </body>
 
-<template name="hello">
-  <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="button" value="Click" />
+<template name="header">
+    <section id="header">
+        <div class="row">
+            <div class="small-12 columns">
+                <button class="button" id="registration-button">Register</button>
+                <button class="button" id="log-out-button">Log out</button>
+            </div>
+        </div>
+    </section>
+</template>
+
+<template name="registration">
+    <section id="registration">
+        <div class="row">
+            <div class="small-12 columns panel">
+                <div class="small-12 medium-10 medium-centered large-8 large-centered columns">
+                    <form data-abide id="registration-form">
+                        <div>
+                            <input type="text" id="name-input" placeholder="Your name" required pattern="[a-zA-Z]+">
+                            <small class="error">Please provide your name.</small>
+                        </div>
+                        <div>
+                            <input type="email" id="email-input" placeholder="Email address" required>
+                            <small class="error">Your email address is required.</small>
+                        </div>
+                        <button type="submit"
+                                class="disabled small-12 medium-10 medium-centered large-8 large-centered columns"
+                                id="submit-button">Register
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="registration-modal" class="reveal-modal" data-reveal>
+            <h2>Awesome. I have it.</h2>
+
+            <p class="lead">Your couch. It is mine.</p>
+
+            <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+    </section>
+</template>
+
+<template name="confirmation">
+    <section id="confirmation">
+        <div id="confirmation-modal" class="reveal-modal" data-reveal>
+            <h2>Please wait a second...</h2>
+        </div>
+        <div id="confirmation-modal-success" class="reveal-modal" data-reveal>
+            <h2>Please wait a second...</h2>
+        </div>
+    </section>
 </template>
