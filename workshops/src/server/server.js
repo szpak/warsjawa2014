@@ -1,16 +1,16 @@
-Meteor.Router.add('/attendees', 'POST', function () {
-    var attendee = this.request.body;
-    attendee._id = attendee.id;
-    delete attendee.id;
-    attendee.workshops = [];
-    var foundAttendee = Attendees.findOne({_id: attendee._id});
-    if (foundAttendee === undefined) {
-        console.log('Adding new attendee: ' + JSON.stringify(attendee));
-        Attendees.insert(attendee);
-    } else {
-        console.log('Tried to add new attendee with id: ' + attendee._id + ', but it is already present in db.')
-    }
-});
+//Meteor.Router.add('/attendees', 'POST', function () {
+//    var attendee = this.request.body;
+//    attendee._id = attendee.id;
+//    delete attendee.id;
+//    attendee.workshops = [];
+//    var foundAttendee = Attendees.findOne({_id: attendee._id});
+//    if (foundAttendee === undefined) {
+//        console.log('Adding new attendee: ' + JSON.stringify(attendee));
+//        Attendees.insert(attendee);
+//    } else {
+//        console.log('Tried to add new attendee with id: ' + attendee._id + ', but it is already present in db.')
+//    }
+//});
 
 Meteor.methods({
     login: function (id, key) {

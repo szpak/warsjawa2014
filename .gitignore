@@ -3,5 +3,3 @@
 app/.sass-cache
 app/output
 *.pyc
-
-/workshops/.meteor
