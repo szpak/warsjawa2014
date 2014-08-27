@@ -26,6 +26,7 @@ template_files = [
     'index.html',
     'call-for-papers.html',
     'thank-you-for-filling-call-for-papers-form.html',
+    'workshops.html',
 ]
 
 loader = jinja2.FileSystemLoader(searchpath=absolute_template_path)
