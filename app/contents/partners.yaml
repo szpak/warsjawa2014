@@ -15,3 +15,12 @@ partners:
     - name: Scala Times
       url: http://scalatimes.com/
       picture_url: images/partners/scala-320x320.png
+
+    - name: The Pragmatic Bookshelf
+      url: https://www.pragprog.com/
+      picture_url: images/partners/the-pragmatic-bookshelf-320x320.png
+
+    - name: O'Reilly
+      url: http://www.oreilly.com/
+      picture_url: images/partners/oreilly-320x320.png
+
