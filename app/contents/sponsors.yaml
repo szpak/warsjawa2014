@@ -39,8 +39,18 @@ sponsors:
       rank: bronze
       url: http://www.7bulls.com/
       picture_url: images/sponsors/7-bulls-320x320.png
-      
+
     - name: Samsung
       rank: silver
       url: http://rd.samsung.pl/
       picture_url: images/sponsors/samsung-320x320.png
+
+    - name: Allegro
+      rank: silver
+      url: http://allegro.pl/
+      picture_url: images/sponsors/allegro-320x320.png 
+
+    - name: Spartez
+      rank: bronze
+      url: https://www.spartez.com/
+      picture_url: images/sponsors/spartez-320x320.png
