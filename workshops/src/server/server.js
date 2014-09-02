@@ -12,17 +12,26 @@
 //    }
 //});
 
+var host = 'http://warsjawa.pl:8181';
+
 Meteor.methods({
     register: function (name, email) {
+        console.log('[' + email + '] registering attendee: ' + name);
         var attendee = Attendees.findOne({_id: email});
         if (attendee === undefined) {
-            // /users POST
+            console.log('[' + email + '] attendee not found. Registering him/her with Warsjawa backend.');
+            var response = HTTP.call('POST', host + '/users', {timeout:3000, data: {email: email, firstName: name, lastName: 'NOT USED!'}});
+            if (response.statusCode === 201) {
+                console.log('[' + email + '] registering with Warsjawa backend complete. Adding to db.');
+                attendee = Attendees.insert({_id: email, email: email, name: name, key: null});
+                return attendee;
+            } else {
+                console.log('[' + email + '] Warsjawa backend returned status code: ' + response.statusCode + ' abandon thread.');
+                throw new Meteor.Error('Something wrong with Warsjawa backend.');
+            }
 
-            var response = Meteor.http.get('http://warsjawa.pl/');
-            console.log('Registering new attendee: ' + email);
-            Attendees.insert({_id: email, email: email, name: name, key: null});
-            return 'ok';
         } else {
+            console.log('[' + email + '] is already registered. Go away.');
             throw new Meteor.Error('Email already taken.');
         }
     },

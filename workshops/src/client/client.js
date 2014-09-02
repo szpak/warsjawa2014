@@ -23,11 +23,12 @@ $(document).ready(function () {
     });
 });
 
-function showSpinnerOnElement(id) {
-    $(id).append(spinner.el);
+function setLoadingIndicatorShown(shown) {
+    shown ? $('#loading-indicator').fadeIn('slow') : $('#loading-indicator').fadeOut('slow');
 }
 
 function showRegistrationSection() {
+    location.hash = "registration";
     $('section#registration').show('slow');
 }
 
@@ -49,53 +50,80 @@ Template.header.events({
     }
 });
 
-function register(name, email) {
-    Meteor.call('register', name, email, function (error, result) {
-        spinner.stop();
-        if (result === 'ok') {
-            $('section#registration').hide('slow');
-            $('#registration-modal').foundation('reveal', 'open');
-        } else {
-            console.log(error);
+(function registration() {
+    var emailRequiredErrorMessage;
+
+    Template.registration.rendered = function () {
+        emailRequiredErrorMessage = $('#email-input').parent().find('small').html();
+
+        if (location.hash === "#registration") {
+            showRegistrationSection();
+        }
+    };
+
+    function validateForm() {
+        function validateEmail(email) {
+            var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+        var name = $('#registration #name-input').val();
+        var email = $('#registration #email-input').val();
+        return name.length > 0 && validateEmail(email);
+    }
+
+    function register() {
+        setLoadingIndicatorShown(true);
+        var name = $('#registration #name-input').val();
+        var email = $('#registration #email-input').val();
+
+        Meteor.call('register', name, email, function (error, result) {
+            setLoadingIndicatorShown(false);
+            if (result !== undefined) {
+                location.hash = "";
+                $('section#registration').hide('slow');
+                $('#registration-finished-modal').foundation('reveal', 'open');
+            } else {
+                if (error.error === 'Email already taken.') {
+                    var emailInput = $('#email-input');
+                    emailInput.parent().find('small').html('This email is already taken.');
+                    emailInput.addClass('error');
+                    emailInput.parent().addClass('error')
+                } else {
+                    $('#registration-error-modal').foundation('reveal', 'open');
+                }
+            }
+        });
+    }
+
+    Template.registration.events({
+        'keyup input, focus input, blur input, change input': function () {
+            console.log('input');
+            var submitButton = $('#registration #submit-button');
+            if (validateForm()) {
+                submitButton.removeAttr('disabled');
+                submitButton.removeClass('disabled');
+            } else {
+                submitButton.attr('disabled', 'disabled');
+                submitButton.addClass('disabled');
+            }
+        },
+        'change #email-input': function () {
+            $('#email-input').parent().find('small').html(emailRequiredErrorMessage);
+        },
+        'click #submit-button': function () {
+            if (validateForm()) {
+                register();
+            }
+        },
+        'keydown': function (event) {
+            if (event.keyCode === 13 && validateForm()) {
+                register();
+            }
         }
     });
-}
+})();
 
-Template.registration.events({
-    'keyup input': function () {
-        var name = $('#registration #name-input').val();
-        var email = $('#registration #email-input').val();
-        var submitButton = $('#registration #submit-button');
-        if (name.length > 0 && email.length > 0) {
-            submitButton.removeAttr('disabled');
-            submitButton.removeClass('disabled');
-        } else {
-            submitButton.attr('disabled', 'disabled');
-            submitButton.addClass('disabled');
-        }
-    },
-    'click #submit-button': function () {
-        var name = $('#registration #name-input').val();
-        var email = $('#registration #email-input').val();
-
-        showSpinnerOnElement('section#registration');
-        register(name, email);
-    },
-    'keydown': function (event) {
-        if (event.keyCode === 13 && !$('#registration #submit-button').hasClass('disabled')) {
-            var name = $('#registration #name-input').val();
-            var email = $('#registration #email-input').val();
-            register(name, email);
-            console.log('keydown');
-        }
-    }
-});
-
-Template.registration.rendered = function () {
-    if (pathnameElements.length > 1 && pathnameElements[1] === 'registration') {
-        showRegistrationSection();
-    }
-};
 
 var setLoggedInState = function (email, key) {
     loggedIn = true;
