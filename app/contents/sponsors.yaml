@@ -1,22 +1,22 @@
 ---
 sponsors:
     - name: Touk
-      rank: diamond
+      rank: silver
       url: http://touk.pl/
       picture_url: images/sponsors/touk-320x320.png
 
     - name: Pragmatists
-      rank: golden
+      rank: bronze
       url: http://pragmatists.pl/
       picture_url: images/sponsors/pragmatists-320x320.png
 
     - name: 4 Finance
-      rank: silver
+      rank: gold
       url: http://www.4finance.com/
       picture_url: images/sponsors/4-finance-320x320.png
 
     - name: Typesafe
-      rank: bronze
+      rank: chill
       url: https://typesafe.com/
       picture_url: images/sponsors/typesafe-320x320.png
 
