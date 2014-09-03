@@ -1,3 +1,5 @@
+section#header #attendee-name {
+  display: none; }
 section#header #log-out-button {
   display: none; }
 

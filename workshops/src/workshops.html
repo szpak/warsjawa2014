@@ -6,7 +6,7 @@
 
 {{> header}}
 {{> registration}}
-{{> confirmation}}
+{{> login}}
 
 <div class="spinner-wrapper" id="loading-indicator">
     <div class="spinner">
@@ -21,9 +21,14 @@
 <template name="header">
     <section id="header">
         <div class="row">
-            <div class="small-12 columns">
-                <button class="button" id="registration-button">Register</button>
+            <div class="small-10 columns">
+                <h3 id="attendee-name">Logged in as {{ attendeeName }}</h3>
+            </div>
+            <div class="small-2 columns">
                 <button class="button" id="log-out-button">Log out</button>
+            </div>
+            <div class="small-2 columns">
+                <button class="button" id="registration-button">Sign up</button>
             </div>
         </div>
     </section>
@@ -52,13 +57,13 @@
             </div>
         </div>
 
-        <div id="registration-finished-modal" class="reveal-modal" data-reveal>
+        <div id="registration-finished-modal" class="reveal-modal small" data-reveal>
             <h2>Thank you for registering!</h2>
             <p>Check your email inbox, you should get activation link in seconds.</p>
             <a class="close-reveal-modal">&#215;</a>
         </div>
 
-        <div id="registration-error-modal" class="reveal-modal" data-reveal>
+        <div id="registration-error-modal" class="reveal-modal small" data-reveal>
             <h2>Oops... Something went wrong...</h2>
             <p>Please try again!</p>
             <a class="close-reveal-modal">&#215;</a>
@@ -66,13 +71,12 @@
     </section>
 </template>
 
-<template name="confirmation">
-    <section id="confirmation">
-        <div id="confirmation-modal" class="reveal-modal" data-reveal>
-            <h2>Please wait a second...</h2>
-        </div>
-        <div id="confirmation-modal-success" class="reveal-modal" data-reveal>
-            <h2>Please wait a second...</h2>
+<template name="login">
+    <section id="login">
+        <div id="login-error-modal" class="reveal-modal small" data-reveal>
+            <h2>Can't log in...</h2>
+            <p>Email or key is invalid. Please check your link or contact support.</p>
+            <a class="close-reveal-modal">&#215;</a>
         </div>
     </section>
 </template>

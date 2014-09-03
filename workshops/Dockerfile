@@ -13,4 +13,4 @@ EXPOSE 3000
 ADD . /workshops
 WORKDIR /workshops
 
-RUN meteor add ewall:foundation iron:router http
+RUN meteor add ewall:foundation

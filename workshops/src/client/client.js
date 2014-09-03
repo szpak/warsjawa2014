@@ -1,14 +1,3 @@
-console.log('client.js');
-
-var pathnameElements = location.pathname.split('/');
-
-loggedIn = false;
-
-
-var spinner = undefined;
-$(document).ready(function () {
-    spinner = new Spinner().spin();
-});
 $(document).foundation({
     reveal: {
         close_on_background_click: false
@@ -32,23 +21,18 @@ function showRegistrationSection() {
     $('section#registration').show('slow');
 }
 
-if (pathnameElements.length === 4 && pathnameElements[1] === 'login') {
-    var id = pathnameElements[2];
-    var key = pathnameElements[3];
-    console.log('id: ' + id);
-    console.log('key: ' + key);
+(function header() {
+    Template.header.attendeeName = function () {
+        return Session.get('attendee').name;
+    };
 
-    Meteor.call('login', id, key, function (error, result) {
-        console.log(error);
-        console.log(result);
+    Template.header.events({
+        'click #registration-button': function () {
+            showRegistrationSection();
+        }
     });
-}
+})();
 
-Template.header.events({
-    'click #registration-button': function () {
-        showRegistrationSection();
-    }
-});
 
 (function registration() {
     var emailRequiredErrorMessage;
@@ -125,27 +109,45 @@ Template.header.events({
 })();
 
 
-var setLoggedInState = function (email, key) {
-    loggedIn = true;
-    $('section#header #registration-button').hide('slow');
-    $('section#header #log-out-button').show('slow');
-    localStorage.setItem('email', email);
-    localStorage.setItem('key', key);
-};
-
-Template.confirmation.rendered = function () {
-    if (pathnameElements.length > 3 && pathnameElements[1] === 'confirmation') {
-        $('#confirmation-modal').foundation('reveal', 'open');
-        var email = pathnameElements[2];
-        var key = pathnameElements[3];
-        Meteor.call('confirmation', email, key, function (error, result) {
-            if (result === 'ok') {
-                $('#confirmation-modal').foundation('reveal', 'close');
-                setLoggedInState(email, key);
+(function login() {
+    function login(email, key) {
+        Meteor.call('login', email, key, function (error, result) {
+            setLoadingIndicatorShown(false);
+            if (result !== undefined) {
+                Session.set('attendee', result);
+                localStorage.setItem('email', result.email);
+                localStorage.setItem('key', result.key);
+                $('#header').find('#registration-button').fadeOut('fast').end().delay(200).queue(function () {
+                    $('#log-out-button').fadeIn('fast').dequeue();
+                });
+                $('#attendee-name').fadeIn('slow');
+            } else {
+                if (error.error === 'Wrong attendee id or key.') {
+                    $('#login-error-modal').foundation('reveal', 'open');
+                } else {
+                    $('#registration-error-modal').foundation('reveal', 'open');
+                }
+                localStorage.removeItem('email');
+                localStorage.removeItem('key');
             }
-
-            console.log(error);
-            console.log(result);
         })
     }
-};
+
+    Template.login.rendered = function () {
+        var hash = location.hash.split('/');
+        if (hash.length === 3 && hash[0] === "#login") {
+            (function () {
+                setLoadingIndicatorShown(true);
+                var email = hash[1];
+                var key = hash[2];
+                login(email, key);
+            })();
+        } else if (location.hash === "") {
+            var email = localStorage.getItem('email');
+            var key = localStorage.getItem('key');
+            if (email !== null && email !== undefined && key !== null && key !== undefined) {
+                login(email, key);
+            }
+        }
+    };
+})();
