@@ -1,8 +1,39 @@
 var host = 'http://warsjawa.pl:8181';
 var timeout = 5000;
 
+var openningDate = new Date(2014, 8, 5, 12);
+
+RegistrationKeys.upsert({_id: 'key1'}, {_id: 'key1', timeHandicap: 1 * 3600*1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key2'}, {_id: 'key2', timeHandicap: 1 * 3600*1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key3'}, {_id: 'key3', timeHandicap: 1 * 3600*1000, used: false, usedBy: null});
+
 Meteor.methods({
-    register: function (name, email) {
+    register: function (name, email, key) {
+        if (key !== null && key !== undefined) {
+            console.log('[' + email + '] using registration key: ' + key);
+        }
+        var timeHandicap = 0;
+        var registrationKey = RegistrationKeys.findOne({_id: key, used: false});
+        if (registrationKey !== undefined) {
+            timeHandicap += registrationKey.timeHandicap;
+            console.log('[' + email + '] key is ok, giving: ' + new Date(timeHandicap) + ' time handicap.');
+        } else {
+            console.log('[' + email + '] no unused registration key for this key.');
+        }
+        var currentDateWithHandicap =  new Date(new Date().getTime() + timeHandicap);
+        if (openningDate.getTime() > currentDateWithHandicap.getTime()) {
+            console.log('[' + email + '] opening date: ' + openningDate + ' is bigger than current date with handicap: ' + currentDateWithHandicap + '. Rejecting.');
+            var error = new Meteor.Error('Cannot register yet.');
+            error.details = {timeToWait:openningDate.getTime() - currentDateWithHandicap.getTime()};
+            throw error;
+        } else {
+            console.log('[' + email + '] opening date: ' + openningDate + ' is lower than current date with handicap: ' + currentDateWithHandicap + '. Registering.');
+            if (registrationKey !== undefined) {
+                console.log('[' + email + '] using key: ' + key);
+                RegistrationKeys.update({_id: key}, {$set: {used: true, usedBy: email}});
+            }
+        }
+
         console.log('[' + email + '] registering attendee: ' + name);
         var attendee = Attendees.findOne({_id: email});
         if (attendee === undefined) {

@@ -49,6 +49,7 @@ function showRegistrationSection() {
             $('#attendee-name').fadeOut('slow');
 
             Meteor.call('logout', function () {
+                location.hash = "";
                 setLoadingIndicatorShown(false);
             });
         }
@@ -58,6 +59,16 @@ function showRegistrationSection() {
 
 (function registration() {
     var emailRequiredErrorMessage;
+
+    Template.registration.hours = function () {
+        return Session.get('hours');
+    };
+    Template.registration.minutes = function () {
+        return Session.get('minutes');
+    };
+    Template.registration.seconds = function () {
+        return Session.get('seconds');
+    };
 
     Template.registration.rendered = function () {
         emailRequiredErrorMessage = $('#email-input').parent().find('small').html();
@@ -82,8 +93,9 @@ function showRegistrationSection() {
         setLoadingIndicatorShown(true);
         var name = $('#registration #name-input').val();
         var email = $('#registration #email-input').val();
+        var key = $('#registration #key-input').val();
 
-        Meteor.call('register', name, email, function (error, result) {
+        Meteor.call('register', name, email, key, function (error, result) {
             setLoadingIndicatorShown(false);
             if (result !== undefined) {
                 location.hash = "";
@@ -95,6 +107,17 @@ function showRegistrationSection() {
                     emailInput.parent().find('small').html('This email is already taken.');
                     emailInput.addClass('error');
                     emailInput.parent().addClass('error')
+                } else if (error.error === 'Cannot register yet.') {
+                    var timeToWaitInSeconds = error.details.timeToWait / 1000;
+                    var hours = Math.floor(timeToWaitInSeconds / 3600);
+                    var minutes = Math.floor((timeToWaitInSeconds - hours * 3600) / 60);
+                    var seconds = Math.floor(timeToWaitInSeconds - hours * 3600 - minutes * 60);
+
+                    Session.set('hours', hours);
+                    Session.set('minutes', minutes);
+                    Session.set('seconds', seconds);
+
+                    $('#registration-cant-register-yet-modal').foundation('reveal', 'open');
                 } else {
                     $('#registration-error-modal').foundation('reveal', 'open');
                 }
@@ -104,7 +127,6 @@ function showRegistrationSection() {
 
     Template.registration.events({
         'keyup input, focus input, blur input, change input': function () {
-            console.log('input');
             var submitButton = $('#registration #submit-button');
             if (validateForm()) {
                 submitButton.removeAttr('disabled');
