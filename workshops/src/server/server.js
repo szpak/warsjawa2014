@@ -7,7 +7,7 @@ Meteor.methods({
         var attendee = Attendees.findOne({_id: email});
         if (attendee === undefined) {
             console.log('[' + email + '] attendee not found. Registering him/her with Warsjawa backend.');
-            var response = HTTP.call('POST', host + '/users', {timeout: timeout, data: {email: email, firstName: name, lastName: 'NOT USED!'}});
+            var response = HTTP.call('POST', host + '/users', {timeout: timeout, data: {email: email, name: name}});
             if (response.statusCode === 201) {
                 console.log('[' + email + '] registering with Warsjawa backend complete. Adding to db.');
                 attendee = Attendees.insert({_id: email, email: email, name: name, key: null});
@@ -26,8 +26,16 @@ Meteor.methods({
         console.log('[' + email + '] logging in...');
         var attendee = Attendees.findOne({email: email, key: key});
         if (attendee === undefined) {
-            console.log('[' + email + '] attendee not found. Wrong email or key.');
-            throw new Meteor.Error('Wrong attendee id or key.');
+            console.log('[' + email + '] attendee not found. Wrong email or key. Trying to check this pair with Warsjawa backend.');
+            var response = HTTP.call('PUT', host + '/users', {timeout: timeout, data: {email: email, key: key}});
+            if (response.statusCode === 201 || response.statusCode === 304) {
+                console.log('[' + email + '] user confirmed with Warsjawa backend. Move along.');
+                attendee = Attendees.update({email: email}, {$set: {key: key}});
+                this.setUserId(attendee._id);
+                return attendee;
+            } else {
+                throw new Meteor.Error('Wrong attendee id or key.');
+            }
         } else {
             console.log('[' + email + '] key is ok. Logged in.');
             this.setUserId(attendee._id);
@@ -36,11 +44,9 @@ Meteor.methods({
     },
 
     logout: function () {
-        if (this.userId !== null) {
-            console.log('Logged out id: ' + this.userId);
-            this.setUserId(null);
-        }
-        return 'ok';
+        console.log('[' + this.userId + '] logging out. Bye bye');
+        this.setUserId(null);
+        return undefined;
     },
 
     toggleWorkshopSignIn: function (id) {

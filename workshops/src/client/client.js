@@ -21,14 +21,36 @@ function showRegistrationSection() {
     $('section#registration').show('slow');
 }
 
+
 (function header() {
     Template.header.attendeeName = function () {
-        return Session.get('attendee').name;
+        var attendee = Session.get('attendee');
+        if (attendee !== null && attendee !== undefined) {
+            return attendee.name;
+        } else {
+            return null;
+        }
     };
 
     Template.header.events({
         'click #registration-button': function () {
             showRegistrationSection();
+        },
+        'click #log-out-button': function () {
+            setLoadingIndicatorShown(true);
+
+            Session.set('attendee', null);
+            localStorage.removeItem('email');
+            localStorage.removeItem('key');
+
+            $('#header').find('#log-out-button').fadeOut('fast').delay(200).queue(function () {
+                $('#registration-button').fadeIn('fast').dequeue();
+            });
+            $('#attendee-name').fadeOut('slow');
+
+            Meteor.call('logout', function () {
+                setLoadingIndicatorShown(false);
+            });
         }
     });
 })();
