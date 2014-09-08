@@ -87,10 +87,10 @@ def update_variables(variables):
         last_number_slot = 0
         while last_number_slot < number_of_time_slots:
             length = 1
-            time_slots_string = '[*time_slot_{0}]'.format(last_number_slot)
+            time_slots_string = '[time_slot_{0}]'.format(last_number_slot)
             if random.random() > 0.8 and last_number_slot + 2 < number_of_time_slots:
                 length = 2
-                time_slots_string = '[*time_slot_{0}, *time_slot_{1}]'.format(last_number_slot, last_number_slot + 1)
+                time_slots_string = '[time_slot_{0}, time_slot_{1}]'.format(last_number_slot, last_number_slot + 1)
 
             print """
     - id: workshop_{id}
@@ -99,7 +99,7 @@ def update_variables(variables):
       speaker: Venkat Subramaniam {id}
       description: Workshop {id} description
       maximum_number_of_attendees: {no_attendees}
-      tags: [\#groovy, \#jvm]
+      tags: [groovy, jvm]
 
             """.format(id=id, track_number=track_number, time_slots=time_slots_string,
                        no_attendees=random.randint(1, 5))
