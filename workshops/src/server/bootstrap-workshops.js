@@ -36,4 +36,10 @@
     console.log('Workshops in db: ' + workshopNames);
 })();
 
-
+(function loadWorkshopsData() {
+    var result = HTTP.call('GET', 'http://warsjawa.pl/workshops.html');
+    var workshopsData = JSON.parse(result.content);
+    console.log(workshopsData.time_slots);
+    console.log(workshopsData.tracks);
+//    console.log(workshopsData.workshops);
+})();

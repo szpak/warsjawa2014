@@ -1,11 +1,12 @@
 var host = 'http://warsjawa.pl:8181';
 var timeout = 5000;
 
-var openningDate = new Date(2014, 8, 5, 12);
+var openingDate = new Date(2014, 8, 7, 18);
 
 RegistrationKeys.upsert({_id: 'key1'}, {_id: 'key1', timeHandicap: 1 * 3600*1000, used: false, usedBy: null});
-RegistrationKeys.upsert({_id: 'key2'}, {_id: 'key2', timeHandicap: 1 * 3600*1000, used: false, usedBy: null});
-RegistrationKeys.upsert({_id: 'key3'}, {_id: 'key3', timeHandicap: 1 * 3600*1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key2'}, {_id: 'key2', timeHandicap: 2 * 3600*1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key3'}, {_id: 'key3', timeHandicap: 3 * 3600*1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key4'}, {_id: 'key4', timeHandicap: 4 * 3600*1000, used: false, usedBy: null});
 
 Meteor.methods({
     register: function (name, email, key) {
@@ -21,13 +22,13 @@ Meteor.methods({
             console.log('[' + email + '] no unused registration key for this key.');
         }
         var currentDateWithHandicap =  new Date(new Date().getTime() + timeHandicap);
-        if (openningDate.getTime() > currentDateWithHandicap.getTime()) {
-            console.log('[' + email + '] opening date: ' + openningDate + ' is bigger than current date with handicap: ' + currentDateWithHandicap + '. Rejecting.');
+        if (openingDate.getTime() > currentDateWithHandicap.getTime()) {
+            console.log('[' + email + '] opening date: ' + openingDate + ' is bigger than current date with handicap: ' + currentDateWithHandicap + '. Rejecting.');
             var error = new Meteor.Error('Cannot register yet.');
-            error.details = {timeToWait:openningDate.getTime() - currentDateWithHandicap.getTime()};
+            error.details = {timeToWait:openingDate.getTime() - currentDateWithHandicap.getTime()};
             throw error;
         } else {
-            console.log('[' + email + '] opening date: ' + openningDate + ' is lower than current date with handicap: ' + currentDateWithHandicap + '. Registering.');
+            console.log('[' + email + '] opening date: ' + openingDate + ' is lower than current date with handicap: ' + currentDateWithHandicap + '. Registering.');
             if (registrationKey !== undefined) {
                 console.log('[' + email + '] using key: ' + key);
                 RegistrationKeys.update({_id: key}, {$set: {used: true, usedBy: email}});
@@ -45,6 +46,7 @@ Meteor.methods({
                 return attendee;
             } else {
                 console.log('[' + email + '] Warsjawa backend returned status code: ' + response.statusCode + ' abandon thread.');
+                console.log(response);
                 throw new Meteor.Error('Something wrong with Warsjawa backend.');
             }
         } else {
@@ -59,12 +61,15 @@ Meteor.methods({
         if (attendee === undefined) {
             console.log('[' + email + '] attendee not found. Wrong email or key. Trying to check this pair with Warsjawa backend.');
             var response = HTTP.call('PUT', host + '/users', {timeout: timeout, data: {email: email, key: key}});
-            if (response.statusCode === 201 || response.statusCode === 304) {
+            if (response.statusCode === 200) {
                 console.log('[' + email + '] user confirmed with Warsjawa backend. Move along.');
-                attendee = Attendees.update({email: email}, {$set: {key: key}});
+                Attendees.update({email: email}, {$set: {key: key}});
+                attendee = Attendees.findOne({email: email, key: key});
                 this.setUserId(attendee._id);
                 return attendee;
             } else {
+                console.log('[' + email + '] Warsjawa backend returned status code: ' + response.statusCode + ' abandon thread.');
+                console.log(response);
                 throw new Meteor.Error('Wrong attendee id or key.');
             }
         } else {
