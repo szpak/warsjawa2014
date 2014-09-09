@@ -240,13 +240,44 @@ section#sponsors {
 
       span {
         position: absolute;
-        bottom: 0;
+        top: 0;
         width: 100%;
         background: rgba($warsjawa-blue, 0.7);
-        color: #ffffff;
+        color: transparent;
         padding: 0.4rem;
         line-height: 1;
         font-size: $small-font-size;
+
+        &.small-show-rank {
+          @media #{$small-only} {
+            color: $warsjawa-beige;
+          }
+        }
+        &.small-short {
+          @media #{$small-only} {
+            width: 95%;
+          }
+        }
+        &.medium-show-rank {
+          @media #{$medium-only}{
+            color: $warsjawa-beige;
+          }
+        }
+        &.medium-short {
+          @media #{$medium-only} {
+            width: 95%;
+          }
+        }
+        &.large-show-rank {
+          @media #{$large-up}{
+            color: $warsjawa-beige;
+          }
+        }
+        &.large-short {
+          @media #{$large-up}{
+            width: 95%;
+          }
+        }
       }
 
       &.placeholder {
@@ -283,11 +314,11 @@ section#organizers {
         background: $warsjawa-blue;
         color: $warsjawa-beige;
 
-        -o-transition:.5s;
-        -ms-transition:.5s;
-        -moz-transition:.5s;
-        -webkit-transition:.5s;
-        transition:.5s;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
 
         .span-wrapper {
           position: absolute;
@@ -315,7 +346,6 @@ section#organizers {
           top: 0%;
         }
       }
-
 
       &.placeholder {
         .logo {

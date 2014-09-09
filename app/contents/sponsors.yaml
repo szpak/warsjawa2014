@@ -4,23 +4,27 @@ sponsors:
       rank: diamond
       url: http://www8.hp.com/pl/pl/home.html
       picture_url: images/sponsors/hp-320x320.png
+      classes: [small-show-rank, small-short, medium-show-rank, medium-short, large-show-rank, large-short]
 
 
     - name: 4 Finance
       rank: gold
       url: http://www.4finance.com/
       picture_url: images/sponsors/4-finance-320x320.png
+      classes: [small-show-rank, medium-show-rank, large-show-rank]
 
     - name: Cybercom
       rank: gold
       url: http://www.cybercom.com/pl/Poland/
       picture_url: images/sponsors/cybercom-poland-320x320.png
+      classes: [small-short, medium-short, large-short]
 
 
     - name: Touk
       rank: silver
       url: http://touk.pl/
       picture_url: images/sponsors/touk-320x320.png
+      classes: [small-show-rank, medium-show-rank, large-show-rank]
 
     - name: Mobica
       rank: silver
@@ -51,12 +55,14 @@ sponsors:
       rank: silver
       url: http://www.cyfrowypolsat.pl/
       picture_url: images/sponsors/cyfrowy-polsat-320x320.png
+      classes: [small-short, medium-short, large-short]
 
 
     - name: Pragmatists
       rank: bronze
       url: http://pragmatists.pl/
       picture_url: images/sponsors/pragmatists-320x320.png
+      classes: [small-show-rank, medium-show-rank, large-show-rank]
 
     - name: 7Bulls
       rank: bronze
@@ -72,11 +78,11 @@ sponsors:
       rank: bronze
       url: http://www.e-point.pl/
       picture_url: images/sponsors/e-point-320-320.png
+      classes: [small-short, medium-short, large-short]
+
 
     - name: Typesafe
       rank: chill
       url: https://typesafe.com/
       picture_url: images/sponsors/typesafe-320x320.png
-
-
-      
+      classes: [small-show-rank, small-short, medium-show-rank, medium-short, large-show-rank, large-short]

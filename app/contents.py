@@ -59,6 +59,16 @@ def update_variables(variables):
 
 
     sponsors = yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/sponsors.yaml', 'r'))['sponsors']
+
+    # last_sponor_rank = ''
+    # for i, sponsor in enumerate(sponsors):
+    #     print '{}: {}'.format(i, sponsor['name'])
+    #     if last_sponor_rank != sponsor['rank']:
+    #         print 'first of this rank: ' + sponsor['rank']
+    #         last_sponor_rank = sponsor['rank']
+    #         sponsor['first_of_this_rank'] = True
+    #     # print i
+
     speakers = yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/speakers.yaml', 'r'))['speakers']
     partners = yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/partners.yaml', 'r'))['partners']
     variables.update({

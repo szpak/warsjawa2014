@@ -189,6 +189,7 @@
             <li>
                 <a href="{{ sponsor.url }}" target="_blank">
                     <img src="{{ sponsor.picture_url }}" alt="{{ sponsor.name }} logo"/>
+                    <span class="{% for c in sponsor.classes %}{{ c }} {% endfor %}">{{ sponsor.rank }}</span>
                 </a>
             </li>
         {% endfor %}
