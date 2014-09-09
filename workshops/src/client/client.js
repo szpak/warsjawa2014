@@ -195,3 +195,109 @@ function showRegistrationSection() {
         }
     };
 })();
+
+
+(function workshops() {
+    function filterWorkshopsForTimeSlotId(timeSlotId) {
+        switch (timeSlotId) {
+            case 'time_slot_0':
+                $('#friday-button').addClass('selected');
+                $('#saturday-button').removeClass('selected');
+                $('#friday-hours').show();
+                $('#saturday-hours').hide();
+                $('[data-slot-id="time_slot_0"]').addClass('selected');
+                $('[data-slot-id="time_slot_1"]').removeClass('selected');
+                $('[data-slot-id="time_slot_2"]').removeClass('selected');
+                $('[data-slot-id="time_slot_3"]').removeClass('selected');
+                $('[data-slot-id="time_slot_4"]').removeClass('selected');
+                break;
+            case 'time_slot_1':
+                $('#friday-button').addClass('selected');
+                $('#saturday-button').removeClass('selected');
+                $('#friday-hours').show();
+                $('#saturday-hours').hide();
+                $('[data-slot-id="time_slot_0"]').removeClass('selected');
+                $('[data-slot-id="time_slot_1"]').addClass('selected');
+                $('[data-slot-id="time_slot_2"]').removeClass('selected');
+                $('[data-slot-id="time_slot_3"]').removeClass('selected');
+                $('[data-slot-id="time_slot_4"]').removeClass('selected');
+                break;
+            case 'time_slot_2':
+                $('#friday-button').removeClass('selected');
+                $('#saturday-button').addClass('selected');
+                $('#friday-hours').hide();
+                $('#saturday-hours').show();
+                $('[data-slot-id="time_slot_0"]').removeClass('selected');
+                $('[data-slot-id="time_slot_1"]').removeClass('selected');
+                $('[data-slot-id="time_slot_2"]').addClass('selected');
+                $('[data-slot-id="time_slot_3"]').removeClass('selected');
+                $('[data-slot-id="time_slot_4"]').removeClass('selected');
+                break;
+            case 'time_slot_3':
+                $('#friday-button').removeClass('selected');
+                $('#saturday-button').addClass('selected');
+                $('#friday-hours').hide();
+                $('#saturday-hours').show();
+                $('[data-slot-id="time_slot_0"]').removeClass('selected');
+                $('[data-slot-id="time_slot_1"]').removeClass('selected');
+                $('[data-slot-id="time_slot_2"]').removeClass('selected');
+                $('[data-slot-id="time_slot_3"]').addClass('selected');
+                $('[data-slot-id="time_slot_4"]').removeClass('selected');
+                break;
+            case 'time_slot_4':
+                $('#friday-button').removeClass('selected');
+                $('#saturday-button').addClass('selected');
+                $('#friday-hours').hide();
+                $('#saturday-hours').show();
+                $('[data-slot-id="time_slot_0"]').removeClass('selected');
+                $('[data-slot-id="time_slot_1"]').removeClass('selected');
+                $('[data-slot-id="time_slot_2"]').removeClass('selected');
+                $('[data-slot-id="time_slot_3"]').removeClass('selected');
+                $('[data-slot-id="time_slot_4"]').addClass('selected');
+
+                break;
+        }
+        Session.set('selectedTimeSlotId', timeSlotId);
+    }
+
+    Template.workshops.created = function () {
+        filterWorkshopsForTimeSlotId('time_slot_0');
+    };
+
+    Template.workshops.rendered = function () {
+        filterWorkshopsForTimeSlotId('time_slot_0');
+    };
+
+    Template.workshops.events({
+        'click #friday-button': function () {
+            filterWorkshopsForTimeSlotId('time_slot_0');
+        },
+        'click #saturday-button': function () {
+            filterWorkshopsForTimeSlotId('time_slot_2');
+        },
+        'click .time-slot-button': function (event) {
+            filterWorkshopsForTimeSlotId(event.target.getAttribute('data-slot-id'));
+        },
+        'click button.workshop-button': function (event) {
+            if (!$(event.target).hasClass('disabled')) {
+                var workshopId = event.target.getAttribute('data-workshop-id');
+                Meteor.call('toggleWorkshopSignUp', workshopId);
+            }
+        }
+    });
+
+    Template.workshops.workshops = function () {
+        var workshops = Workshops.find({ time_slots: { $in: [Session.get('selectedTimeSlotId')]}}).fetch();
+        for (var i = 0; i < workshops.length; ++i) {
+            var workshop = workshops[i];
+            workshop.numberOfSignUps = SignUps.find({workshopId: workshop._id, active: true}).fetch().length;
+            workshop.disabled = Session.get('attendee') === undefined || workshop.numberOfSignUps >= workshop.maximum_number_of_attendees;
+
+            if (Session.get('attendee') !== undefined) {
+                var find = SignUps.find({workshopId: workshop._id, active: true, attendeeId: Session.get('attendee')._id}).fetch();
+            }
+            workshop.signedUpForThisWorkshop = Session.get('attendee') !== undefined && find.length > 0;
+        }
+        return workshops;
+    }
+})();

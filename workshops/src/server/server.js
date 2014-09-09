@@ -1,12 +1,16 @@
 var host = 'http://warsjawa.pl:8181';
 var timeout = 5000;
 
-var openingDate = new Date(2014, 8, 7, 18);
+var openingDate = new Date(2014, 8, 8, 21);
 
-RegistrationKeys.upsert({_id: 'key1'}, {_id: 'key1', timeHandicap: 1 * 3600*1000, used: false, usedBy: null});
-RegistrationKeys.upsert({_id: 'key2'}, {_id: 'key2', timeHandicap: 2 * 3600*1000, used: false, usedBy: null});
-RegistrationKeys.upsert({_id: 'key3'}, {_id: 'key3', timeHandicap: 3 * 3600*1000, used: false, usedBy: null});
-RegistrationKeys.upsert({_id: 'key4'}, {_id: 'key4', timeHandicap: 4 * 3600*1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key1'}, {_id: 'key1', timeHandicap: 1 * 3600 * 1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key2'}, {_id: 'key2', timeHandicap: 2 * 3600 * 1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key3'}, {_id: 'key3', timeHandicap: 3 * 3600 * 1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key4'}, {_id: 'key4', timeHandicap: 4 * 3600 * 1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key5'}, {_id: 'key5', timeHandicap: 1 * 3600 * 1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key6'}, {_id: 'key6', timeHandicap: 2 * 3600 * 1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key7'}, {_id: 'key7', timeHandicap: 3 * 3600 * 1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key8'}, {_id: 'key8', timeHandicap: 4 * 3600 * 1000, used: false, usedBy: null});
 
 Meteor.methods({
     register: function (name, email, key) {
@@ -21,11 +25,11 @@ Meteor.methods({
         } else {
             console.log('[' + email + '] no unused registration key for this key.');
         }
-        var currentDateWithHandicap =  new Date(new Date().getTime() + timeHandicap);
+        var currentDateWithHandicap = new Date(new Date().getTime() + timeHandicap);
         if (openingDate.getTime() > currentDateWithHandicap.getTime()) {
             console.log('[' + email + '] opening date: ' + openingDate + ' is bigger than current date with handicap: ' + currentDateWithHandicap + '. Rejecting.');
             var error = new Meteor.Error('Cannot register yet.');
-            error.details = {timeToWait:openingDate.getTime() - currentDateWithHandicap.getTime()};
+            error.details = {timeToWait: openingDate.getTime() - currentDateWithHandicap.getTime()};
             throw error;
         } else {
             console.log('[' + email + '] opening date: ' + openingDate + ' is lower than current date with handicap: ' + currentDateWithHandicap + '. Registering.');
@@ -85,9 +89,16 @@ Meteor.methods({
         return undefined;
     },
 
-    toggleWorkshopSignIn: function (id) {
+    toggleWorkshopSignUp: function (workshopId) {
+        console.log('[' + this.userId + '] is trying to toggle workshop with id: ' + workshopId);
         if (this.userId !== null) {
-            console.log('toggleWorkshopSignIn id:' + this.userId);
+            var workshop = Workshops.findOne({_id: workshopId});
+            var signUps = SignUps.find({attendeeId: this.userId, timeSlots: {$in: workshop.time_slots}}).fetch();
+            for (var i = 0; i < signUps.length; ++i) {
+                var signUp = signUps[i];
+                SignUps.update({_id: signUp._id}, {$set: {active: false, deactivationTimestamp: new Date()}});
+            }
+            SignUps.insert({timestamp: new Date(), workshopId: workshopId, attendeeId: this.userId, active: true, timeSlots: workshop.time_slots});
         } else {
             console.log('Tried to toggle workshopId, not logged in');
         }

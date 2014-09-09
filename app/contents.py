@@ -81,29 +81,29 @@ def update_variables(variables):
     variables.update(yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/organizers.yaml', 'r')))
     variables.update(yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/workshops.yaml', 'r')))
 
-    id = 0
-    for track_number in range(0, 18):
-        number_of_time_slots = 5
-        last_number_slot = 0
-        while last_number_slot < number_of_time_slots:
-            length = 1
-            time_slots_string = '[time_slot_{0}]'.format(last_number_slot)
-            if random.random() > 0.8 and last_number_slot + 2 < number_of_time_slots:
-                length = 2
-                time_slots_string = '[time_slot_{0}, time_slot_{1}]'.format(last_number_slot, last_number_slot + 1)
-
-            print """
-    - id: workshop_{id}
-      name: Workshop {id}
-      time_slots: {time_slots}
-      speaker: Venkat Subramaniam {id}
-      description: Workshop {id} description
-      maximum_number_of_attendees: {no_attendees}
-      tags: [groovy, jvm]
-
-            """.format(id=id, track_number=track_number, time_slots=time_slots_string,
-                       no_attendees=random.randint(1, 5))
-            id += 1
-            last_number_slot+=1
+    # id = 0
+    # for track_number in range(0, 18):
+    #     number_of_time_slots = 5
+    #     last_number_slot = 0
+    #     while last_number_slot < number_of_time_slots:
+    #         length = 1
+    #         time_slots_string = '[time_slot_{0}]'.format(last_number_slot)
+    #         if random.random() > 0.8 and last_number_slot + 2 < number_of_time_slots:
+    #             length = 2
+    #             time_slots_string = '[time_slot_{0}, time_slot_{1}]'.format(last_number_slot, last_number_slot + 1)
+    #
+    #         print """
+    # - id: workshop_{id}
+    #   name: Workshop {id}
+    #   time_slots: {time_slots}
+    #   speaker: Venkat Subramaniam {id}
+    #   description: Workshop {id} description
+    #   maximum_number_of_attendees: {no_attendees}
+    #   tags: [groovy, jvm]
+    #
+    #         """.format(id=id, track_number=track_number, time_slots=time_slots_string,
+    #                    no_attendees=random.randint(1, 5))
+    #         id += 1
+    #         last_number_slot+=1
 
 

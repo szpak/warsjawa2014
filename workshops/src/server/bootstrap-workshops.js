@@ -1,44 +1,30 @@
-(function bootstrapWorkshop() {
-    titleLog('Bootstrapping workshop data');
+var cron = new Cron(1000);
 
-    var workshopsData = [
-        {
-            _id: "123",
-            name: "workshop 1",
-            speaker: "workshop speaker 1",
-            maximumNumberOfAttendees: 10 + Math.floor((Math.random() * 10) + 1),
-            description: "Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?"
-        },
-        {
-            _id: "1234",
-            name: "workshop 2",
-            speaker: "workshop speaker 2",
-            maximumNumberOfAttendees: 10 + Math.floor((Math.random() * 10) + 1),
-            description: "Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?"
-        }
-    ];
+function loadWorkshopsData() {
+    console.log('Updating workshop data.');
 
-    for (var i = 0; i < workshopsData.length; ++i) {
-        var workshopData = workshopsData[i];
-        Workshops.upsert({_id: workshopData._id}, workshopData);
-        var workshop = Workshops.findOne({_id: workshopData._id});
-        if (workshop.attendees === undefined) {
-            Workshops.update({_id: workshop._id}, {$push: {attendees: []}});
-        }
-    }
-
-    var currentWorkshops = Workshops.find({}).fetch();
-    console.log('Number of workshops after update: ' + currentWorkshops.length);
-    var workshopNames = [];
-    for (var i = 0; i < currentWorkshops.length; ++i) {
-        workshopNames.push(workshopsData[i].name);
-    }
-    console.log('Workshops in db: ' + workshopNames);
-})();
-
-(function loadWorkshopsData() {
     var result = HTTP.call('GET', 'http://warsjawa.pl/workshops.html');
     var workshopsData = JSON.parse(result.content);
-    console.log(workshopsData.time_slots);
-    console.log(workshopsData.workshops);
-})();
+
+    (function setupTimeSlots(timeSlots) {
+        for (var i = 0; i < timeSlots.length; ++i) {
+            var timeSlot = timeSlots[i].time_slot;
+            timeSlot._id = timeSlot.id;
+            delete timeSlot.id;
+            TimeSlots.upsert({_id: timeSlot._id}, timeSlot);
+        }
+    })(workshopsData.time_slots);
+
+    (function setupWorkshops(workshops) {
+        for (var i = 0; i < workshops.length; ++i) {
+            var workshop = workshops[i];
+            workshop._id = workshop.id;
+            delete workshop.id;
+            Workshops.upsert({_id: workshop._id}, workshop);
+        }
+    })(workshopsData.workshops);
+
+    cron.addScheduleJob(Math.round((new Date()).getTime() / 1000) + 60, loadWorkshopsData);
+}
+
+loadWorkshopsData();

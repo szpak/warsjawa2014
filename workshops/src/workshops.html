@@ -1,5 +1,6 @@
 <head>
     <title>workshops</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
 
 <body>
@@ -7,6 +8,7 @@
 {{> header}}
 {{> registration}}
 {{> login}}
+{{> workshops }}
 
 <div class="spinner-wrapper" id="loading-indicator">
     <div class="spinner">
@@ -27,9 +29,7 @@
             <div class="small-2 columns">
                 <button class="button" id="log-out-button">Log out</button>
             </div>
-            <div class="small-2 columns">
-                <button class="button" id="registration-button">Sign up</button>
-            </div>
+            <button class="button small-2 columns" id="registration-button">Sign up</button>
         </div>
     </section>
 </template>
@@ -62,18 +62,21 @@
 
         <div id="registration-finished-modal" class="reveal-modal small" data-reveal>
             <h2>Thank you for registering!</h2>
+
             <p>Check your email inbox, you should get activation link in seconds.</p>
             <a class="close-reveal-modal">&#215;</a>
         </div>
 
         <div id="registration-error-modal" class="reveal-modal small" data-reveal>
             <h2>Oops... Something went wrong...</h2>
+
             <p>Please try again!</p>
             <a class="close-reveal-modal">&#215;</a>
         </div>
 
         <div id="registration-cant-register-yet-modal" class="reveal-modal small" data-reveal>
             <h2>Sorry. You can't register yet.</h2>
+
             <p>Please try again in {{ hours }}:{{ minutes }}:{{ seconds }}.</p>
             <a class="close-reveal-modal">&#215;</a>
         </div>
@@ -84,8 +87,43 @@
     <section id="login">
         <div id="login-error-modal" class="reveal-modal small" data-reveal>
             <h2>Can't log in...</h2>
+
             <p>Email or key is invalid. Please check your link or contact support.</p>
             <a class="close-reveal-modal">&#215;</a>
+        </div>
+    </section>
+</template>
+
+<template name="workshops">
+    <section id="workshops">
+        <div class="row">
+            <button id="friday-button" class="small-6 columns selected">Friday</button>
+            <button id="saturday-button" class="small-6 columns">Saturday</button>
+        </div>
+        <div id="friday-hours" class="row">
+            <button class="small-6 columns time-slot-button" data-slot-id="time_slot_0">10:00-13:00</button>
+            <button class="small-6 columns time-slot-button" data-slot-id="time_slot_1">14:00-17:00</button>
+        </div>
+        <div id="saturday-hours" class="row">
+            <button class="small-4 columns time-slot-button" data-slot-id="time_slot_2">10:00-13:00</button>
+            <button class="small-4 columns time-slot-button" data-slot-id="time_slot_3">14:00-17:00</button>
+            <button class="small-4 columns time-slot-button" data-slot-id="time_slot_4">18:00-21:00</button>
+        </div>
+        <div class="row workshop-row">
+            {{#each workshops}}
+
+            <button class="workshop-button small-11 columns {{# if disabled}}disabled
+                    {{/if }} {{# if signedUpForThisWorkshop}}signed-up{{/if }}" data-workshop-id="{{ _id }}">
+                {{ speaker }}
+                {{ name }}
+                <small>{{ description }}</small>
+                {{ numberOfSignUps }}/{{ maximum_number_of_attendees }}
+            </button>
+            <button class="small-1 columns">
+                i
+            </button>
+
+            {{/each }}
         </div>
     </section>
 </template>

@@ -7,6 +7,15 @@ section#registration {
   display: none;
   position: relative; }
 
+section#workshops button.selected {
+  background-color: #001F3F; }
+section#workshops .workshop-row button {
+  margin: 0.25rem 0 0 0;
+  padding: 0.25rem;
+  text-align: left; }
+  section#workshops .workshop-row button.workshop-button.signed-up {
+    background-color: #3D9970; }
+
 .spinner-wrapper {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
