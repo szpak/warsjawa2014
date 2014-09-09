@@ -1,24 +1,26 @@
 ---
 sponsors:
-    - name: Touk
-      rank: silver
-      url: http://touk.pl/
-      picture_url: images/sponsors/touk-320x320.png
+    - name: Hewlett Packard
+      rank: diamond
+      url: http://www8.hp.com/pl/pl/home.html
+      picture_url: images/sponsors/hp-320x320.png
 
-    - name: Pragmatists
-      rank: bronze
-      url: http://pragmatists.pl/
-      picture_url: images/sponsors/pragmatists-320x320.png
 
     - name: 4 Finance
       rank: gold
       url: http://www.4finance.com/
       picture_url: images/sponsors/4-finance-320x320.png
 
-    - name: Typesafe
-      rank: chill
-      url: https://typesafe.com/
-      picture_url: images/sponsors/typesafe-320x320.png
+    - name: Cybercom
+      rank: gold
+      url: http://www.cybercom.com/pl/Poland/
+      picture_url: images/sponsors/cybercom-poland-320x320.png
+
+
+    - name: Touk
+      rank: silver
+      url: http://touk.pl/
+      picture_url: images/sponsors/touk-320x320.png
 
     - name: Mobica
       rank: silver
@@ -35,11 +37,6 @@ sponsors:
       url: https://www.lendon.pl/
       picture_url: images/sponsors/lendon-320x320.png
 
-    - name: 7Bulls
-      rank: bronze
-      url: http://www.7bulls.com/
-      picture_url: images/sponsors/7-bulls-320x320.png
-
     - name: Samsung
       rank: silver
       url: http://rd.samsung.pl/
@@ -48,7 +45,23 @@ sponsors:
     - name: Allegro
       rank: silver
       url: http://allegro.pl/
-      picture_url: images/sponsors/allegro-320x320.png 
+      picture_url: images/sponsors/allegro-320x320.png
+
+    - name: Cyfrowy Polsat
+      rank: silver
+      url: http://www.cyfrowypolsat.pl/
+      picture_url: images/sponsors/cyfrowy-polsat-320x320.png
+
+
+    - name: Pragmatists
+      rank: bronze
+      url: http://pragmatists.pl/
+      picture_url: images/sponsors/pragmatists-320x320.png
+
+    - name: 7Bulls
+      rank: bronze
+      url: http://www.7bulls.com/
+      picture_url: images/sponsors/7-bulls-320x320.png
 
     - name: Spartez
       rank: bronze
@@ -60,19 +73,10 @@ sponsors:
       url: http://www.e-point.pl/
       picture_url: images/sponsors/e-point-320-320.png
 
-    - name: Cyfrowy Polsat
-      rank: silver
-      url: http://www.cyfrowypolsat.pl/
-      picture_url: images/sponsors/cyfrowy-polsat-320x320.png
+    - name: Typesafe
+      rank: chill
+      url: https://typesafe.com/
+      picture_url: images/sponsors/typesafe-320x320.png
 
-    - name: Cybercom
-      rank: gold
-      url: http://www.cybercom.com/pl/Poland/
-      picture_url: images/sponsors/cybercom-poland-320x320.png
-
-    - name: Hewlett Packard
-      rank: diamond
-      url: http://www8.hp.com/pl/pl/home.html
-      picture_url: images/sponsors/hp-320x320.png
 
       
