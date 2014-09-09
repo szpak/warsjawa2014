@@ -1,3 +1,37 @@
+$warsjawa-beige: #ffffff;
+$warsjawa-blue: #1b4055;
+$warsjawa-light-blue: #46addb;
+$warsjawa-gray: #adb1b2;
+$warsjawa-raspberry: #f43252;
+$warsjawa-green: #25803e;
+
+body {
+  padding-top: 2rem;
+}
+
+button {
+  background-color: lighten($warsjawa-blue, 10%);
+  &:hover {
+    background-color: lighten($warsjawa-blue, 20%);
+  }
+  &.selected {
+    background-color: $warsjawa-green;
+    &:hover {
+      background-color: lighten($warsjawa-green, 10%);
+    }
+  }
+
+  &.disabled {
+    background-color: $warsjawa-gray;
+    &:hover {
+      background-color: lighten($warsjawa-gray, 10%);
+    }
+  }
+}
+
+.reveal-modal {
+  padding: 0.9375rem 0 0 0;
+}
 
 section#header {
   #attendee-name {
@@ -15,24 +49,66 @@ section#registration {
 }
 
 section#workshops {
-  button {
-    &.selected {
-      background-color: #001F3F;
-    }
+  .days-row button {
+    margin: 0rem;
   }
 
   .workshop-row {
-    button {
-      margin: 0.25rem 0 0 0;
-      padding: 0.25rem;
-      text-align: left;
+    border: 0 solid $warsjawa-blue;
+    border-bottom-width: 1px;
+    margin-bottom: 0.25rem;
 
-      &.workshop-button {
-        &.signed-up {
-          background-color: #3D9970;
-        }
+    background-color: lighten($warsjawa-blue, 10%);
+
+    &.disabled {
+      background-color: $warsjawa-gray;
+      button:hover {
+        background-color: lighten($warsjawa-gray, 10%);
       }
     }
+
+    &.signed-up {
+      background-color: $warsjawa-green;
+      button:hover {
+        background-color: lighten($warsjawa-green, 10%);
+      }
+    }
+
+    button {
+      margin: 0;
+      padding: 0.5rem;
+      text-align: left;
+      background-color: transparent;
+
+      &:hover {
+        background-color: lighten($warsjawa-blue, 20%);
+      }
+
+      &.info-button {
+        text-align: center;
+        color: $warsjawa-beige;
+      }
+    }
+  }
+}
+
+.spacer {
+  margin-bottom: 2rem;
+}
+
+.image-wrapper {
+  position: relative;
+  max-width: 320px;
+  span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba($warsjawa-blue, 0.7);
+    color: #ffffff;
+    padding: 0.4rem;
+    line-height: 1;
+    font-size: 0.75rem;
   }
 }
 

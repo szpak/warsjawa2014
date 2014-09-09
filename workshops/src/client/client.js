@@ -23,6 +23,16 @@ function showRegistrationSection() {
 
 
 (function header() {
+    Template.header.rendered = function () {
+//        console.log(Configs.findOne().startDate);
+
+//        var now = new Date();
+//        var openingDate = Configs.findOne().startDate;
+//        var difference = openingDate.getTime() - now.getTime();
+//        console.log(difference);
+//        $('#registration-timeout').find('span').html(difference);
+    };
+
     Template.header.attendeeName = function () {
         var attendee = Session.get('attendee');
         if (attendee !== null && attendee !== undefined) {
@@ -30,6 +40,10 @@ function showRegistrationSection() {
         } else {
             return null;
         }
+    };
+
+    Template.header.timeRemaining = function () {
+        return moment(Configs.findOne().startDate.getTime()).format('YYYY-DD-MM, HH:mm:ss');
     };
 
     Template.header.events({
@@ -182,7 +196,7 @@ function showRegistrationSection() {
         if (hash.length === 3 && hash[0] === "#login") {
             (function () {
                 setLoadingIndicatorShown(true);
-                var email = hash[1];
+                var email = decodeURIComponent(hash[1]);
                 var key = hash[2];
                 login(email, key);
             })();
@@ -283,6 +297,21 @@ function showRegistrationSection() {
                 var workshopId = event.target.getAttribute('data-workshop-id');
                 Meteor.call('toggleWorkshopSignUp', workshopId);
             }
+        },
+        'click button.info-button': function (event) {
+            var workshopId = $(event.target).data('workshop-id') || $(event.target).parent().data('workshop-id');
+            var workshop = Workshops.findOne({_id: workshopId});
+            var workshopModal = $('#workshop-modal');
+            workshopModal.find('ul').empty();
+            workshopModal.find('ul').append(
+                    '<li><div class="image-wrapper"><img src="' + 'http://placehold.it/320x320' + '"/><span>' + workshop.speaker + '</span></div></li>'
+            );
+            workshopModal.find('h2').empty();
+            workshopModal.find('h2').append(workshop.name);
+            workshopModal.find('p').empty();
+            workshopModal.find('p').append(workshop.description);
+
+            workshopModal.foundation('reveal', 'open');
         }
     });
 

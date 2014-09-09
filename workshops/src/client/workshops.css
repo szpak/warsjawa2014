@@ -1,3 +1,22 @@
+body {
+  padding-top: 2rem; }
+
+button {
+  background-color: #275d7c; }
+  button:hover {
+    background-color: #347aa2; }
+  button.selected {
+    background-color: #25803e; }
+    button.selected:hover {
+      background-color: #30a851; }
+  button.disabled {
+    background-color: #adb1b2; }
+    button.disabled:hover {
+      background-color: #c7cacb; }
+
+.reveal-modal {
+  padding: 0.9375rem 0 0 0; }
+
 section#header #attendee-name {
   display: none; }
 section#header #log-out-button {
@@ -7,14 +26,48 @@ section#registration {
   display: none;
   position: relative; }
 
-section#workshops button.selected {
-  background-color: #001F3F; }
-section#workshops .workshop-row button {
-  margin: 0.25rem 0 0 0;
-  padding: 0.25rem;
-  text-align: left; }
-  section#workshops .workshop-row button.workshop-button.signed-up {
-    background-color: #3D9970; }
+section#workshops .days-row button {
+  margin: 0rem; }
+section#workshops .workshop-row {
+  border: 0 solid #1b4055;
+  border-bottom-width: 1px;
+  margin-bottom: 0.25rem;
+  background-color: #275d7c; }
+  section#workshops .workshop-row.disabled {
+    background-color: #adb1b2; }
+    section#workshops .workshop-row.disabled button:hover {
+      background-color: #c7cacb; }
+  section#workshops .workshop-row.signed-up {
+    background-color: #25803e; }
+    section#workshops .workshop-row.signed-up button:hover {
+      background-color: #30a851; }
+  section#workshops .workshop-row button {
+    margin: 0;
+    padding: 0.5rem;
+    text-align: left;
+    background-color: transparent; }
+    section#workshops .workshop-row button:hover {
+      background-color: #347aa2; }
+    section#workshops .workshop-row button.info-button {
+      text-align: center;
+      color: white; }
+
+.spacer {
+  margin-bottom: 2rem; }
+
+.image-wrapper {
+  position: relative;
+  max-width: 320px; }
+  .image-wrapper span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(27, 64, 85, 0.7);
+    color: #ffffff;
+    padding: 0.4rem;
+    line-height: 1;
+    font-size: 0.75rem; }
 
 .spinner-wrapper {
   background: rgba(0, 0, 0, 0.5);

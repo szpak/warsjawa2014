@@ -25,10 +25,9 @@
         <div class="row">
             <div class="small-10 columns">
                 <h3 id="attendee-name">Logged in as {{ attendeeName }}</h3>
+                <h3 id="registration-timeout">Registration starts at: <span>{{ timeRemaining }}</span></h3>
             </div>
-            <div class="small-2 columns">
-                <button class="button" id="log-out-button">Log out</button>
-            </div>
+            <button class="button small-2 columns" id="log-out-button">Log out</button>
             <button class="button small-2 columns" id="registration-button">Sign up</button>
         </div>
     </section>
@@ -61,23 +60,35 @@
         </div>
 
         <div id="registration-finished-modal" class="reveal-modal small" data-reveal>
-            <h2>Thank you for registering!</h2>
+            <div class="row">
+                <div class="small-12 columns">
+                    <h2>Thank you for registering!</h2>
 
-            <p>Check your email inbox, you should get activation link in seconds.</p>
+                    <p>Check your email inbox, you should get activation link in seconds.</p>
+                </div>
+            </div>
             <a class="close-reveal-modal">&#215;</a>
         </div>
 
         <div id="registration-error-modal" class="reveal-modal small" data-reveal>
-            <h2>Oops... Something went wrong...</h2>
+            <div class="row">
+                <div class="small-12 columns">
+                    <h2>Oops... Something went wrong...</h2>
 
-            <p>Please try again!</p>
+                    <p>Please try again!</p>
+                </div>
+            </div>
             <a class="close-reveal-modal">&#215;</a>
         </div>
 
         <div id="registration-cant-register-yet-modal" class="reveal-modal small" data-reveal>
-            <h2>Sorry. You can't register yet.</h2>
+            <div class="row">
+                <div class="small-12 columns">
+                    <h2>Sorry. You can't register yet.</h2>
 
-            <p>Please try again in {{ hours }}:{{ minutes }}:{{ seconds }}.</p>
+                    <p>Please try again in {{ hours }}:{{ minutes }}:{{ seconds }}.</p>
+                </div>
+            </div>
             <a class="close-reveal-modal">&#215;</a>
         </div>
     </section>
@@ -86,9 +97,13 @@
 <template name="login">
     <section id="login">
         <div id="login-error-modal" class="reveal-modal small" data-reveal>
-            <h2>Can't log in...</h2>
+            <div class="row">
+                <div class="small-12 columns">
+                    <h2>Can't log in...</h2>
 
-            <p>Email or key is invalid. Please check your link or contact support.</p>
+                    <p>Email or key is invalid. Please check your link or contact support.</p>
+                </div>
+            </div>
             <a class="close-reveal-modal">&#215;</a>
         </div>
     </section>
@@ -96,7 +111,7 @@
 
 <template name="workshops">
     <section id="workshops">
-        <div class="row">
+        <div class="row days-row">
             <button id="friday-button" class="small-6 columns selected">Friday</button>
             <button id="saturday-button" class="small-6 columns">Saturday</button>
         </div>
@@ -109,22 +124,56 @@
             <button class="small-4 columns time-slot-button" data-slot-id="time_slot_3">14:00-17:00</button>
             <button class="small-4 columns time-slot-button" data-slot-id="time_slot_4">18:00-21:00</button>
         </div>
-        <div class="row workshop-row">
-            {{#each workshops}}
 
-            <button class="workshop-button small-11 columns {{# if disabled}}disabled
-                    {{/if }} {{# if signedUpForThisWorkshop}}signed-up{{/if }}" data-workshop-id="{{ _id }}">
+        {{#each workshops}}
+        <div class="row workshop-row {{# if disabled}}disabled{{/if }} {{# if signedUpForThisWorkshop}}signed-up
+                {{/if }}">
+            <button class="workshop-button small-10 medium-11 columns {{# if disabled}}disabled{{/if }}"
+                    data-workshop-id="{{ _id }}">
                 {{ speaker }}
                 {{ name }}
                 <small>{{ description }}</small>
                 {{ numberOfSignUps }}/{{ maximum_number_of_attendees }}
             </button>
-            <button class="small-1 columns">
-                i
+            <button class="info-button small-2 medium-1 columns" data-workshop-id="{{ _id }}">
+                <i class="fa fa-search"></i>
             </button>
-
-            {{/each }}
         </div>
+        {{/each }}
+
+        <div id="workshop-modal" class="reveal-modal medium" data-reveal>
+            <div class="row">
+                <div class="small-12 columns">
+                    <ul class="small-block-grid-2">
+                        <li>
+                            <div class="image-wrapper">
+                                <img src="http://placehold.it/320x320" alt=""/><span>Name</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="image-wrapper">
+                                <img src="http://placehold.it/320x320" alt=""/><span>Name</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="small-12 columns">
+                    <h2>Sorry. You can't register yet.</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="small-12 columns">
+                    <p>Please try again in {{ hours }}:{{ minutes }}:{{ seconds }}.</p>
+                </div>
+            </div>
+
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div class="spacer"></div>
     </section>
 </template>
 

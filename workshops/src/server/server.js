@@ -1,7 +1,6 @@
-var host = 'http://warsjawa.pl:8181';
+var host = 'http://warsjawa.pl:8080/api';
 var timeout = 5000;
-
-var openingDate = new Date(2014, 8, 8, 21);
+var headers = {Authorization: 'Basic YmFja2VuZHVzZXI6Ijc2NT89RiUuaitMK14oNCxAaC1KQDI+fV4mJjYiPCpfIG45WTtbNilRNTdY'};
 
 RegistrationKeys.upsert({_id: 'key1'}, {_id: 'key1', timeHandicap: 1 * 3600 * 1000, used: false, usedBy: null});
 RegistrationKeys.upsert({_id: 'key2'}, {_id: 'key2', timeHandicap: 2 * 3600 * 1000, used: false, usedBy: null});
@@ -26,6 +25,7 @@ Meteor.methods({
             console.log('[' + email + '] no unused registration key for this key.');
         }
         var currentDateWithHandicap = new Date(new Date().getTime() + timeHandicap);
+        var openingDate = Configs.findOne().startDate;
         if (openingDate.getTime() > currentDateWithHandicap.getTime()) {
             console.log('[' + email + '] opening date: ' + openingDate + ' is bigger than current date with handicap: ' + currentDateWithHandicap + '. Rejecting.');
             var error = new Meteor.Error('Cannot register yet.');
@@ -43,7 +43,7 @@ Meteor.methods({
         var attendee = Attendees.findOne({_id: email});
         if (attendee === undefined) {
             console.log('[' + email + '] attendee not found. Registering him/her with Warsjawa backend.');
-            var response = HTTP.call('POST', host + '/users', {timeout: timeout, data: {email: email, name: name}});
+            var response = HTTP.call('POST', host + '/users', {timeout: timeout, headers: headers, data: {email: email, name: name}});
             if (response.statusCode === 201) {
                 console.log('[' + email + '] registering with Warsjawa backend complete. Adding to db.');
                 attendee = Attendees.insert({_id: email, email: email, name: name, key: null});
@@ -60,11 +60,14 @@ Meteor.methods({
     },
 
     login: function (email, key) {
+        console.log(email);
+        console.log(key);
         console.log('[' + email + '] logging in...');
         var attendee = Attendees.findOne({email: email, key: key});
+        console.log(attendee);
         if (attendee === undefined) {
             console.log('[' + email + '] attendee not found. Wrong email or key. Trying to check this pair with Warsjawa backend.');
-            var response = HTTP.call('PUT', host + '/users', {timeout: timeout, data: {email: email, key: key}});
+            var response = HTTP.call('PUT', host + '/users', {timeout: timeout, headers: headers, data: {email: email, key: key}});
             if (response.statusCode === 200) {
                 console.log('[' + email + '] user confirmed with Warsjawa backend. Move along.');
                 Attendees.update({email: email}, {$set: {key: key}});

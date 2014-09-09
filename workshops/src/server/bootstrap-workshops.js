@@ -1,3 +1,12 @@
+var config = Configs.findOne();
+var configData = {startDate: new Date(2014, 8, 9, 16, 30)};
+if (config === undefined) {
+    Configs.insert(configData);
+} else {
+    Configs.upsert({_id: config._id}, {$set: configData});
+}
+
+
 var cron = new Cron(1000);
 
 function loadWorkshopsData() {
@@ -24,7 +33,7 @@ function loadWorkshopsData() {
         }
     })(workshopsData.workshops);
 
-    cron.addScheduleJob(Math.round((new Date()).getTime() / 1000) + 60, loadWorkshopsData);
+//    cron.addScheduleJob(Math.round((new Date()).getTime() / 1000) + 60, loadWorkshopsData);
 }
 
 loadWorkshopsData();
