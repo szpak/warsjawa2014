@@ -20,6 +20,7 @@ RUN pip install flanker
 RUN apt-get -y install nginx
 
 ADD ./app /warsjawa/app
+ADD ./.htpasswd /warsjawa/.htpasswd
 #RUN find /warsjawa -type f -name "*.jpg" -o -name "*.jpeg" | xargs -l jpegoptim --strip-all
 RUN python /warsjawa/app/buildsite.py
 

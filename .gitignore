@@ -3,3 +3,5 @@
 app/.sass-cache
 app/output
 *.pyc
+.htpasswd
+
