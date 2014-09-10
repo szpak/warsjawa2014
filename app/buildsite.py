@@ -5,6 +5,7 @@ import sys
 import os
 import shutil
 import contents
+import json
 
 
 absolute_path = os.path.dirname(os.path.abspath(__file__))
@@ -26,7 +27,6 @@ template_files = [
     'index.html',
     'call-for-papers.html',
     'thank-you-for-filling-call-for-papers-form.html',
-    'workshops.html',
 ]
 
 loader = jinja2.FileSystemLoader(searchpath=absolute_template_path)
@@ -38,6 +38,13 @@ for template_file in template_files:
     output_file = open(absolute_output_path + '/' + template_file, 'wr+')
     output_file.write(outputText.encode('utf8'))
     output_file.close()
+
+workshop_data = {'time_slots':globals()['templateVariables']['time_slots'], 'workshops':globals()['templateVariables']['workshops']}
+print workshop_data
+# print json.dumps(workshop_data).encode('utf8').replace('&quot;', '\"')
+workshop_data_file =  open(absolute_output_path + '/workshops.html', 'wr+')
+workshop_data_file.write(json.dumps(workshop_data).encode('utf8').replace('&quot;', '\\"'))
+workshop_data_file.close()
 
 print(' ++++ copying static to output')
 os.system('cp -rf %s %s' % (absolute_path + '/static/*', absolute_output_path))
