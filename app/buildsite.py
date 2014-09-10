@@ -40,11 +40,14 @@ for template_file in template_files:
     output_file.close()
 
 workshop_data = {'time_slots':globals()['templateVariables']['time_slots'], 'workshops':globals()['templateVariables']['workshops']}
-print workshop_data
-# print json.dumps(workshop_data).encode('utf8').replace('&quot;', '\"')
 workshop_data_file =  open(absolute_output_path + '/workshops.html', 'wr+')
 workshop_data_file.write(json.dumps(workshop_data).encode('utf8').replace('&quot;', '\\"'))
 workshop_data_file.close()
+
+speakers_data = globals()['templateVariables']['speakers']
+speakers_data_file =  open(absolute_output_path + '/speakers.html', 'wr+')
+speakers_data_file.write(json.dumps(speakers_data).encode('utf8').replace('&quot;', '\\"'))
+speakers_data_file.close()
 
 print(' ++++ copying static to output')
 os.system('cp -rf %s %s' % (absolute_path + '/static/*', absolute_output_path))
