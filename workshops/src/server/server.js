@@ -97,23 +97,30 @@ Meteor.methods({
     },
 
     logout: function () {
-        console.log('[' + Attendees.findOne({_id:this.userId}).email + '] logging out. Bye bye');
+        console.log('[' + Attendees.findOne({_id: this.userId}).email + '] logging out. Bye bye');
         this.setUserId(null);
         return undefined;
     },
 
     toggleWorkshopSignUp: function (workshopId) {
-        console.log('[' + Attendees.findOne({_id:this.userId}).email + '] is trying to toggle workshop with id: ' + workshopId);
+        var email = Attendees.findOne({_id: this.userId}).email;
+        console.log('[' + email + '] is trying to toggle workshop with id: ' + workshopId);
         if (this.userId !== null) {
             var workshop = Workshops.findOne({_id: workshopId});
-            var signUps = SignUps.find({attendeeId: this.userId, timeSlots: {$in: workshop.time_slots}}).fetch();
+            var signUps = SignUps.find({active: true, attendeeId: this.userId, timeSlots: {$in: workshop.time_slots}}).fetch();
             for (var i = 0; i < signUps.length; ++i) {
                 var signUp = signUps[i];
                 SignUps.update({_id: signUp._id}, {$set: {active: false, deactivationTimestamp: new Date()}});
+                HTTP.call('DELETE', host + '/emails/' + signUp.workshopId + '/' + Attendees.findOne({_id: signUp.attendeeId}).email, {timeout: timeout, headers: headers}, function (error, result) {
+                    console.log('[' + email + '] delete from wokshop with id: ' + signUp.workshopId + ' status code: ' + result.statusCode);
+                });
             }
             SignUps.insert({timestamp: new Date(), workshopId: workshopId, attendeeId: this.userId, active: true, timeSlots: workshop.time_slots});
+            HTTP.call('PUT', host + '/emails/' + workshopId + '/' + email, {timeout: timeout, headers: headers}, function (error, result) {
+                console.log('[' + email + '] add to workshop with id: ' + workshopId +' status code: ' + result.statusCode);
+            });
         } else {
-            console.log('Tried to toggle workshopId, not logged in');
+            console.log('Tried to toggle workshop with id: ' + workshopId + ', not logged in.');
         }
     },
 
