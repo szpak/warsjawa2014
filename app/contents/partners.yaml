@@ -1,16 +1,8 @@
 ---
 partners:
-    - name: Bitspiration
-      url: http://bitspiration.com/
-      picture_url: images/partners/bitspiration-320x320.png
-
     - name: Toruń JUG
       url: http://torun.jug.pl/
       picture_url: images/partners/torun-jug-320x320.png
-
-    - name: Magazyn Programista
-      url: http://programistamag.pl/
-      picture_url: images/partners/programista-320x320.png
 
     - name: Scala Times
       url: http://scalatimes.com/
@@ -24,3 +16,22 @@ partners:
       url: http://www.oreilly.com/
       picture_url: images/partners/oreilly-320x320.png
 
+
+supporters:
+    - name: Polidea
+      url: http://polidea.com/
+      picture_url: images/sponsors/touk-320x320.png
+
+    - name: Touk
+      url: http://touk.pl/
+      picture_url: images/sponsors/touk-320x320.png
+
+
+media_partners:
+    - name: Bitspiration
+      url: http://bitspiration.com/
+      picture_url: images/partners/bitspiration-320x320.png
+
+    - name: Magazyn Programista
+      url: http://programistamag.pl/
+      picture_url: images/partners/programista-320x320.png

@@ -71,6 +71,8 @@ def update_variables(variables):
 
     speakers = yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/speakers.yaml', 'r'))['speakers']
     partners = yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/partners.yaml', 'r'))['partners']
+    supporters = yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/partners.yaml', 'r'))['supporters']
+    media_partners = yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/partners.yaml', 'r'))['media_partners']
     variables.update({
         'page_title': 'Warsjawa: 100% workshop formula',
         'page_description': 'Conference for developers, by developers. Unique 100% workshop formula. “Learn by doing” approach. Proudly host workshops related to all aspects of software development: designing, developing, testing, maintaining etc. Initially oriented around Java and JVM programming languages. Now open to other programming languages like Scala, Groovy, Python, mobile development for Android, iOS and others.',
@@ -87,6 +89,8 @@ def update_variables(variables):
                                                   number_of_cells_in_small_resolution=4,
                                                   number_of_cells_in_medium_resolution=6,
                                                   number_of_cells_in_large_resolution=8),
+        'supporters': supporters,
+        'media_partners': media_partners,
     })
     variables.update(yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/organizers.yaml', 'r')))
     variables.update(yaml.load(open(os.path.dirname(os.path.abspath(__file__)) + '/contents/workshops.yaml', 'r')))
