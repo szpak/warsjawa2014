@@ -11,6 +11,15 @@ RegistrationKeys.upsert({_id: 'key6'}, {_id: 'key6', timeHandicap: 2 * 3600 * 10
 RegistrationKeys.upsert({_id: 'key7'}, {_id: 'key7', timeHandicap: 3 * 3600 * 1000, used: false, usedBy: null});
 RegistrationKeys.upsert({_id: 'key8'}, {_id: 'key8', timeHandicap: 4 * 3600 * 1000, used: false, usedBy: null});
 
+
+Meteor.publish('Workshops', function () {
+    return Workshops.find();
+});
+
+Meteor.publish('SignUps', function () {
+    return SignUps.find();
+});
+
 Meteor.methods({
     register: function (name, email, key) {
         if (key !== null && key !== undefined) {
@@ -25,7 +34,11 @@ Meteor.methods({
             console.log('[' + email + '] no unused registration key for this key.');
         }
         var currentDateWithHandicap = new Date(new Date().getTime() + timeHandicap);
-        var openingDate = Configs.findOne().startDate;
+
+        var date = Meteor.settings.openingDate;
+        var openingDate = new Date(date[0], date[1], date[2], date[3], date[4]);
+
+        console.log(openingDate);
         if (openingDate.getTime() > currentDateWithHandicap.getTime()) {
             console.log('[' + email + '] opening date: ' + openingDate + ' is bigger than current date with handicap: ' + currentDateWithHandicap + '. Rejecting.');
             var error = new Meteor.Error('Cannot register yet.');
@@ -40,13 +53,13 @@ Meteor.methods({
         }
 
         console.log('[' + email + '] registering attendee: ' + name);
-        var attendee = Attendees.findOne({_id: email});
+        var attendee = Attendees.findOne({email: email});
         if (attendee === undefined) {
             console.log('[' + email + '] attendee not found. Registering him/her with Warsjawa backend.');
             var response = HTTP.call('POST', host + '/users', {timeout: timeout, headers: headers, data: {email: email, name: name}});
             if (response.statusCode === 201) {
                 console.log('[' + email + '] registering with Warsjawa backend complete. Adding to db.');
-                attendee = Attendees.insert({_id: email, email: email, name: name, key: null});
+                attendee = Attendees.insert({email: email, name: name, key: null});
                 return attendee;
             } else {
                 console.log('[' + email + '] Warsjawa backend returned status code: ' + response.statusCode + ' abandon thread.');
@@ -60,11 +73,8 @@ Meteor.methods({
     },
 
     login: function (email, key) {
-        console.log(email);
-        console.log(key);
         console.log('[' + email + '] logging in...');
         var attendee = Attendees.findOne({email: email, key: key});
-        console.log(attendee);
         if (attendee === undefined) {
             console.log('[' + email + '] attendee not found. Wrong email or key. Trying to check this pair with Warsjawa backend.');
             var response = HTTP.call('PUT', host + '/users', {timeout: timeout, headers: headers, data: {email: email, key: key}});
@@ -87,13 +97,13 @@ Meteor.methods({
     },
 
     logout: function () {
-        console.log('[' + this.userId + '] logging out. Bye bye');
+        console.log('[' + Attendees.findOne({_id:this.userId}).email + '] logging out. Bye bye');
         this.setUserId(null);
         return undefined;
     },
 
     toggleWorkshopSignUp: function (workshopId) {
-        console.log('[' + this.userId + '] is trying to toggle workshop with id: ' + workshopId);
+        console.log('[' + Attendees.findOne({_id:this.userId}).email + '] is trying to toggle workshop with id: ' + workshopId);
         if (this.userId !== null) {
             var workshop = Workshops.findOne({_id: workshopId});
             var signUps = SignUps.find({attendeeId: this.userId, timeSlots: {$in: workshop.time_slots}}).fetch();

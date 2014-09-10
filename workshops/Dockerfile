@@ -12,5 +12,3 @@ EXPOSE 3000
 
 ADD . /workshops
 WORKDIR /workshops
-
-RUN meteor add ewall:foundation http mrt:cron-tick chrismbeckett:fontawesome4

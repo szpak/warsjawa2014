@@ -1,3 +1,7 @@
+Meteor.subscribe('Workshops');
+Meteor.subscribe('SignUps');
+
+
 $(document).foundation({
     reveal: {
         close_on_background_click: false
