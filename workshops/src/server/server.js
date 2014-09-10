@@ -1,6 +1,6 @@
-var host = 'http://warsjawa.pl:8080/api';
-var timeout = 5000;
-var headers = {Authorization: 'Basic YmFja2VuZHVzZXI6Ijc2NT89RiUuaitMK14oNCxAaC1KQDI+fV4mJjYiPCpfIG45WTtbNilRNTdY'};
+var host = Meteor.settings.emailHost;
+var timeout = Meteor.settings.timeout;
+var headers = Meteor.settings.headers;
 
 RegistrationKeys.upsert({_id: 'key1'}, {_id: 'key1', timeHandicap: 1 * 3600 * 1000, used: false, usedBy: null});
 RegistrationKeys.upsert({_id: 'key2'}, {_id: 'key2', timeHandicap: 2 * 3600 * 1000, used: false, usedBy: null});
@@ -105,5 +105,10 @@ Meteor.methods({
         } else {
             console.log('Tried to toggle workshopId, not logged in');
         }
+    },
+
+    openingDate: function () {
+        var date = Meteor.settings.openingDate;
+        return new Date(date[0], date[1], date[2], date[3], date[4]);
     }
 });

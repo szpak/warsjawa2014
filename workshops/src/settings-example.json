@@ -1,0 +1,10 @@
+{
+    "workshopDataUrl": "http://warsjawa.pl/workshops.html",
+    "emailHost": "http://warsjawa.pl",
+    "timeout": "5000",
+    "headers": {
+        "USER": "wars",
+        "PASS": "jawa"
+    },
+    "openingDate": [2014, 8, 10, 12, 30]
+}

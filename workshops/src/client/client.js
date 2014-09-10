@@ -23,14 +23,10 @@ function showRegistrationSection() {
 
 
 (function header() {
-    Template.header.rendered = function () {
-//        console.log(Configs.findOne().startDate);
-
-//        var now = new Date();
-//        var openingDate = Configs.findOne().startDate;
-//        var difference = openingDate.getTime() - now.getTime();
-//        console.log(difference);
-//        $('#registration-timeout').find('span').html(difference);
+    Template.header.created = function () {
+        Meteor.call('openingDate', function (error, date) {
+            Session.set('openingDate', moment(date).format('YYYY-DD-MM, HH:mm:ss'));
+        });
     };
 
     Template.header.attendeeName = function () {
@@ -42,8 +38,8 @@ function showRegistrationSection() {
         }
     };
 
-    Template.header.timeRemaining = function () {
-        return moment(Configs.findOne().startDate.getTime()).format('YYYY-DD-MM, HH:mm:ss');
+    Template.header.openingDate = function () {
+        return Session.get('openingDate');
     };
 
     Template.header.events({

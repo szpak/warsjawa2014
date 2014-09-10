@@ -1,18 +1,9 @@
-var config = Configs.findOne();
-var configData = {startDate: new Date(2014, 8, 9, 16, 30)};
-if (config === undefined) {
-    Configs.insert(configData);
-} else {
-    Configs.upsert({_id: config._id}, {$set: configData});
-}
-
-
 var cron = new Cron(1000);
 
 function loadWorkshopsData() {
     console.log('Updating workshop data.');
 
-    var result = HTTP.call('GET', 'http://warsjawa.pl/workshops.html');
+    var result = HTTP.call('GET', Meteor.settings.workshopDataUrl);
     var workshopsData = JSON.parse(result.content);
 
     (function setupTimeSlots(timeSlots) {
