@@ -1,3 +1,4 @@
+Meteor.subscribe('Speakers');
 Meteor.subscribe('Workshops');
 Meteor.subscribe('SignUps');
 Meteor.subscribe('TimeSlots');
@@ -75,19 +76,12 @@ function showRegistrationSection() {
 (function registration() {
     var emailRequiredErrorMessage;
 
-    Template.registration.hours = function () {
-        return Session.get('hours');
-    };
-    Template.registration.minutes = function () {
-        return Session.get('minutes');
-    };
-    Template.registration.seconds = function () {
-        return Session.get('seconds');
+    Template.registration.timeRemainingToOpenRegistration = function () {
+        return Session.get('timeRemainingToOpenRegistration');
     };
 
     Template.registration.rendered = function () {
         emailRequiredErrorMessage = $('#email-input').parent().find('small').html();
-
         if (location.hash === "#registration") {
             showRegistrationSection();
         }
@@ -123,15 +117,7 @@ function showRegistrationSection() {
                     emailInput.addClass('error');
                     emailInput.parent().addClass('error')
                 } else if (error.error === 'Cannot register yet.') {
-                    var timeToWaitInSeconds = error.details.timeToWait / 1000;
-                    var hours = Math.floor(timeToWaitInSeconds / 3600);
-                    var minutes = Math.floor((timeToWaitInSeconds - hours * 3600) / 60);
-                    var seconds = Math.floor(timeToWaitInSeconds - hours * 3600 - minutes * 60);
-
-                    Session.set('hours', hours);
-                    Session.set('minutes', minutes);
-                    Session.set('seconds', seconds);
-
+                    Session.set('timeRemainingToOpenRegistration', moment(error.details.timeToWait).format('HH:mm:ss'));
                     $('#registration-cant-register-yet-modal').foundation('reveal', 'open');
                 } else {
                     $('#registration-error-modal').foundation('reveal', 'open');
@@ -283,12 +269,12 @@ function showRegistrationSection() {
         filterWorkshopsForTimeSlotId('time_slot_1');
     };
 
-    Template.workshops.startHour = function(timeSlotId) {
-        return TimeSlots.findOne({_id:timeSlotId}).start_hour;
+    Template.workshops.startHour = function (timeSlotId) {
+        return TimeSlots.findOne({_id: timeSlotId}).start_hour;
     };
 
-    Template.workshops.endHour = function(timeSlotId) {
-        return TimeSlots.findOne({_id:timeSlotId}).end_hour;
+    Template.workshops.endHour = function (timeSlotId) {
+        return TimeSlots.findOne({_id: timeSlotId}).end_hour;
     };
 
     Template.workshops.events({
@@ -310,17 +296,22 @@ function showRegistrationSection() {
         'click button.info-button': function (event) {
             var workshopId = $(event.target).data('workshop-id') || $(event.target).parent().data('workshop-id');
             var workshop = Workshops.findOne({_id: workshopId});
+            var speakers = Speakers.find({name: {$in: workshop.speakers}}).fetch();
             var workshopModal = $('#workshop-modal');
             workshopModal.find('ul').empty();
-            workshopModal.find('ul').append(
-                    '<li><div class="image-wrapper"><img src="' + 'http://placehold.it/320x320' + '"/><span>' + workshop.speaker + '</span></div></li>'
-            );
+            for (var i = 0; i < speakers.length; ++i) {
+                var speaker = speakers[i];
+                workshopModal.find('ul').append(
+                        '<li><div class="image-wrapper"><img src="' + 'http://warsjawa.pl/' + speaker.picture_url + '"/><span>' + speaker.name + '</span></div></li>'
+                );
+            }
             workshopModal.find('h2').empty();
             workshopModal.find('h2').append(workshop.name);
             workshopModal.find('p').empty();
             workshopModal.find('p').append(workshop.description);
 
             workshopModal.foundation('reveal', 'open');
+
         }
     });
 

@@ -6,13 +6,17 @@ RegistrationKeys.upsert({_id: 'key1'}, {_id: 'key1', timeHandicap: 1 * 3600 * 10
 RegistrationKeys.upsert({_id: 'key2'}, {_id: 'key2', timeHandicap: 2 * 3600 * 1000, used: false, usedBy: null});
 RegistrationKeys.upsert({_id: 'key3'}, {_id: 'key3', timeHandicap: 3 * 3600 * 1000, used: false, usedBy: null});
 RegistrationKeys.upsert({_id: 'key4'}, {_id: 'key4', timeHandicap: 4 * 3600 * 1000, used: false, usedBy: null});
-RegistrationKeys.upsert({_id: 'key5'}, {_id: 'key5', timeHandicap: 1 * 3600 * 1000, used: false, usedBy: null});
-RegistrationKeys.upsert({_id: 'key6'}, {_id: 'key6', timeHandicap: 2 * 3600 * 1000, used: false, usedBy: null});
-RegistrationKeys.upsert({_id: 'key7'}, {_id: 'key7', timeHandicap: 3 * 3600 * 1000, used: false, usedBy: null});
-RegistrationKeys.upsert({_id: 'key8'}, {_id: 'key8', timeHandicap: 4 * 3600 * 1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key5'}, {_id: 'key5', timeHandicap: 5 * 3600 * 1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key6'}, {_id: 'key6', timeHandicap: 6 * 3600 * 1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key7'}, {_id: 'key7', timeHandicap: 7 * 3600 * 1000, used: false, usedBy: null});
+RegistrationKeys.upsert({_id: 'key8'}, {_id: 'key8', timeHandicap: 8 * 3600 * 1000, used: false, usedBy: null});
 
 Meteor.publish('TimeSlots', function () {
     return TimeSlots.find();
+});
+
+Meteor.publish('Speakers', function () {
+    return Speakers.find();
 });
 
 Meteor.publish('Workshops', function () {
@@ -111,17 +115,21 @@ Meteor.methods({
         if (this.userId !== null) {
             var workshop = Workshops.findOne({_id: workshopId});
             var signUps = SignUps.find({active: true, attendeeId: this.userId, timeSlots: {$in: workshop.time_slots}}).fetch();
+            var signOutOnly = false;
             for (var i = 0; i < signUps.length; ++i) {
                 var signUp = signUps[i];
+                signOutOnly = signOutOnly || signUp.workshopId === workshopId;
                 SignUps.update({_id: signUp._id}, {$set: {active: false, deactivationTimestamp: new Date()}});
                 HTTP.call('DELETE', host + '/emails/' + signUp.workshopId + '/' + Attendees.findOne({_id: signUp.attendeeId}).email, {timeout: timeout, headers: headers}, function (error, result) {
                     console.log('[' + email + '] delete from wokshop with id: ' + signUp.workshopId + ' status code: ' + result.statusCode);
                 });
             }
-            SignUps.insert({timestamp: new Date(), workshopId: workshopId, attendeeId: this.userId, active: true, timeSlots: workshop.time_slots});
-            HTTP.call('PUT', host + '/emails/' + workshopId + '/' + email, {timeout: timeout, headers: headers}, function (error, result) {
-                console.log('[' + email + '] add to workshop with id: ' + workshopId +' status code: ' + result.statusCode);
-            });
+            if (!signOutOnly) {
+                SignUps.insert({timestamp: new Date(), workshopId: workshopId, attendeeId: this.userId, active: true, timeSlots: workshop.time_slots});
+                HTTP.call('PUT', host + '/emails/' + workshopId + '/' + email, {timeout: timeout, headers: headers}, function (error, result) {
+                    console.log('[' + email + '] add to workshop with id: ' + workshopId + ' status code: ' + result.statusCode);
+                });
+            }
         } else {
             console.log('Tried to toggle workshop with id: ' + workshopId + ', not logged in.');
         }

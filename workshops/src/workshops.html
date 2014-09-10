@@ -86,7 +86,7 @@
                 <div class="small-12 columns">
                     <h2>Sorry. You can't register yet.</h2>
 
-                    <p>Please try again in {{ hours }}:{{ minutes }}:{{ seconds }}.</p>
+                    <p>Please try again in {{ timeRemainingToOpenRegistration }}.</p>
                 </div>
             </div>
             <a class="close-reveal-modal">&#215;</a>
@@ -143,33 +143,17 @@
         <div id="workshop-modal" class="reveal-modal medium" data-reveal>
             <div class="row">
                 <div class="small-12 columns">
-                    <ul class="small-block-grid-2">
-                        <li>
-                            <div class="image-wrapper">
-                                <img src="http://placehold.it/320x320" alt=""/><span>Name</span>
-                            </div>
-                        </li>
+                    <ul class="small-block-grid-3">
                         <li>
                             <div class="image-wrapper">
                                 <img src="http://placehold.it/320x320" alt=""/><span>Name</span>
                             </div>
                         </li>
                     </ul>
+                    <h2></h2>
+                    <p></p>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="small-12 columns">
-                    <h2>Sorry. You can't register yet.</h2>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="small-12 columns">
-                    <p>Please try again in {{ hours }}:{{ minutes }}:{{ seconds }}.</p>
-                </div>
-            </div>
-
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div class="spacer"></div>
