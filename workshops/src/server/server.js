@@ -11,6 +11,9 @@ RegistrationKeys.upsert({_id: 'key6'}, {_id: 'key6', timeHandicap: 2 * 3600 * 10
 RegistrationKeys.upsert({_id: 'key7'}, {_id: 'key7', timeHandicap: 3 * 3600 * 1000, used: false, usedBy: null});
 RegistrationKeys.upsert({_id: 'key8'}, {_id: 'key8', timeHandicap: 4 * 3600 * 1000, used: false, usedBy: null});
 
+Meteor.publish('TimeSlots', function () {
+    return TimeSlots.find();
+});
 
 Meteor.publish('Workshops', function () {
     return Workshops.find();

@@ -1,5 +1,6 @@
 Meteor.subscribe('Workshops');
 Meteor.subscribe('SignUps');
+Meteor.subscribe('TimeSlots');
 
 
 $(document).foundation({
@@ -214,17 +215,6 @@ function showRegistrationSection() {
 (function workshops() {
     function filterWorkshopsForTimeSlotId(timeSlotId) {
         switch (timeSlotId) {
-            case 'time_slot_0':
-                $('#friday-button').addClass('selected');
-                $('#saturday-button').removeClass('selected');
-                $('#friday-hours').show();
-                $('#saturday-hours').hide();
-                $('[data-slot-id="time_slot_0"]').addClass('selected');
-                $('[data-slot-id="time_slot_1"]').removeClass('selected');
-                $('[data-slot-id="time_slot_2"]').removeClass('selected');
-                $('[data-slot-id="time_slot_3"]').removeClass('selected');
-                $('[data-slot-id="time_slot_4"]').removeClass('selected');
-                break;
             case 'time_slot_1':
                 $('#friday-button').addClass('selected');
                 $('#saturday-button').removeClass('selected');
@@ -237,10 +227,10 @@ function showRegistrationSection() {
                 $('[data-slot-id="time_slot_4"]').removeClass('selected');
                 break;
             case 'time_slot_2':
-                $('#friday-button').removeClass('selected');
-                $('#saturday-button').addClass('selected');
-                $('#friday-hours').hide();
-                $('#saturday-hours').show();
+                $('#friday-button').addClass('selected');
+                $('#saturday-button').removeClass('selected');
+                $('#friday-hours').show();
+                $('#saturday-hours').hide();
                 $('[data-slot-id="time_slot_0"]').removeClass('selected');
                 $('[data-slot-id="time_slot_1"]').removeClass('selected');
                 $('[data-slot-id="time_slot_2"]').addClass('selected');
@@ -256,6 +246,17 @@ function showRegistrationSection() {
                 $('[data-slot-id="time_slot_1"]').removeClass('selected');
                 $('[data-slot-id="time_slot_2"]').removeClass('selected');
                 $('[data-slot-id="time_slot_3"]').addClass('selected');
+                $('[data-slot-id="time_slot_4"]').removeClass('selected');
+                break;
+            case 'time_slot_0':
+                $('#friday-button').removeClass('selected');
+                $('#saturday-button').addClass('selected');
+                $('#friday-hours').hide();
+                $('#saturday-hours').show();
+                $('[data-slot-id="time_slot_0"]').addClass('selected');
+                $('[data-slot-id="time_slot_1"]').removeClass('selected');
+                $('[data-slot-id="time_slot_2"]').removeClass('selected');
+                $('[data-slot-id="time_slot_3"]').removeClass('selected');
                 $('[data-slot-id="time_slot_4"]').removeClass('selected');
                 break;
             case 'time_slot_4':
@@ -275,19 +276,27 @@ function showRegistrationSection() {
     }
 
     Template.workshops.created = function () {
-        filterWorkshopsForTimeSlotId('time_slot_0');
+        filterWorkshopsForTimeSlotId('time_slot_1');
     };
 
     Template.workshops.rendered = function () {
-        filterWorkshopsForTimeSlotId('time_slot_0');
+        filterWorkshopsForTimeSlotId('time_slot_1');
+    };
+
+    Template.workshops.startHour = function(timeSlotId) {
+        return TimeSlots.findOne({_id:timeSlotId}).start_hour;
+    };
+
+    Template.workshops.endHour = function(timeSlotId) {
+        return TimeSlots.findOne({_id:timeSlotId}).end_hour;
     };
 
     Template.workshops.events({
         'click #friday-button': function () {
-            filterWorkshopsForTimeSlotId('time_slot_0');
+            filterWorkshopsForTimeSlotId('time_slot_1');
         },
         'click #saturday-button': function () {
-            filterWorkshopsForTimeSlotId('time_slot_2');
+            filterWorkshopsForTimeSlotId('time_slot_3');
         },
         'click .time-slot-button': function (event) {
             filterWorkshopsForTimeSlotId(event.target.getAttribute('data-slot-id'));

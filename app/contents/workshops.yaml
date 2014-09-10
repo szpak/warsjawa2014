@@ -1,12 +1,5 @@
 ---
 time_slots:
-
-    - time_slot: &time_slot_0
-          id: time_slot_0
-          day: Saturday
-          start_hour: '14:00'
-          end_hour: '15:30'
-
     - time_slot: &time_slot_1
           id: time_slot_1
           day: Friday
@@ -20,10 +13,16 @@ time_slots:
           end_hour: '20:30'
 
     - time_slot: &time_slot_3
-          id: time_slot_3
+              id: time_slot_3
+              day: Saturday
+              start_hour: '09:30'
+              end_hour: '12:45'
+
+    - time_slot: &time_slot_0
+          id: time_slot_0
           day: Saturday
-          start_hour: '09:30'
-          end_hour: '12:45'
+          start_hour: '14:00'
+          end_hour: '15:30'
 
     - time_slot: &time_slot_4
           id: time_slot_4

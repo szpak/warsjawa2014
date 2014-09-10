@@ -116,13 +116,13 @@
             <button id="saturday-button" class="small-6 columns">Saturday</button>
         </div>
         <div id="friday-hours" class="row">
-            <button class="small-6 columns time-slot-button" data-slot-id="time_slot_0">10:00-13:00</button>
-            <button class="small-6 columns time-slot-button" data-slot-id="time_slot_1">14:00-17:00</button>
+            <button class="small-6 columns time-slot-button" data-slot-id="time_slot_1">{{startHour "time_slot_1"}} - {{endHour "time_slot_1"}}</button>
+            <button class="small-6 columns time-slot-button" data-slot-id="time_slot_2">{{startHour "time_slot_2"}} - {{endHour "time_slot_2"}}</button>
         </div>
         <div id="saturday-hours" class="row">
-            <button class="small-4 columns time-slot-button" data-slot-id="time_slot_2">10:00-13:00</button>
-            <button class="small-4 columns time-slot-button" data-slot-id="time_slot_3">14:00-17:00</button>
-            <button class="small-4 columns time-slot-button" data-slot-id="time_slot_4">18:00-21:00</button>
+            <button class="small-4 columns time-slot-button" data-slot-id="time_slot_3">{{startHour "time_slot_3"}} - {{endHour "time_slot_3"}}</button>
+            <button class="small-4 columns time-slot-button" data-slot-id="time_slot_0">{{startHour "time_slot_0"}} - {{endHour "time_slot_0"}}</button>
+            <button class="small-4 columns time-slot-button" data-slot-id="time_slot_4">{{startHour "time_slot_4"}} - {{endHour "time_slot_4"}}</button>
         </div>
 
         {{#each workshops}}
@@ -130,9 +130,8 @@
                 {{/if }}">
             <button class="workshop-button small-10 medium-11 columns {{# if disabled}}disabled{{/if }}"
                     data-workshop-id="{{ _id }}">
-                {{ speaker }}
                 {{ name }}
-                <small>{{ description }}</small>
+                {{ speaker }}
                 {{ numberOfSignUps }}/{{ maximum_number_of_attendees }}
             </button>
             <button class="info-button small-2 medium-1 columns" data-workshop-id="{{ _id }}">
