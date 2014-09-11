@@ -846,7 +846,7 @@ Warsztat będzie prowadzony po polsku, względnie może być po niemiecku. Włas
       time_slots: [time_slot_0]
       speaker: "Venkat Subramaniam"
       description: ""
-      maximum_number_of_attendees: 50
+      maximum_number_of_attendees: 16
       tags: [android]
 
     - id: workshop_75
@@ -860,9 +860,9 @@ W czasie warsztatu pokażemy na przykładzie kodu, który przy braku ostrożnoś
  - sprawdzić jak mocno pokrywają one produkcyjny kod,
  - szybko i bez ryzyka przeprowadzić refaktoring.
 Wszystko to, aby móc szybko i bezpiecznie dokonywać zmian (poprawiać błędy, dodawać nowe funkcje) bez narzutu generowanego przez istniejący dług techniczny."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
-
+      
     - id: workshop_76
       name: "Pełne zanurzenie w Scruma dla developerów"
       time_slots: [time_slot_2]
@@ -875,5 +875,5 @@ Warsztat może być w wersji ok. trzygodzinnej dla ludzi znających już Scruma,
 
 Dwa słowa o mnie:
 Jestem certyfikowanym Scrum Masterem (PSMI) i Product Ownerem (PSPOI). Na codzień pracuję jako Scrum Master i developer Java. Prowadzę też szkolenia dla zespołów developerskich, wdrażających Scruma. Pomogłem już wdrożyć Scruma kilku/kilkunastu zespołom różnej wielkości i w kilku różnych firmach. Interesuję się głównie Scrumem na poziomie organizacji pracy zespołu developerskiego. Należę do wąskiego grona Scrum Masterów i trenerów Agile z backgroundem technologicznym i wciąż aktywnie developuję. Tego typu warsztat prowadziłem już z dużym sukcesem m.in. na konferencji InfoShare w Gdańsku, podobny będę prowadził na targach Future3."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [agile]
