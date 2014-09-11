@@ -44,7 +44,7 @@ Why me:
 -I'm Java developer / team lead with 10years of professional experience
 -For almost 2 years I'm developing startup application RestoTronic.com using GoogleAppEngine - which implies I can show attendees real case scenarios and share more than formal knowledge
 -I already lead similar workshop in my company for about 15 people they were satisfied (at least they were able to hide the truth :) )"
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [java]
 
     - id: workshop_1
@@ -52,7 +52,7 @@ Why me:
       time_slots: [time_slot_4]
       speaker: "Antoni Kędracki"
       description: "Temat jest dogadany z Maćkiem Opałą:D"
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [ios]
 
     - id: workshop_2
@@ -68,7 +68,7 @@ As for me, I am an active member of Warsaw Scala UG (also WJUG), have been much 
 Public speaking-wise, I gave a presentation at KKIO 2013 conference (mutation testing), and I also took part in WJUG flash-talks (Java 8 Optional).
 So I am very excited to engage in an even greater task, as this workshop is to be;)
 "
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [scala]
 
     - id: workshop_3
@@ -81,7 +81,7 @@ Bo zbyt niewydajnie pakuję torby.
 Bo zżarłem na Ansible własne zęby.
 Bo próg wejścia jest przyjemnie niski.
 Bo znalazłem ten formularz mimo martwej strony."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [automation/monitoring]
 
     - id: workshop_4
@@ -103,7 +103,7 @@ I was 'passive' member of polish Java community - but after I started attending 
 More info:
 I'd prefer workshop in Polish language, but english won't be any problem for me.
 I hope I've provided enough info about the workshop - if you have any more questions, don't hesitate to ask :)"
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [java]
 
     - id: workshop_5
@@ -111,7 +111,7 @@ I hope I've provided enough info about the workshop - if you have any more quest
       time_slots: [time_slot_3]
       speaker: "Michał Parkoła"
       description: "More then a decade after the Agile Manifesto it's no longer enough to talk anout \"working software\" and \"responding to change\". Along with constantly advancing engineering practices we need more powerful methods for defining success, planning and evaluating progress. And it all starts with the brutal honesty of numbers..."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [agile]
 
     - id: workshop_6
@@ -121,7 +121,7 @@ I hope I've provided enough info about the workshop - if you have any more quest
       description: "Byłoby to spotkanie w formie Code Dojo, w który rozwiązujemy pewne problemy programistyczne w podejściu funkcyjnym, w Scali, lub jeśli niektórzy uczestnicy będą chcieli i potrafili - w innych językach.
 Każdy przykład wraz z kilkoma rozwiązaniami będzie omawiany przez grupę. Warsztat bez konkretnej technologii/narzędzia poza językiem programowania. Kierowany do osób, które wiedzą choć trochę nt. programowania funkcyjnego, ale nie czują się w nim pewnie.
 Moje przygotowanie będzie polegało na doborze kilku problemów, przygotowaniu zalążka projektu by łatwiej wystartować w Scali, wsparciu uczestników w problemach."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
 
     - id: workshop_7
@@ -129,7 +129,7 @@ Moje przygotowanie będzie polegało na doborze kilku problemów, przygotowaniu 
       time_slots: [time_slot_2]
       speaker: "Tomasz Gołembiewski"
       description: "As a pre-sales effort for one of our accounts we're created a small application showing our capabilities in rapid developments. mobile hybrid technologies and predictive analitics. We've received a great feedback and to my suprice a lot of people inside HP wanted to know how it was done. I'm pretty sure that also people outside of HP would be interested.."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [data_analysis]
 
     - id: workshop_8
@@ -137,7 +137,7 @@ Moje przygotowanie będzie polegało na doborze kilku problemów, przygotowaniu 
       time_slots: [time_slot_1]
       speaker: "Kamil Książek"
       description: "This workshop will provide information about Android animations basis. During it attendees will have an opportunity to learn about animation types and use them to implement example visual effects. Goal of this workshop is to provide practical knowledge about enhancing Android applications look and fell with animations for developers who has little to no experience in this field. Workshop is organized and sponsored by Samsung Electronics Poland."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [android]
 
     - id: workshop_9
@@ -164,7 +164,7 @@ I believe a good workshop is one that empowers participant. To that end
 - I am there to help if someone stucked
 During workshops participants work in pairs. That helps participants in overcoming over 50% their problems.
 I have enough experience in Clojure core.async and Twitter Finagle to provide an unforgettable experience plus my workshops last year were highly rated"
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [jvm_goodies]
 
     - id: workshop_11
@@ -173,7 +173,7 @@ I have enough experience in Clojure core.async and Twitter Finagle to provide an
       speaker: "Grzegorz Kossakowski"
       description: "I'd like to give a workshop on programming with Reactive Streams. It's a neat abstraction I/O that is asynchronous, concurrent and demand-driven. The demand-driven property makes it easy to program systems that have components with varying performance characteristics.
 This will be a hands-on workshop that let's you dive in into typical scenarios where Reactive Streams are most useful."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [jvm_goodies]
 
     - id: workshop_12
@@ -194,7 +194,7 @@ Formuła spotkania:
 - retrospektywa
 Można całość zamknąć w 2 godzinach, ale lepiej mieć 3 zatem pasuje mi Wasza formuła bardzo. :-)
 Detale poprzednich spotkań można znaleźć na stronach meetup SCKRK i PJUG."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
 
     - id: workshop_13
@@ -202,7 +202,7 @@ Detale poprzednich spotkań można znaleźć na stronach meetup SCKRK i PJUG."
       time_slots: [time_slot_1]
       speaker: "Venkat Subramaniam"
       description: ""
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [java]
 
     - id: workshop_14
@@ -214,7 +214,7 @@ Uczestnicy rozpoczną z przygotowanym szkieletem aplikacji i kilkoma już zautom
 Opcje (tzn. dajcie znać, jeśli uważacie, że warto którąś wykorzystać):
 - dłuższe wprowadzenie do tego, jak pisać dobre scenariusze kosztem czasu na automatyzację
 - automatyzacja w cucumber-js zamiast cucumber-jvm"
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [agile]
 
     - id: workshop_15
@@ -229,7 +229,7 @@ Opcje (tzn. dajcie znać, jeśli uważacie, że warto którąś wykorzystać):
 * Picasso
 About me:
 I have comercial experience as a Android trainer and developer. I focus on practical aspects, which are most interesting for developers. Workshop can be held in both English or Polish."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [android]
 
     - id: workshop_16
@@ -238,7 +238,7 @@ I have comercial experience as a Android trainer and developer. I focus on pract
       speaker: "Adam Pierzchała, Krzysztof Jelski"
       description: "This will be a coding dojo, where we will be using multiple techniques such as Ping-Pong Pair Programming, Pomodoro and TDD to help us.
 We are experienced software developers, and we use these techniques on daily basis. We want to show that by using them we can both have fun from coding, as well as improve our code quality."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
 
     - id: workshop_17
@@ -260,7 +260,7 @@ You can find the materials (schematics and code) at https://github.com/rucek/ard
 Android workshop about writing as little amount of code as possible and actually creating useful apps at the same time.
 Why should we pick you?
 You shouldn't, but if you do, beware: I will share some of my knowledge on Android programming."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [android]
 
     - id: workshop_19
@@ -269,7 +269,7 @@ You shouldn't, but if you do, beware: I will share some of my knowledge on Andro
       speaker: "Andrzej Michałowski, Jacek Głodek, Łukasz Sowa"
       description: "Podczas warsztatów pokażemy jak szybko i prosto można zbudować aplikację opartą o architekturę mikroserwisów w Scali. Do tego celu wykorzystamy frameworki i biblioteki takie jak Spray, Play czy Akka. To nie wszystko... na samym zbudowaniu aplikacji nie poprzestaniemy- pokażemy również jak w prosty sposób monitorować nasz system oraz jak przetestować go pod względem wydajnościowym.
 Nasz warsztat zdecydowanie nie będzie typowym odtworzeniem czterech pierwszych lekcji jakiegoś tutoriala dostępnego w Internecie, tylko prawdziwą ucztą dla (średnio)zaawansowanych programistów. Szkolenie przeznaczone jest dla osób, które znają Scalę i przynajmniej trochę słyszeli/programowali, w którymś z frameworków Scalowych. Zakres warsztatu bardzo zależy od ilości czasu jaką dostaniemy, ale myślę, że jesteśmy w stanie zapełnić każde okno czasowe."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [scala]
 
     - id: workshop_20
@@ -277,7 +277,7 @@ Nasz warsztat zdecydowanie nie będzie typowym odtworzeniem czterech pierwszych 
       time_slots: [time_slot_3]
       speaker: "Marek Będkowski"
       description: "I've been developing web-applications with JavaScript being used all the time so with modern twist and JavaScript becoming recognized as smth more powerful than just form validation I spent last year sharing my knowledge on meet.js and other meetups in this area and developing my full stack application called Maracuya Jukebox. Part of this application is a mobile client developed using PhoneGap framework, built with grunt task runner and debuggable with weinre tool. I'd like to transform part of this knowledge into a workshop during which users could get their hands-on experience on how easy it is to develop portable application for most mobile platforms using web-technologies (formementioned PhoneGap/grunt/weinre)."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [javascript]
 
     - id: workshop_21
@@ -285,7 +285,7 @@ Nasz warsztat zdecydowanie nie będzie typowym odtworzeniem czterech pierwszych 
       time_slots: [time_slot_4]
       speaker: "Adam Smolnik"
       description: "Distribute your Business Processes and long-running Tasks all over the world across diverse machines and devices. Harness the powerful features of Cloud to walk through the steps of your processes. Keep them under your control. Write your workflows in pure Java, not with Graphical Designer in place."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [cloud_aws]
 
     - id: workshop_22
@@ -294,7 +294,7 @@ Nasz warsztat zdecydowanie nie będzie typowym odtworzeniem czterech pierwszych 
       speaker: "Tomasz Grynfelder"
       description: "6 hours of introduction to development for iOS. From basic project configuration, \"Hello World\" up to UITableView + (elementary) CoreData.
 Mac with OS X and Xcode 5 (already installed) will be obligatory to participate in this workshop."
-      maximum_number_of_attendees: 50
+      maximum_number_of_attendees: 16
       tags: [ios]
 
     - id: workshop_23
@@ -302,7 +302,7 @@ Mac with OS X and Xcode 5 (already installed) will be obligatory to participate 
       time_slots: [time_slot_2]
       speaker: "Kamil Szymański"
       description: "Learn Ansible basics and conventions, touch more advanced stuff but what's more important understand how it works and how to work with it. We will also use Ansible with Vagrant / Docker, see the difference between Ansible and Puppet / Chef and learn enough YAML :>."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [automation_monitoring]
 
     - id: workshop_24
@@ -310,7 +310,7 @@ Mac with OS X and Xcode 5 (already installed) will be obligatory to participate 
       time_slots: [time_slot_1]
       speaker: "Marcin Korniluk, Dariusz Aniszewski, Dariusz Seweryn"
       description: "Płynność działania UI aplikacji Androidowych jest od lat największym powodem niezadowolenia jego użytkowników, oraz pretekstem do żartów ze strony użytkowników iOSa. Podczas prezentacji chcielibyśmy pokazać mniej oczywiste powody takiego stanu rzeczy, oraz rozwiązania problemów. Część warsztatowa polegałaby na zbadaniu przykładowej aplikacji za pomocą odpowiednich narzędzi i omówieniu obserwacji. Następnie, krok za krokiem, uczestnicy warsztatów poprawiliby aplikację zgodnie z wcześniej omówionymi zasadami."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [android]
 
     - id: workshop_25
@@ -320,7 +320,7 @@ Mac with OS X and Xcode 5 (already installed) will be obligatory to participate 
       description: "Planuję dla urozmaicenia ściągnąć 2 osoby - z czego jedna absolutnie nie będzie związana z IT aby grupy miały obiekty testowe. Oczywiście jeszcze moja wizja warsztatów jeszcze jakoś będzie ewoluowała. 
 Czemu powinniście wybrać mnie? Żeby mieć jakieś warsztaty prowadzone przez kobietę ;)
 Jedyne moje zastrzeżenie to max 20 osób i to, że prowadzę warsztaty tylko po polsku. Ewentualnie gdybyście woleli mogę to zrobić dłuższe na te 3h, wtedy też mogę mieć ~30 osób. "
-      maximum_number_of_attendees: 20
+      maximum_number_of_attendees: 16
       tags: [soft]
 
     - id: workshop_26
@@ -330,7 +330,7 @@ Jedyne moje zastrzeżenie to max 20 osób i to, że prowadzę warsztaty tylko po
       description: "JavaScript has been under phenomenal development during recent years. As an indirect result of browser wars, node.js has been introduced, which enabled developers to run JS on the server side. Thanks to this, lots of professional tools have been created: npm (package manager), grunt (automating, building), bower (assets manager), yeoman (skeleton generators). Additionally, many other tools could be executed on the server-side from now on, e.g. end-to-end testing without a browser (phantom/casper). This has promoted JS applications to full-professional projects with stable development workflow: building, testing, deployment - where everything is automated using well-known tools such as jenkins or git.
 Nowadays, the possibilities of JavaScript are a lot more than colourful forms written with obtrusive mixture of jquery and html, as it used to be some time ago. During this talk, I want to show what JavaScript can do now - what are the tools, how you can use them and why are they useful. And it doesn't matter what single-page-app framework you use (angular, bb, ember) or what server-side technology you use (the server itself doesn't have to rely on node.js).
 Workshop/presentation can be done both in Polish and English. It is aimed to fit in JavaScript path."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [javascript]
 
     - id: workshop_27
@@ -343,7 +343,7 @@ Description:
 I will use examples and exercises that i had prepared for similar workshops that i run internally in my company and on 4Developers:
 http://devyard.wordpress.com/2014/01/09/angularjs-directives-mind-map-with-examples/
 In newest version there is about 30 exercises/examples about different aspects of directives."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [javascript]
 
     - id: workshop_28
@@ -352,7 +352,7 @@ In newest version there is about 30 exercises/examples about different aspects o
       speaker: "Michał Tajchert"
       description: "A workshop to set up an emulator of Android Wear watch and create some simple apps using it. I will cover topics such: Notifications (also with actions), Voice, custom watchfaces and sharing data with a phone. In that order so even beginners won't get lost and will benefit from it. But it is addressed to mid skilled (and above) Android devs.
 Participants need to have a phone with Android >=4.3 to fully benefit from this workshop."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [android]
 
     - id: workshop_29
@@ -362,7 +362,7 @@ Participants need to have a phone with Android >=4.3 to fully benefit from this 
       description: "Warsztat wprowadzający do Groovy'ego i SPOCK-a.
 W końcowej fazie warsztatu (zapewne około 30/45 minut) chciałbym pokazać najczęściej popełniane błędy w trakcie testowania/TDD i przedstawić kilka zasad pisania dobrych testów.
 Warsztat dla początkujących."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
 
     - id: workshop_30
@@ -370,7 +370,7 @@ Warsztat dla początkujących."
       time_slots: [time_slot_3]
       speaker: "Przemysław Jakubczyk"
       description: "-"
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [android]
 
     - id: workshop_31
@@ -384,7 +384,7 @@ Amazon Cloud, its API and SDK is designed and intended especially for Java Devel
 Workshop in Polish. After all, we are AWS User Group Poland.
 awsug.pl
 I can also lead the workshops in English. But as AWS User Group Poland we'd like to speak Polish."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [cloud_aws]
 
     - id: workshop_32
@@ -392,7 +392,7 @@ I can also lead the workshops in English. But as AWS User Group Poland we'd like
       time_slots: [time_slot_4]
       speaker: "Aleksander Piotrowski"
       description: "Korzystając z faktu, że warsztat jest dłuższy niż typowa prezentacja na imprezie branżowej i może zawierać bardziej szczegółowe informacje, niż ogólniki padająca na typowych prezentacjach o testowaniu na platformie, marzy mi się przeprowadzić praktyczny kurs pokazujący jak konkretnie przetestować ekrany logowania na platformie Android. Ale czy się uda?"
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [android]
 
     - id: workshop_33
@@ -401,7 +401,7 @@ I can also lead the workshops in English. But as AWS User Group Poland we'd like
       speaker: "Paweł Byszewski"
       description: "Mobile apps make developers think about safety in old fashion way, when unauthorized access or data leak were main problems. In mobile world each user has full access to complete instance of application. Thus reverse engineering is again popular and important. Each Android's developer should know at least basic of Android reverse engineering. First of all you would be able to verify and improve app safety because you will know your opponent and his tools.
 It will be basic course of Android app decompilation, receompilation etc."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [android]
 
     - id: workshop_34
@@ -409,7 +409,7 @@ It will be basic course of Android app decompilation, receompilation etc."
       time_slots: [time_slot_3]
       speaker: "Łukasz Balcerzak, Konrad Hałas"
       description: "Celem warsztatów będzie stworzenie aplikacji webowej typu SPA (Single Page App) wykorzystującej Pythona po stronie serwerowej i JavaScript po stronie frontendowej. Podczas warsztatów szczególny nacisk zostanie położony na zaznaczenie odpowiedzialność pomiędzy dwoma częściami tworzonej aplikacji. W ramach warsztatów zostanie omówiony \"nowoczesny\" stos bibliotek i narzędzi ułatwiających pracę webdevelopera, w oparciu o frameworki Django oraz AngularJS."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [javascript]
 
     - id: workshop_35
@@ -417,7 +417,7 @@ It will be basic course of Android app decompilation, receompilation etc."
       time_slots: [time_slot_1]
       speaker: "Adam Ruka"
       description: "Warsztat ma na celu pokazanie możliwości biblioteki Geb w pisaniu automatycznych testów funkcjonalnych i akceptacyjnych. Mają one wysoki stopień wiarygodności, gdyż korzystają z takiej samej przeglądarki, co użytkownicy aplikacji. Pozwalają też na szybką werfykację działania pod różnymi przeglądarkami. Myślę, że temat jest ciekawy i nie taki trywialny."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [automation_monitoring]
 
     - id: workshop_36
@@ -425,7 +425,7 @@ It will be basic course of Android app decompilation, receompilation etc."
       time_slots: [time_slot_3]
       speaker: "Mariusz Sieraczkiewicz"
       description: "I have spent a couple of years working with codebases (as I consultant helping to rescue the code). I have also developed a process called Natural Course of Refactoring (presented at many conferences - eg. http://www.mix-it.fr/session/357/natural-course-of-refactoring-a-refactoring-work). And I know that even knowing working with legacy code techniques (eg. refactoring) it is still very difficult to apply it in real life."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
 
     - id: workshop_37
@@ -436,7 +436,7 @@ It will be basic course of Android app decompilation, receompilation etc."
 I have spoken at conferences in Europe and US, you can see my experience at http://lanyrd.com/profile/_tjeden/past/speaking/ There are also some videos of my talks here: http://lanyrd.com/profile/_tjeden/video/ You can see my lightning talk from Railsberry - it’s only 5 minutes long: https://www.youtube.com/watch?v=Oj4vXMRenFo I’m also an lecturer at Coder’s Lab, when I teach about OOP and TDD, since first edition, plus I was delivering few week-long trainings in Ruby on Rails, so I know how to conduct a workshop. I can show you some references if needed. 
 Bio:
 Aleksander Dąbrowski is a Ruby developer, CTO at Astarium, and lecturer at Coder's Lab - Ruby on Rails school. He has worked in a variety of start-ups and in a marketing agency. He co-organises Warsaw's Ruby User Group. Aleks is also the author of rubysfera.pl, the leading Polish blog focused on Ruby and Rails. He likes to speak at Ruby developer events and is very passionate about sharing his knowledge with others. Along with using and contributing to open source software, Aleks particularly enjoys deleting ugly code, and in his spare is city guide of Warsaw."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [javascript]
 
     - id: workshop_38
@@ -444,7 +444,7 @@ Aleksander Dąbrowski is a Ruby developer, CTO at Astarium, and lecturer at Code
       time_slots: [time_slot_3]
       speaker: "Bartosz Gałek, Marcin Wróblewski"
       description: "We would like to make something creative using allegro webapi i.e. live map of Poland with incoming transactions every second. Nodejs would be good option, but maybe we could prepare java version (spring). Still, we want to show that live map of transactions in such a big platform is possible thing to do :) Did I mention, that we work at Allegro Group? :)"
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [data_analysis]
 
     - id: workshop_39
@@ -456,7 +456,7 @@ Aleksander Dąbrowski is a Ruby developer, CTO at Astarium, and lecturer at Code
 2) Gulp
 3) Photoshop - Plugins
 Warsztaty bylyby ogolnie o optymalizacji pracy dla Frontend Developera - jak przyspieszyc swoja prace na codzien."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [developers_tools]
 
     - id: workshop_40
@@ -471,7 +471,7 @@ If you identify with at least one of the following statements is a Workshop for 
 3) Contributed to run the Web service (eg, \"was coding\", \"implemented a\", \"kept our fingers crossed\").
 4) I do not know what's going on with this integration but would like to know.
 5) I'd like to see an interesting use case Docker."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [java]
 
     - id: workshop_41
@@ -480,7 +480,7 @@ If you identify with at least one of the following statements is a Workshop for 
       speaker: "Paweł Sołtysek"
       description: "Analiza dużych zbiorów danych staje się coraz powszechniejszą potrzebą. Niestety jedną z podstawowych barier stanowi wymóg utrzymywania skalowalnej infrastruktury wymaganej przez większość narzędzi analitycznych. Amazon Elastic MapReduce (EMR) eliminuje tę barierę umożliwiając nam szybkie wejście do świata Big Data. W ciągu kilku minut możemy stworzyć potrzebną infrastrukturę, która będzie skalowała się w zależności od naszych potrzeb i równie szybko jej się pozbyć w chwili, kiedy nie będzie nam już potrzebna.
 Podczas warsztatów chciałbym pokazać jak efektywnie wykorzystać usługę Amazon EMR z takimi technologiami jak MapReduce oraz narzędziami jak Hive, czy Impala. Ponadto powiem na jakie problemy możemy trafić oraz jak należy sobie z nimi radzić."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [cloud_aws]
 
     - id: workshop_42
@@ -489,7 +489,7 @@ Podczas warsztatów chciałbym pokazać jak efektywnie wykorzystać usługę Ama
       speaker: "Łukasz Szczęsny"
       description: "\"Puppet jest trudny, uciążliwy i dziwny \" - to bardzo popularna opinia na temat tego narzędzia do zarządzania konfiguracją. Postaram się pokazać ludzką twarz Puppeta. 
 Wyjaśnię jak napisać m.in. własny moduł, funkcje, dodać własne fakty do factera. Wszystko będzie uruchamiane na maszynie wirutlanej działającej pod kontrolą Vagranta."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [devops]
 
     - id: workshop_43
@@ -497,7 +497,7 @@ Wyjaśnię jak napisać m.in. własny moduł, funkcje, dodać własne fakty do f
       time_slots: [time_slot_2]
       speaker: "Venkat Subramaniam"
       description: ""
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [groovy]
 
     - id: workshop_44
@@ -511,7 +511,7 @@ Wyjaśnię jak napisać m.in. własny moduł, funkcje, dodać własne fakty do f
 4) short roles description and RBAC
 5) cluster deployment in Standalone and Domain modes
 a) possible switching to TCP if time allows"
-      maximum_number_of_attendees: 50
+      maximum_number_of_attendees: 16
       tags: [java]
 
     - id: workshop_45
@@ -540,7 +540,7 @@ Uwagi:
 - warsztaty mogą być po angielsku;
 - w razie potrzeby stworzenie opisu po angielsku będzie chyba prostsze niż po polsku...
 - warsztaty raczej nieprzeznaczone dla starych wyjadaczy (acz pozostaje pytanie co to znaczy, rym niezamierzony)."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [developers_tools]
 
     - id: workshop_47
@@ -548,7 +548,7 @@ Uwagi:
       time_slots: [time_slot_3]
       speaker: "Krzysztof Nielepkowicz"
       description: "Co to jest Selenium? Większość z was wie. Niestety nie są powszechne, w wielu firmach nadal zatrudnia się ludzi do pracy którą może wykonać automat - tym samym marnując ich potencjał. Dla usprawnienia organizacji, każdy z was otrzyma obraz maszyny wirtualnej na virtual box z gotowym środowiskiem :) Maszynę oczywiście będzie można ściągnąć również przed warsztatami. Na warsztatach dowiecie się jak napisać test, który będzie elastyczny, jak znajdywać punkty zaczepienia by zmiany we frontendzie nie powodowały konieczności ciągłych zmian. Ale to nie wszystko - Selenium można wykorzystać również w domu, przykładowo by automat na bieżąco sprawdzał nowe auta na mobile.de ;)"
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [automation_monitoring]
 
     - id: workshop_48
@@ -556,7 +556,7 @@ Uwagi:
       time_slots: [time_slot_4]
       speaker: "Dominik Przybysz"
       description: "Podczas warsztatu przyjrzymy się możliwością silnika Activiti. Przejrzymy elementu dostępne przy tworzeniu procesów oraz zobaczymy jak je połączyć w procesy biznesowe, które będą w pełni automatyczne, komunikujące się z człowiekiem oraz innymi systemami."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [java]
 
     - id: workshop_49
@@ -576,7 +576,7 @@ The multi-machine cluster will consist of
   c) Hadoop or Cassandra
 Who I am? I work in mBank in architecture team, part of my responsibility is evaluating DevOps tools and research in new technologies. I was an assistant of Warsaw University of Technology on MiNI 
 I will prefer Saturday - but it is not a must."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [devops]
 
     - id: workshop_50
@@ -585,7 +585,7 @@ I will prefer Saturday - but it is not a must."
       speaker: "Tomasz Fijałkowski"
       description: "Celem warsztatu jest przybliżyć uczestnikom możliwości Javy 8. Omówię paradygmat programowania funkcyjnego, jak wyrażenia lambda mogą poprawić jakość kodu oraz zastąpić klasyczne wzorce projektowe. Czyli to z czym mamy do czynienia na co dzień.
 Aktualnie plan zakłada rozpoczęcie od 15-20 minutowej prezentacji wprowadzającej, później uczestnicy przystąpią do rozwiązywania (w parach) przygotowanych ćwiczeń. Po każdym zadaniu będzie przeprowadzana dyskusja, co można było zrobić lepiej i dlaczego Java 8 jest fajna (a czego jej jeszcze brakuje). Przygotuję także parę przykładów, które mam zamiar rozwiązać na żywo."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [java]
 
     - id: workshop_51
@@ -596,7 +596,7 @@ Aktualnie plan zakłada rozpoczęcie od 15-20 minutowej prezentacji wprowadzają
 Opowiem o miarach istotnych w sieciach społecznościowych, sposobach ich wyznaczania, o algorytmach generowania grafów o zadanych właściwościach, co się stanie jak do procesu tworzenia takiego grafu dodamy wnioski płynące z zastosowania teorii gier i co z tego wynika.
 Postaram się również pokazać kilka bardzo podstawowych faktów, które zmienią Wasze spojrzenie na zastosowanie grafów w informatyce. 
 Nie planuję popełnić plagiatu, ale będę w części teoretycznej bazował na wykładzie prof. Matthew O. Jacksona pod tytułem \"Social and Economic Networks: Models and Analysis\" oraz jego książce \"Social and Economic Networks\". Postaram się położyć nacisk na część obliczeniową - głównie w aplikacji gephi.github.io ale również po prostu na kartce/tablicy/jakkolwiek."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [data_analysis]
 
     - id: workshop_52
@@ -605,7 +605,7 @@ Nie planuję popełnić plagiatu, ale będę w części teoretycznej bazował na
       speaker: "Jarosław Pałka"
       description: "Will start with introduction to bytecode structure (opcodes, type checking and such) and execution model, and then will dive into code generation and modification with ASM and Javaasist, how to modify your code on the fly (instrumentation with Java agents), how to survive and don't get mentally injured with Jitescript, will show how to use bytecode manipulation for fault injection tests and performance tracing with Byteman. And if time permits will end up in world of invokedynamic.
 I can do it only on Saturday"
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [java]
 
     - id: workshop_53
@@ -614,7 +614,7 @@ I can do it only on Saturday"
       speaker: "Jarosław Pałka"
       description: "As title suggests, full workshop filled with examples, how to work with Spring Data and its different flavours, JPA, Neo4j, MongoDB, Redis and others. Will discuss different mapping strategis between your database and your POJOs, how work with Spring Data repositories, finder methods, statically typed queries with QueryDSL, cross stores and many others. Will also talk a lot about modeling for different database paradigms. This is a compressed version on full fledged 4 day long commercial training :) should be fun.
 And I  can do it only on Saturday"
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [java]
 
     - id: workshop_54
@@ -622,7 +622,7 @@ And I  can do it only on Saturday"
       time_slots: [time_slot_2]
       speaker: "Kamil Trzciński"
       description: "During the workshop attendees will be able to get familiar with tools for forensic analysis and reverse engineering. Workshop will teach how to disassemble, modify and assemble Android application. Trainer will show how to securely store sensitive data and securely connect with external services. We will try to break Android security mechanism to gain root capabilities. As requirement attendee should bring with himself jailbroken Android device and Laptop with any operating system."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [android]
 
     - id: workshop_55
@@ -644,7 +644,7 @@ Plan:
 - Second round of exercises
 - OO and FP in one project.
 Workshop should be in Polish, but if we will have non-polish guest it will be in english. "
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [java]
 
     - id: workshop_56
@@ -661,7 +661,7 @@ c) JVM ZING (Azul),
 d) IBM JVM
 All the operations may be performed on POWER platform as an additional feature of the workshop.
 The idea of the workshop is demonstration and practice on patological applications (workload testing) and utilizing different JVM's as well as GC algorythms and putting the tuning results together."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [java]
 
     - id: workshop_57
@@ -670,7 +670,7 @@ The idea of the workshop is demonstration and practice on patological applicatio
       speaker: "Konrad Gawda, Michał Pawłowski"
       description: "Software Defined Networking (SDN) is currently a strong trend in telecommunications. It allows to split Control Plane (the \"brain\" of the network) from Data Plane. We will show how it works, using example of most popular SDN protocol - OpenFlow, and Python frameworks for SDN controllers - POX and to some extent also Pyretic. The workshop will start with theoretical introduction, and then, in practical part participants will do some exercise with SDN frameworks, to finally implement own networking service.
 Experience with SDN will be for sure useful for work in both Telco networks and data centers."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [misc]
 
     - id: workshop_58
@@ -678,7 +678,7 @@ Experience with SDN will be for sure useful for work in both Telco networks and 
       time_slots: [time_slot_2]
       speaker: "Błażej Marcinkiewicz"
       description: "Workshop will guide participants through animation techniques used in iOS apps. During workshop I'll present how to use UIKit and CoreAnimation to create some nifty animations. I'll also show what's going on under the hood when animations are dispatched. I'll show you how to get even more control over animations with custom easing curves and animating properties which are not animatable."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [ios]
 
     - id: workshop_59
@@ -694,7 +694,7 @@ Podczas swoich warsztatów chciałbym:
 - Pokazać, jak android-db-commons sprawia, że znowu chce się programować!
 Następnie hakowanie.
 Czas potrzebny na poprowadzenie warsztatów oceniam na 2-2.5h."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [android]
 
     - id: workshop_60
@@ -715,7 +715,7 @@ http://www.linkedin.com/pub/micha%C5%82-trzaskowski/24/618/31a"
       description: "Hi guys and girls,
 this workshop will be about the Play Framework and the intention is to show how fun and easy is to build super cool web applications with it! During the workshop we will get in touch with other topics/technologies like AngularJS, JQuery, Bootstrap, WebSockets, REST and even a little bit Scala (we will write the web application with the Java API of Play though - in the spirit of WarsJawa :)). The idea is to make the workshop beginner-friendly while I will try to show some real-world advanced techniques when using Play.
 Just a little bit info about me: I am a Java Software Engineer from Berlin working on Rich Client and Web projects with educational background in computer science from the Technical University of Berlin."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [scala]
 
     - id: workshop_62
@@ -723,7 +723,7 @@ Just a little bit info about me: I am a Java Software Engineer from Berlin worki
       time_slots: [time_slot_3]
       speaker: "Piotr Jagielski, Marcin Cylke"
       description: "First we would like to do a brief clojure introduction (1/3 of the given time) than encourage people to play a game. The challenge would be to fight with each other (each team?) by way of clojure-written program. We would provide a server and dummy implementation of a client. And fighting logic would be implemented by the workshop attendees."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [jvm_goodies]
 
     - id: workshop_63
@@ -732,7 +732,7 @@ Just a little bit info about me: I am a Java Software Engineer from Berlin worki
       speaker: "Paweł Wrzeszcz"
       description: "Opis warsztatów jest tutaj: http://warsztatyprzedconfitura14.evenea.pl/
 Robiłem przed Confiturą i bardzo fajnie wyszły :)"
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [agile]
 
     - id: workshop_64
@@ -745,7 +745,7 @@ W trakcie warsztatów, w grupach, stworzymy takie biznes plany dla Waszych pomys
 Co dadzą Tobie warsztaty:
 - jeśli masz pomysł na startup - prosty sposób biznesowej walidacji pomysłu
 - ogólnie - lepsze zrozumienie biznesu"
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [agile]
 
     - id: workshop_65
@@ -757,7 +757,7 @@ Zdjęcia prelegentów dosyła się jakoś później, nie?
 Ew. jest opcja na angielski tytuł  angielską wersję:
 Docker-time  - from zero to container-hero!
 Ale nie wiem co o tym sądzicie?"
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [devops]
 
     - id: workshop_66
@@ -767,7 +767,7 @@ Ale nie wiem co o tym sądzicie?"
       description: "Chciałbym przeprowadzić warsztat z tworzenia ekosystemu deweloperskiego wspierającego pracę programistów.
 Głównie Jira, Jira Agile, Jenkins, Confluence / Wiki, Stash, Sonar, Sputnik.
 Jak setupować, jak łączyć, jak zrobić aby te narzędzia ze sobą współgrały i były ekosystemem a nie zbiorem osobnych tooli."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [developers_tools]
 
     - id: workshop_67
@@ -780,7 +780,7 @@ Your coaches work as backend developers at stylefruits, one of largest European 
 Yannick Scherer graduated in CS from Technical University of Munich. He's an active member of the Clojure open source ecosystem and the author of lein-ancient, a popular library which every day saves time of Clojure developers upgrading their projects' dependencies.
 Jan Stępień graduated in CS from Warsaw University of Technology. Apart from releasing a bunch of Clojure projects and occasional contributions on GitHub he spent way too much time writing his own VM running a subset of Clojure.
 By extrapolating from our two proposals, we can offer more in-depth, advanced workshops and dive into some more complicated topics. We suspect that the demand for such workshops might be low but if you're interested just let us know!"
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [jvm_goodies]
 
     - id: workshop_68
@@ -793,7 +793,7 @@ How many times you wanted to quickly create a project without involving whole se
 If you've had these situations and you want to avoid them in the future come and listen how within few minutes and 'clicks' create the server for your mobile app.
 Workshop will be based on Android application but whole framework works for iOS, OS X, Windows Phone and many more. 
 The workshop will be conducted in Polish or English, depending on the preferences of the participants."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [android]
 
     - id: workshop_69
@@ -812,7 +812,7 @@ The workshop can be either in Polish or English."
       speaker: "Marcin Stachniuk"
       description: "Warsztat jest przeznaczony dla średniozaawansowanych programistów Java, którzy napisali już trochę testów i chcieli by je upiększyć. Podczas warsztatu będziemy ćwiczyć tworzenie ładnej sekcji given (za pomocą Builder'ów), jak i czytelniejsze zapisywanie assercji (za pomocą Hamcrest'a, FEST'a i AssertJ). Bedzie jeszcze o testowaniu try catch i testach parametrycznych.
 Warsztat będzie prowadzony po polsku, względnie może być po niemiecku. Wymagane jest zabranie ze sobą własnego komputera ze skonfigurowanym środowiskiem programistycznym i konto na GitHubie (do przesyłania gist'ów). Potrzebny rzutnik."
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [java]
 
     - id: workshop_71
@@ -820,7 +820,7 @@ Warsztat będzie prowadzony po polsku, względnie może być po niemiecku. Wymag
       time_slots: [time_slot_3]
       speaker: "Venkat Subramaniam"
       description: ""
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [groovy]
 
     - id: workshop_72
@@ -838,7 +838,7 @@ Warsztat będzie prowadzony po polsku, względnie może być po niemiecku. Włas
       time_slots: [time_slot_4]
       speaker: "Artur Stępniewski"
       description: "This workshop is about using C/C++ code in Android development with Gradle as the build system. The topic is fresh and would be a nice addition to Warsjava's agenda I think."     
-      maximum_number_of_attendees: 30
+      maximum_number_of_attendees: 16
       tags: [android]
 
     - id: workshop_74
