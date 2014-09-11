@@ -219,12 +219,15 @@ Opcje (tzn. dajcie znać, jeśli uważacie, że warto którąś wykorzystać):
       name: "How to combine Square libs to make Android development just a bit easier"
       time_slots: [time_slot_2]
       speaker: "Sylwester Madej"
-      description: "Libraries from Square has become de facto standard for Android development. Goal of this workshop is to show how to combine some of them in real project. Attendees will have opportunity to build, from the ground up, an app using following libs:
+      description: "Libraries from Square has become de facto standard for Android development. Goal of this workshop is to show how to combine some of them in real project. 
+
+Attendees will have opportunity to build, from the ground up, an app using following libs:
 * Dagger
 * ButterKnife
 * Otto
 * Retrofit
 * Picasso
+
 About me:
 I have comercial experience as a Android trainer and developer. I focus on practical aspects, which are most interesting for developers. Workshop can be held in both English or Polish."
       maximum_number_of_attendees: 16
@@ -291,7 +294,7 @@ Nasz warsztat zdecydowanie nie będzie typowym odtworzeniem czterech pierwszych 
       time_slots: [time_slot_3, time_slot_4]
       speaker: "Tomasz Grynfelder"
       description: "6 hours of introduction to development for iOS. From basic project configuration, \"Hello World\" up to UITableView + (elementary) CoreData.
-Mac with OS X and Xcode 5 (already installed) will be obligatory to participate in this workshop."
+Mac with OS X and Xcode 5 + AppCode (already installed, AppCode as 30 days trial fits in) will be obligatory to participate in this workshop."
       maximum_number_of_attendees: 16
       tags: [ios]
 
@@ -346,8 +349,11 @@ In newest version there is about 30 exercises/examples about different aspects o
       name: "Android Wear Development Session"
       time_slots: [time_slot_3]
       speaker: "Michał Tajchert"
-      description: "A workshop to set up an emulator of Android Wear watch and create some simple apps using it. I will cover topics such: Notifications (also with actions), Voice, custom watchfaces and sharing data with a phone. In that order so even beginners won't get lost and will benefit from it. But it is addressed to mid skilled (and above) Android devs.
-Participants need to have a phone with Android >=4.3 to fully benefit from this workshop."
+      description: "Warsztat zacznie się od konfiguracji emulatora Android Wear i podłączenie go do telefonu . Następnie napiszemy aplikację z powiadomieniami wraz z akcjami dla Android Wear, a na koniec - aplikację dedykowaną na zegarek.
+
+Chętni uczestnicy będą mogli na koniec przetestować swoje aplikację na zegarku Samsung Gear Live.
+
+Wymagane: Znajomość platformy Android, telefon z Androidem >=4.3 (lub emulator), Android Studio i pobrane SDK 4.4W (API 20)."
       maximum_number_of_attendees: 16
       tags: [android]
 
@@ -365,7 +371,7 @@ Warsztat dla początkujących."
       name: "RoboSpock. Modern unit testing in Android using Groovy."
       time_slots: [time_slot_3]
       speaker: "Przemysław Jakubczyk"
-      description: "-"
+      description: "Jak ugryźć testy jednostkowe w Androidzie, czyli od Robolectrica przez Gradle do Grooviego. To jest właśnie Robospock."
       maximum_number_of_attendees: 16
       tags: [android]
 
@@ -387,7 +393,9 @@ I can also lead the workshops in English. But as AWS User Group Poland we'd like
       name: "Testowanie ekranów logowania na platformie Android z użyciem RoboSpocka"
       time_slots: [time_slot_4]
       speaker: "Aleksander Piotrowski"
-      description: "Korzystając z faktu, że warsztat jest dłuższy niż typowa prezentacja na imprezie branżowej i może zawierać bardziej szczegółowe informacje, niż ogólniki padająca na typowych prezentacjach o testowaniu na platformie, marzy mi się przeprowadzić praktyczny kurs pokazujący jak konkretnie przetestować ekrany logowania na platformie Android. Ale czy się uda?"
+      description: "Korzystając z faktu, że warsztat jest dłuższy niż typowa prezentacja na imprezie branżowej i może zawierać bardziej szczegółowe informacje, niż ogólniki padająca na typowych prezentacjach o testowaniu na platformie, marzy mi się przeprowadzić praktyczny kurs pokazujący jak konkretnie przetestować ekrany logowania na platformie Android. Ale czy się uda?
+
+Po cichu zakładamy, że znasz już RoboSpocka. Jeśli nie, to polecamy warsztat \"RoboSpock. Modern unit testing in Android using Groovy.\""
       maximum_number_of_attendees: 16
       tags: [android]
 
@@ -428,9 +436,8 @@ It will be basic course of Android app decompilation, receompilation etc."
       name: "Building rich single-page application with Ember.js"
       time_slots: [time_slot_4]
       speaker: "Aleksander Dąbrowski"
-      description: "This is introduction to Ember.js - little less known alternative to Angular. It's good to have choice, and Ember.js may be better choice when you want to build bigger, and more complicated applications. I don't want to discuss about differences between Ember.js and Angular, I just want to show it to the people, and teach them good basics.
-I have spoken at conferences in Europe and US, you can see my experience at http://lanyrd.com/profile/_tjeden/past/speaking/ There are also some videos of my talks here: http://lanyrd.com/profile/_tjeden/video/ You can see my lightning talk from Railsberry - it’s only 5 minutes long: https://www.youtube.com/watch?v=Oj4vXMRenFo I’m also an lecturer at Coder’s Lab, when I teach about OOP and TDD, since first edition, plus I was delivering few week-long trainings in Ruby on Rails, so I know how to conduct a workshop. I can show you some references if needed. 
-Bio:
+      description: "This is introduction to Ember.js - little less known alternative to Angular. It's good to have choice, and Ember.js may be better choice when you want to build bigger, and more complicated applications. I won't discuss differences between Ember.js and Angular, I will show you how to build single-page application.
+
 Aleksander Dąbrowski is a Ruby developer, CTO at Astarium, and lecturer at Coder's Lab - Ruby on Rails school. He has worked in a variety of start-ups and in a marketing agency. He co-organises Warsaw's Ruby User Group. Aleks is also the author of rubysfera.pl, the leading Polish blog focused on Ruby and Rails. He likes to speak at Ruby developer events and is very passionate about sharing his knowledge with others. Along with using and contributing to open source software, Aleks particularly enjoys deleting ugly code, and in his spare is city guide of Warsaw."
       maximum_number_of_attendees: 16
       tags: [javascript]
@@ -771,11 +778,14 @@ Jak setupować, jak łączyć, jak zrobić aby te narzędzia ze sobą współgra
       time_slots: [time_slot_2]
       speaker: "Jan Stępień, Yannick Scherer"
       description: "In this workshop we will demonstrate how easy it is to use Clojure for building modern web applications. We'll start by presenting the structure of a typical Clojure project. We'll set our goal as building a simple WebSocket-based chat application. We'll take a peek into the Clojure ecosystem and pick libraries which will help us build our app. By composing them we'll demonstrate how easy it is to interact with third party code in a language which promotes simplicity. We'll connect our editor to the JVM running our code and experiment by editing our sources directly within a running application. We'll discover why Clojure programmers tend to describe their development model as REPL-driven. We'll learn how to keep track of changing state of our application in a thread-safe way. We'll find out how simple it is to maintain consistency in a multithreaded environment when all data structures are immutable. By using protocols we'll study injection of abstract behaviour and we'll make our code extensible and testable. Finally, we'll learn how to package our application and deploy it as a portable JAR. We'll be also happy to answer any questions regarding experiences of running Clojure in a production setting.
+
 This workshop is not an entry level one; We expect the audience to be familiar with basics of Clojure. We also expect participants' computers to have a necessary Clojure environment installed; We will provide participants with a pre-workshop to-do list. We'll also need Internet access.
+
 Your coaches work as backend developers at stylefruits, one of largest European fashion and interior design platforms. They're responsible for Clojure services backing websites hit by over 10 million unique sessions across the continent. They work with the language every day.
+
 Yannick Scherer graduated in CS from Technical University of Munich. He's an active member of the Clojure open source ecosystem and the author of lein-ancient, a popular library which every day saves time of Clojure developers upgrading their projects' dependencies.
-Jan Stępień graduated in CS from Warsaw University of Technology. Apart from releasing a bunch of Clojure projects and occasional contributions on GitHub he spent way too much time writing his own VM running a subset of Clojure.
-By extrapolating from our two proposals, we can offer more in-depth, advanced workshops and dive into some more complicated topics. We suspect that the demand for such workshops might be low but if you're interested just let us know!"
+
+Jan Stępień graduated in CS from Warsaw University of Technology. Apart from releasing a bunch of Clojure projects and occasional contributions on GitHub he spent way too much time writing his own VM running a subset of Clojure."
       maximum_number_of_attendees: 16
       tags: [jvm_goodies]
 
