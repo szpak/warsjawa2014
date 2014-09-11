@@ -144,9 +144,7 @@ Moje przygotowanie będzie polegało na doborze kilku problemów, przygotowaniu 
       name: "Akka basics: remoting and clustering"
       time_slots: [time_slot_1]
       speaker: "Krzysztof Romanowski, Piotr Kukiełka"
-      description: "Żeby zaoszczędzić cenny czas programistów zgłoszenia dokonuje Dominika Musiał - jest mój mail dołączony i we wszystkich sprawach można i nawet należy kontaktować się ze mną. Zdjęcia, bio czy szczegóły prezentacji będę w stanie dostarczyć. 
-Jest to warsztat zastępczy za Konrada Malawskiego. Prosił jedną osobę od nas z firmy o zastąpienie go, jednak ona w tym czasie nie jest dostępna. Wybraliśmy jednak 2 pracowników z tego samego zespołu i Konrad ich zaakceptował dlatego też idzie zgłoszenie.
-Jedyne nasze zastrzeżenie jest takie, że pasujący termin to piątek, sobota niestety odpada. Jeżeli jeszcze nie upchaliście sobie agendy i chcecie coś o takiej tematyce to chętnie zwiększymy reprezentację firmy do 3 osób :)"
+      description: ""
       maximum_number_of_attendees: 16
       tags: [scala]
 
@@ -317,9 +315,7 @@ Mac with OS X and Xcode 5 (already installed) will be obligatory to participate 
       name: "Informatycy vs. reszta świata - Communication Kata"
       time_slots: [time_slot_0]
       speaker: "Dominika Musiał"
-      description: "Planuję dla urozmaicenia ściągnąć 2 osoby - z czego jedna absolutnie nie będzie związana z IT aby grupy miały obiekty testowe. Oczywiście jeszcze moja wizja warsztatów jeszcze jakoś będzie ewoluowała. 
-Czemu powinniście wybrać mnie? Żeby mieć jakieś warsztaty prowadzone przez kobietę ;)
-Jedyne moje zastrzeżenie to max 20 osób i to, że prowadzę warsztaty tylko po polsku. Ewentualnie gdybyście woleli mogę to zrobić dłuższe na te 3h, wtedy też mogę mieć ~30 osób. "
+      description: ""
       maximum_number_of_attendees: 16
       tags: [soft]
 
