@@ -35,15 +35,24 @@ workshops:
       name: "Google App Engine - from 0 to working web application (with Eclipse)"
       time_slots: [time_slot_2]
       speaker: "Maciej Arkit"
-      description: "The workshop will explain how to setup your environment to start working with Google App Engine using Eclipse.
-Then it will show how to implement sample application using Java/JSP in GoogleAppEngine (including frontend and backend).
-It will show most important modules of GAE: persistence, cron jobs, authentication, images, GAE console etc.
+      description: Google App Engine is a Platfrom as a Service which helps you to build your project on Google's infrastructure, 
+which scales well and keeps your app ready for success (huge traffic) from beginning.
+If you are looking for advanced and scalable platform to start your new project or place for your home site
+without having to pay unless it gets profitable - please come and join! 
+
+
+The workshop will explain principles and how to setup your environment to start working using GAE plugin for Eclipse.
+Then it will show how to implement sample application using Java/SpringMVC/JSP in GoogleAppEngine (including frontend and backend).
+
+It will show most important modules of GAE: 
+-persistence, 
+-cron jobs, 
+-authentication, 
+-images, 
+-GAE dashboard console etc.
+
 At the end workshop will lead through public domain configuration.
-The result will be publicly available application.
-Why me:
--I'm Java developer / team lead with 10years of professional experience
--For almost 2 years I'm developing startup application RestoTronic.com using GoogleAppEngine - which implies I can show attendees real case scenarios and share more than formal knowledge
--I already lead similar workshop in my company for about 15 people they were satisfied (at least they were able to hide the truth :) )"
+The result will be publicly available application."
       maximum_number_of_attendees: 16
       tags: [java]
 
@@ -97,7 +106,7 @@ Remember - minimum theory, maximum practice!"
       name: "IMPACT: How to get results through clear thinking"
       time_slots: [time_slot_3]
       speaker: "Michał Parkoła"
-      description: "More then a decade after the Agile Manifesto it's no longer enough to talk anout \"working software\" and \"responding to change\". Along with constantly advancing engineering practices we need more powerful methods for defining success, planning and evaluating progress. And it all starts with the brutal honesty of numbers..."
+      description: "More then a decade after the Agile Manifesto it's no longer enough to talk anout 'working software' and 'responding to change'. Along with constantly advancing engineering practices we need more powerful methods for defining success, planning and evaluating progress. And it all starts with the brutal honesty of numbers..."
       maximum_number_of_attendees: 16
       tags: [agile]
 
@@ -199,11 +208,9 @@ Detale poprzednich spotkań można znaleźć na stronach meetup SCKRK i PJUG."
       name: "Specification by Example - Cucumber Automation Workshop"
       time_slots: [time_slot_2]
       speaker: "Krzysztof Jelski"
-      description: "Chcę się skoncentrować na automatyzowaniu specyfikacji (scenariuszy) w Cucumberze. Zakładam użycie cucumber-jvm.
-Uczestnicy rozpoczną z przygotowanym szkieletem aplikacji i kilkoma już zautomatyzowanymi scenariuszami (na poziomie \"Hello world\"). Ich zadaniem będzie automatyzacja od jednego do kilku następnych scenariuszy. Po drodze nauczą się kilku trików (automatyzacja na różnych poziomach aplikacji, użycie tagów i hooków, tworzenie warstwy automatyzacji).
-Opcje (tzn. dajcie znać, jeśli uważacie, że warto którąś wykorzystać):
-- dłuższe wprowadzenie do tego, jak pisać dobre scenariusze kosztem czasu na automatyzację
-- automatyzacja w cucumber-js zamiast cucumber-jvm"
+      description: "Chcę się skoncentrować na automatyzowaniu specyfikacji (scenariuszy) w Cucumberze. Zakładam użycie cucumber-jvm [https://github.com/cucumber/cucumber-jvm]. Co oznacza niekoniecznie Javę. Będziecie mogli użyć też Groovy'ego, Scali czy Clojure.
+
+Rozpoczniecie z przygotowanym szkieletem aplikacji i kilkoma już zautomatyzowanymi scenariuszami (na poziomie 'Hello world'). Waszym zadaniem będzie automatyzacja od jednego do kilku następnych scenariuszy. Po drodze nauczycie się kilku trików (automatyzacja na różnych poziomach aplikacji, użycie tagów i hooków, tworzenie warstwy automatyzacji)."
       maximum_number_of_attendees: 16
       tags: [agile]
 
@@ -252,10 +259,11 @@ You can find the materials (schematics and code) at https://github.com/rucek/ard
       name: "Android without boilerplate"
       time_slots: [time_slot_3]
       speaker: "Maciej Górski"
-      description: "What's it about?
-Android workshop about writing as little amount of code as possible and actually creating useful apps at the same time.
-Why should we pick you?
-You shouldn't, but if you do, beware: I will share some of my knowledge on Android programming."
+      description: "Mobile applications become more complex each year. This also means our code base essentially becomes more complex. But we must distinguish essential complexity from accidental, which is often rooted in the boundary we base on - Android SDK.
+
+There are many tools and libraries that can help with that, but we will focus on those using Pluggable Annotation Processing API or JSR-269. Annotation processing tools can greatly help us remove boilerplate often crossing business logic, so we can focus more on requirements and spend less time on reviewing and maintaining code that is expected to exist for our application to correctly behave in the world of Android.
+
+We will try to use a couple of libraries specifically designed to ease our work: AndroidAnnotations, ButterKnife, Parceler and Hrisey. We will also write our own, simple JSR-269-based tool."
       maximum_number_of_attendees: 16
       tags: [android]
 
@@ -291,7 +299,7 @@ Bring your laptops. We'll send you more instructions after workshop registration
       name: "iOS Development Intro"
       time_slots: [time_slot_3, time_slot_4]
       speaker: "Tomasz Grynfelder"
-      description: "6 hours of introduction to development for iOS. From basic project configuration, \"Hello World\" up to UITableView + (elementary) CoreData.
+      description: "6 hours of introduction to development for iOS. From basic project configuration, 'Hello World' up to UITableView + (elementary) CoreData.
 Mac with OS X and Xcode 5 + AppCode (already installed, AppCode as 30 days trial fits in) will be obligatory to participate in this workshop."
       maximum_number_of_attendees: 16
       tags: [ios]
@@ -300,7 +308,17 @@ Mac with OS X and Xcode 5 + AppCode (already installed, AppCode as 30 days trial
       name: "Automating your infrastructure with Ansible"
       time_slots: [time_slot_2]
       speaker: "Kamil Szymański"
-      description: "Learn Ansible basics and conventions, touch more advanced stuff but what's more important understand how it works and how to work with it. We will also use Ansible with Vagrant / Docker, see the difference between Ansible and Puppet / Chef and learn enough YAML :>."
+      description: "Learn Ansible basics and conventions, touch more advanced stuff but what's more important understand how Ansible works and how to work with it.
+We will also use Ansible with Vagrant / Docker, see how Ansible differs from Puppet / Chef and learn enough YAML :>.
+
+### What is Ansible?
+Ansible is radically simple, yet powerful IT automation tool.
+It can configure systems, deploy software, and orchestrate more advanced IT tasks such as continuous deployments or zero downtime rolling updates.
+It's configurations are simple data descriptions of your infrastructure (both human-readable and machine-parsable) which guarantees that everyone on your team will be able to understand the meaning of each configuration task.
+
+### Who will get the most out of this workshop?
+This workshop should be most beneficial for people working in an environment that has not yet or just started DevOps transition.
+If you already are a Puppet / Chef (or any similar solution) user you might find few parts of this workshop a little boring because we will start with the basics."
       maximum_number_of_attendees: 16
       tags: [automation_monitoring]
 
@@ -392,7 +410,7 @@ awsug.pl"
       speaker: "Aleksander Piotrowski"
       description: "Korzystając z faktu, że warsztat jest dłuższy niż typowa prezentacja na imprezie branżowej i może zawierać bardziej szczegółowe informacje, niż ogólniki padająca na typowych prezentacjach o testowaniu na platformie, marzy mi się przeprowadzić praktyczny kurs pokazujący jak konkretnie przetestować ekrany logowania na platformie Android. Ale czy się uda?
 
-Po cichu zakładamy, że znasz już RoboSpocka. Jeśli nie, to polecamy warsztat \"RoboSpock. Modern unit testing in Android using Groovy.\""
+Po cichu zakładamy, że znasz już RoboSpocka. Jeśli nie, to polecamy warsztat 'RoboSpock. Modern unit testing in Android using Groovy.'"
       maximum_number_of_attendees: 16
       tags: [android]
 
@@ -409,7 +427,7 @@ It will be basic course of Android app decompilation, receompilation etc."
       name: "Single Page App z Django i AngularJS"
       time_slots: [time_slot_3]
       speaker: "Łukasz Balcerzak, Konrad Hałas"
-      description: "Celem warsztatów będzie stworzenie aplikacji webowej typu SPA (Single Page App) wykorzystującej Pythona po stronie serwerowej i JavaScript po stronie frontendowej. Podczas warsztatów szczególny nacisk zostanie położony na zaznaczenie odpowiedzialność pomiędzy dwoma częściami tworzonej aplikacji. W ramach warsztatów zostanie omówiony \"nowoczesny\" stos bibliotek i narzędzi ułatwiających pracę webdevelopera, w oparciu o frameworki Django oraz AngularJS."
+      description: "Celem warsztatów będzie stworzenie aplikacji webowej typu SPA (Single Page App) wykorzystującej Pythona po stronie serwerowej i JavaScript po stronie frontendowej. Podczas warsztatów szczególny nacisk zostanie położony na zaznaczenie odpowiedzialność pomiędzy dwoma częściami tworzonej aplikacji. W ramach warsztatów zostanie omówiony 'nowoczesny' stos bibliotek i narzędzi ułatwiających pracę webdevelopera, w oparciu o frameworki Django oraz AngularJS."
       maximum_number_of_attendees: 16
       tags: [javascript]
 
@@ -417,7 +435,7 @@ It will be basic course of Android app decompilation, receompilation etc."
       name: "Zautomatyzowane testy aplikacji webowych przez przeglądarkę za pomocą biblioteki Geb"
       time_slots: [time_slot_1]
       speaker: "Adam Ruka"
-      description: "Warsztat ma na celu pokazanie możliwości biblioteki Geb w pisaniu automatycznych testów funkcjonalnych i akceptacyjnych. Mają one wysoki stopień wiarygodności, gdyż korzystają z takiej samej przeglądarki, co użytkownicy aplikacji. Pozwalają też na szybką werfykację działania pod różnymi przeglądarkami. Myślę, że temat jest ciekawy i nie taki trywialny."
+      description: "This workshop presents ways to leverage the Geb library to write automated functional and acceptance tests that interact with your web application through a real browser, thus allowing your tests to achieve high levels of confidence and quickly detect browser incompatibilities."
       maximum_number_of_attendees: 16
       tags: [automation_monitoring]
 
@@ -463,14 +481,14 @@ Warsztaty bylyby ogolnie o optymalizacji pracy dla Frontend Developera - jak prz
       name: "From ServiceMix to Fabric8 - esb trends, practice, lessons learned"
       time_slots: [time_slot_1]
       speaker: "Stoigniew Sztank"
-      description: "\"The old days of having 2 boxes with a few XML config files on each box managed by hand are fast becoming the death ...\" - Fabric8
-We want to share our experience with integration platform ServiceMix and Fabric8. Practice and examples.
-If you identify with at least one of the following statements is a Workshop for you: 
-1) I am integration Guru.
-2) I deal with integration from time to time.
-3) Contributed to run the Web service (eg, \"was coding\", \"implemented a\", \"kept our fingers crossed\").
-4) I do not know what's going on with this integration but would like to know.
-5) I'd like to see an interesting use case Docker."
+      description: "Build integration example based on Camel and run it on different integration platforms like ServiceMix and Fabric8.
+  
+Discuss about integration and ESB platforms.  Draw your own conclusions.
+
+Everyone is welcome. 
+Newbie? Get fast track to integration. 
+Integration expert? Drop by to enrich our discussion. 
+Docker affected? Get your hands dirty."
       maximum_number_of_attendees: 16
       tags: [java]
 
@@ -488,7 +506,7 @@ Podczas warsztatów pokażę jak efektywnie wykorzystać usługę Amazon EMR z t
       name: "Puppet"
       time_slots: [time_slot_4]
       speaker: "Łukasz Szczęsny"
-      description: "\"Puppet jest trudny, uciążliwy i dziwny \" - to bardzo popularna opinia na temat tego narzędzia do zarządzania konfiguracją. Postaram się pokazać ludzką twarz Puppeta. 
+      description: "'Puppet jest trudny, uciążliwy i dziwny' - to bardzo popularna opinia na temat tego narzędzia do zarządzania konfiguracją. Postaram się pokazać ludzką twarz Puppeta. 
 Wyjaśnię jak napisać m.in. własny moduł, funkcje, dodać własne fakty do factera. Wszystko będzie uruchamiane na maszynie wirutlanej działającej pod kontrolą Vagranta."
       maximum_number_of_attendees: 16
       tags: [devops]
@@ -534,7 +552,7 @@ Prerequisite: Grails 2.4.3 and Groovy 2.3 distribution installed on your laptop 
       name: "Mortal Combos czyli refaktoryzacje w Eclipse"
       time_slots: [time_slot_2]
       speaker: "Paweł Radziński"
-      description: "Warsztaty o pokojowym tytule \"Mortal Combos czyli refaktoryzacje w Eclipse\" dotyczyć będą różnych refaktoryzacji w Eclipse, małych i większych, a przy okazji innych sztuczek ułatwiających pracę w tym środowisku. Język programowania: Java.
+      description: "Warsztaty o pokojowym tytule 'Mortal Combos czyli refaktoryzacje w Eclipse' dotyczyć będą różnych refaktoryzacji w Eclipse, małych i większych, a przy okazji innych sztuczek ułatwiających pracę w tym środowisku. Język programowania: Java.
 Pokażę trochę podstawowych operacji, które często stosowane potrafią przyspieszyć i ułatwić pracę. Potem pojawią się też combosy, czyli bardziej złożone refaktoryzacje. Będziemy pracować na prostych, fikcyjnych przykładach. Żeby nie było zupełnie fikcyjnie, będziemy pisać testy (tu możesz wstawić uśmieszek jeśli Ci pasuje). I przy okazji trochę porozmawiamy o podstawach pisania dobrych testów.
 Jeśli pracujesz w Eclipse (WID, OEPE, inne...) i chcesz ułatwić sobie życie, bądź wymienić doświadczeniami - przyjdź.
 Uwagi:
@@ -584,8 +602,8 @@ I will prefer Saturday - but it is not a must."
       name: "Java 8 w codziennym życiu"
       time_slots: [time_slot_2]
       speaker: "Tomasz Fijałkowski"
-      description: "Celem warsztatu jest przybliżyć uczestnikom możliwości Javy 8. Omówię paradygmat programowania funkcyjnego, jak wyrażenia lambda mogą poprawić jakość kodu oraz zastąpić klasyczne wzorce projektowe. Czyli to z czym mamy do czynienia na co dzień.
-Aktualnie plan zakłada rozpoczęcie od 15-20 minutowej prezentacji wprowadzającej, później uczestnicy przystąpią do rozwiązywania (w parach) przygotowanych ćwiczeń. Po każdym zadaniu będzie przeprowadzana dyskusja, co można było zrobić lepiej i dlaczego Java 8 jest fajna (a czego jej jeszcze brakuje). Przygotuję także parę przykładów, które mam zamiar rozwiązać na żywo."
+      description: "Celem warsztatu jest przybliżenie uczestnikom możliwości Javy 8. W trakcie zajęć omówiony zostanie paradygmat programowania funkcyjnego oraz zostanie zaprezentowane jak wyrażenia lambda mogą poprawić jakość kodu i zastąpić klasyczne wzorce projektowe. Czyli jak radzić sobie z tym wszystkim, z czym mamy do czynienia na co dzień.
+Zajęcia praktyczne poprzedzi krótka prezentacja, po której przystąpimy do rozwiązywania w parach przykładowych ćwiczeń. Każde zadanie zostanie przedyskutowane pod kątem możliwości Javy 8 oraz jej potencjalnych braków."
       maximum_number_of_attendees: 16
       tags: [java]
 
@@ -596,7 +614,7 @@ Aktualnie plan zakłada rozpoczęcie od 15-20 minutowej prezentacji wprowadzają
       description: "Nie planuję pokazywać kolejnego narzędzia, które przetwarza olbrzymie ilości danych, nie będzie prawie nic o bazach grafowych, giraph.apache.org, gephi.github.io zamiast tego będzie można dowiedzieć się jak wyciągać praktyczne wnioski z analizy tych danych - czyli jak informacje ilościowe przekształcić w informacje jakościowe. 
 Opowiem o miarach istotnych w sieciach społecznościowych, sposobach ich wyznaczania, o algorytmach generowania grafów o zadanych właściwościach, co się stanie jak do procesu tworzenia takiego grafu dodamy wnioski płynące z zastosowania teorii gier i co z tego wynika.
 Postaram się również pokazać kilka bardzo podstawowych faktów, które zmienią Wasze spojrzenie na zastosowanie grafów w informatyce. 
-Nie planuję popełnić plagiatu, ale będę w części teoretycznej bazował na wykładzie prof. Matthew O. Jacksona pod tytułem \"Social and Economic Networks: Models and Analysis\" oraz jego książce \"Social and Economic Networks\". Postaram się położyć nacisk na część obliczeniową - głównie w aplikacji gephi.github.io ale również po prostu na kartce/tablicy/jakkolwiek."
+Nie planuję popełnić plagiatu, ale będę w części teoretycznej bazował na wykładzie prof. Matthew O. Jacksona pod tytułem 'Social and Economic Networks: Models and Analysis' oraz jego książce 'Social and Economic Networks'. Postaram się położyć nacisk na część obliczeniową - głównie w aplikacji gephi.github.io ale również po prostu na kartce/tablicy/jakkolwiek."
       maximum_number_of_attendees: 16
       tags: [data_analysis]
 
@@ -627,8 +645,8 @@ Nie planuję popełnić plagiatu, ale będę w części teoretycznej bazował na
     - id: workshop_55
       name: "Beginning Functional Programming in Java world"
       time_slots: [time_slot_3]
-      speaker: "Bartek \"Koziołek\" Kuczyński"
-      description: "Workshop is for java programmers who never worked in \"functional world\" and like to try this. I will show You basics of functional programming (FP). Main differences between Object Oriented and Functional way to solve problems and how to merge this two worlds together. 
+      speaker: "Bartek 'Koziołek' Kuczyński"
+      description: "Workshop is for java programmers who never worked in 'functional world' and like to try this. I will show You basics of functional programming (FP). Main differences between Object Oriented and Functional way to solve problems and how to merge this two worlds together. 
 After this workshop You will know how to create functional like code in java and how this methodology could help You in your daily task. 
 Minimum requirements:
 - Basic Java knowledge 
@@ -642,7 +660,8 @@ Plan:
 - How to test functional code
 - Second round of exercises
 - OO and FP in one project.
-Workshop should be in Polish, but if we will have non-polish guest it will be in english. "
+
+Workshop should be in Polish, but if we will have non-polish guest it will be in english."
       maximum_number_of_attendees: 16
       tags: [java]
 
@@ -667,7 +686,7 @@ The idea of the workshop is demonstration and practice on patological applicatio
       name: "Software Defined Networking in Python"
       time_slots: [time_slot_2]
       speaker: "Konrad Gawda, Michał Pawłowski"
-      description: "Software Defined Networking (SDN) is currently a strong trend in telecommunications. It allows to split Control Plane (the \"brain\" of the network) from Data Plane. We will show how it works, using example of most popular SDN protocol - OpenFlow, and Python frameworks for SDN controllers - POX and to some extent also Pyretic. The workshop will start with theoretical introduction, and then, in practical part participants will do some exercise with SDN frameworks, to finally implement own networking service.
+      description: "Software Defined Networking (SDN) is currently a strong trend in telecommunications. It allows to split Control Plane from Data Plane. We will show how it works, using example of most popular SDN protocol - OpenFlow, and Python frameworks for SDN controllers e.g. POX. We will start with some theory and then go to practical exercise with SDN frameworks and implementing own networking services.
 Experience with SDN will be for sure useful for work in both Telco networks and data centers."
       maximum_number_of_attendees: 16
       tags: [misc]
@@ -700,7 +719,7 @@ Czas potrzebny na poprowadzenie warsztatów oceniam na 2-2.5h."
       name: "Squeeze more from your webapp - when simple CSS can replace complex Javascript"
       time_slots: [time_slot_4]
       speaker: "Michał Trzaskowski"
-      description: "The IE6 \"blocking\" era is long over. Nowadays browsers support many features and standards that speeds up development and offer very rewarding designing effects. Even the simplest CSS standard is getting much attention although it's true capabilities are still a mystery to many web developers. Today CSS provides many design flavours that was only available through use of complex JavaScript or third party plug-ins / libraries. Animations, transition effects or graphic transformations can be declared and used with simple and declarative syntax of good old web standard.
+      description: "The IE6 'blocking' era is long over. Nowadays browsers support many features and standards that speeds up development and offer very rewarding designing effects. Even the simplest CSS standard is getting much attention although it's true capabilities are still a mystery to many web developers. Today CSS provides many design flavours that was only available through use of complex JavaScript or third party plug-ins / libraries. Animations, transition effects or graphic transformations can be declared and used with simple and declarative syntax of good old web standard.
 On my workshop I will try to present and work through a few pretty nice CSS solutions. Dynamic gradients, shadows and transparency, transitions and animations, 2d transformations. Some of them can reduce complexity of used JavaScript, some of them may even replace whole JavaScript libs at all.
 Michał is Team Leader and Software Architect with web-based interfaces specialization. More than 8 years of experience in web-like technologies and cross-browser interface design (including solutions for CSS and Javascript browser incompatibilities). Advocate of all that is linked with good UX (User Experience). Since 2011 regular workshop and conference speaker. Currently working as Project Manager at TouK.
 http://www.linkedin.com/pub/micha%C5%82-trzaskowski/24/618/31a"
@@ -721,7 +740,7 @@ Just a little bit info about me: I am a Java Software Engineer from Berlin worki
       name: "Clojure for the brave"
       time_slots: [time_slot_3]
       speaker: "Piotr Jagielski, Marcin Cylke"
-      description: "First we would like to do a brief clojure introduction (1/3 of the given time) than encourage people to play a game. The challenge would be to fight with each other (each team?) by way of clojure-written program. We would provide a server and dummy implementation of a client. And fighting logic would be implemented by the workshop attendees."
+      description: "First we would like to do a brief Clojure introduction than encourage people to solve some puzzles in Clojure. Solving in groups or individually. There would be simple ones - like testing, basic operations and structures, and more advanced - involving external services, distributed computations."
       maximum_number_of_attendees: 16
       tags: [jvm_goodies]
 
