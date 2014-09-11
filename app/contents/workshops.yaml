@@ -1,34 +1,34 @@
 ---
 time_slots:
     - time_slot: &time_slot_1
-          id: time_slot_1
-          day: Friday
-          start_hour: '13:00'
-          end_hour: '16:15'
+      id: time_slot_1
+      day: Friday
+      start_hour: '13:00'
+      end_hour: '16:15'
 
     - time_slot: &time_slot_2
-          id: time_slot_2
-          day: Friday
-          start_hour: '17:15'
-          end_hour: '20:30'
+      id: time_slot_2
+      day: Friday
+      start_hour: '17:15'
+      end_hour: '20:30'
 
     - time_slot: &time_slot_3
-              id: time_slot_3
-              day: Saturday
-              start_hour: '09:30'
-              end_hour: '12:45'
+      id: time_slot_3
+      day: Saturday
+      start_hour: '09:30'
+      end_hour: '12:45'
 
     - time_slot: &time_slot_0
-          id: time_slot_0
-          day: Saturday
-          start_hour: '14:00'
-          end_hour: '15:30'
+      id: time_slot_0
+      day: Saturday
+      start_hour: '14:00'
+      end_hour: '15:30'
 
     - time_slot: &time_slot_4
-          id: time_slot_4
-          day: Saturday
-          start_hour: '16:00'
-          end_hour: '19:15'
+      id: time_slot_4
+      day: Saturday
+      start_hour: '16:00'
+      end_hour: '19:15'
 
 workshops:
     - id: workshop_0
@@ -198,7 +198,7 @@ Detale poprzednich spotkań można znaleźć na stronach meetup SCKRK i PJUG."
       tags: [software_craftsmanship]
 
     - id: workshop_13
-      name: "TBA"
+      name: "Programming Concurrency"
       time_slots: [time_slot_1]
       speaker: "Venkat Subramaniam"
       description: ""
@@ -493,7 +493,7 @@ Wyjaśnię jak napisać m.in. własny moduł, funkcje, dodać własne fakty do f
       tags: [devops]
 
     - id: workshop_43
-      name: "TBA"
+      name: "Meta Programming in Groovy"
       time_slots: [time_slot_2]
       speaker: "Venkat Subramaniam"
       description: ""
@@ -816,7 +816,7 @@ Warsztat będzie prowadzony po polsku, względnie może być po niemiecku. Wymag
       tags: [java]
 
     - id: workshop_71
-      name: "TBA"
+      name: "Creating Domain Specific Languages using Groovy"
       time_slots: [time_slot_3]
       speaker: "Venkat Subramaniam"
       description: ""
@@ -840,3 +840,40 @@ Warsztat będzie prowadzony po polsku, względnie może być po niemiecku. Włas
       description: "This workshop is about using C/C++ code in Android development with Gradle as the build system. The topic is fresh and would be a nice addition to Warsjava's agenda I think."     
       maximum_number_of_attendees: 30
       tags: [android]
+
+    - id: workshop_74
+      name: "The Art of Giving Technical Presentations"
+      time_slots: [time_slot_0]
+      speaker: "Venkat Subramaniam"
+      description: ""
+      maximum_number_of_attendees: 50
+      tags: [android]
+
+    - id: workshop_75
+      name: "Legacy code - efektywna rewitalizacja"
+      time_slots: [time_slot_4]
+      speaker: "Marcin Zajączkowski, Michał Piotrkowski"
+      description: "Chyba każdy programista lubi pracę nad nowym projektem, gdzie może w pełni wykorzystać swoją wiedzę i doświadczenie z zakresu pisania czytelnego, testowalnego i bardziej niezawodnego kodu. Niestety czasem zdarza się, iż zmieniamy zespół/projekt/pracę i musimy zmierzyć się z istniejącym kodem, którego twórcy nie byli uświadomieni, iż klasy mające 3000 linii, nadmierne używanie operatora \“new\”, czy 6 poziomów zagnieżdzonych \“ifów\” niekoniecznie jest najlepszym pomysłem, gdy chcemy być w stanie szybko i bezpiecznie go modyfikować i rozwijać.
+W czasie warsztatu pokażemy na przykładzie kodu, który przy braku ostrożności mógłby pojawić się w większości projektów napisanych w języku Java, jak:
+ - poradzić sobie z \“nietestowalnymi\” fragmentami,
+ - napisać czytelne i efektywne testy,
+ - sprawdzić jak mocno pokrywają one produkcyjny kod,
+ - szybko i bez ryzyka przeprowadzić refaktoring.
+Wszystko to, aby móc szybko i bezpiecznie dokonywać zmian (poprawiać błędy, dodawać nowe funkcje) bez narzutu generowanego przez istniejący dług techniczny."
+      maximum_number_of_attendees: 30
+      tags: [software_craftsmanship]
+
+    - id: workshop_76
+      name: "Pełne zanurzenie w Scruma dla developerów"
+      time_slots: [time_slot_2]
+      speaker: "Wòjcech Makùrôt"
+      description: "Nie ma lepszej metody nauki języka niż przez tzw. zanurzenie (immersję), analogicznie nie da się poznać Scruma tylko czytając o nim.
+Zapraszam na kilka godzin pełnego zanurzenia w zwinności (Agile). Wraz z doświadczonym Scrum Masterem nie tylko dowiesz się jak wygląda praca w zespole zwinnym, ale przede wszystkim poczujesz ją na własnej skórze. Poznasz ciekawe i sprawdzone metody, jak uczynić swoją pracę bardziej efektywną, ale i zarazem przyjemniejszą. Dowiesz się, co znaczy wartość samoorganizującego się Zespołu, nauczysz się zwinnie szacować i planować pracę, prawidłowo określać Definicję ""Done"", a także odpowiednio ofertować swoją pracę. Nie zabraknie też odpowiedzi na tak ważkie kwestie jak: kiedy nie warto stosować Scruma, jakie są najczęstsze problemy podczas jego wdrażania i jak sobie z nimi radzić. Wszystko oczywiście maksymalnie zwinnie i elastycznie.
+
+Warsztat to zbiór kilkunastu ćwiczeń, wybranych subiektywnie z różnych szkoleń, warsztatów i konferencji, a czasami także i z życia. Wszystkie one stanowią wypełnienie najważniejszej formy, jaką jest kilka mikro sprintów, zorganizowanych jako w pełni wartościowy Scrum, ze wszystkimi itotnymi jego elementami. Nie ma żadnej prezentacji, wszystko to są zadania w backlogu produktu. Do prezentacji używam chyba najpopularniejszego narzędzia, tj. Jiry z pluginem Jira Agile, więc jest też możliwość poznać jak to działa w praktyce. Po takich warsztatach uczestnicy są w stanie skutecznie pracować w zespole scrumowym, wykorzystując wszystkie zalety tej metodyki.
+Warsztat może być w wersji ok. trzygodzinnej dla ludzi znających już Scruma, albo rozszerzony o 1,5-godzinne wprowadzenie w Scruma (obie części razem, albo oddzielnie).
+
+Dwa słowa o mnie:
+Jestem certyfikowanym Scrum Masterem (PSMI) i Product Ownerem (PSPOI). Na codzień pracuję jako Scrum Master i developer Java. Prowadzę też szkolenia dla zespołów developerskich, wdrażających Scruma. Pomogłem już wdrożyć Scruma kilku/kilkunastu zespołom różnej wielkości i w kilku różnych firmach. Interesuję się głównie Scrumem na poziomie organizacji pracy zespołu developerskiego. Należę do wąskiego grona Scrum Masterów i trenerów Agile z backgroundem technologicznym i wciąż aktywnie developuję. Tego typu warsztat prowadziłem już z dużym sukcesem m.in. na konferencji InfoShare w Gdańsku, podobny będę prowadził na targach Future3."
+      maximum_number_of_attendees: 30
+      tags: [agile]
