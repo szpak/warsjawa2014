@@ -235,7 +235,7 @@ I have comercial experience as a Android trainer and developer. I focus on pract
     - id: workshop_16
       name: "PPPPP - Ping Pong Pomodoro Pair Programming dojo"
       time_slots: [time_slot_4]
-      speaker: "Adam Pierzchała, Michał Lipski"
+      speaker: "Adam Pierzchała, Krzysztof Jelski"
       description: "This will be a coding dojo, where we will be using multiple techniques such as Ping-Pong Pair Programming, Pomodoro and TDD to help us.
 We are experienced software developers, and we use these techniques on daily basis. We want to show that by using them we can both have fun from coding, as well as improve our code quality."
       maximum_number_of_attendees: 30
