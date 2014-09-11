@@ -853,13 +853,15 @@ Warsztat będzie prowadzony po polsku, względnie może być po niemiecku. Włas
       name: "Legacy code - efektywna rewitalizacja"
       time_slots: [time_slot_4]
       speaker: "Marcin Zajączkowski, Michał Piotrkowski"
-      description: "Chyba każdy programista lubi pracę nad nowym projektem, gdzie może w pełni wykorzystać swoją wiedzę i doświadczenie z zakresu pisania czytelnego, testowalnego i bardziej niezawodnego kodu. Niestety czasem zdarza się, iż zmieniamy zespół/projekt/pracę i musimy zmierzyć się z istniejącym kodem, którego twórcy nie byli uświadomieni, iż klasy mające 3000 linii, nadmierne używanie operatora \“new\”, czy 6 poziomów zagnieżdzonych \“ifów\” niekoniecznie jest najlepszym pomysłem, gdy chcemy być w stanie szybko i bezpiecznie go modyfikować i rozwijać.
+
+      description: "Chyba każdy programista lubi pracę nad nowym projektem, gdzie może w pełni wykorzystać swoją wiedzę i doświadczenie z zakresu pisania czytelnego, testowalnego i bardziej niezawodnego kodu. Niestety czasem zdarza się, iż zmieniamy zespół/projekt/pracę i musimy zmierzyć się z istniejącym kodem, którego twórcy nie byli uświadomieni, iż klasy mające 3000 linii, nadmierne używanie operatora 'new', czy 6 poziomów zagnieżdzonych 'ifów' niekoniecznie jest najlepszym pomysłem, gdy chcemy być w stanie szybko i bezpiecznie go modyfikować i rozwijać.
 W czasie warsztatu pokażemy na przykładzie kodu, który przy braku ostrożności mógłby pojawić się w większości projektów napisanych w języku Java, jak:
- - poradzić sobie z \“nietestowalnymi\” fragmentami,
+ - poradzić sobie z 'nietestowalnymi' fragmentami,
  - napisać czytelne i efektywne testy,
  - sprawdzić jak mocno pokrywają one produkcyjny kod,
  - szybko i bez ryzyka przeprowadzić refaktoring.
 Wszystko to, aby móc szybko i bezpiecznie dokonywać zmian (poprawiać błędy, dodawać nowe funkcje) bez narzutu generowanego przez istniejący dług techniczny."
+
       maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
 
@@ -868,7 +870,7 @@ Wszystko to, aby móc szybko i bezpiecznie dokonywać zmian (poprawiać błędy,
       time_slots: [time_slot_2]
       speaker: "Wòjcech Makùrôt"
       description: "Nie ma lepszej metody nauki języka niż przez tzw. zanurzenie (immersję), analogicznie nie da się poznać Scruma tylko czytając o nim.
-Zapraszam na kilka godzin pełnego zanurzenia w zwinności (Agile). Wraz z doświadczonym Scrum Masterem nie tylko dowiesz się jak wygląda praca w zespole zwinnym, ale przede wszystkim poczujesz ją na własnej skórze. Poznasz ciekawe i sprawdzone metody, jak uczynić swoją pracę bardziej efektywną, ale i zarazem przyjemniejszą. Dowiesz się, co znaczy wartość samoorganizującego się Zespołu, nauczysz się zwinnie szacować i planować pracę, prawidłowo określać Definicję ""Done"", a także odpowiednio ofertować swoją pracę. Nie zabraknie też odpowiedzi na tak ważkie kwestie jak: kiedy nie warto stosować Scruma, jakie są najczęstsze problemy podczas jego wdrażania i jak sobie z nimi radzić. Wszystko oczywiście maksymalnie zwinnie i elastycznie.
+Zapraszam na kilka godzin pełnego zanurzenia w zwinności (Agile). Wraz z doświadczonym Scrum Masterem nie tylko dowiesz się jak wygląda praca w zespole zwinnym, ale przede wszystkim poczujesz ją na własnej skórze. Poznasz ciekawe i sprawdzone metody, jak uczynić swoją pracę bardziej efektywną, ale i zarazem przyjemniejszą. Dowiesz się, co znaczy wartość samoorganizującego się Zespołu, nauczysz się zwinnie szacować i planować pracę, prawidłowo określać Definicję 'Done', a także odpowiednio ofertować swoją pracę. Nie zabraknie też odpowiedzi na tak ważkie kwestie jak: kiedy nie warto stosować Scruma, jakie są najczęstsze problemy podczas jego wdrażania i jak sobie z nimi radzić. Wszystko oczywiście maksymalnie zwinnie i elastycznie.
 
 Warsztat to zbiór kilkunastu ćwiczeń, wybranych subiektywnie z różnych szkoleń, warsztatów i konferencji, a czasami także i z życia. Wszystkie one stanowią wypełnienie najważniejszej formy, jaką jest kilka mikro sprintów, zorganizowanych jako w pełni wartościowy Scrum, ze wszystkimi itotnymi jego elementami. Nie ma żadnej prezentacji, wszystko to są zadania w backlogu produktu. Do prezentacji używam chyba najpopularniejszego narzędzia, tj. Jiry z pluginem Jira Agile, więc jest też możliwość poznać jak to działa w praktyce. Po takich warsztatach uczestnicy są w stanie skutecznie pracować w zespole scrumowym, wykorzystując wszystkie zalety tej metodyki.
 Warsztat może być w wersji ok. trzygodzinnej dla ludzi znających już Scruma, albo rozszerzony o 1,5-godzinne wprowadzenie w Scruma (obie części razem, albo oddzielnie).
