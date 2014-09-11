@@ -57,10 +57,19 @@ The result will be publicly available application."
       tags: [java]
 
     - id: workshop_1
-      name: "iBeacon: An Introduciton"
+      name: "iBeacon: An Introduction"
       time_slots: [time_slot_4]
       speaker: "Antoni Kędracki"
-      description: "Temat jest dogadany z Maćkiem Opałą:D"
+      description: "Temat mikro-lokalizacji jest gorący. I nie ma w tym nic dziwnego. iBeacony dostarczają aplikacjom ten tak bardzo potrzebny kontekst. 'Magiczny' składnik który sprawia że mogą one wykonywać swoje zadanie dokładnie w odpowiednim miejscu i w odpowiednim czasie. I to bez naszej ingerencji. 
+
+W ramach warsztatów odpowiemy na pytanie czym są i jak działają iBeacony. A co dużo ważniejsze: jak można je wykorzystać do stworzenia ciekawych aplikacji.
+
+Celem warsztatu jest coś zakodzić, potrzebny będzie zatem:
+- Mac z xcode 5 i SDK do iOS7
+- dowolne urządzenie z iOS7 wspierające iBeacons: iPhone 4S+, iPad 3+, iPad mini+, iPod Touch 5Gen
+- podstawowa znajomość Objective-C i iOS
+
+Bardzo zachęcam do programowania w parach:D"
       maximum_number_of_attendees: 16
       tags: [ios]
 
@@ -81,17 +90,14 @@ The goals of the workshop are:
       name: "Ansible - superluminal way to infrastructure automation"
       time_slots: [time_slot_4]
       speaker: "Jakub Kramarz"
-      description: "Hello everyone, as the world starts to be dominated by Chef and Puppet, I'd like to take you on an simple, instant, agent-less and Python-powered trip through Ansible and pure LXC containers.
+      description: "As the world starts to be dominated by Chef and Puppet, I'd like to take you on an simple, instant, agent-less and Python-powered trip through Ansible and pure LXC containers.
 Three hours of playing hard with automation, writing own playbooks and Jinja templates and also extending Ansible with custom Python plugins. Tips, tricks and pitfalls.
-Bo zbyt niewydajnie pakuję torby.
-Bo zżarłem na Ansible własne zęby.
-Bo próg wejścia jest przyjemnie niski.
-Bo znalazłem ten formularz mimo martwej strony."
+Please have your VirtualBox or QEMU working before workshops to make environment setup easier."
       maximum_number_of_attendees: 16
       tags: [automation/monitoring]
 
     - id: workshop_4
-      name: "Java 8 - deep into unknown (For people who know what functional programming is)"
+      name: "Java 8 - deep into unknown"
       time_slots: [time_slot_4]
       speaker: "Michał Orłowski"
       description: "About workshop:
@@ -111,20 +117,31 @@ Remember - minimum theory, maximum practice!"
       tags: [agile]
 
     - id: workshop_6
-      name: "Functional Programming Kata"
+      name: "Fun with Functional Programming"
       time_slots: [time_slot_2]
-      speaker: "Tomasz Bartczak"
-      description: "Byłoby to spotkanie w formie Code Dojo, w który rozwiązujemy pewne problemy programistyczne w podejściu funkcyjnym, w Scali, lub jeśli niektórzy uczestnicy będą chcieli i potrafili - w innych językach.
-Każdy przykład wraz z kilkoma rozwiązaniami będzie omawiany przez grupę. Warsztat bez konkretnej technologii/narzędzia poza językiem programowania. Kierowany do osób, które wiedzą choć trochę nt. programowania funkcyjnego, ale nie czują się w nim pewnie.
-Moje przygotowanie będzie polegało na doborze kilku problemów, przygotowaniu zalążka projektu by łatwiej wystartować w Scali, wsparciu uczestników w problemach."
+      speaker: "Tomasz Bartczak, Maciej Jaśkowski"
+      description: "Na tym warsztacie poćwiczymy umiejętności programowania funkcyjnego w formie coding dojo. Coding dojo to niezła zabawa, wiecie? My wiemy. 
+    Będziemy pracować w parach i rozwiązywać zadanka programistyczne w podejściu funkcyjnym. Ciekawe aspekty i rozwiązania będą prezentowane i dyskutowane przez całą grupę.
+    Możecie pracować w dowolnym języku, ale prowadzący zapewnią wsparcie w Scali i Clojure.
+ 
+    Od uczestnika oczekujemy podstawowej wiedzy na temat programowania funkcyjnego i jakiegoś języka funkcyjnego oraz przygotowanego własnego sprzętu do pracy z nim (w czym możemy pomóc na warsztacie).
+
+    Warsztaty będą prowadzone przez Tomasza Bartczaka @bartczakt który będzie przekonywał do Scali i Maćka Jaśkowskiego @mjaskowski który będzie przekonywał do Clojure.
+
+aktualny opis i więcej informacji: 
+http://kretes.github.io/functional-workshop-warsjawa-2014/"
       maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
 
     - id: workshop_7
-      name: "How we predicted all matches winners in Fifa WorldCup 2014 - Predictive analitics in real Life - very basic introduction."
+      name: "How we predicted all matches winners in Fifa WorldCup 2014 - Predictive analitics in real Life - very basic introduction"
       time_slots: [time_slot_2]
       speaker: "Tomasz Gołembiewski"
-      description: "As a pre-sales effort for one of our accounts we're created a small application showing our capabilities in rapid developments. mobile hybrid technologies and predictive analitics. We've received a great feedback and to my suprice a lot of people inside HP wanted to know how it was done. I'm pretty sure that also people outside of HP would be interested.."
+      description: "As a pre-sales effort for one of our accounts we're created a small application showing our capabilities in rapid developments. mobile hybrid technologies and predictive analitics. We've received a great feedback and to a lot of people inside HP wanted to know how it was done. I'm pretty sure that also people outside of HP would be interested...
+Planed agenda is:
+1. Introduction to Monte Carlo method and our sample application for predicting game winners.
+2. Implementation workshop - we'll implement our whoWillWintTheGame(team1,team2) method.
+3. We try to make a little tournament using our attenders implemented methods to predict some Fifa game winners (with an Award for author of best predicting method)"
       maximum_number_of_attendees: 16
       tags: [data_analysis]
 
@@ -132,7 +149,13 @@ Moje przygotowanie będzie polegało na doborze kilku problemów, przygotowaniu 
       name: "Introduction to animations in Android"
       time_slots: [time_slot_1]
       speaker: "Kamil Książek"
-      description: "This workshop will provide information about Android animations basis. During it attendees will have an opportunity to learn about animation types and use them to implement example visual effects. Goal of this workshop is to provide practical knowledge about enhancing Android applications look and fell with animations for developers who has little to no experience in this field. Workshop is organized and sponsored by Samsung Electronics Poland."
+      description: "This workshop will provide information about Android animations basis. During it, attendees will have an opportunity to learn about animation types and use them to implement example visual effects. Goal of this workshop is to provide practical knowledge about enhancing Android applications look and feel with animations for developers, who has little to no experience in this field. Basic knowledge about creating Android applications and GUI elements is required. Topics that will be covered:
+
+- View Animations (Android pre-3.0) - changing alpha, scale, rotation and position
+- Property Animations (Android 3.0) - advanced animations scenarios (crossfading 2 buttons, zooming images, synchronizing multiple animations)
+- Changes in animations in Android L - touch feedback, reveal effects, activities transitions, curved motions, animating view state changes)
+
+All topics will be presented in sample virtual shop applications that will have their visual interface improved during workshop. Attendees will be able to see how simple changes in application improve user experience. Also they will have an opportunity to design and implement their own custom animations. Workshop is organized and sponsored by Samsung Electronics Polska."
       maximum_number_of_attendees: 16
       tags: [android]
 
@@ -140,12 +163,9 @@ Moje przygotowanie będzie polegało na doborze kilku problemów, przygotowaniu 
       name: "Akka basics: remoting and clustering"
       time_slots: [time_slot_1]
       speaker: "Krzysztof Romanowski, Piotr Kukiełka"
-      description: "Workshop will focus on practical aspects of Akka. In small groups we will be creating from scratch distributed computing system using:
-- remoting
-- work parallelization
-- error handling, supervision strategies
-- clustering
-- patters useful for programming with actors"
+      description: "This workshop is aiming for teaching Akka using practical examples.
+We will be working in small teams trying to build distributed computing system.
+Starting with simple prototype we will incrementally build more robust and secure system using Akka remoting, clustering, work parallelization and error handling with supervision strategies. All attempts will be automatically rated by central server, so be prepared for a bit of competition as well!"
       maximum_number_of_attendees: 16
       tags: [scala]
 
@@ -153,16 +173,21 @@ Moje przygotowanie będzie polegało na doborze kilku problemów, przygotowaniu 
       name: "Beyond Futures and Actors"
       time_slots: [time_slot_1]
       speaker: "Maciej Jaśkowski"
-      description: "It's an introduction to concurrency model known from Go language on JVM (participant chooses language from: Clojure, Scala, Java)
-Core.async, Twitter Finagle or Parallel Universe Quasar/Pulsar, give the programmer means to model concurrency using lightweight persistent queues, usually called Channels. It's mind blowing to see how this shift in stress comparing to Actors simplifies the code you write and empowers you to write readable, testable and concise concurrent code.
-I believe a good workshop is one that empowers participant. To that end 
-* workshops I provide have a clear final goal
-* workshops I provide are individualised:
-- I do not assume participant's knowledge - everyone is free to come, no one will be bored, some will learn more
-- I do not assume participant's coding speed - everyone is free to code at his own pace
-- I am there to help if someone stucked
-During workshops participants work in pairs. That helps participants in overcoming over 50% their problems.
-I have enough experience in Clojure core.async and Twitter Finagle to provide an unforgettable experience plus my workshops last year were highly rated"
+      description: "During this workshop you will practice (on JVM) concurrency model known from Go language (participant chooses a language of his choice: Clojure, Scala, Java and an appropriate library)
+
+Libraries like core.async, Twitter Finagle or Parallel Universe Quasar/Pulsar, give the programmer means to model concurrency using lightweight persistent queues, usually called Channels. 
+
+It's mind blowing to see how this shift in stress comparing to Actors simplifies the code you write and empowers you to write readable, testable and concise concurrent code.
+
+Features:
+* you will work in pair with someone on a single machine (feel free to hook up with someone beforehand)
+* you will be given a handout
+* you will work at your own pace, indepedently from the others
+* there will be a clearly defined goal
+
+Prerequisites:
+* you know basics of Clojure, Scala or Java.
+* each participant is to bring his machine setup accordingly. Nothing complex should be needed though."
       maximum_number_of_attendees: 16
       tags: [jvm_goodies]
 
@@ -176,23 +201,19 @@ This will be a hands-on workshop that let's you dive in into typical scenarios w
       tags: [jvm_goodies]
 
     - id: workshop_12
-      name: "Archi-kata - great designers design! / wielcy projektanci projektują!"
+      name: "Architectural kata / Archi-kata"
       time_slots: [time_slot_2]
       speaker: "Tomasz Borek"
-      description: "Ludki formują zespoły, dostają problem z wytycznymi i próbują zaprojektować system, który ten problem będzie w stanie rozwiązać. Wymagania wymuszają na nich twórcze myślenie, by spełnić możliwie dużą ich część, czasem też rozmowy z klientem by wyeliminować niektóre lub poznać dokładniej priorytety.
-Każde kata (nawet przy tym samym problemie) przebiega inaczej, bo dużo zależy od grup.
-Każdy zespół architektów potem musi ZAPREZENTOWAĆ swój projekt, w końcu architekt to nie tylko projektant, ale też przywódca / mentor. Powinien umieć przekonać do swego i pokazać, dlaczego jego pomysł jest wart uwagi.
-Robiłem już kata w firmach i w grupach (np. PJUG, czy SCKRK), za każdym razem uczestnicy oceniali je wysoko.
-Formuła spotkania:
-- prezentacja reguł (brak netu, projekt - prezentacja i pytania, założenia są konieczne itp.)
-- prezentacja problemu (wymagania, kim jest klient, jaki jest kontekst projektu, którego architekturę wymyślamy)
-- pytania
-- projektowanie (i sesje pytań do klienta, który krąży po sali)
-- prezentacje projektów i sesja pytań / odpowiedzi, pyta klient, pytają inne zespoły
-- głosowanie by wyłonić dobre projekty (wygrać może więcej niż jeden)
-- retrospektywa
-Można całość zamknąć w 2 godzinach, ale lepiej mieć 3 zatem pasuje mi Wasza formuła bardzo. :-)
-Detale poprzednich spotkań można znaleźć na stronach meetup SCKRK i PJUG."
+      description: "Great designers design, that's why they're so great.
+
+You will group with others to design solution to presented problem. 
+
+NO INTERNET, NO COMPUTERS, just pen and pencil... and your ideas.
+No hire/fire power over other team members. 
+No time to check it all, so use ASSUMPTIONS.
+
+After design, you will have to present your solution to others and answer their questions... as well as those from the client.
+Don't worry, you get to ask others too. ;-)"
       maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
 
@@ -236,8 +257,8 @@ I have comercial experience as a Android trainer and developer. I focus on pract
       name: "PPPPP - Ping Pong Pomodoro Pair Programming dojo"
       time_slots: [time_slot_4]
       speaker: "Adam Pierzchała, Krzysztof Jelski"
-      description: "This will be a coding dojo, where we will be using multiple techniques such as Ping-Pong Pair Programming, Pomodoro and TDD to help us.
-We are experienced software developers, and we use these techniques on daily basis. We want to show that by using them we can both have fun from coding, as well as improve our code quality."
+      description: "This will be a coding dojo, where we will be using multiple techniques such as Ping-Pong Pair Programming, Pomodoro and TDD to help us. All of them will be introduced step by step, so that everyone can get familiar and comfortable with them before making things more interesting.
+We are experienced software developers, and we use these techniques on daily basis. We want to show that by using them we can both have fun from coding, and improve our code quality."
       maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
 
@@ -268,7 +289,7 @@ We will try to use a couple of libraries specifically designed to ease our work:
       tags: [android]
 
     - id: workshop_19
-      name: "Mikroserwisy w Scali (Play, Spray, Akka i inne)"
+      name: "Microservices in Scala"
       time_slots: [time_slot_2]
       speaker: "Andrzej Michałowski, Jacek Głodek, Łukasz Sowa"
       description: "We will show you how easy and fast it is to build microservices in Scala. During workshop we invite you to learn how to use and combine frameworks such as Spray, Play and Akka. You will build a simple distributed system based on microservices. We will get to know techniques of deployment and monitoring of your microservices and we'll benchmark them with performance tests.
@@ -283,12 +304,24 @@ Bring your laptops. We'll send you more instructions after workshop registration
       name: "Crossplatform mobile application with PhoneGap"
       time_slots: [time_slot_3]
       speaker: "Marek Będkowski"
-      description: "I've been developing web-applications with JavaScript being used all the time so with modern twist and JavaScript becoming recognized as smth more powerful than just form validation I spent last year sharing my knowledge on meet.js and other meetups in this area and developing my full stack application called Maracuya Jukebox. Part of this application is a mobile client developed using PhoneGap framework, built with grunt task runner and debuggable with weinre tool. I'd like to transform part of this knowledge into a workshop during which users could get their hands-on experience on how easy it is to develop portable application for most mobile platforms using web-technologies (formementioned PhoneGap/grunt/weinre)."
+      description: "Wraz z nastaniem ery web 2.0 i trendu nazywanym 'Ajax revolution' język JavaScript awansował ze skrywanej/wyśmiewanej umiejętności do elementu bez którego CV każdego web-developera nie jest traktowane poważnie. Po dotarciu na serwer postaci nodejs'a, nastała pora na urządzenia mobilne - czyli framework Cordova/PhoneGap. Jednak tak naprawdę obecna platforma daje cały ekosystem narzędzi i frameworków ułatwiających pracę developera i tak niniejszy warsztat swoim zakresem będzie obejmował:
+- przykładową aplikację mobilną 
+- grunt jako narzędzie integracji wraz z obsługą statycznej analizy kodu
+- preprocessor + różnicowanie paczek dla różnych środowisk
+- weinre oraz narzędzia integracji
+
+Czyli full-stack JavaScript - od developera, poprzez zarządzanie jakością aż do wypuszczenia wersji na różne środowiska.
+
+Jako wynik każdy uczestnik będzie zaaplikować swoje umiejętności front-end'owe do szybkiego stworzenia aplikacji mobilnej bazującej na TYM SAMYM kodzie co aplikacja web'owa.
+
+Prowadząc warsztat będę bazował na doświadczeniu wyniesionym z dodawania aplikacji mobilnej dla projektu Maracuya Jukebox (dostępnej zarówno na iOS'a jak i Androida).
+
+W związku z tym, że konfiguracja środowiska phonegap'owego - szczególnie w przypadku androida troche trwa, przygotowałem wirtualna maszyne pod VirtualBoxa. Jednak jak ktoś jest chętny do samodzielnej instalacji proszę o kontakt."
       maximum_number_of_attendees: 16
       tags: [javascript]
 
     - id: workshop_21
-      name: "Java Workflow in the Cloud - AWS Amazon Simple Workflow Service for Java &amp; Eclipse."
+      name: "Java Workflow in the Cloud - AWS Amazon Simple Workflow Service for Java &amp; Eclipse"
       time_slots: [time_slot_4]
       speaker: "Adam Smolnik"
       description: "Distribute your Business Processes and long-running Tasks all over the world across diverse machines and devices. Harness the powerful features of Cloud to walk through the steps of your processes. Keep them under your control. Write your workflows in pure Java, not with Graphical Designer in place. Learn how to harness the power of asynchronous and distributed programming with Java and Amazon SWF."
@@ -384,7 +417,7 @@ Warsztat dla początkujących."
       tags: [software_craftsmanship]
 
     - id: workshop_30
-      name: "RoboSpock. Modern unit testing in Android using Groovy."
+      name: "RoboSpock. Modern unit testing in Android using Groovy"
       time_slots: [time_slot_3]
       speaker: "Przemysław Jakubczyk"
       description: "Jak ugryźć testy jednostkowe w Androidzie, czyli od Robolectrica przez Gradle do Grooviego. To jest właśnie Robospock."
@@ -392,7 +425,7 @@ Warsztat dla początkujących."
       tags: [android]
 
     - id: workshop_31
-      name: "Build a global, highly-available web application with AWS Cloud - harness Java to make your IT infrastructure an entirely programmable component. Make your IT infrastructure a part of your business logic.."
+      name: "Build a global, highly-available web application with AWS Cloud - harness Java to make your IT infrastructure an entirely programmable component. Make your IT infrastructure a part of your business logic"
       time_slots: [time_slot_3]
       speaker: "Adam Smolnik"
       description: "You don't escape Cloud as a Java developer. It's only a question of time. A lot of new things to learn: How to take advantage of the power of Cloud features like elasticity and scalability, how to include virtual computing resources as one another component like a process or Java's thread. But it comes at a price - you have to learn to live with new challenges: permanent or temporary failures found at every turn. You must grapple with cost optimization, designing for failures from the very beginning of your project.  
@@ -419,7 +452,7 @@ Po cichu zakładamy, że znasz już RoboSpocka. Jeśli nie, to polecamy warsztat
       time_slots: [time_slot_2]
       speaker: "Paweł Byszewski"
       description: "Mobile apps make developers think about safety in old fashion way, when unauthorized access or data leak were main problems. In mobile world each user has full access to complete instance of application. Thus reverse engineering is again popular and important. Each Android's developer should know at least basic of Android reverse engineering. First of all you would be able to verify and improve app safety because you will know your opponent and his tools.
-It will be basic course of Android app decompilation, receompilation etc."
+It will be basic course of Android app decompilation, receompilation etc. Workshop will be held in polish."
       maximum_number_of_attendees: 16
       tags: [android]
 
@@ -432,7 +465,7 @@ It will be basic course of Android app decompilation, receompilation etc."
       tags: [javascript]
 
     - id: workshop_35
-      name: "Zautomatyzowane testy aplikacji webowych przez przeglądarkę za pomocą biblioteki Geb"
+      name: "Automated browser-based web application testing with the Geb library"
       time_slots: [time_slot_1]
       speaker: "Adam Ruka"
       description: "This workshop presents ways to leverage the Geb library to write automated functional and acceptance tests that interact with your web application through a real browser, thus allowing your tests to achieve high levels of confidence and quickly detect browser incompatibilities."
@@ -493,7 +526,7 @@ Docker affected? Get your hands dirty."
       tags: [java]
 
     - id: workshop_41
-      name: "Elephant in the cloud - data analysis using Amazon Elastic MapReduce"
+      name: "Słoń w chmurach - analiza danych w oparciu o Amazon Elastic MapReduce"
       time_slots: [time_slot_2]
       speaker: "Paweł Sołtysek"
       description: "Analiza dużych zbiorów danych staje się coraz powszechniejszą potrzebą. Niestety jedną z podstawowych barier stanowi wymóg utrzymywania skalowalnej infrastruktury wymaganej przez większość narzędzi analitycznych. Amazon Elastic MapReduce (EMR) eliminuje tę barierę umożliwiając nam szybkie wejście do świata Big Data. W ciągu kilku minut możemy stworzyć potrzebną infrastrukturę, która będzie skalowała się w zależności od naszych potrzeb i równie szybko jej się pozbyć w chwili, kiedy nie będzie nam już potrzebna.
@@ -520,7 +553,7 @@ Wyjaśnię jak napisać m.in. własny moduł, funkcje, dodać własne fakty do f
       tags: [groovy]
 
     - id: workshop_44
-      name: "WildFly in production environment: work modes, securing with RBAC, central logging, clustering."
+      name: "WildFly in production environment: work modes, securing with RBAC, central logging, clustering"
       time_slots: [time_slot_3]
       speaker: "Przemysław Kuźnicki"
       description: "I want to share my competence regarding Open Source Middleware in following topics:
@@ -549,16 +582,26 @@ Prerequisite: Grails 2.4.3 and Groovy 2.3 distribution installed on your laptop 
       tags: [groovy]
 
     - id: workshop_46
-      name: "Mortal Combos czyli refaktoryzacje w Eclipse"
+      name: "Mortal Combos or refactoring in Eclipse"
       time_slots: [time_slot_2]
       speaker: "Paweł Radziński"
-      description: "Warsztaty o pokojowym tytule 'Mortal Combos czyli refaktoryzacje w Eclipse' dotyczyć będą różnych refaktoryzacji w Eclipse, małych i większych, a przy okazji innych sztuczek ułatwiających pracę w tym środowisku. Język programowania: Java.
-Pokażę trochę podstawowych operacji, które często stosowane potrafią przyspieszyć i ułatwić pracę. Potem pojawią się też combosy, czyli bardziej złożone refaktoryzacje. Będziemy pracować na prostych, fikcyjnych przykładach. Żeby nie było zupełnie fikcyjnie, będziemy pisać testy (tu możesz wstawić uśmieszek jeśli Ci pasuje). I przy okazji trochę porozmawiamy o podstawach pisania dobrych testów.
-Jeśli pracujesz w Eclipse (WID, OEPE, inne...) i chcesz ułatwić sobie życie, bądź wymienić doświadczeniami - przyjdź.
-Uwagi:
-- warsztaty mogą być po angielsku;
-- w razie potrzeby stworzenie opisu po angielsku będzie chyba prostsze niż po polsku...
-- warsztaty raczej nieprzeznaczone dla starych wyjadaczy (acz pozostaje pytanie co to znaczy, rym niezamierzony)."
+      description: "The workshop named peacefully 'Mortal Combos or refactoring in Eclipse' will cover some examples of refactorings available in Eclipse Java development tools. Quite incidentally, it will also touch on some tricks making everyday work in the IDE easier.
+
+I will demonstrate several fairly basic yet not that frequently used operations which will let you work easier and faster. We will also play with combos - composite refactorings made of those basic ones.
+
+We will work on simple, or even simplistic code. It will be quite sham as well, so to escape from the pure fiction at least a bit, we will write some tests. Writing tests is as real as it can be, isn't it? You may put your favourite emoticon if you wish... This is not going to be test-centred event, but we will talk about some good practices in the area.
+
+Do attend the workshop if you:
+- use Eclipse or you have to (put WID/OEPE/whatever here);
+- or want to make your work easier;
+- or just to share your experience.
+
+What will you need?
+- Eclipse 4.3 (the 'for Java developers' version will be sufficient)
+- JDK 7
+- Git client installed in the OS (EGit itself is not enough)
+
+Note: Mortal Kombat is probably a registered trademark of its respective owner(s). I do not foresee any resemblance of the workshop to this very game. This and any other resemblance is certainly purely coincidental."
       maximum_number_of_attendees: 16
       tags: [developers_tools]
 
@@ -582,19 +625,23 @@ Uwagi:
       name: "Cook your Vagrant"
       time_slots: [time_slot_2]
       speaker: "Piotr Stapp"
-      description: "We would like to present workshop with following main points:
-1) Small introduction what Vagrant is
-2) Demo or two with example for different operating systems
-3) Workshop with setup multi-machine cluster which include:
-  a) Preparing recipes in bash and chef
-  b) Ensuring proper network connections between machines
-  c) Running a simple test program
-The multi-machine cluster will consist of
-  a) Storm
-  b) RabbitMQ
-  c) Hadoop or Cassandra
-Who I am? I work in mBank in architecture team, part of my responsibility is evaluating DevOps tools and research in new technologies. I was an assistant of Warsaw University of Technology on MiNI 
-I will prefer Saturday - but it is not a must."
+      description: "If you decide to be on my workshop you we will do amazing DevOps stuff. Together we will go through Vagrant: from very easy concepts to complex recipes. From your developer machine to production ready environment. From padawan to master.
+
+The first step will be 'The Tao of Vagrant' - introduction of basic concepts in Vagrant. During this part, I will show and help you how to run Vagrant on your machine.
+The second step will be basic Vagrant provisioning using Shell. We will setup single instance of storm-project (https://storm.incubator.apache.org/) and run an example topology :)  
+The next step we will rewrite our provisioning to setup cluster of ZooKeeper and Storm using Chef.
+We will also do some provisioning on Windows box
+In the last step I will show how we can move our developer recipes to production ready environment. 
+
+What will you learn:
+1) A lot about Vagrant
+2) Basic about Chef provisioning
+
+What You need to active listener on this workshop :
+1) Sign up to this workshop :)
+2) Have a computer (SSD will be useful) with Windows or Linux
+3) Install your favorite text editor
+4) Have some space (up to few GB) on HDD"
       maximum_number_of_attendees: 16
       tags: [devops]
 
@@ -608,13 +655,13 @@ Zajęcia praktyczne poprzedzi krótka prezentacja, po której przystąpimy do ro
       tags: [java]
 
     - id: workshop_51
-      name: "Modele i analiza sieci społecznościowych."
+      name: "Modele i analiza sieci społecznościowych"
       time_slots: [time_slot_4]
       speaker: "Piotr Pietrzak"
-      description: "Nie planuję pokazywać kolejnego narzędzia, które przetwarza olbrzymie ilości danych, nie będzie prawie nic o bazach grafowych, giraph.apache.org, gephi.github.io zamiast tego będzie można dowiedzieć się jak wyciągać praktyczne wnioski z analizy tych danych - czyli jak informacje ilościowe przekształcić w informacje jakościowe. 
-Opowiem o miarach istotnych w sieciach społecznościowych, sposobach ich wyznaczania, o algorytmach generowania grafów o zadanych właściwościach, co się stanie jak do procesu tworzenia takiego grafu dodamy wnioski płynące z zastosowania teorii gier i co z tego wynika.
-Postaram się również pokazać kilka bardzo podstawowych faktów, które zmienią Wasze spojrzenie na zastosowanie grafów w informatyce. 
-Nie planuję popełnić plagiatu, ale będę w części teoretycznej bazował na wykładzie prof. Matthew O. Jacksona pod tytułem 'Social and Economic Networks: Models and Analysis' oraz jego książce 'Social and Economic Networks'. Postaram się położyć nacisk na część obliczeniową - głównie w aplikacji gephi.github.io ale również po prostu na kartce/tablicy/jakkolwiek."
+      description: "Zastosowania teorii grafów związane z sieciami społecznościowymi i ekonomicznymi cieszą się ostatnio wielkim zainteresowaniem głównie ze względu na interesujące wnioski płynące z takich analiz. Jak wiele można dowiedzieć się na temat społeczności badając jedynie wzajemne powiązania? Czemu konkretna średniowieczna wenecka rodzina zdobyła olbrzymie wpływy? Jak rozpowszechniana jest nowa informacja w sieci? Jak znaleźć elementy istotne w sieci np. po to, by wygaszać kryzysy w sieciach społecznościowych? 
+
+Będę bazował na wykładach Prof Matthew Jacksona i Prof Michaela Kearnsa oraz książce 'Social and Economic Networks' Jacksona.
+Będziemy mięli okazję wspólnie poznać elementy teorii grafów, kilka pojęć teorii gier i zobaczymy jak zaskakujące są połączenia pomiędzy grafami i macierzami. Będzie okazja do przypomnienia sobie podstaw rachunku macierzowego (głównie mnożenie), ale bardziej skomplikowane obliczenia poprowadzimy w pakiecie gephi ( https://gephi.github.io )."
       maximum_number_of_attendees: 16
       tags: [data_analysis]
 
@@ -638,7 +685,7 @@ Nie planuję popełnić plagiatu, ale będę w części teoretycznej bazował na
       name: "Android Application Security for Dummies"
       time_slots: [time_slot_2]
       speaker: "Kamil Trzciński"
-      description: "During the workshop attendees will be able to get familiar with tools for forensic analysis and reverse engineering. Workshop will teach how to disassemble, modify and assemble Android application. Trainer will show how to securely store sensitive data and securely connect with external services. We will try to break Android security mechanism to gain root capabilities. As requirement attendee should bring with himself jailbroken Android device and Laptop with any operating system."
+      description: "During the workshop attendees will be able to get familiar with tools for forensic analysis and reverse engineering. Workshop will teach how to disassemble, modify and assemble Android application. Trainer will show how to securely store sensitive data and securely connect with external services, but not only these. We will try to fix badly written Android application secure. As requirement attendee should bring with himself jailbroken Android device and Laptop with any operating system."
       maximum_number_of_attendees: 16
       tags: [android]
 
@@ -705,12 +752,14 @@ Experience with SDN will be for sure useful for work in both Telco networks and 
       speaker: "Mateusz Herych"
       description: "Jestem Mateusz, pracuję w Base jako Android developer, z programowaniem na tę platformę jestem związany nieprzerwanie od 2011 roku. Jestem członkiem programu Google Developer Expert. Występowałem na kilku eventach, takich jak nasze rodzime Mobilization, jak i również nie-rodzime Droidcony w Moskwie czy Turynie.
 Wraz z moim znajomym w pracy zaczęliśmy bardzo irytować się bazodanowym API, które dostarcza Google w Android SDK. Dlatego tez napisaliśmy bibliotekę android-db-commons która ma na celu sprawiać, że developerzy Androida są szczęśliwsi. Oferuje ona m.in. fluent API dla SQLa, fluent wrappery dla API ContentProvidera, czy bardzo użyteczne rozszerzenia do CursorLoadera. 
+
 Podczas swoich warsztatów chciałbym:
 - Rozpocząć od któtkiego wstępu czym jest ContentProvider i jak należy z niego wybierać dane
 - Pokazać jak brzydkie potrafi być wołanie metod ContentResolvera
 - Pokazać jakie wady ma CursorLoader.
 - Pokazać, jak android-db-commons sprawia, że znowu chce się programować!
 Następnie hakowanie.
+
 Czas potrzebny na poprowadzenie warsztatów oceniam na 2-2.5h."
       maximum_number_of_attendees: 16
       tags: [android]
@@ -748,8 +797,22 @@ Just a little bit info about me: I am a Java Software Engineer from Berlin worki
       name: "Techniki skutecznej komunikacji - z klientem i w zespole"
       time_slots: [time_slot_1]
       speaker: "Paweł Wrzeszcz"
-      description: "Opis warsztatów jest tutaj: http://warsztatyprzedconfitura14.evenea.pl/
-Robiłem przed Confiturą i bardzo fajnie wyszły :)"
+      description: "Celem warsztatów jest zwiększenie efektywności komunikacji z klientem i wewnątrz zespołu poprzez praktyczne poznanie technik prowadzenia konwersacji.
+
+Techniki te są proste, choć nie zawsze łatwe do stosowania. Bardzo możliwe, że okaże się, że część z nich już znasz i stosujesz. Wartością warsztatów jest nauczenie się ich stosowania bardziej świadomie.
+
+Plan warsztatów:
+
+1. Słuchanie ze 100% nastawieniem na klienta/rozmówcę
+2. Zadawanie pytań
+- pytania niesugerujące
+- pytania otwarte
+- pytania roszerzające vs. uszczegóławiające
+3. Cisza
+4. Parafrazowanie, wyjaśnianie
+5. Cykl konwersacji - połączenie ww. technik w jedną całość
+
+Forma warsztatowa - czyli pracujemy na przykładach/case’ach, 10% teorii, 90% ćwiczenia."
       maximum_number_of_attendees: 16
       tags: [agile]
 
@@ -757,11 +820,14 @@ Robiłem przed Confiturą i bardzo fajnie wyszły :)"
       name: "Lean Canvas - jak szybko sprawdzić swój pomysł na startup?"
       time_slots: [time_slot_4]
       speaker: "Paweł Wrzeszcz"
-      description: "Lean Canvas to taki biznes plan na 1 kartce A4. Wyjście poza “co to ma robić” do “jakie potrzeby ma zaspokajać”, “co naprawdę nas wyróżnia”, “kto będzie płacił” i “jak do niego dotrzemy”.
+      description: "Lean Canvas to taki biznes plan na 1 kartce A4. Wyjście poza 'co to ma robić' do 'jakie potrzeby ma zaspokajać', 'co naprawdę nas wyróżnia', 'kto będzie płacił' i 'jak do niego dotrzemy'.
+
 O samym Lean Canvas: http://practicetrumpstheory.com/2010/08/businessmodelcanvas/
+
 W trakcie warsztatów, w grupach, stworzymy takie biznes plany dla Waszych pomysłów. (Nie trzeba mieć/ujawniać swojego pomysłu przychodząc na warsztaty ale można)
+
 Co dadzą Tobie warsztaty:
-- jeśli masz pomysł na startup - prosty sposób biznesowej walidacji pomysłu
+- jeśli masz pomysł na startup - prosty sposób biznesowego przeanalizowania pomysłu
 - ogólnie - lepsze zrozumienie biznesu"
       maximum_number_of_attendees: 16
       tags: [agile]
@@ -770,11 +836,14 @@ Co dadzą Tobie warsztaty:
       name: "Czas Dockera - Od zera do kontenera!"
       time_slots: [time_slot_3]
       speaker: "Przemek Hejman, Marcin Brański"
-      description: "Zapraszamy wszystkich na warsztat poświęcony Dockerowi - najgłośniejszemu narzędziu ostatnich miesięcy :)
+      description: "Docker-time  - from zero to container-hero!
+Workshop o  Dockerze czyli nowoczesnych kontenerach LXC.
 
-Rozpoczniemy łagodnym wstępem - powiemy, czym jest docker i jak się nim posługiwać. Przygotowaliśmy dla Was kilka przykładów, które pomogą Wam płynnie posługiwać się Dockerem, a także dadzą dobry obraz tego, co można, a czego nie można z jego pomocą zrobić. Wszystkie przerobimy wspólnie, wyjaśniając po drodze powstałe wątpliwości.
+Powiemy o tym, co jest pod maską, jak to działa, dlaczego to działa i w czym nam może pomóc.
+Odpalimy razem dockera (także na OSX!). Krok po kroku przejdziemy od prostego odpalenia kontenera, przez Dockerfile, zlinkowane kontenery po zaawansowane rozwiązania. 
+Pokażemy kilka praktycznych przykładów w akcji, kilka haków z których korzystamy na codzień oraz zahaczymy o narzędzia pochodne, którymi będziemy tworzyć dynamiczne środowiska oparte na Dockerze.
 
-Zahaczymy też o narzędzia pokrewne, takie jak fig, czy serf (w miarę możliwości czasowych), żebyście mogli śmiało pójść dalej w temacie kontenerów."
+Serdecznie zapraszamy!"
       maximum_number_of_attendees: 16
       tags: [devops]
 
@@ -805,7 +874,7 @@ Jan Stępień graduated in CS from Warsaw University of Technology. Apart from r
       tags: [jvm_goodies]
 
     - id: workshop_68
-      name: "Simple server with push notifications for android application's without any server side programming skills."
+      name: "Simple server with push notifications for android application without any server side programming skills."
       time_slots: [time_slot_1]
       speaker: "Michał Walędziak"
       description: "How often do you have a great idea for a mobile app, but didn't know anyone who could help you create the server for the project? 
@@ -845,7 +914,7 @@ Warsztat będzie prowadzony po polsku, względnie może być po niemiecku. Wymag
       tags: [groovy]
 
     - id: workshop_72
-      name: "Poznaj lepiej swoje środowisko programistyczne i zwiększ swoją produktywność"
+      name: "Poznaj lepiej swoje środowisko programistyczne i zwiększ swoją produktywność z IntelliJ Idea"
       time_slots: [time_slot_4]
       speaker: "Marcin Stachniuk"
       description: "Każdy programista powinien poświęcić 10 godzin na dogłębne poznanie swojego zintegrowanego środowiska pracy, aby móc z niego efektywnie (i efektownie) korzystać! A Ty ile czasu na to poświęciłeś? 
@@ -859,7 +928,7 @@ Warsztat będzie prowadzony po polsku, względnie może być po niemiecku. Włas
       name: "C/C++ in Android Apps"
       time_slots: [time_slot_4]
       speaker: "Artur Stępniewski"
-      description: "This workshop is about using C/C++ code in Android development with Gradle as the build system. The topic is fresh and would be a nice addition to Warsjava's agenda I think."     
+      description: "This workshop is about using C/C++ code in Android development. You will learn how to move your code from regular Java to native methods. Our focus will be performance, obfuscation and how to properly unit test the native code."     
       maximum_number_of_attendees: 16
       tags: [android]
 
@@ -876,13 +945,45 @@ Warsztat będzie prowadzony po polsku, względnie może być po niemiecku. Włas
       time_slots: [time_slot_4]
       speaker: "Marcin Zajączkowski, Michał Piotrkowski"
 
-      description: "Chyba każdy programista lubi pracę nad nowym projektem, gdzie może w pełni wykorzystać swoją wiedzę i doświadczenie z zakresu pisania czytelnego, testowalnego i bardziej niezawodnego kodu. Niestety czasem zdarza się, iż zmieniamy zespół/projekt/pracę i musimy zmierzyć się z istniejącym kodem, którego twórcy nie byli uświadomieni, iż klasy mające 3000 linii, nadmierne używanie operatora 'new', czy 6 poziomów zagnieżdzonych 'ifów' niekoniecznie jest najlepszym pomysłem, gdy chcemy być w stanie szybko i bezpiecznie go modyfikować i rozwijać.
-W czasie warsztatu pokażemy na przykładzie kodu, który przy braku ostrożności mógłby pojawić się w większości projektów napisanych w języku Java, jak:
+      description: "Chyba każdy programista lubi pracę nad nowym projektem, gdzie może w pełni wykorzystać swoją wiedzę i doświadczenie z zakresu pisania czytelnego, testowalnego i bardziej niezawodnego kodu. Niestety czasem zdarza się, iż zmieniamy zespół/projekt/pracę i musimy zmierzyć się z istniejącym kodem, którego twórcy nie byli uświadomieni, iż klasy mające 3000 linii, nadmierne używanie operatora 'new', czy 6 poziomów zagnieżdżonych 'ifów' niekoniecznie jest najlepszym pomysłem, gdy chcemy być w stanie szybko i bezpiecznie go modyfikować i rozwijać.
+
+W czasie warsztatu pokażemy na przykładzie kodu, który przy braku
+ostrożności mógłby pojawić się w większości projektów napisanych w
+języku Java, jak:
  - poradzić sobie z 'nietestowalnymi' fragmentami,
  - napisać czytelne i efektywne testy,
  - sprawdzić jak mocno pokrywają one produkcyjny kod,
  - szybko i bez ryzyka przeprowadzić refaktoring.
-Wszystko to, aby móc szybko i bezpiecznie dokonywać zmian (poprawiać błędy, dodawać nowe funkcje) bez narzutu generowanego przez istniejący dług techniczny."
+
+Wszystko to, aby móc szybko i bezpiecznie dokonywać zmian (poprawiać błędy, dodawać nowe funkcje) bez narzutu generowanego przez istniejący dług techniczny.
+
+O Marcinie: 
+
+- Jestem doświadczonym architektem specjalizującym się w tworzeniu
+wysokiej jakości oprogramowania. Będąc pod wrażeniem metodyk Agile i
+ruchu Software Craftsmanship wierzę w wartość dobrego, testowalnego i
+łatwego w utrzymaniu kodu. Dążę do tworzenia dobrego oprogramowania,
+które spełnia oczekiwania klienta i jednocześnie z którego zespół
+realizujący może być dumny.
+
+Dodatkowo poprzez prezentacje, szkolenia (http://www.solidsoft.info/training/), zajęcia ze
+studentami i mentoring w firmach pokazuję jak można tworzyć
+oprogramowanie oparte na testach (z TDD, programowaniem w parach,
+czystym kodem, wzorcami projektowymi, itp.) oraz utrzymywać w firmie
+środowisko deweloperskie ukierunkowane na jakość (z serwerem CI,
+Sonarem, automatycznym wdrażaniem, itp.).
+
+Oprócz tego tworzę i angażuję się w projekty open source, jestem
+miłośnikiem Linuksa oraz prowadzę blog Solid Soft - Working code is not
+enough (http://blog.solidsoft.info/).
+
+O Michale:
+
+Absolwent Wydziału Elektroniki i Technik Informacyjnych Politechniki
+Warszawskiej. Wyznawca Domain-Driven Design w połączeniu z Test-Driven
+Development. Uwielbia pisać testy oraz refaktoryzować z ich pomocą. Na
+co dzień stara się zgłębiać tajniki wzorców projektowych i OOP prowadząc
+szkolenia i pracując jako programista w firmie Pragmatists."
 
       maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
