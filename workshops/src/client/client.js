@@ -63,7 +63,7 @@ function showRegistrationSection() {
 
     Template.header.openingDate = function () {
         var date = Session.get('openingDate');
-        if (date !== undefined && date.getTime() > new Date().getTime() && Session.get('attendee') === null) {
+        if (date !== undefined && date.getTime() > new Date().getTime() && (Session.get('attendee') === null ||Session.get('attendee') === undefined)) {
             $('#registration-timeout').show();
         }
         return moment(date).format('YYYY-DD-MM, HH:mm:ss');
