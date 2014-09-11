@@ -94,7 +94,7 @@ Bo znalazłem ten formularz mimo martwej strony."
       name: "Java 8 - deep into unknown (For people who know what functional programming is)"
       time_slots: [time_slot_4]
       speaker: "Michał Orłowski"
-      description: About workshop:
+      description: "About workshop:
 If you are passionate about Java and you've already read what's new in this revolutionary update - it's time for the next step - go deep into it!
 During workshop attendees will be challenged with exercies related with functional programming/lambdas/streams/Date API and many more problems. It's time to write your own Collector, learn how streams processing order works and hack lack of tuples in Java.
 
