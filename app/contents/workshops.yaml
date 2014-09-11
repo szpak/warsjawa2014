@@ -98,7 +98,7 @@ Please have your VirtualBox or QEMU working before workshops to make environment
 
     - id: workshop_4
       name: "Java 8 - deep into unknown"
-      time_slots: [time_slot_4]
+      time_slots: [time_slot_3]
       speaker: "Michał Orłowski"
       description: "About workshop:
 If you are passionate about Java and you've already read what's new in this revolutionary update - it's time for the next step - go deep into it!
@@ -691,7 +691,7 @@ Będziemy mięli okazję wspólnie poznać elementy teorii grafów, kilka poję�
 
     - id: workshop_55
       name: "Beginning Functional Programming in Java world"
-      time_slots: [time_slot_3]
+      time_slots: [time_slot_4]
       speaker: "Bartek 'Koziołek' Kuczyński"
       description: "Workshop is for java programmers who never worked in 'functional world' and like to try this. I will show You basics of functional programming (FP). Main differences between Object Oriented and Functional way to solve problems and how to merge this two worlds together. 
 After this workshop You will know how to create functional like code in java and how this methodology could help You in your daily task. 
