@@ -63,7 +63,7 @@ function showRegistrationSection() {
 
     Template.header.openingDate = function () {
         var date = Session.get('openingDate');
-        if (date !== undefined && date.getTime() > new Date().getTime()) {
+        if (date !== undefined && date.getTime() > new Date().getTime() && Session.get('attendee') === null) {
             $('#registration-timeout').show();
         }
         return moment(date).format('YYYY-DD-MM, HH:mm:ss');
@@ -186,6 +186,7 @@ function showRegistrationSection() {
                 $('#header').find('#registration-button').fadeOut('fast').end().delay(200).queue(function () {
                     $('#log-out-button').fadeIn('fast').dequeue();
                 });
+                $('#registration-timeout').hide();
                 $('#attendee-name').fadeIn('slow');
             } else {
                 if (error.error === 'Wrong attendee id or key.') {

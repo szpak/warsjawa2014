@@ -11,7 +11,7 @@ $font-museo-700: 'Museo700Regular';
 $font-museo-sans-500: 'museo_sans500';
 
 body {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 body, button {
@@ -25,24 +25,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
-  background-color: lighten($warsjawa-blue, 10%);
+  color: $warsjawa-blue;
+  background-color: #D0D9E4;
   &:hover {
-    background-color: lighten($warsjawa-blue, 20%);
+    color: $warsjawa-blue;
+    background-color: lighten(#D0D9E4, 10%);
   }
   &.selected {
-    background-color: $warsjawa-green;
+    color: $warsjawa-blue;
+    background-color: #58BE74;
     &:hover {
-      background-color: lighten($warsjawa-green, 10%);
+      background-color: lighten(#58BE74, 10%);
     }
   }
-
   &.disabled {
-    background-color: $warsjawa-gray;
+    color: $warsjawa-blue;
+    background-color: #efefef;
     &:hover {
-      background-color: lighten($warsjawa-gray, 10%);
+      background-color: lighten(#efefef, 10%);
     }
   }
-
   outline: none;
 }
 
@@ -53,6 +55,10 @@ button {
 section#header {
   #attendee-name {
     display: none;
+  }
+
+  button {
+    width: 100%;
   }
 
   #log-out-button {

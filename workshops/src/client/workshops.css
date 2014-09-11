@@ -1,5 +1,5 @@
 body {
-  padding-top: 2rem; }
+  padding-top: 1rem; }
 
 body, button {
   font-family: "museo_sans500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -10,24 +10,30 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500; }
 
 button {
-  background-color: #275d7c;
+  color: #1b4055;
+  background-color: #D0D9E4;
   outline: none; }
   button:hover {
-    background-color: #347aa2; }
+    color: #1b4055;
+    background-color: #f0f3f7; }
   button.selected {
-    background-color: #25803e; }
+    color: #1b4055;
+    background-color: #58BE74; }
     button.selected:hover {
-      background-color: #30a851; }
+      background-color: #7dcc93; }
   button.disabled {
-    background-color: #d2d6d7; }
+    color: #1b4055;
+    background-color: #efefef; }
     button.disabled:hover {
-      background-color: #edefef; }
+      background-color: white; }
 
 .reveal-modal {
   padding: 0.9375rem 0 0 0; }
 
 section#header #attendee-name {
   display: none; }
+section#header button {
+  width: 100%; }
 section#header #log-out-button {
   display: none; }
 section#header #registration-timeout {

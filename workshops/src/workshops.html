@@ -24,12 +24,14 @@
 <template name="header">
     <section id="header">
         <div class="row">
-            <div class="small-10 columns">
-                <h3 id="attendee-name">Logged in as {{ attendeeName }}</h3>
-                <h3 id="registration-timeout">Registration starts at: <span>{{ openingDate }}</span></h3>
+            <div class="small-7 medium-10 columns">
+                <h4 id="attendee-name">Logged in as {{ attendeeName }}</h4>
+                <h4 id="registration-timeout">Registration starts at: <span>{{ openingDate }}</span></h4>
             </div>
-            <button class="button small-2 columns" id="log-out-button">Log out</button>
-            <button class="button small-2 columns" id="registration-button">Sign up</button>
+            <div class="small-5 medium-2 columns" style="padding-right: 0;">
+                <button id="log-out-button">Log out</button>
+                <button id="registration-button">Sign up</button>
+            </div>
         </div>
     </section>
 </template>
