@@ -60,14 +60,11 @@ Why me:
       time_slots: [time_slot_3]
       speaker: "Piotr Trzpil"
       description: "This workshop is aimed to be an Akka overview for newcommers of Java background, so they can get a taste of the framework while creating a real-world application. At least basic Scala knowledge would be required.
-So, I intend the goals of the workshop to be:
+
+The goals of the workshop are:
 - Help people new to Scala to get a look on Akka and Scala as a useful tool;
 - Present major features of Akka (tell/ask, supervision, actor lifecycle, routers), but not the advanced ones (clustering, persistence);
-- Create a real-world application;
-As for me, I am an active member of Warsaw Scala UG (also WJUG), have been much involved in Scala programming for over a year, Java before that.
-Public speaking-wise, I gave a presentation at KKIO 2013 conference (mutation testing), and I also took part in WJUG flash-talks (Java 8 Optional).
-So I am very excited to engage in an even greater task, as this workshop is to be;)
-"
+- Create a real-world application;"
       maximum_number_of_attendees: 16
       tags: [scala]
 
@@ -88,21 +85,11 @@ Bo znalazłem ten formularz mimo martwej strony."
       name: "Java 8 - deep into unknown (For people who know what functional programming is)"
       time_slots: [time_slot_4]
       speaker: "Michał Orłowski"
-      description: "About workshop:
-If you are passionate about Java and you've already read what's new in this revolutionary update it's time for next step - go deep into it!
+      description: About workshop:
+If you are passionate about Java and you've already read what's new in this revolutionary update - it's time for the next step - go deep into it!
 During workshop attendees will be challenged with exercies related with functional programming/lambdas/streams/Date API and many more problems. It's time to write your own Collector, learn how streams processing order works and hack lack of tuples in Java.
-Workshop format - minimum theory, maximum practice. 
-Few words about me:
-I'm Java passionate and huge fan of functional programming (Google Guava evangelist in my company, also Scala adept).
-Since 3,5h year I'm working in Katowice in JCommerce company - I'm Java Developer, Team Lead, tech recruiter and Silesian University of Technology lecturer.
-I'm trainer in Competence Academy (http://www.jcommerce.pl/firma/aktualnosci/255-akademia-kompetencji-jcommerce-najwyzej-ocenionym-wnioskiem-w-ramach-konkursu-pokl.html)
--  currently I'm leading workshops regarding Java 8 for beginners and working on few others ( http://crossweb.pl/wydarzenia/java-8-warsztaty/)
-Also I'll be speaker in infoMEET conference (http://novial.pl/infomeet/p/31/infomeet-katowice) - it will be talk for funtional programming beginer and people who didn't have time for Java 8 investigation (Java 8 - in love again).
-Why should you pick me?
-I was 'passive' member of polish Java community - but after I started attending conferences like Confiture, Geecon or Warsjawa I've decided to change it and be part of this great group of people.
-More info:
-I'd prefer workshop in Polish language, but english won't be any problem for me.
-I hope I've provided enough info about the workshop - if you have any more questions, don't hesitate to ask :)"
+
+Remember - minimum theory, maximum practice!"
       maximum_number_of_attendees: 16
       tags: [java]
 
@@ -252,8 +239,11 @@ We are experienced software developers, and we use these techniques on daily bas
       time_slots: [time_slot_3]
       speaker: "Jacek Kunicki"
       description: "The workshop aims to teach how the basic electronic components and circuits work. It covers a voltage divider with a photoresistor, switch debouncing, transistor as a switch/inverter and building a DYI capacity meter with a RC circuit. This is more than yet another Arduino introduction, as the attendees are going to learn something about the electronic components as well.
+
 I have already led this workshop for my company buddies and they were quite enthusiastic about it, so now I'm ready for a wider audience. 
+
 Bacis programming skills are recommended so that we can focus on the hardware part.
+
 You can find the materials (schematics and code) at https://github.com/rucek/arduino-workshop"
       maximum_number_of_attendees: 16
       tags: [misc]
@@ -273,8 +263,11 @@ You shouldn't, but if you do, beware: I will share some of my knowledge on Andro
       name: "Mikroserwisy w Scali (Play, Spray, Akka i inne)"
       time_slots: [time_slot_2]
       speaker: "Andrzej Michałowski, Jacek Głodek, Łukasz Sowa"
-      description: "Podczas warsztatów pokażemy jak szybko i prosto można zbudować aplikację opartą o architekturę mikroserwisów w Scali. Do tego celu wykorzystamy frameworki i biblioteki takie jak Spray, Play czy Akka. To nie wszystko... na samym zbudowaniu aplikacji nie poprzestaniemy- pokażemy również jak w prosty sposób monitorować nasz system oraz jak przetestować go pod względem wydajnościowym.
-Nasz warsztat zdecydowanie nie będzie typowym odtworzeniem czterech pierwszych lekcji jakiegoś tutoriala dostępnego w Internecie, tylko prawdziwą ucztą dla (średnio)zaawansowanych programistów. Szkolenie przeznaczone jest dla osób, które znają Scalę i przynajmniej trochę słyszeli/programowali, w którymś z frameworków Scalowych. Zakres warsztatu bardzo zależy od ilości czasu jaką dostaniemy, ale myślę, że jesteśmy w stanie zapełnić każde okno czasowe."
+      description: "We will show you how easy and fast it is to build microservices in Scala. During workshop we invite you to learn how to use and combine frameworks such as Spray, Play and Akka. You will build a simple distributed system based on microservices. We will get to know techniques of deployment and monitoring of your microservices and we'll benchmark them with performance tests.
+
+It's not just step by step tutorial we're going to give you but a real deal tutoring that aims to answer your software architecture questions. The workshop is for (semi-)advanced programmers who know a bit of Scala and worked with web frameworks before.
+
+Bring your laptops. We'll send you more instructions after workshop registration."
       maximum_number_of_attendees: 16
       tags: [scala]
 
@@ -486,7 +479,8 @@ If you identify with at least one of the following statements is a Workshop for 
       time_slots: [time_slot_2]
       speaker: "Paweł Sołtysek"
       description: "Analiza dużych zbiorów danych staje się coraz powszechniejszą potrzebą. Niestety jedną z podstawowych barier stanowi wymóg utrzymywania skalowalnej infrastruktury wymaganej przez większość narzędzi analitycznych. Amazon Elastic MapReduce (EMR) eliminuje tę barierę umożliwiając nam szybkie wejście do świata Big Data. W ciągu kilku minut możemy stworzyć potrzebną infrastrukturę, która będzie skalowała się w zależności od naszych potrzeb i równie szybko jej się pozbyć w chwili, kiedy nie będzie nam już potrzebna.
-Podczas warsztatów chciałbym pokazać jak efektywnie wykorzystać usługę Amazon EMR z takimi technologiami jak MapReduce oraz narzędziami jak Hive, czy Impala. Ponadto powiem na jakie problemy możemy trafić oraz jak należy sobie z nimi radzić."
+
+Podczas warsztatów pokażę jak efektywnie wykorzystać usługę Amazon EMR z takimi technologiami jak MapReduce oraz narzędziami jak Hive, czy Impala. Ponadto powiem na jakie problemy możemy trafić oraz jak należy sobie z nimi radzić."
       maximum_number_of_attendees: 16
       tags: [cloud_aws]
 
@@ -757,11 +751,11 @@ Co dadzą Tobie warsztaty:
       name: "Czas Dockera - Od zera do kontenera!"
       time_slots: [time_slot_3]
       speaker: "Przemek Hejman, Marcin Brański"
-      description: "Zrobimy workshop o  dockerze, trochę powiemy o tym, co jest pod maską, odpalimy też dockera na OSX, pokażemy kilka praktycznych przykładów w akcji oraz zahaczymy o narzędzia pochodne, w stylu fig, żeby było wiadomo, jak pójść dalej w temacie kontenerów.
-Zdjęcia prelegentów dosyła się jakoś później, nie?
-Ew. jest opcja na angielski tytuł  angielską wersję:
-Docker-time  - from zero to container-hero!
-Ale nie wiem co o tym sądzicie?"
+      description: "Zapraszamy wszystkich na warsztat poświęcony Dockerowi - najgłośniejszemu narzędziu ostatnich miesięcy :)
+
+Rozpoczniemy łagodnym wstępem - powiemy, czym jest docker i jak się nim posługiwać. Przygotowaliśmy dla Was kilka przykładów, które pomogą Wam płynnie posługiwać się Dockerem, a także dadzą dobry obraz tego, co można, a czego nie można z jego pomocą zrobić. Wszystkie przerobimy wspólnie, wyjaśniając po drodze powstałe wątpliwości.
+
+Zahaczymy też o narzędzia pokrewne, takie jak fig, czy serf (w miarę możliwości czasowych), żebyście mogli śmiało pójść dalej w temacie kontenerów."
       maximum_number_of_attendees: 16
       tags: [devops]
 
@@ -795,10 +789,11 @@ Jan Stępień graduated in CS from Warsaw University of Technology. Apart from r
       name: "Simple server with push notifications for android application's without any server side programming skills."
       time_slots: [time_slot_1]
       speaker: "Michał Walędziak"
-      description: "How often do you have a great idea for a mobile app, but do not know anyone who could help you create the server for the project? 
-How many times have you given up some functionality because you do not know how to create a server mechanism for push notification for your app? 
+      description: "How often do you have a great idea for a mobile app, but didn't know anyone who could help you create the server for the project? 
+How many times have you given up some functionality because you didn't not know how to create a server mechanism for push notification for your app? 
 How many times you wanted to quickly create a project without involving whole server team, agree on a protocol, server communication, information exchange, etc...?
 If you've had these situations and you want to avoid them in the future come and listen how within few minutes and 'clicks' create the server for your mobile app.
+
 Workshop will be based on Android application but whole framework works for iOS, OS X, Windows Phone and many more. 
 The workshop will be conducted in Polish or English, depending on the preferences of the participants."
       maximum_number_of_attendees: 16
@@ -808,9 +803,7 @@ The workshop will be conducted in Polish or English, depending on the preference
       name: "Microservices hackathon"
       time_slots: [time_slot_2]
       speaker: "Marcin Grzejszczak"
-      description: "During this workshop we will take a look at microservices, what they are and how to work with them. We will try to set up a system that uses service discovery, whose logs are remotely collected and whose metrics can be plotted on graphs. We will work with the coolest libraries and infrastructure on the block including Zookeeper, Swagger, Graphite, Graphana, Kibana, Groovy, Gradle etc.
-I'd like to speak on Friday cause on Saturday I will be unavailable.
-The workshop can be either in Polish or English."
+      description: "During this workshop we will take a look at microservices, what they are and how to work with them. We will try to set up a system that uses service discovery, whose logs are remotely collected and whose metrics can be plotted on graphs. We will work with the coolest libraries and infrastructure on the block including Zookeeper, Swagger, Graphite, Graphana, Kibana, Groovy, Gradle etc."
       maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
 
@@ -818,8 +811,9 @@ The workshop can be either in Polish or English."
       name: "Upiększ swoje testy. Testowanie jednostkowe dla średnio zaawansowanych"
       time_slots: [time_slot_1]
       speaker: "Marcin Stachniuk"
-      description: "Warsztat jest przeznaczony dla średniozaawansowanych programistów Java, którzy napisali już trochę testów i chcieli by je upiększyć. Podczas warsztatu będziemy ćwiczyć tworzenie ładnej sekcji given (za pomocą Builder'ów), jak i czytelniejsze zapisywanie assercji (za pomocą Hamcrest'a, FEST'a i AssertJ). Bedzie jeszcze o testowaniu try catch i testach parametrycznych.
-Warsztat będzie prowadzony po polsku, względnie może być po niemiecku. Wymagane jest zabranie ze sobą własnego komputera ze skonfigurowanym środowiskiem programistycznym i konto na GitHubie (do przesyłania gist'ów). Potrzebny rzutnik."
+      description: "Warsztat jest przeznaczony dla średniozaawansowanych programistów Java, którzy napisali już trochę testów i chcieli by je upiększyć. Podczas warsztatu będziemy ćwiczyć tworzenie ładnej sekcji given (za pomocą Builder'ów), jak i czytelniejsze zapisywanie assercji (za pomocą Hamcrest'a, FEST'a i AssertJ). Bedzie jeszcze o testowaniu wyjątków i testach parametrycznych.
+
+Warsztat będzie prowadzony po polsku, względnie może być po niemiecku. Wymagane jest zabranie ze sobą własnego komputera ze skonfigurowanym środowiskiem programistycznym i opcjonalnie konto na GitHub'ie (do przesyłania gist'ów)."
       maximum_number_of_attendees: 16
       tags: [java]
 
@@ -836,8 +830,9 @@ Warsztat będzie prowadzony po polsku, względnie może być po niemiecku. Wymag
       time_slots: [time_slot_4]
       speaker: "Marcin Stachniuk"
       description: "Każdy programista powinien poświęcić 10 godzin na dogłębne poznanie swojego zintegrowanego środowiska pracy, aby móc z niego efektywnie (i efektownie) korzystać! A Ty ile czasu na to poświęciłeś? 
+
 Warsztat jest przeznaczony dla programistów Java, korzystających z IntelliJ Idea, lub chcących się go nauczyć. Warsztat będzie miał formę Coding Dojo, podczas którego będziemy wspólnie pisać Katę i wzajemnie uczyć się korzystania z Idei bez użycia myszki. 
-Warsztat będzie prowadzony po polsku, względnie może być po niemiecku. Własny komputer nie jest wymagany, gdyż będziemy kodować wspólnie na jednym, podpiętym do rzutnika. Przyda się za to notatnik i długopis do zapisywania kombinacji klawiszowych. Potrzebna tablica / flipchart, i w miarę możliwości osoba pomagająca zapisywać używane skróty."
+Warsztat będzie prowadzony po polsku, względnie może być po niemiecku. Własny komputer nie jest wymagany, gdyż będziemy kodować wspólnie na jednym, podpiętym do rzutnika. Przyda się za to notatnik i długopis do zapisywania nowopoznanych kombinacji klawiszowych."
       maximum_number_of_attendees: 16
       tags: [developers_tools]
 
