@@ -66,7 +66,7 @@ function showRegistrationSection() {
         if (date !== undefined && date.getTime() > new Date().getTime() && (Session.get('attendee') === null ||Session.get('attendee') === undefined)) {
             $('#registration-timeout').show();
         }
-        return moment(date).format('YYYY-DD-MM, HH:mm:ss');
+        return moment(date).format('YYYY-MM-DD, HH:mm:ss');
     };
 
     Template.header.events({
