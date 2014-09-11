@@ -113,16 +113,20 @@
 <template name="workshops">
     <section id="workshops">
         <div class="row days-row">
-            <div class="small-6 columns">
+            <div class="small-6 columns" style="padding-left: 0; padding-right: 0.1rem;">
                 <button id="friday-button" class="selected">Friday</button>
             </div>
-            <div class="small-6 columns">
+            <div class="small-6 columns" style="padding-left: 0.1rem; padding-right: 0;">
                 <button id="saturday-button">Saturday</button>
             </div>
         </div>
         <div id="friday-hours" class="row">
-            <button class="small-6 columns time-slot-button" data-slot-id="time_slot_1">{{startHour "time_slot_1"}} - {{endHour "time_slot_1"}}</button>
-            <button class="small-6 columns time-slot-button" data-slot-id="time_slot_2">{{startHour "time_slot_2"}} - {{endHour "time_slot_2"}}</button>
+            <div class="small-6 columns" style="padding-left: 0; padding-right: 0;">
+            <button class="time-slot-button" data-slot-id="time_slot_1">{{startHour "time_slot_1"}} - {{endHour "time_slot_1"}}</button>
+            </div>
+            <div class="small-6 columns" style="padding-left: 0; padding-right: 0;">
+            <button class="time-slot-button" data-slot-id="time_slot_2">{{startHour "time_slot_2"}} - {{endHour "time_slot_2"}}</button>
+            </div>
         </div>
         <div id="saturday-hours" class="row">
             <button class="small-4 columns time-slot-button" data-slot-id="time_slot_3">{{startHour "time_slot_3"}} - {{endHour "time_slot_3"}}</button>

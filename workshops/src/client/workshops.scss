@@ -73,6 +73,19 @@ section#workshops {
   .days-row button {
     margin: 0rem;
     width: 100%;
+    padding-bottom: 0.9rem;
+    &.selected {
+      padding-bottom: 1rem;
+    }
+
+  }
+
+  #friday-hours button {
+    width: 100%;
+  }
+
+  #seturday-hours button {
+    width: 100%;
   }
 
   .workshop-row {
