@@ -138,7 +138,7 @@ function showRegistrationSection() {
                     emailInput.addClass('error');
                     emailInput.parent().addClass('error')
                 } else if (error.error === 'Cannot register yet.') {
-                    Session.set('timeRemainingToOpenRegistration', moment(error.details.timeToWait).format('HH:mm:ss'));
+                    Session.set('timeRemainingToOpenRegistration', moment(error.details.timeToWait - 60*60*1000).format('HH:mm:ss'));
                     $('#registration-cant-register-yet-modal').foundation('reveal', 'open');
                 } else {
                     $('#registration-error-modal').foundation('reveal', 'open');
