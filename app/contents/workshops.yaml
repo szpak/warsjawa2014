@@ -862,7 +862,7 @@ W czasie warsztatu pokażemy na przykładzie kodu, który przy braku ostrożnoś
 Wszystko to, aby móc szybko i bezpiecznie dokonywać zmian (poprawiać błędy, dodawać nowe funkcje) bez narzutu generowanego przez istniejący dług techniczny."
       maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
-      
+
     - id: workshop_76
       name: "Pełne zanurzenie w Scruma dla developerów"
       time_slots: [time_slot_2]
