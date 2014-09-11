@@ -35,7 +35,7 @@ workshops:
       name: "Google App Engine - from 0 to working web application (with Eclipse)"
       time_slots: [time_slot_2]
       speaker: "Maciej Arkit"
-      description: Google App Engine is a Platfrom as a Service which helps you to build your project on Google's infrastructure, 
+      description: "Google App Engine is a Platfrom as a Service which helps you to build your project on Google's infrastructure, 
 which scales well and keeps your app ready for success (huge traffic) from beginning.
 If you are looking for advanced and scalable platform to start your new project or place for your home site
 without having to pay unless it gets profitable - please come and join! 
