@@ -144,7 +144,12 @@ Moje przygotowanie będzie polegało na doborze kilku problemów, przygotowaniu 
       name: "Akka basics: remoting and clustering"
       time_slots: [time_slot_1]
       speaker: "Krzysztof Romanowski, Piotr Kukiełka"
-      description: ""
+      description: "Workshop will focus on practical aspects of Akka. In small groups we will be creating from scratch distributed computing system using:
+- remoting
+- work parallelization
+- error handling, supervision strategies
+- clustering
+- patters useful for programming with actors"
       maximum_number_of_attendees: 16
       tags: [scala]
 
@@ -285,7 +290,7 @@ Nasz warsztat zdecydowanie nie będzie typowym odtworzeniem czterech pierwszych 
       name: "Java Workflow in the Cloud - AWS Amazon Simple Workflow Service for Java &amp; Eclipse."
       time_slots: [time_slot_4]
       speaker: "Adam Smolnik"
-      description: "Distribute your Business Processes and long-running Tasks all over the world across diverse machines and devices. Harness the powerful features of Cloud to walk through the steps of your processes. Keep them under your control. Write your workflows in pure Java, not with Graphical Designer in place."
+      description: "Distribute your Business Processes and long-running Tasks all over the world across diverse machines and devices. Harness the powerful features of Cloud to walk through the steps of your processes. Keep them under your control. Write your workflows in pure Java, not with Graphical Designer in place. Learn how to harness the power of asynchronous and distributed programming with Java and Amazon SWF."
       maximum_number_of_attendees: 16
       tags: [cloud_aws]
 
@@ -379,13 +384,12 @@ Warsztat dla początkujących."
       name: "Build a global, highly-available web application with AWS Cloud - harness Java to make your IT infrastructure an entirely programmable component. Make your IT infrastructure a part of your business logic.."
       time_slots: [time_slot_3]
       speaker: "Adam Smolnik"
-      description: "You don't escape Cloud as a Java developer. It's only a question of time. A lot of new things to learn: How to take advantage of the power of Cloud features like elasticity and scalability, how to include virtual computing resources as one another component like process or Java's thread. But it comes at a price - you have to learn to live with new challenges: permanent or temporary failures  at every turn. You must grapple with cost optimization, designing for failures from the very beginning of your project.  
-More on Change in Thinking you can find there http://2014.4developers.org.pl/pl/agenda/point/44/
-or in my LinkedIn profile.
-Amazon Cloud, its API and SDK is designed and intended especially for Java Developers. We will work on real AWS Cloud environment and I give the attendees opportunity to implement, deploy and test their solution on regular AWS Cloud settings.
-Workshop in Polish. After all, we are AWS User Group Poland.
-awsug.pl
-I can also lead the workshops in English. But as AWS User Group Poland we'd like to speak Polish."
+      description: "You don't escape Cloud as a Java developer. It's only a question of time. A lot of new things to learn: How to take advantage of the power of Cloud features like elasticity and scalability, how to include virtual computing resources as one another component like a process or Java's thread. But it comes at a price - you have to learn to live with new challenges: permanent or temporary failures found at every turn. You must grapple with cost optimization, designing for failures from the very beginning of your project.  
+Amazon Cloud, its API and SDK are designed to be easily used by Java Developers.
+We will work on real AWS Cloud environment and I give the attendees opportunity to implement, deploy and test their solution on regular AWS Cloud settings.
+
+The workshop will be led in Polish. After all, we are members of AWS User Group Poland :).
+awsug.pl"
       maximum_number_of_attendees: 16
       tags: [cloud_aws]
 
@@ -446,7 +450,7 @@ Aleksander Dąbrowski is a Ruby developer, CTO at Astarium, and lecturer at Code
       name: "Live map of transactions from allegro.pl (realtime app)"
       time_slots: [time_slot_3]
       speaker: "Bartosz Gałek, Marcin Wróblewski"
-      description: "We would like to make something creative using allegro webapi i.e. live map of Poland with incoming transactions every second. Nodejs would be good option, but maybe we could prepare java version (spring). Still, we want to show that live map of transactions in such a big platform is possible thing to do :) Did I mention, that we work at Allegro Group? :)"
+      description: "We would like to make something creative using allegro webapi i.e. live map of Poland with incoming transactions every second. Nodejs would be good option - but maybe we could prepare java version as well. Still, we want to show that live map of transactions in such a big platform is a possible thing to do :) Did I mention, that we work at Allegro Group? :)"
       maximum_number_of_attendees: 16
       tags: [data_analysis]
 
@@ -507,13 +511,13 @@ Wyjaśnię jak napisać m.in. własny moduł, funkcje, dodać własne fakty do f
       name: "WildFly in production environment: work modes, securing with RBAC, central logging, clustering."
       time_slots: [time_slot_3]
       speaker: "Przemysław Kuźnicki"
-      description: "I want to share my comeptence regarding Open Source Middleware in following topics:
+      description: "I want to share my competence regarding Open Source Middleware in following topics:
 1) working in Standalone mode
 2) working in Domain mode
 3) centralization of logging
 4) short roles description and RBAC
 5) cluster deployment in Standalone and Domain modes
-a) possible switching to TCP if time allows"
+    a) possible switching to TCP if time allows"
       maximum_number_of_attendees: 16
       tags: [java]
 
@@ -527,8 +531,8 @@ On this workshop you will learn how to quickly startup a project running on JVM.
 We will use Groovy language and Grails platform. 
 You will try yourself how easy it is to create domain model, views and controllers, fill database with some demo data, add security and integrate all this with standard Spring services and controllers written in Java. You will feel the power of GORM.
 The workshop will take 3h. 
-It is targeted to beginning Grails developers and those who has never heard of Grails. Advanced Spring developers might also find it interesting.
-Prerequisite: have the latest Grails and Groovy distribution installed on your laptop and plugin for Grails in your favourite IDE, however you can also use gEdit like me, if you like so."
+It is targeted to beginning Grails developers and those who have never heard of Grails. Advanced Spring developers might also find it interesting.
+Prerequisite: Grails 2.4.3 and Groovy 2.3 distribution installed on your laptop and plugin for Grails in your favourite IDE, however you can also use gEdit like me, if you like so."
       maximum_number_of_attendees: 16
       tags: [groovy]
 
@@ -606,8 +610,7 @@ Nie planuję popełnić plagiatu, ale będę w części teoretycznej bazował na
       name: "JVM bytecode manipulation techniques for JVM &quot;freaks wannabe&quot;"
       time_slots: [time_slot_3]
       speaker: "Jarosław Pałka"
-      description: "Will start with introduction to bytecode structure (opcodes, type checking and such) and execution model, and then will dive into code generation and modification with ASM and Javaasist, how to modify your code on the fly (instrumentation with Java agents), how to survive and don't get mentally injured with Jitescript, will show how to use bytecode manipulation for fault injection tests and performance tracing with Byteman. And if time permits will end up in world of invokedynamic.
-I can do it only on Saturday"
+      description: "Will start with introduction to bytecode structure (opcodes, type checking and such) and execution model, and then will dive into code generation and modification with ASM and Javaasist, how to modify your code on the fly (instrumentation with Java agents), how to survive and don't get mentally injured with Jitescript, will show how to use bytecode manipulation for fault injection tests and performance tracing with Byteman. And if time permits will end up in world of invokedynamic."
       maximum_number_of_attendees: 16
       tags: [java]
 
@@ -615,8 +618,7 @@ I can do it only on Saturday"
       name: "Practical Spring Data - an introduction for lazy people into JPA and NoSQL &quot;the Spring Way&quot;"
       time_slots: [time_slot_4]
       speaker: "Jarosław Pałka"
-      description: "As title suggests, full workshop filled with examples, how to work with Spring Data and its different flavours, JPA, Neo4j, MongoDB, Redis and others. Will discuss different mapping strategis between your database and your POJOs, how work with Spring Data repositories, finder methods, statically typed queries with QueryDSL, cross stores and many others. Will also talk a lot about modeling for different database paradigms. This is a compressed version on full fledged 4 day long commercial training :) should be fun.
-And I  can do it only on Saturday"
+      description: "As title suggests, full workshop filled with examples, how to work with Spring Data and its different flavours, JPA, Neo4j, MongoDB, Redis and others. Will discuss different mapping strategies between your database and your POJOs, how work with Spring Data repositories, finder methods, statically typed queries with QueryDSL, cross stores and many others. Will also talk a lot about modelling for different database paradigms. This is a compressed version on full fledged 4 day long training, I do promise a whole lot of fun."
       maximum_number_of_attendees: 16
       tags: [java]
 
@@ -885,3 +887,12 @@ Dwa słowa o mnie:
 Jestem certyfikowanym Scrum Masterem (PSMI) i Product Ownerem (PSPOI). Na codzień pracuję jako Scrum Master i developer Java. Prowadzę też szkolenia dla zespołów developerskich, wdrażających Scruma. Pomogłem już wdrożyć Scruma kilku/kilkunastu zespołom różnej wielkości i w kilku różnych firmach. Interesuję się głównie Scrumem na poziomie organizacji pracy zespołu developerskiego. Należę do wąskiego grona Scrum Masterów i trenerów Agile z backgroundem technologicznym i wciąż aktywnie developuję. Tego typu warsztat prowadziłem już z dużym sukcesem m.in. na konferencji InfoShare w Gdańsku, podobny będę prowadził na targach Future3."
       maximum_number_of_attendees: 16
       tags: [agile]
+
+    - id: workshop_77
+      name: "Warsztaty miękkie"
+      time_slots: [time_slot_0]
+      speaker: "wielu prowadzących"
+      description: "Tutaj będą odbywać się różne spotkania i warsztaty związane z umiejętnościami miękkimi. Na większość z nich nie jest wymagana rejestracja."
+      maximum_number_of_attendees: 1000
+      tags: [soft]
+
