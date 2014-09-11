@@ -502,11 +502,10 @@ Aleksander Dąbrowski is a Ruby developer, CTO at Astarium, and lecturer at Code
       name: "Frontend Workflow - Workshop"
       time_slots: [time_slot_1]
       speaker: "Damian Kałek"
-      description: "Frontend Workflow - Workshop
-1) Sublime Text - Plugins
-2) Gulp
-3) Photoshop - Plugins
-Warsztaty bylyby ogolnie o optymalizacji pracy dla Frontend Developera - jak przyspieszyc swoja prace na codzien."
+      description: "Frontend Workflow - Warsztaty będą między innymi o optymalizacji pracy dla Frontend Developera - jak przyśpieszyć swoją prace na codzień ale również o tym jak zbudować sobie własne środowisko do pracy aby było ono jak najbardziej optymalne i nowoczesne. Poruszumy takie tematy jak: Remote Device Debuggin , livereload , compile SASS, gulp/grunt. Jeżeli starczy czasu i będą chęci powiemy też o Responsive Web Design lub Frontend Testing. Zapraszam.
+
+Wymagania:
+laptop , node js , npm , trial Photoshop w chmurze , Sublime Text"
       maximum_number_of_attendees: 16
       tags: [developers_tools]
 
