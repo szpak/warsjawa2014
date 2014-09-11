@@ -2,15 +2,6 @@ var host = Meteor.settings.emailHost;
 var timeout = Meteor.settings.timeout;
 var headers = Meteor.settings.headers;
 
-RegistrationKeys.upsert({_id: 'key1'}, {_id: 'key1', timeHandicap: 1 * 3600 * 1000, used: false, usedBy: null});
-RegistrationKeys.upsert({_id: 'key2'}, {_id: 'key2', timeHandicap: 2 * 3600 * 1000, used: false, usedBy: null});
-RegistrationKeys.upsert({_id: 'key3'}, {_id: 'key3', timeHandicap: 3 * 3600 * 1000, used: false, usedBy: null});
-RegistrationKeys.upsert({_id: 'key4'}, {_id: 'key4', timeHandicap: 4 * 3600 * 1000, used: false, usedBy: null});
-RegistrationKeys.upsert({_id: 'key5'}, {_id: 'key5', timeHandicap: 5 * 3600 * 1000, used: false, usedBy: null});
-RegistrationKeys.upsert({_id: 'key6'}, {_id: 'key6', timeHandicap: 6 * 3600 * 1000, used: false, usedBy: null});
-RegistrationKeys.upsert({_id: 'key7'}, {_id: 'key7', timeHandicap: 7 * 3600 * 1000, used: false, usedBy: null});
-RegistrationKeys.upsert({_id: 'key8'}, {_id: 'key8', timeHandicap: 8 * 3600 * 1000, used: false, usedBy: null});
-
 Meteor.publish('TimeSlots', function () {
     return TimeSlots.find();
 });

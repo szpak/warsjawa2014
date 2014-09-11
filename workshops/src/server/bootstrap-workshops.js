@@ -16,7 +16,7 @@ function loadDATAAAAAAAA() {
                 var workshopsData = JSON.parse(result.content);
                 (function setupTimeSlots(timeSlots) {
                     for (var i = 0; i < timeSlots.length; ++i) {
-                        var timeSlot = timeSlots[i].time_slot;
+                        var timeSlot = timeSlots[i];
                         timeSlot._id = timeSlot.id;
                         delete timeSlot.id;
                         console.log('Upserting time slot with id: ' + timeSlot._id);
