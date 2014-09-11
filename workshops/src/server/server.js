@@ -85,6 +85,12 @@ Meteor.methods({
 
     login: function (email, key) {
         console.log('[' + email + '] logging in...');
+
+        function bumpSignUpsTimestamp(attendeeId) {
+            SignUps.update({attendeeId: attendeeId, active: true}, {$set:{lastSeen:new Date()}});
+            console.log(SignUps.find({attendeeId: attendeeId, active: true}).fetch());
+        }
+
         var attendee = Attendees.findOne({email: email, key: key});
         if (attendee === undefined) {
             console.log('[' + email + '] attendee not found. Wrong email or key. Trying to check this pair with Warsjawa backend.');
@@ -93,6 +99,7 @@ Meteor.methods({
                 console.log('[' + email + '] user confirmed with Warsjawa backend. Move along.');
                 Attendees.update({email: email}, {$set: {key: key}});
                 attendee = Attendees.findOne({email: email, key: key});
+                bumpSignUpsTimestamp(attendee._id);
                 this.setUserId(attendee._id);
                 return attendee;
             } else {
@@ -102,6 +109,7 @@ Meteor.methods({
             }
         } else {
             console.log('[' + email + '] key is ok. Logged in.');
+            bumpSignUpsTimestamp(attendee._id);
             this.setUserId(attendee._id);
             return attendee;
         }
@@ -129,7 +137,7 @@ Meteor.methods({
                 });
             }
             if (!signOutOnly) {
-                SignUps.insert({timestamp: new Date(), workshopId: workshopId, attendeeId: this.userId, active: true, timeSlots: workshop.time_slots});
+                SignUps.insert({timestamp: new Date(), lastSeen:new Date(), workshopId: workshopId, attendeeId: this.userId, active: true, timeSlots: workshop.time_slots});
                 HTTP.call('PUT', host + '/emails/' + workshopId + '/' + email, {timeout: timeout, headers: headers}, function (error, result) {
                     console.log('[' + email + '] add to workshop with id: ' + workshopId + ' status code: ' + result.statusCode);
                 });
