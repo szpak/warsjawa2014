@@ -5,7 +5,7 @@ function loadDATAAAAAAAA() {
     console.log('Downloading speakers data');
 
     var retryTime = 5000;
-    var refreshRate = 60 * 1000;
+    var refreshRate = 10 * 60 * 1000;
 
     function loadWorkshopOnlyData() {
         console.log('Downloading workshops data');
@@ -62,3 +62,4 @@ function loadDATAAAAAAAA() {
 }
 
 loadDATAAAAAAAA();
+

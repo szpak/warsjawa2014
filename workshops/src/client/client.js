@@ -2,6 +2,7 @@ Meteor.subscribe('Speakers');
 Meteor.subscribe('Workshops');
 Meteor.subscribe('SignUps');
 Meteor.subscribe('TimeSlots');
+Meteor.subscribe('Attendees');
 
 
 $(document).foundation({
@@ -18,6 +19,22 @@ $(document).ready(function () {
     });
 });
 
+//$(window).load(function () {
+//    centerContent();
+//});
+//
+//$(window).resize(function () {
+//    centerContent();
+//});
+//
+//function centerContent() {
+//    var workshopRows = $('.workshop-row');
+//    for (var i = 0; i < workshopRows.length; ++i) {
+//        var row = $(workshopRows[i]);
+//        row.find('.workshop-attendees-count').css('line-height',parseInt(row.css('height'))-1 + 'px');
+//    }
+//}
+
 function setLoadingIndicatorShown(shown) {
     shown ? $('#loading-indicator').fadeIn('slow') : $('#loading-indicator').fadeOut('slow');
 }
@@ -31,7 +48,7 @@ function showRegistrationSection() {
 (function header() {
     Template.header.created = function () {
         Meteor.call('openingDate', function (error, date) {
-            Session.set('openingDate', moment(date).format('YYYY-DD-MM, HH:mm:ss'));
+            Session.set('openingDate', date);
         });
     };
 
@@ -45,7 +62,11 @@ function showRegistrationSection() {
     };
 
     Template.header.openingDate = function () {
-        return Session.get('openingDate');
+        var date = Session.get('openingDate');
+        if (date !== undefined && date.getTime() > new Date().getTime()) {
+            $('#registration-timeout').show();
+        }
+        return moment(date).format('YYYY-DD-MM, HH:mm:ss');
     };
 
     Template.header.events({
@@ -288,8 +309,16 @@ function showRegistrationSection() {
             filterWorkshopsForTimeSlotId(event.target.getAttribute('data-slot-id'));
         },
         'click button.workshop-button': function (event) {
-            if (!$(event.target).hasClass('disabled')) {
-                var workshopId = event.target.getAttribute('data-workshop-id');
+            var row;
+            if ($(event.target).data('workshop-id') !== undefined) {
+                row = $(event.target);
+            } else if ($(event.target).parent().data('workshop-id') !== undefined) {
+                row = $(event.target).parent();
+            }
+
+
+            if (!row.hasClass('disabled')) {
+                var workshopId = row.data('workshop-id');
                 Meteor.call('toggleWorkshopSignUp', workshopId);
             }
         },
@@ -329,4 +358,16 @@ function showRegistrationSection() {
         }
         return workshops;
     }
+})();
+
+(function stats(){
+    Template.stats.noWorkshops = function () {
+        return Workshops.find().fetch().length;
+    };
+    Template.stats.noAttendees = function () {
+        return Attendees.find().fetch().length;
+    };
+    Template.stats.noSignUps = function () {
+        return SignUps.find({active:true}).fetch().length;
+    };
 })();

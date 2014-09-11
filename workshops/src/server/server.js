@@ -27,6 +27,10 @@ Meteor.publish('SignUps', function () {
     return SignUps.find();
 });
 
+Meteor.publish('Attendees', function () {
+    return Attendees.find({key: {$exists: true}}, {fields: {key:0, email:0, name:0}});
+});
+
 Meteor.methods({
     register: function (name, email, key) {
         if (key !== null && key !== undefined) {

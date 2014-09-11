@@ -1,8 +1,17 @@
 body {
   padding-top: 2rem; }
 
+body, button {
+  font-family: "museo_sans500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 500; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Museo500Regular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 500; }
+
 button {
-  background-color: #275d7c; }
+  background-color: #275d7c;
+  outline: none; }
   button:hover {
     background-color: #347aa2; }
   button.selected {
@@ -10,9 +19,9 @@ button {
     button.selected:hover {
       background-color: #30a851; }
   button.disabled {
-    background-color: #adb1b2; }
+    background-color: #d2d6d7; }
     button.disabled:hover {
-      background-color: #c7cacb; }
+      background-color: #edefef; }
 
 .reveal-modal {
   padding: 0.9375rem 0 0 0; }
@@ -21,39 +30,56 @@ section#header #attendee-name {
   display: none; }
 section#header #log-out-button {
   display: none; }
+section#header #registration-timeout {
+  display: none; }
 
 section#registration {
   display: none;
   position: relative; }
 
 section#workshops .days-row button {
-  margin: 0rem; }
+  margin: 0rem;
+  width: 100%; }
 section#workshops .workshop-row {
-  border: 0 solid #1b4055;
-  border-bottom-width: 1px;
-  margin-bottom: 0.25rem;
-  background-color: #275d7c; }
-  section#workshops .workshop-row.disabled {
-    background-color: #adb1b2; }
-    section#workshops .workshop-row.disabled button:hover {
-      background-color: #c7cacb; }
-  section#workshops .workshop-row.signed-up {
-    background-color: #25803e; }
-    section#workshops .workshop-row.signed-up button:hover {
-      background-color: #30a851; }
+  margin-bottom: 0.75rem;
+  color: #1b4055;
+  background-color: #D0D9E4; }
   section#workshops .workshop-row button {
     margin: 0;
-    padding: 0.5rem;
+    padding: 0.75rem;
     text-align: left;
-    background-color: transparent; }
+    background-color: transparent;
+    color: #1b4055; }
     section#workshops .workshop-row button:hover {
-      background-color: #347aa2; }
-    section#workshops .workshop-row button.info-button {
-      text-align: center;
-      color: white; }
-
-.spacer {
-  margin-bottom: 2rem; }
+      background-color: #f0f3f7; }
+  section#workshops .workshop-row .workshop-attendees-count, section#workshops .workshop-row .info-button {
+    color: #1b4055;
+    text-align: center; }
+  section#workshops .workshop-row span {
+    display: block; }
+  section#workshops .workshop-row.disabled {
+    background-color: #efefef; }
+    section#workshops .workshop-row.disabled button, section#workshops .workshop-row.disabled .workshop-attendees-count, section#workshops .workshop-row.disabled .info-button {
+      color: #1b4055; }
+    section#workshops .workshop-row.disabled button:hover {
+      background-color: white; }
+  section#workshops .workshop-row.signed-up {
+    background-color: #58BE74; }
+    section#workshops .workshop-row.signed-up button:hover {
+      background-color: #7dcc93; }
+section#workshops .workshop-name {
+  font-family: Museo500Regular, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 500; }
+section#workshops .workshop-speakers {
+  font-family: Museo300Regular, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem; }
+section#workshops .workshop-attendees-count {
+  line-height: 2rem;
+  color: #ffffff;
+  float: right;
+  font-family: "museo_sans500", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 500; }
 
 .image-wrapper {
   position: relative;
@@ -68,6 +94,13 @@ section#workshops .workshop-row {
     padding: 0.4rem;
     line-height: 1;
     font-size: 0.75rem; }
+
+#stats {
+  margin-bottom: 2rem;
+  color: #999;
+  font-family: Museo300Regular, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem; }
 
 .spinner-wrapper {
   background: rgba(0, 0, 0, 0.5);

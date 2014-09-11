@@ -9,6 +9,7 @@
 {{> registration}}
 {{> login}}
 {{> workshops }}
+{{> stats }}
 
 <div class="spinner-wrapper" id="loading-indicator">
     <div class="spinner">
@@ -37,7 +38,7 @@
     <section id="registration">
         <div class="row">
             <div class="small-12 columns panel">
-                <div class="small-12 medium-10 medium-centered large-8 large-centered columns">
+                <div class="small-12 medium-10 medium-centered large-8 large-centered columns text-center">
                     <form data-abide id="registration-form">
                         <div>
                             <input type="text" id="name-input" placeholder="Your name" required pattern="[a-zA-Z]+">
@@ -52,7 +53,7 @@
                         </div>
                     </form>
                     <button type="submit"
-                            class="disabled small-12 medium-10 medium-centered large-8 large-centered columns"
+                            class="disabled small-12 columns"
                             id="submit-button">Register
                     </button>
                 </div>
@@ -112,8 +113,12 @@
 <template name="workshops">
     <section id="workshops">
         <div class="row days-row">
-            <button id="friday-button" class="small-6 columns selected">Friday</button>
-            <button id="saturday-button" class="small-6 columns">Saturday</button>
+            <div class="small-6 columns">
+                <button id="friday-button" class="selected">Friday</button>
+            </div>
+            <div class="small-6 columns">
+                <button id="saturday-button">Saturday</button>
+            </div>
         </div>
         <div id="friday-hours" class="row">
             <button class="small-6 columns time-slot-button" data-slot-id="time_slot_1">{{startHour "time_slot_1"}} - {{endHour "time_slot_1"}}</button>
@@ -128,12 +133,15 @@
         {{#each workshops}}
         <div class="row workshop-row {{# if disabled}}disabled{{/if }} {{# if signedUpForThisWorkshop}}signed-up
                 {{/if }}">
-            <button class="workshop-button small-10 medium-11 columns {{# if disabled}}disabled{{/if }}"
+            <button class="workshop-button small-8 medium-10 columns {{# if disabled}}disabled{{/if }}"
                     data-workshop-id="{{ _id }}">
-                {{ name }}
-                {{ speaker }}
-                {{ numberOfSignUps }}/{{ maximum_number_of_attendees }}
+                <span class="workshop-name">{{ name }}</span>
+                <span class="workshop-speakers">{{ speaker }}</span>
+
             </button>
+            <div class="center-vertically small-2 medium-1 columns">
+                <span class="workshop-attendees-count">{{ numberOfSignUps }}/{{ maximum_number_of_attendees }}</span>
+            </div>
             <button class="info-button small-2 medium-1 columns" data-workshop-id="{{ _id }}">
                 <i class="fa fa-search"></i>
             </button>
@@ -156,7 +164,17 @@
             </div>
             <a class="close-reveal-modal">&#215;</a>
         </div>
-        <div class="spacer"></div>
     </section>
 </template>
+
+<template name="stats">
+    <section id="stats">
+        <div class="row">
+            <div class="small-12 columns">
+                <span>#workshops: {{ noWorkshops }}, #attendees: {{ noAttendees }}, #sign ups: {{ noSignUps }}</span>
+            </div>
+        </div>
+    </section>
+</template>
+
 

@@ -1,12 +1,27 @@
 $warsjawa-beige: #ffffff;
 $warsjawa-blue: #1b4055;
 $warsjawa-light-blue: #46addb;
-$warsjawa-gray: #adb1b2;
+$warsjawa-gray: #d2d6d7;
 $warsjawa-raspberry: #f43252;
 $warsjawa-green: #25803e;
 
+$font-museo-300: 'Museo300Regular';
+$font-museo-500: 'Museo500Regular';
+$font-museo-700: 'Museo700Regular';
+$font-museo-sans-500: 'museo_sans500';
+
 body {
   padding-top: 2rem;
+}
+
+body, button {
+  font-family: $font-museo-sans-500, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-museo-500, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 
 button {
@@ -27,6 +42,8 @@ button {
       background-color: lighten($warsjawa-gray, 10%);
     }
   }
+
+  outline: none;
 }
 
 .reveal-modal {
@@ -41,6 +58,10 @@ section#header {
   #log-out-button {
     display: none;
   }
+
+  #registration-timeout {
+    display: none;
+  }
 }
 
 section#registration {
@@ -51,49 +72,69 @@ section#registration {
 section#workshops {
   .days-row button {
     margin: 0rem;
+    width: 100%;
   }
 
   .workshop-row {
-    border: 0 solid $warsjawa-blue;
-    border-bottom-width: 1px;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.75rem;
 
-    background-color: lighten($warsjawa-blue, 10%);
+    color: $warsjawa-blue;
+    background-color: #D0D9E4;
+    button {
+      margin: 0;
+      padding: 0.75rem;
+      text-align: left;
+      background-color: transparent;
+      color: $warsjawa-blue;
+      &:hover {
+        background-color: lighten(#D0D9E4, 10%);
+      }
+    }
+    .workshop-attendees-count, .info-button {
+      color: $warsjawa-blue;
+      text-align: center;
+    }
+
+    span {
+      display: block;
+    }
 
     &.disabled {
-      background-color: $warsjawa-gray;
+      background-color: #efefef;
+      button, .workshop-attendees-count, .info-button {
+        color: $warsjawa-blue;
+      }
       button:hover {
-        background-color: lighten($warsjawa-gray, 10%);
+        background-color: lighten(#efefef, 10%);
       }
     }
 
     &.signed-up {
-      background-color: $warsjawa-green;
+      background-color: #58BE74;
       button:hover {
-        background-color: lighten($warsjawa-green, 10%);
-      }
-    }
-
-    button {
-      margin: 0;
-      padding: 0.5rem;
-      text-align: left;
-      background-color: transparent;
-
-      &:hover {
-        background-color: lighten($warsjawa-blue, 20%);
-      }
-
-      &.info-button {
-        text-align: center;
-        color: $warsjawa-beige;
+        background-color: lighten(#58BE74, 10%);
       }
     }
   }
-}
 
-.spacer {
-  margin-bottom: 2rem;
+  .workshop-name {
+    font-family: Museo500Regular, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+  }
+
+  .workshop-speakers {
+    font-family: Museo300Regular, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+  }
+
+  .workshop-attendees-count {
+    line-height: 2rem;
+    color: #ffffff;
+    float: right;
+    font-family: $font-museo-sans-500, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+  }
 }
 
 .image-wrapper {
@@ -110,6 +151,14 @@ section#workshops {
     line-height: 1;
     font-size: 0.75rem;
   }
+}
+
+#stats {
+  margin-bottom: 2rem;
+  color: #999;
+  font-family: Museo300Regular, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
 }
 
 //SPINNER
