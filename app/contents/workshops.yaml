@@ -202,7 +202,7 @@ This will be a hands-on workshop that let's you dive in into typical scenarios w
 
     - id: workshop_12
       name: "Architectural kata / Archi-kata"
-      time_slots: [time_slot_2]
+      time_slots: [time_slot_4]
       speaker: "Tomasz Borek"
       description: "Great designers design, that's why they're so great.
 
@@ -227,7 +227,7 @@ Don't worry, you get to ask others too. ;-)"
 
     - id: workshop_14
       name: "Specification by Example - Cucumber Automation Workshop"
-      time_slots: [time_slot_2]
+      time_slots: [time_slot_1]
       speaker: "Krzysztof Jelski"
       description: "Chcę się skoncentrować na automatyzowaniu specyfikacji (scenariuszy) w Cucumberze. Zakładam użycie cucumber-jvm [https://github.com/cucumber/cucumber-jvm]. Co oznacza niekoniecznie Javę. Będziecie mogli użyć też Groovy'ego, Scali czy Clojure.
 
@@ -255,7 +255,7 @@ I have comercial experience as a Android trainer and developer. I focus on pract
 
     - id: workshop_16
       name: "PPPPP - Ping Pong Pomodoro Pair Programming dojo"
-      time_slots: [time_slot_4]
+      time_slots: [time_slot_3]
       speaker: "Adam Pierzchała, Krzysztof Jelski"
       description: "This will be a coding dojo, where we will be using multiple techniques such as Ping-Pong Pair Programming, Pomodoro and TDD to help us. All of them will be introduced step by step, so that everyone can get familiar and comfortable with them before making things more interesting.
 We are experienced software developers, and we use these techniques on daily basis. We want to show that by using them we can both have fun from coding, and improve our code quality."
