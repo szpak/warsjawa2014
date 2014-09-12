@@ -49,7 +49,10 @@ It will show most important modules of GAE: <br/>
 -GAE dashboard console etc. <br/>
 
 At the end workshop will lead through public domain configuration. <br/>
-The result will be publicly available application."
+The result will be publicly available application.<br/>
+<h3>Maciej Arkit:</h3><br/>
+Develops software for over 10 years. First experiments with Java started as a computer science student at AGH Cracow during multiple projects, to become finally professional software developer at Comarch in Telecommunication sector. For 6 years works as software engineer in Sabre Holdings, currently acting as  a team leader for project developing module for <a target=\"_blank\" href=\"http://tripcase.com\">TripCase</a> - application supporting people in all phases of their travel.<br/>
+In free time tries to broaden his knowledge to keep up with recent technology trends  by attending software conferences, startup meetups and developing own project RestoTronic.com using GoogleAppEngine+Spring."
       maximum_number_of_attendees: 16
       tags: [java]
 
@@ -66,7 +69,9 @@ Celem warsztatu jest coś zakodzić, potrzebny będzie zatem:<br/>
 - dowolne urządzenie z iOS7 wspierające iBeacons: iPhone 4S+, iPad 3+, iPad mini+, iPod Touch 5Gen<br/>
 - podstawowa znajomość Objective-C i iOS<br/>
 <br/>
-Bardzo zachęcam do programowania w parach:D"
+Bardzo zachęcam do programowania w parach:D<br/>
+<h3>Antoni Kędracki:</h3><br/>
+Lead Engineer w firmie Polidea. Od samego początku swojej kariery związany nierozłącznie z platformami mobilnymi. Po pierwszych doświadczeniach zebranych na BlackBerry i Androidzie, wyspecializował się w iOS. Ceni sobie dobrą muzykę, i jeszcze lepsze jedzenie (wraz z procesem jego przyrządzania)."
       maximum_number_of_attendees: 16
       tags: [ios]
 
@@ -79,7 +84,12 @@ Bardzo zachęcam do programowania w parach:D"
 The goals of the workshop are:<br/>
 - Help people new to Scala to get a look on Akka and Scala as a useful tool;<br/>
 - Present major features of Akka (tell/ask, supervision, actor lifecycle, routers), but not the advanced ones (clustering, persistence);<br/>
-- Create a real-world application;"
+- Create a real-world application;</br>
+Piotr Trzpil:</br>
+Enthusiast of Scala, JVM, clean code and static typing.</br>
+Loved C# and its functional features but then took a deeper dive (and there is no going back).</br>
+Active Warsaw Scala & Java UG member, occasional speaker.</br>
+In his free time he codes, reads and dreams about using Scala in projectional editor."
       maximum_number_of_attendees: 16
       tags: [scala]
 
@@ -101,7 +111,14 @@ Please have your VirtualBox or QEMU working before workshops to make environment
 If you are passionate about Java and you've already read what's new in this revolutionary update - it's time for the next step - go deep into it!<br/>
 During workshop attendees will be challenged with exercies related with functional programming/lambdas/streams/Date API and many more problems. It's time to write your own Collector, learn how streams processing order works and hack lack of tuples in Java.<br/>
 <br/>
-Remember - minimum theory, maximum practice!"
+Remember - minimum theory, maximum practice!<br/>
+Programista Java, rekruter techniczny, mentor młodych talentów, trener Akademii Kompetencji JCommerce oraz wykładowca Politechniki Śląskiej.<br/>
+Jako programista - fan programowania funkcyjnego, pasjonat Javy, adept Scali, zwolennik Javascriptu<br/>
+Jako rekruter - nie szuka przeciętności oraz 'zasiedziałych' seniorów<br/>
+Jako mentor - stara się udowodnić, że jednak 'się da'<br/>
+Jako trener - uczy tylko rzeczy nowych i ambitnych<br/>
+Na co dzień stara się udowodnić, że 'umiejętności > doświadczenie'<br/>
+Po godzinach kolekcjoner certyfikatów programistycznych."
       maximum_number_of_attendees: 16
       tags: [java]
 
@@ -109,7 +126,9 @@ Remember - minimum theory, maximum practice!"
       name: "IMPACT: How to get results through clear thinking"
       time_slots: [time_slot_3]
       speaker: "Michał Parkoła"
-      description: "More then a decade after the Agile Manifesto it's no longer enough to talk about 'working software' and 'responding to change'. Along with constantly advancing engineering practices we need more powerful methods for defining success, planning and evaluating progress. And it all starts with the brutal honesty of numbers..."
+      description: "More then a decade after the Agile Manifesto it's no longer enough to talk about 'working software' and 'responding to change'. Along with constantly advancing engineering practices we need more powerful methods for defining success, planning and evaluating progress. And it all starts with the brutal honesty of numbers...<br/>
+Michał Parkoła:</br>
+      Product Owner i Agile Coach w grupie 4FINANCE odpowiedzialny za rozwój ogólnoeuropejskiej platformy płatności. Professional Scrum Master 1 i 2, Certified Scrum Master uczony m.in. przez twórcę Scrum – Jeffa Sutherlanda. Trener (kilkaset godzin szkoleń) i coach Agile. Współzałożyciel Fluid Circle i trener Bottega IT Solutions."
       maximum_number_of_attendees: 16
       tags: [agile]
 
@@ -146,7 +165,7 @@ Planed agenda is:<br/>
       name: "Introduction to animations in Android"
       time_slots: [time_slot_1]
       speaker: "Kamil Książek"
-      description: "This workshop will provide information about Android animations basis. During it, attendees will have an opportunity to learn about animation types and use them to implement example visual effects. Goal of this workshop is to provide practical knowledge about enhancing Android applications look and feel with animations for developers, who has little to no experience in this field. Basic knowledge about creating Android applications and GUI elements is required. Topics that will be covered:<br/>
+      description: "This workshop will provide information about Android animations basis. During it, attendees will have an opportunity to learn about animation types and use them to implement example visual effects. Goal of this workshop is to provide practical knowledge about enhancing Android applications look and feel with animations for developers, who has little to no experience in this field. Basic knowledge about creating Android applications and GUI elements is required. Topics that will be covered 
 <br/>
 - View Animations (Android pre-3.0) - changing alpha, scale, rotation and position<br/>
 - Property Animations (Android 3.0) - advanced animations scenarios (crossfading 2 buttons, zooming images, synchronizing multiple animations)<br/>
@@ -210,7 +229,9 @@ No hire/fire power over other team members. <br/>
 No time to check it all, so use ASSUMPTIONS.<br/>
 <br/>
 After design, you will have to present your solution to others and answer their questions... as well as those from the client.<br/>
-Don't worry, you get to ask others too. ;-)"
+Don't worry, you get to ask others too. ;-)</br/>
+Tomasz Borek: </br>
+<a target=\"_blank\" href=\"http://lafkblogs.wordpress.com/about/bio/\">http://lafkblogs.wordpress.com/about/bio/</a>"
       maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
 
@@ -228,7 +249,9 @@ Don't worry, you get to ask others too. ;-)"
       speaker: "Krzysztof Jelski"
       description: "Chcę się skoncentrować na automatyzowaniu specyfikacji (scenariuszy) w Cucumberze. Zakładam użycie <a target=\"_blank\" href=\"https://github.com/cucumber/cucumber-jvm\">cucumber-jvm</a>. Co oznacza niekoniecznie Javę. Będziecie mogli użyć też Groovy'ego, Scali czy Clojure.<br/>
 <br/>
-Rozpoczniecie z przygotowanym szkieletem aplikacji i kilkoma już zautomatyzowanymi scenariuszami (na poziomie 'Hello world'). Waszym zadaniem będzie automatyzacja od jednego do kilku następnych scenariuszy. Po drodze nauczycie się kilku trików (automatyzacja na różnych poziomach aplikacji, użycie tagów i hooków, tworzenie warstwy automatyzacji)."
+Rozpoczniecie z przygotowanym szkieletem aplikacji i kilkoma już zautomatyzowanymi scenariuszami (na poziomie 'Hello world'). Waszym zadaniem będzie automatyzacja od jednego do kilku następnych scenariuszy. Po drodze nauczycie się kilku trików (automatyzacja na różnych poziomach aplikacji, użycie tagów i hooków, tworzenie warstwy automatyzacji).<br/>
+<h3>Krzysztof Jelski:</h3><br/> 
+Doświadczony deweloper Javy i C#. Od 2005 stosuje w pracy Test-Driven Development. Pracuje na sposób Agile’owy i przez szkolenia i coaching uczy innych tworzenia oprogramowania w ten sposób. Chce, aby software efektywnie pomagał innym w życiu i pracy. Stąd też w obszarze jego zainteresowań są również Specification by Example (bliski krewny Behaviour-Driven Development) i Impact Mapping. Na co dzień w Pragmatists. Właściciel agile-elearning.pl, sprzedaje online’owe szkolenia z Agile’owych praktyk inżynierskich."
       maximum_number_of_attendees: 16
       tags: [agile]
 
@@ -281,7 +304,9 @@ You can find the materials (schematics and code) at <a target=\"_blank\" href=\"
 <br/>
 There are many tools and libraries that can help with that, but we will focus on those using Pluggable Annotation Processing API or JSR-269. Annotation processing tools can greatly help us remove boilerplate often crossing business logic, so we can focus more on requirements and spend less time on reviewing and maintaining code that is expected to exist for our application to correctly behave in the world of Android.<br/>
 <br/>
-We will try to use a couple of libraries specifically designed to ease our work: AndroidAnnotations, ButterKnife, Parceler and Hrisey. We will also write our own, simple JSR-269-based tool."
+We will try to use a couple of libraries specifically designed to ease our work: AndroidAnnotations, ButterKnife, Parceler and Hrisey. We will also write our own, simple JSR-269-based tool.<br/>
+<h3>Maciej Górski:</h3><br/>
+Maciej is a passionate developer, but also a conference wanderer - during the last year, he spent more time listening (and sometimes speaking) to people during various conferences and meetups on topics mostly related to mobile and Java Eee, than sitting and coding behind his desk. He likes open source. Last year he worked at lot with the new Android API for maps, which resulted in the birth of a small library called Android Maps Extensions. This year he is working on Hrisey, a new kind of anti-boilerplate tool. When he's not programming, Maciej avoids computers and prefers to bike."
       maximum_number_of_attendees: 16
       tags: [android]
 
@@ -293,7 +318,11 @@ We will try to use a couple of libraries specifically designed to ease our work:
 <br/>
 It's not just step by step tutorial we're going to give you but a real deal tutoring that aims to answer your software architecture questions. The workshop is for (semi-)advanced programmers who know a bit of Scala and worked with web frameworks before.<br/>
 <br/>
-Bring your laptops. We'll send you more instructions after workshop registration."
+Bring your laptops. We'll send you more instructions after workshop registration.<br/>
+<h3>Jacek Głodek:</h3><br/>
+Co–founder, engineer, designer and organizer at Iterators. Loves Scala and Ruby, enjoys monads. Likes business/programmer anarchy part of microservices and decentralized development process. Loves to micro–optimize, knows it's bad.<br/>
+<h3>Łukasz Sowa:</h3><br/>
+Co–founder of Iterators Software House. Advocate of polyglot programming, hence fascination with microservices. Specializes in highly concurrent and distributed systems. Sporadic blogger, pizza lover and football addict."
       maximum_number_of_attendees: 16
       tags: [scala]
 
@@ -313,7 +342,9 @@ Jako wynik każdy uczestnik będzie zaaplikować swoje umiejętności front-end'
 <br/>
 Prowadząc warsztat będę bazował na doświadczeniu wyniesionym z dodawania aplikacji mobilnej dla projektu Maracuya Jukebox (dostępnej zarówno na iOS'a jak i Androida).<br/>
 <br/>
-W związku z tym, że konfiguracja środowiska phonegap'owego - szczególnie w przypadku androida troche trwa, przygotowałem wirtualna maszyne pod VirtualBoxa. Jednak jak ktoś jest chętny do samodzielnej instalacji proszę o kontakt."
+W związku z tym, że konfiguracja środowiska phonegap'owego - szczególnie w przypadku androida troche trwa, przygotowałem wirtualna maszyne pod VirtualBoxa. Jednak jak ktoś jest chętny do samodzielnej instalacji proszę o kontakt.<br/>
+<h3>Marek Będkowski:</h3><br/>
+Na co dzien developer JEE, chociaz z racji swojej pasji i doswiadczenia z jezykiem JavaScript i tam sie zapuszcza. Zajmuje się wytwarzaniem oprogramowania od ponad 10-ciu lat. Jego kariera jest zwiazana z aplikacjiami web'owymi - pierwsze kroki stawial w jezyku PHP, ktory porzucil jednak na rzecz pelnej obiektowosci i wzorcow projektowych dostepnych na platformie JEE. W miedyczasie udalo mu sie na pracowac przez pare miesiecy jako developer JavaScript w Berlinie gdzie nauczyl sie doceniac swobode i lekkosc oferowana przez ten jezyk. Po powroce kontynuowal swoja przygode z JEE uczestniczac w realizacji takich projektow jak EESSI czy e-ms (projekt realizowany dla ministertwa sprawiedliwosci). Od 1.5 roku aktywnie rozwija projekt Maracuya Jukebox dostepny jako wolne oprogramowanie oraz prezentacja mozliwosci platformy JavaScript jako w pelni komplentego narzedzia do wytwarzania oprogramowania (obejmujacego czesc serwerowa, komunikacje, przegladarke, mobilki, zarzadzanie zaleznosciami oraz build system)."
       maximum_number_of_attendees: 16
       tags: [javascript]
 
@@ -321,7 +352,9 @@ W związku z tym, że konfiguracja środowiska phonegap'owego - szczególnie w p
       name: "Java Workflow in the Cloud - AWS Amazon Simple Workflow Service for Java &amp; Eclipse"
       time_slots: [time_slot_4]
       speaker: "Adam Smolnik"
-      description: "Distribute your Business Processes and long-running Tasks all over the world across diverse machines and devices. Harness the powerful features of Cloud to walk through the steps of your processes. Keep them under your control. Write your workflows in pure Java, not with Graphical Designer in place. Learn how to harness the power of asynchronous and distributed programming with Java and Amazon SWF."
+      description: "Distribute your Business Processes and long-running Tasks all over the world across diverse machines and devices. Harness the powerful features of Cloud to walk through the steps of your processes. Keep them under your control. Write your workflows in pure Java, not with Graphical Designer in place. Learn how to harness the power of asynchronous and distributed programming with Java and Amazon SWF.<br/>
+      <h3>Adam Smolnik:</h3><br/>
+      Software development professional with 12+ years of commercial experience in SOA, Cloud Computing and Business Rules solutions. Software architect and certified Java/JEE expert. Co-founder Amazon AWS User Group Poland (awsug.pl). AWS Certified Solutions Architect. Previously working as an application developer, consultant, designer for companies like IBM, EDS, ComputerLand. Currently developing Kroll Ontrack Service Platform with Amazon Web Services as an underlying Cloud Platform."
       maximum_number_of_attendees: 16
       tags: [cloud_aws]
 
@@ -330,7 +363,9 @@ W związku z tym, że konfiguracja środowiska phonegap'owego - szczególnie w p
       time_slots: [time_slot_3, time_slot_4]
       speaker: "Tomasz Grynfelder"
       description: "6 hours of introduction to development for iOS. From basic project configuration, 'Hello World' up to UITableView + (elementary) CoreData.<br/>
-Mac with OS X and Xcode 5 + AppCode (already installed, AppCode as 30 days trial fits in) will be obligatory to participate in this workshop."
+Mac with OS X and Xcode 5 + AppCode (already installed, AppCode as 30 days trial fits in) will be obligatory to participate in this workshop.<br/>
+<h3>Tomasz Grynfelder:</h3><br/>
+Software Engineer at Polidea, mobile technologies freak highly focused on iOS development, simultaneously finishing MSc in Computer Science at Warsaw University of Technology. Member of Jitter Hackathon team on Mobile Central Europe Conference. Great fan of cycling and sailing."
       maximum_number_of_attendees: 16
       tags: [ios]
 
@@ -348,7 +383,9 @@ It's configurations are simple data descriptions of your infrastructure (both hu
 <br/>
 ### Who will get the most out of this workshop?<br/>
 This workshop should be most beneficial for people working in an environment that has not yet or just started DevOps transition.<br/>
-If you already are a Puppet / Chef (or any similar solution) user you might find few parts of this workshop a little boring because we will start with the basics."
+If you already are a Puppet / Chef (or any similar solution) user you might find few parts of this workshop a little boring because we will start with the basics.<br/>
+<h3>Kamil Szymański:</h3><br/>
+software developer, JVM & open-source enthusiast, DevOps advocate, Warsaw JUG leader, Warsjawa board member"
       maximum_number_of_attendees: 16
       tags: [automation_monitoring]
 
@@ -387,7 +424,9 @@ Have you ever complained about DOM? Do You experienced how hard manipulating it 
 Description:<br/>
 I will use examples and exercises that i had prepared for similar workshops that i run internally in my company and on 4Developers:<br/>
 <a target=\"_blank\" href=\"http://devyard.wordpress.com/2014/01/09/angularjs-directives-mind-map-with-examples/\">http://devyard.wordpress.com/2014/01/09/angularjs-directives-mind-map-with-examples/</a><br/>
-In newest version there is about 30 exercises/examples about different aspects of directives."
+In newest version there is about 30 exercises/examples about different aspects of directives.<br/>
+<h3>Michał Lipski:</h3><br/>
+Experienced Java and front-end developer and occasionally Agile and XP practices trainer at Pragmatists. Practitioner of Test Driven Development. Enthusiast of lightweight technologies and agile methodologies. Experience working in enterprise and startups projects. Scrum master in international and distributed teams."
       maximum_number_of_attendees: 16
       tags: [javascript]
 
@@ -428,7 +467,9 @@ Amazon Cloud, its API and SDK are designed to be easily used by Java Developers.
 We will work on real AWS Cloud environment and I give the attendees opportunity to implement, deploy and test their solution on regular AWS Cloud settings.<br/>
 <br/>
 The workshop will be led in Polish. After all, we are members of AWS User Group Poland :).<br/>
-awsug.pl"
+awsug.pl<br/>
+      <h3>Adam Smolnik:</h3><br/>
+      Software development professional with 12+ years of commercial experience in SOA, Cloud Computing and Business Rules solutions. Software architect and certified Java/JEE expert. Co-founder Amazon AWS User Group Poland (awsug.pl). AWS Certified Solutions Architect. Previously working as an application developer, consultant, designer for companies like IBM, EDS, ComputerLand. Currently developing Kroll Ontrack Service Platform with Amazon Web Services as an underlying Cloud Platform."
       maximum_number_of_attendees: 16
       tags: [cloud_aws]
 
@@ -471,7 +512,10 @@ It will be basic course of Android app decompilation, receompilation etc. Worksh
       name: "Working with legacy code"
       time_slots: [time_slot_3]
       speaker: "Mariusz Sieraczkiewicz"
-      description: "I have spent a couple of years working with codebases (as I consultant helping to rescue the code). I have also developed a process called Natural Course of Refactoring (presented at many conferences - eg. <a target=\"_blank\" href=\"http://www.mix-it.fr/session/357/natural-course-of-refactoring-a-refactoring-work\">http://www.mix-it.fr/session/357/natural-course-of-refactoring-a-refactoring-work</a>). And I know that even knowing working with legacy code techniques (eg. refactoring) it is still very difficult to apply it in real life."
+      description: "I have spent a couple of years working with codebases (as I consultant helping to rescue the code). I have also developed a process called Natural Course of Refactoring (presented at many conferences - eg. <a target=\"_blank\" href=\"http://www.mix-it.fr/session/357/natural-course-of-refactoring-a-refactoring-work\">http://www.mix-it.fr/session/357/natural-course-of-refactoring-a-refactoring-work</a>). And I know that even knowing working with legacy code techniques (eg. refactoring) it is still very difficult to apply it in real life.<br/>
+<h3>Mariusz Sieraczkiewicz:</h3><br/>
+      Od ponad dziesięciu lat profesjonalnie zajmuje się tworzeniem oprogramowania. Zdobyte w tym czasie doświadczenie przenosi na pole zawodowe w BNS IT, gdzie jako trener i konsultant, współpracuje z jednymi z najlepszych polskich zespołów programistycznych. Jego obszary specjalizacji to: czysty kod oraz technical leadership.<br/>
+Prowadzenie szkoleń, wystąpienia na konferencjach, liczne publikacje w obszarze IT są pasją, w której, podobnie jak w życiu, kieruje się zasadą, że człowiek jest najważniejszy."
       maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
 
@@ -481,7 +525,7 @@ It will be basic course of Android app decompilation, receompilation etc. Worksh
       speaker: "Aleksander Dąbrowski"
       description: "This is introduction to Ember.js - little less known alternative to Angular. It's good to have choice, and Ember.js may be better choice when you want to build bigger, and more complicated applications. I won't discuss differences between Ember.js and Angular, I will show you how to build single-page application.<br/>
 <br/>
-Aleksander Dąbrowski is a Ruby developer, CTO at Astarium, and lecturer at Coder's Lab - Ruby on Rails school. He has worked in a variety of start-ups and in a marketing agency. He co-organises Warsaw's Ruby User Group. Aleks is also the author of rubysfera.pl, the leading Polish blog focused on Ruby and Rails. He likes to speak at Ruby developer events and is very passionate about sharing his knowledge with others. Along with using and contributing to open source software, Aleks particularly enjoys deleting ugly code, and in his spare is city guide of Warsaw."
+Aleksander Dąbrowski is a Ruby developer, CTO at Astarium, and lecturer at Coder's Lab - Ruby on Rails school. He has worked in a variety of start-ups and in a marketing agency. He co-organises Warsaw's Ruby User Group. Aleks is also the author of <a target=\"_blank\" href=\"rubysfera.pl\">rubysfera.pl</a>, the leading Polish blog focused on Ruby and Rails. He likes to speak at Ruby developer events and is very passionate about sharing his knowledge with others. Along with using and contributing to open source software, Aleks particularly enjoys deleting ugly code, and in his spare is city guide of Warsaw."
       maximum_number_of_attendees: 16
       tags: [javascript]
 
@@ -922,7 +966,9 @@ Warsztat będzie prowadzony po polsku, względnie może być po niemiecku. Włas
       name: "C/C++ in Android Apps"
       time_slots: [time_slot_4]
       speaker: "Artur Stępniewski"
-      description: "This workshop is about using C/C++ code in Android development. You will learn how to move your code from regular Java to native methods. Our focus will be performance, obfuscation and how to properly unit test the native code."     
+      description: "This workshop is about using C/C++ code in Android development. You will learn how to move your code from regular Java to native methods. Our focus will be performance, obfuscation and how to properly unit test the native code.<br/>
+      <h3>Artur Stępniewski:</h3><br/>
+      Android developer working at Allegro Group Sp. z o.o. Previously connected with Korean tech industry giants. He's passionate about motorsports and snooker."     
       maximum_number_of_attendees: 16
       tags: [android]
 
@@ -948,7 +994,7 @@ W czasie warsztatu pokażemy na przykładzie kodu, który przy braku ostrożnoś
 <br/>
 Wszystko to, aby móc szybko i bezpiecznie dokonywać zmian (poprawiać błędy, dodawać nowe funkcje) bez narzutu generowanego przez istniejący dług techniczny.<br/>
 <br/>
-O Marcinie: <br/>
+<h3>O Marcinie:</h3><br/>
 <br/>
 - Jestem doświadczonym architektem specjalizującym się w tworzeniu wysokiej jakości oprogramowania. Będąc pod wrażeniem metodyk Agile i ruchu Software Craftsmanship wierzę w wartość dobrego, testowalnego i łatwego w utrzymaniu kodu. Dążę do tworzenia dobrego oprogramowania, które spełnia oczekiwania klienta i jednocześnie z którego zespół realizujący może być dumny.
 <br/>
@@ -956,7 +1002,7 @@ Dodatkowo poprzez prezentacje, szkolenia (<a target=\"_blank\" href=\"http://www
 <br/>
 Oprócz tego tworzę i angażuję się w projekty open source, jestem miłośnikiem Linuksa oraz prowadzę blog Solid Soft - Working code is not enough (<a target=\"_blank\" href=\"http://blog.solidsoft.info/\">http://blog.solidsoft.info/</a>).<br/>
 <br/>
-O Michale:<br/>
+<h3>O Michale:</h3><br/>
 <br/>
 Absolwent Wydziału Elektroniki i Technik Informacyjnych Politechniki Warszawskiej. Wyznawca Domain-Driven Design w połączeniu z Test-Driven Development. Uwielbia pisać testy oraz refaktoryzować z ich pomocą. Na co dzień stara się zgłębiać tajniki wzorców projektowych i OOP prowadząc szkolenia i pracując jako programista w firmie Pragmatists."
       maximum_number_of_attendees: 16
@@ -967,7 +1013,10 @@ Absolwent Wydziału Elektroniki i Technik Informacyjnych Politechniki Warszawski
       time_slots: [time_slot_2]
       speaker: "Wòjcech Makùrôt"
       description: "Nie ma lepszej metody nauki języka niż przez tzw. zanurzenie (immersję), analogicznie nie da się poznać Scruma tylko czytając o nim.<br/>
-Zapraszam na kilka godzin pełnego zanurzenia w zwinności (Agile). Wraz z doświadczonym Scrum Masterem nie tylko dowiesz się jak wygląda praca w zespole zwinnym, ale przede wszystkim poczujesz ją na własnej skórze. Poznasz ciekawe i sprawdzone metody, jak uczynić swoją pracę bardziej efektywną, ale i zarazem przyjemniejszą. Dowiesz się, co znaczy wartość samoorganizującego się Zespołu, nauczysz się zwinnie szacować i planować pracę, prawidłowo określać Definicję 'Done', a także odpowiednio ofertować swoją pracę. Nie zabraknie też odpowiedzi na tak ważkie kwestie jak: kiedy nie warto stosować Scruma, jakie są najczęstsze problemy podczas jego wdrażania i jak sobie z nimi radzić. Wszystko oczywiście maksymalnie zwinnie i elastycznie.<br/>"
+Zapraszam na kilka godzin pełnego zanurzenia w zwinności (Agile). Wraz z doświadczonym Scrum Masterem nie tylko dowiesz się jak wygląda praca w zespole zwinnym, ale przede wszystkim poczujesz ją na własnej skórze. Poznasz ciekawe i sprawdzone metody, jak uczynić swoją pracę bardziej efektywną, ale i zarazem przyjemniejszą. Dowiesz się, co znaczy wartość samoorganizującego się Zespołu, nauczysz się zwinnie szacować i planować pracę, prawidłowo określać Definicję 'Done', a także odpowiednio ofertować swoją pracę. Nie zabraknie też odpowiedzi na tak ważkie kwestie jak: kiedy nie warto stosować Scruma, jakie są najczęstsze problemy podczas jego wdrażania i jak sobie z nimi radzić. Wszystko oczywiście maksymalnie zwinnie i elastycznie.<br/>
+<h3>Wòjcech Makùrôt:</h3><br/>
+Doświadczony Scrum Master i developer Java. Autor szkoleń dla zespołów developerskich. Wykorzystuje Agile w codziennej pracy od 7 lat (oczywiście z różnym skutkiem). Pomógł już wdrożyć Scruma wielu zespołom różnej wielkości i w kilku różnych firmach. Interesuje się głównie Scrumem na poziomie organizacji pracy zespołu developerskiego. Należy do wąskiego grona Scrum Masterów i trenerów Agile z backgroundem technologicznym. Wciąż aktywnie developuje. Certyfikowany Scrum Master (PSMI) i Product Owner (PSPOI). Prelegent na InfoShare, Future3, PG. Członek JUG Trójmiasto i grupy Agile3m.<br/>
+Po pracy rozwija swoje zainteresowania związane z Kaszubami m.in. współpracując z Radą Języka Kaszubskiego oraz wykładając w tym języku na Akademii Pomorskiej."
       maximum_number_of_attendees: 16
       tags: [agile]
 
