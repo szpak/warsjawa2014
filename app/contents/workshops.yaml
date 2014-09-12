@@ -284,7 +284,7 @@ We are experienced software developers, and we use these techniques on daily bas
 
     - id: workshop_17
       name: "Electronics Fundamentals for Dummies (Arduino included)"
-      time_slots: [time_slot_3]
+      time_slots: [time_slot_3,time_slot_4]
       speaker: "Jacek Kunicki"
       description: "The workshop aims to teach how the basic electronic components and circuits work. It covers a voltage divider with a photoresistor, switch debouncing, transistor as a switch/inverter and building a DYI capacity meter with a RC circuit. This is more than yet another Arduino introduction, as the attendees are going to learn something about the electronic components as well.<br/>
 <br/>
