@@ -16,6 +16,14 @@ partners:
       url: http://www.oreilly.com/
       picture_url: images/partners/oreilly-320x320.png
 
+    - name: Estimote
+      url: http://estimote.com/
+      picture_url: images/partners/estimote-320x320.png
+
+    - name: Warsaw Java User Group
+      url: http://warszawa.jug.pl/
+      picture_url: images/partners/warszawa-java-user-group-320x320.png
+
 
 supporters:
     - name: Polidea
@@ -35,3 +43,8 @@ media_partners:
     - name: Magazyn Programista
       url: http://programistamag.pl/
       picture_url: images/partners/programista-320x320.png
+
+    - name: KarieraPlus
+      url: http://karieraplus.pl/
+      picture_url: images/partners/kariera-plus-320x320.png
+
