@@ -57,6 +57,11 @@ sponsors:
       picture_url: images/sponsors/cyfrowy-polsat-320x320.png
       classes: [small-short, medium-short, large-short]
 
+    - name: Hays
+      rank: silver
+      url: http://www.hays.pl/
+      picture_url: static/images/sponsors/hays-320x320.png
+      classes: [small-short, medium-short, large-short]      
 
     - name: Pragmatists
       rank: bronze
@@ -86,3 +91,10 @@ sponsors:
       url: https://typesafe.com/
       picture_url: images/sponsors/typesafe-320x320.png
       classes: [small-show-rank, small-short, medium-show-rank, medium-short, large-show-rank, large-short]
+
+    - name: SoftwareMill
+      rank: afterparty
+      url: https://softwaremill.com/
+      picture_url: images/sponsors/softwaremill-320x320.png
+      classes: [small-show-rank, small-short, medium-show-rank, medium-short, large-show-rank, large-short]
+
