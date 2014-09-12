@@ -1025,5 +1025,15 @@ Po pracy rozwija swoje zainteresowania związane z Kaszubami m.in. współpracuj
       time_slots: [time_slot_0]
       speaker: "wielu prowadzących"
       description: "Tutaj będą odbywać się różne spotkania i warsztaty związane z umiejętnościami miękkimi.<br/> Na większość z nich nie jest wymagana rejestracja."
-      maximum_number_of_attendees: 1000
+      maximum_number_of_attendees: 700
       tags: [soft]
+      
+    - id: workshop_78
+      name: "Test your skills in AI Challenge"
+      time_slots: [time_slot_0]
+      speaker: "Kamil Berdychowski"
+      description: "During this special workshop we will create a bot for a popular game. We are planning to have lots of fun and create code that you don't write every day. Pair Programming allowed, Test Driven Development encouraged, Enthusiasm welcome! Compete with others, prove your skills and win a prize!<br/>
+No previous knowledge of AI needed. Game and rules will be announced when Warsjawa starts."
+      maximum_number_of_attendees: 18
+      tags: [soft]
+      
