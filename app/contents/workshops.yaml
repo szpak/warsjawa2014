@@ -312,7 +312,7 @@ Maciej is a passionate developer, but also a conference wanderer - during the la
 
     - id: workshop_19
       name: "Microservices in Scala"
-      time_slots: [time_slot_2]
+      time_slots: [time_slot_1,time_slot_2]
       speaker: "Andrzej Michałowski, Jacek Głodek, Łukasz Sowa"
       description: "We will show you how easy and fast it is to build microservices in Scala. During workshop we invite you to learn how to use and combine frameworks such as Spray, Play and Akka. You will build a simple distributed system based on microservices. We will get to know techniques of deployment and monitoring of your microservices and we'll benchmark them with performance tests.<br/>
 <br/>
