@@ -55,8 +55,7 @@ sponsors:
       rank: silver
       url: http://www.cyfrowypolsat.pl/
       picture_url: images/sponsors/cyfrowy-polsat-320x320.png
-      classes: [small-short, medium-short, large-short]
-
+    
     - name: Hays
       rank: silver
       url: http://www.hays.pl/
