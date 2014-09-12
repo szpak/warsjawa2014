@@ -1005,7 +1005,7 @@ Oprócz tego tworzę i angażuję się w projekty open source, jestem miłośnik
 <h3>O Michale:</h3>
 <br/>
 Absolwent Wydziału Elektroniki i Technik Informacyjnych Politechniki Warszawskiej. Wyznawca Domain-Driven Design w połączeniu z Test-Driven Development. Uwielbia pisać testy oraz refaktoryzować z ich pomocą. Na co dzień stara się zgłębiać tajniki wzorców projektowych i OOP prowadząc szkolenia i pracując jako programista w firmie Pragmatists."
-      maximum_number_of_attendees: 34
+      maximum_number_of_attendees: 20
       tags: [software_craftsmanship]
 
     - id: workshop_76
