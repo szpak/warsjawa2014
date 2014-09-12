@@ -61,7 +61,7 @@ sponsors:
       rank: silver
       url: http://www.hays.pl/
       picture_url: static/images/sponsors/hays-320x320.png
-      classes: [small-short, medium-short, large-short]      
+      classes: [small-short, medium-short, large-short]
 
 
     - name: Pragmatists
