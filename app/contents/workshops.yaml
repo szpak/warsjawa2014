@@ -85,7 +85,7 @@ The goals of the workshop are:<br/>
 - Help people new to Scala to get a look on Akka and Scala as a useful tool;<br/>
 - Present major features of Akka (tell/ask, supervision, actor lifecycle, routers), but not the advanced ones (clustering, persistence);<br/>
 - Create a real-world application;</br>
-Piotr Trzpil:</br>
+<h3>Piotr Trzpil:</h3>
 Enthusiast of Scala, JVM, clean code and static typing.</br>
 Loved C# and its functional features but then took a deeper dive (and there is no going back).</br>
 Active Warsaw Scala & Java UG member, occasional speaker.</br>
@@ -127,7 +127,7 @@ Po godzinach kolekcjoner certyfikatów programistycznych."
       time_slots: [time_slot_3]
       speaker: "Michał Parkoła"
       description: "More then a decade after the Agile Manifesto it's no longer enough to talk about 'working software' and 'responding to change'. Along with constantly advancing engineering practices we need more powerful methods for defining success, planning and evaluating progress. And it all starts with the brutal honesty of numbers...<br/>
-Michał Parkoła:</br>
+<h3>Michał Parkoła:</h3>
       Product Owner i Agile Coach w grupie 4FINANCE odpowiedzialny za rozwój ogólnoeuropejskiej platformy płatności. Professional Scrum Master 1 i 2, Certified Scrum Master uczony m.in. przez twórcę Scrum – Jeffa Sutherlanda. Trener (kilkaset godzin szkoleń) i coach Agile. Współzałożyciel Fluid Circle i trener Bottega IT Solutions."
       maximum_number_of_attendees: 16
       tags: [agile]
@@ -230,7 +230,7 @@ No time to check it all, so use ASSUMPTIONS.<br/>
 <br/>
 After design, you will have to present your solution to others and answer their questions... as well as those from the client.<br/>
 Don't worry, you get to ask others too. ;-)</br/>
-Tomasz Borek: </br>
+<h3>Tomasz Borek:</h3>
 <a target=\"_blank\" href=\"http://lafkblogs.wordpress.com/about/bio/\">http://lafkblogs.wordpress.com/about/bio/</a>"
       maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
