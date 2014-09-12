@@ -63,6 +63,7 @@ sponsors:
       picture_url: static/images/sponsors/hays-320x320.png
       classes: [small-short, medium-short, large-short]      
 
+
     - name: Pragmatists
       rank: bronze
       url: http://pragmatists.pl/
