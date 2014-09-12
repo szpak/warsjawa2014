@@ -109,7 +109,7 @@ Remember - minimum theory, maximum practice!"
       name: "IMPACT: How to get results through clear thinking"
       time_slots: [time_slot_3]
       speaker: "Michał Parkoła"
-      description: "More then a decade after the Agile Manifesto it's no longer enough to talk anout 'working software' and 'responding to change'. Along with constantly advancing engineering practices we need more powerful methods for defining success, planning and evaluating progress. And it all starts with the brutal honesty of numbers..."
+      description: "More then a decade after the Agile Manifesto it's no longer enough to talk about 'working software' and 'responding to change'. Along with constantly advancing engineering practices we need more powerful methods for defining success, planning and evaluating progress. And it all starts with the brutal honesty of numbers..."
       maximum_number_of_attendees: 16
       tags: [agile]
 
@@ -123,10 +123,10 @@ Remember - minimum theory, maximum practice!"
  <br/>
     Od uczestnika oczekujemy podstawowej wiedzy na temat programowania funkcyjnego i jakiegoś języka funkcyjnego oraz przygotowanego własnego sprzętu do pracy z nim (w czym możemy pomóc na warsztacie).
 <br/>
-    Warsztaty będą prowadzone przez Tomasza Bartczaka @bartczakt który będzie przekonywał do Scali i Maćka Jaśkowskiego @mjaskowski który będzie przekonywał do Clojure.<br/>
+    Warsztaty będą prowadzone przez Tomasza Bartczaka <a href=\"https://twitter.com/bartczakt\">@bartczakt</a> który będzie przekonywał do Scali i Maćka Jaśkowskiego <a href=\"https://twitter.com/mjaskowski\">@mjaskowski</a> który będzie przekonywał do Clojure.<br/>
 <br/>
 aktualny opis i więcej informacji: <br/>
-http://kretes.github.io/functional-workshop-warsjawa-2014/"
+<a href=\"http://kretes.github.io/functional-workshop-warsjawa-2014/\">http://kretes.github.io/functional-workshop-warsjawa-2014/</a>"
       maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
 
@@ -226,7 +226,7 @@ Don't worry, you get to ask others too. ;-)"
       name: "Specification by Example - Cucumber Automation Workshop"
       time_slots: [time_slot_1]
       speaker: "Krzysztof Jelski"
-      description: "Chcę się skoncentrować na automatyzowaniu specyfikacji (scenariuszy) w Cucumberze. Zakładam użycie cucumber-jvm [https://github.com/cucumber/cucumber-jvm]. Co oznacza niekoniecznie Javę. Będziecie mogli użyć też Groovy'ego, Scali czy Clojure.<br/>
+      description: "Chcę się skoncentrować na automatyzowaniu specyfikacji (scenariuszy) w Cucumberze. Zakładam użycie <a href=\"https://github.com/cucumber/cucumber-jvm\">cucumber-jvm</a>. Co oznacza niekoniecznie Javę. Będziecie mogli użyć też Groovy'ego, Scali czy Clojure.<br/>
 <br/>
 Rozpoczniecie z przygotowanym szkieletem aplikacji i kilkoma już zautomatyzowanymi scenariuszami (na poziomie 'Hello world'). Waszym zadaniem będzie automatyzacja od jednego do kilku następnych scenariuszy. Po drodze nauczycie się kilku trików (automatyzacja na różnych poziomach aplikacji, użycie tagów i hooków, tworzenie warstwy automatyzacji)."
       maximum_number_of_attendees: 16
@@ -269,7 +269,7 @@ I have already led this workshop for my company buddies and they were quite enth
 <br/>
 Basic programming skills are recommended so that we can focus on the hardware part.<br/>
 <br/>
-You can find the materials (schematics and code) at https://github.com/rucek/arduino-workshop"
+You can find the materials (schematics and code) at <a href=\"https://github.com/rucek/arduino-workshop\">https://github.com/rucek/arduino-workshop</a>"
       maximum_number_of_attendees: 16
       tags: [misc]
 
@@ -386,7 +386,7 @@ Workshop/presentation can be done both in Polish and English. It is aimed to fit
 Have you ever complained about DOM? Do You experienced how hard manipulating it with jquery can be? AngulrarJs web framework is for the rescue. Using angular with directives you can modify or even create totally new behavior in HTML. Everything in declarative manner without tons of javascript snippets hanging around. During workshop we will go step by step creating custom directives that will extend HTML, add new behavior to standard elements and wrap jquery plugins. We will also cover best practices, ways of testing directives.<br/>
 Description:<br/>
 I will use examples and exercises that i had prepared for similar workshops that i run internally in my company and on 4Developers:<br/>
-http://devyard.wordpress.com/2014/01/09/angularjs-directives-mind-map-with-examples/<br/>
+<a href=\"http://devyard.wordpress.com/2014/01/09/angularjs-directives-mind-map-with-examples/\">http://devyard.wordpress.com/2014/01/09/angularjs-directives-mind-map-with-examples/</a><br/>
 In newest version there is about 30 exercises/examples about different aspects of directives."
       maximum_number_of_attendees: 16
       tags: [javascript]
@@ -407,9 +407,7 @@ Wymagane: Znajomość platformy Android, telefon z Androidem >=4.3 (lub emulator
       name: "How to become SPOCK at TDD"
       time_slots: [time_slot_1]
       speaker: "Mateusz Kaczmarek"
-      description: "Warsztat wprowadzający do Groovy'ego i SPOCK-a.<br/>
-W końcowej fazie warsztatu (zapewne około 30/45 minut) chciałbym pokazać najczęściej popełniane błędy w trakcie testowania/TDD i przedstawić kilka zasad pisania dobrych testów.<br/>
-Warsztat dla początkujących."
+      description: "Warsztat wprowadzający do Groovy'ego, Spock-a oraz efektywnego TDD, czyli jak testować, żeby nie zabetonować sobie kodu testami. Najwięcej na warsztatach skorzystają średnio zaawansowani programiści Java, którzy już trochę testów (unitowych, integracyjnych) w swojej karierze napisali. Będę prezentował doświadczenia ponadrocznego wykorzystania produkcyjnego Groovy'ego i Spock-a więc będzie sporo anegdotek i śmiesznego kodu :) Z tego też powodu osoby, które już trochę groovy-ego/spock-a znają również nie powinny się nudzić. Czy będzie więcej podstaw, czy też zaawansowanych tematów zależy tak na prawdę od poziomu wtajemniczenia uczestników."
       maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
 
@@ -473,7 +471,7 @@ It will be basic course of Android app decompilation, receompilation etc. Worksh
       name: "Working with legacy code"
       time_slots: [time_slot_3]
       speaker: "Mariusz Sieraczkiewicz"
-      description: "I have spent a couple of years working with codebases (as I consultant helping to rescue the code). I have also developed a process called Natural Course of Refactoring (presented at many conferences - eg. http://www.mix-it.fr/session/357/natural-course-of-refactoring-a-refactoring-work). And I know that even knowing working with legacy code techniques (eg. refactoring) it is still very difficult to apply it in real life."
+      description: "I have spent a couple of years working with codebases (as I consultant helping to rescue the code). I have also developed a process called Natural Course of Refactoring (presented at many conferences - eg. <a href=\"http://www.mix-it.fr/session/357/natural-course-of-refactoring-a-refactoring-work\">http://www.mix-it.fr/session/357/natural-course-of-refactoring-a-refactoring-work</a>). And I know that even knowing working with legacy code techniques (eg. refactoring) it is still very difficult to apply it in real life."
       maximum_number_of_attendees: 16
       tags: [software_craftsmanship]
 
@@ -624,7 +622,7 @@ Note: Mortal Kombat is probably a registered trademark of its respective owner(s
       description: "If you decide to be on my workshop you we will do amazing DevOps stuff. Together we will go through Vagrant: from very easy concepts to complex recipes. From your developer machine to production ready environment. From padawan to master.<br/>
 <br/>
 The first step will be 'The Tao of Vagrant' - introduction of basic concepts in Vagrant. During this part, I will show and help you how to run Vagrant on your machine.<br/>
-The second step will be basic Vagrant provisioning using Shell. We will setup single instance of storm-project (https://storm.incubator.apache.org/) and run an example topology :)  <br/>
+The second step will be basic Vagrant provisioning using Shell. We will setup single instance of storm-project (<a href=\"https://storm.incubator.apache.org/\">https://storm.incubator.apache.org/</a>) and run an example topology :)  <br/>
 The next step we will rewrite our provisioning to setup cluster of ZooKeeper and Storm using Chef.<br/>
 We will also do some provisioning on Windows box<br/>
 In the last step I will show how we can move our developer recipes to production ready environment. <br/>
@@ -657,7 +655,7 @@ Zajęcia praktyczne poprzedzi krótka prezentacja, po której przystąpimy do ro
       description: "Zastosowania teorii grafów związane z sieciami społecznościowymi i ekonomicznymi cieszą się ostatnio wielkim zainteresowaniem głównie ze względu na interesujące wnioski płynące z takich analiz. Jak wiele można dowiedzieć się na temat społeczności badając jedynie wzajemne powiązania? Czemu konkretna średniowieczna wenecka rodzina zdobyła olbrzymie wpływy? Jak rozpowszechniana jest nowa informacja w sieci? Jak znaleźć elementy istotne w sieci np. po to, by wygaszać kryzysy w sieciach społecznościowych? <br/>
 <br/>
 Będę bazował na wykładach Prof Matthew Jacksona i Prof Michaela Kearnsa oraz książce 'Social and Economic Networks' Jacksona.<br/>
-Będziemy mięli okazję wspólnie poznać elementy teorii grafów, kilka pojęć teorii gier i zobaczymy jak zaskakujące są połączenia pomiędzy grafami i macierzami. Będzie okazja do przypomnienia sobie podstaw rachunku macierzowego (głównie mnożenie), ale bardziej skomplikowane obliczenia poprowadzimy w pakiecie gephi ( https://gephi.github.io )."
+Będziemy mięli okazję wspólnie poznać elementy teorii grafów, kilka pojęć teorii gier i zobaczymy jak zaskakujące są połączenia pomiędzy grafami i macierzami. Będzie okazja do przypomnienia sobie podstaw rachunku macierzowego (głównie mnożenie), ale bardziej skomplikowane obliczenia poprowadzimy w pakiecie gephi ( <a href=\"https://gephi.github.io\">https://gephi.github.io</a> )."
       maximum_number_of_attendees: 16
       tags: [data_analysis]
 
@@ -767,7 +765,7 @@ Czas potrzebny na poprowadzenie warsztatów oceniam na 2-2.5h."
       description: "The IE6 'blocking' era is long over. Nowadays browsers support many features and standards that speeds up development and offer very rewarding designing effects. Even the simplest CSS standard is getting much attention although it's true capabilities are still a mystery to many web developers. Today CSS provides many design flavours that was only available through use of complex JavaScript or third party plug-ins / libraries. Animations, transition effects or graphic transformations can be declared and used with simple and declarative syntax of good old web standard.<br/>
 On my workshop I will try to present and work through a few pretty nice CSS solutions. Dynamic gradients, shadows and transparency, transitions and animations, 2d transformations. Some of them can reduce complexity of used JavaScript, some of them may even replace whole JavaScript libs at all.<br/>
 Michał is Team Leader and Software Architect with web-based interfaces specialization. More than 8 years of experience in web-like technologies and cross-browser interface design (including solutions for CSS and Javascript browser incompatibilities). Advocate of all that is linked with good UX (User Experience). Since 2011 regular workshop and conference speaker. Currently working as Project Manager at TouK.<br/>
-http://www.linkedin.com/pub/micha%C5%82-trzaskowski/24/618/31a"
+<a href=\"http://www.linkedin.com/pub/micha%C5%82-trzaskowski/24/618/31a\">http://www.linkedin.com/pub/micha%C5%82-trzaskowski/24/618/31a</a>"
       maximum_number_of_attendees: 16
       tags: [javascript]
 
@@ -818,7 +816,7 @@ Forma warsztatowa - czyli pracujemy na przykładach/case’ach, 10% teorii, 90% 
       speaker: "Paweł Wrzeszcz"
       description: "Lean Canvas to taki biznes plan na 1 kartce A4. Wyjście poza 'co to ma robić' do 'jakie potrzeby ma zaspokajać', 'co naprawdę nas wyróżnia', 'kto będzie płacił' i 'jak do niego dotrzemy'.<br/>
 <br/>
-O samym Lean Canvas: http://practicetrumpstheory.com/2010/08/businessmodelcanvas/<br/>
+O samym Lean Canvas: <a href=\"http://practicetrumpstheory.com/2010/08/businessmodelcanvas/\">http://practicetrumpstheory.com/2010/08/businessmodelcanvas/</a><br/>
 <br/>
 W trakcie warsztatów, w grupach, stworzymy takie biznes plany dla Waszych pomysłów. (Nie trzeba mieć/ujawniać swojego pomysłu przychodząc na warsztaty ale można)<br/>
 <br/>
@@ -954,9 +952,9 @@ O Marcinie: <br/>
 <br/>
 - Jestem doświadczonym architektem specjalizującym się w tworzeniu wysokiej jakości oprogramowania. Będąc pod wrażeniem metodyk Agile i ruchu Software Craftsmanship wierzę w wartość dobrego, testowalnego i łatwego w utrzymaniu kodu. Dążę do tworzenia dobrego oprogramowania, które spełnia oczekiwania klienta i jednocześnie z którego zespół realizujący może być dumny.
 <br/>
-Dodatkowo poprzez prezentacje, szkolenia (http://www.solidsoft.info/training/), zajęcia ze studentami i mentoring w firmach pokazuję jak można tworzyć oprogramowanie oparte na testach (z TDD, programowaniem w parach, czystym kodem, wzorcami projektowymi, itp.) oraz utrzymywać w firmie środowisko deweloperskie ukierunkowane na jakość (z serwerem CI, Sonarem, automatycznym wdrażaniem, itp.).<br/>
+Dodatkowo poprzez prezentacje, szkolenia (<a href=\"http://www.solidsoft.info/training/\">http://www.solidsoft.info/training/</a>), zajęcia ze studentami i mentoring w firmach pokazuję jak można tworzyć oprogramowanie oparte na testach (z TDD, programowaniem w parach, czystym kodem, wzorcami projektowymi, itp.) oraz utrzymywać w firmie środowisko deweloperskie ukierunkowane na jakość (z serwerem CI, Sonarem, automatycznym wdrażaniem, itp.).<br/>
 <br/>
-Oprócz tego tworzę i angażuję się w projekty open source, jestem miłośnikiem Linuksa oraz prowadzę blog Solid Soft - Working code is not enough (http://blog.solidsoft.info/).<br/>
+Oprócz tego tworzę i angażuję się w projekty open source, jestem miłośnikiem Linuksa oraz prowadzę blog Solid Soft - Working code is not enough (<a href=\"http://blog.solidsoft.info/\">http://blog.solidsoft.info/</a>).<br/>
 <br/>
 O Michale:<br/>
 <br/>
@@ -983,7 +981,7 @@ Jestem certyfikowanym Scrum Masterem (PSMI) i Product Ownerem (PSPOI). Na codzie
       name: "Warsztaty miękkie"
       time_slots: [time_slot_0]
       speaker: "wielu prowadzących"
-      description: "Tutaj będą odbywać się różne spotkania i warsztaty związane z umiejętnościami miękkimi. Na większość z nich nie jest wymagana rejestracja."
+      description: "Tutaj będą odbywać się różne spotkania i warsztaty związane z umiejętnościami miękkimi.<br/> Na większość z nich nie jest wymagana rejestracja."
       maximum_number_of_attendees: 1000
       tags: [soft]
 
