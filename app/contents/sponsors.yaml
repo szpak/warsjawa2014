@@ -60,7 +60,7 @@ sponsors:
     - name: Hays
       rank: silver
       url: http://www.hays.pl/
-      picture_url: static/images/sponsors/hays-320x320.png
+      picture_url: images/sponsors/hays-320x320.png
       classes: [small-short, medium-short, large-short]
 
 
