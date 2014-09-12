@@ -2,6 +2,8 @@ var host = Meteor.settings.emailHost;
 var timeout = Meteor.settings.timeout;
 var headers = Meteor.settings.headers;
 
+RegistrationKeys.upsert({_id:'key'},{_id:'key', timaHandicap:9999999999, used:false});
+
 Meteor.publish('TimeSlots', function () {
     return TimeSlots.find();
 });
@@ -48,10 +50,6 @@ Meteor.methods({
             throw error;
         } else {
             console.log('[' + email + '] opening date: ' + openingDate + ' is lower than current date with handicap: ' + currentDateWithHandicap + '. Registering.');
-            if (registrationKey !== undefined) {
-                console.log('[' + email + '] using key: ' + key);
-                RegistrationKeys.update({_id: key}, {$set: {used: true, usedBy: email}});
-            }
         }
 
         console.log('[' + email + '] registering attendee: ' + name);
@@ -60,6 +58,11 @@ Meteor.methods({
             console.log('[' + email + '] attendee not found. Registering him/her with Warsjawa backend.');
             var response = HTTP.call('POST', host + '/users', {timeout: timeout, headers: headers, data: {email: email, name: name}});
             if (response.statusCode === 201) {
+                if (registrationKey !== undefined) {
+                    console.log('[' + email + '] using key: ' + key);
+                    RegistrationKeys.update({_id: key}, {$set: {used: true, usedBy: email}});
+                }
+
                 console.log('[' + email + '] registering with Warsjawa backend complete. Adding to db.');
                 attendee = Attendees.insert({email: email, name: name, key: null});
                 return attendee;
